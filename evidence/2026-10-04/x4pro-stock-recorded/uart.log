@@ -1,0 +1,47 @@
+
+    ╻ ╻ ╻ ╻
+   ┏┻━┻━┻━┻┓    ┏━╸┏━┓┏━┓   ┏━╸┏┳┓╻ ╻
+  ━┫       ┣━   ┣╸ ┗━┓┣━┛╺━╸┣╸ ┃┃┃┃ ┃
+  ━┫ ESP32 ┣━   ┗━╸┗━┛╹     ┗━╸╹ ╹┗━┛
+  ━┫       ┣━
+   ┗┳━┳━┳━┳┛    ESP32 series emulator · v0.45.0
+    ╹ ╹ ╹ ╹
+
+[INFO  esp_emu] Loaded firmware: 16777216 bytes
+[INFO  machine] WiFi SoftAP: WPA2/WPA3 transition enabled (PWE Both) for SSID 'myssid'
+[INFO  net_user] user-net: DNS forwarder upstream [192.168.65.7:53], restrict=true
+[INFO  net_user] user-net: backend ready (gateway 192.168.4.1, 0 hostfwd rules)
+[INFO  esp_emu] Network backend: user-mode (smoltcp NAT, 192.168.4.1 -> host loopback)
+[INFO  esp_emu] Loaded ROM ELF: <embedded esp32s3> (949552 bytes)
+[INFO  esp_emu] Booting from real ROM reset vector (use --skip-rom to bypass)
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  esp_emu] Starting emulation (chip=esp32s3, batch_size=50000)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc2c
+load:0x403cb700,len:0x2b2c
+entry 0x403c8870
+I (383) octal_psram: vendor id    : 0x0d (AP)
+I (383) octal_psram: dev id       : 0x01 (generation 2)
+I (383) octal_psram: density      : 0x03 (64 Mbit)
+I (383) octal_psram: good-die     : 0x01 (Pass)
+I (383) octal_psram: Latency      : 0x00 (Variable)
+I (384) octal_psram: VCC          : 0x01 (3V)
+I (384) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (384) octal_psram: BurstType    : 0x00 ( Wrap)
+I (384) octal_psram: BurstLen     : 0x00 (16 Byte)
+I (384) octal_psram: Readlatency  : 0x00 (6 cycles@Variable)
+I (384) octal_psram: DriveStrength: 0x00 (1/1)
+I (384) MSPI Timing: Enter psram timing tuning
+W MSPI Timing: tuning fail, best point is fallen back to index 5
+I (385) esp_psram: Found 8MB PSRAM device
+I (385) esp_psram: Speed: 80MHz
+I (385) cpu_start: Multicore app
+[INFO  esp_emu] Timeout reached after 20.000089825s

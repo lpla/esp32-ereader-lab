@@ -2,6 +2,10 @@
 
 This report preserves the initial engine experiments. Subsequent SD reading and CrossPoint comparisons are recorded in [the executed EPUB comparison](docs/EPUB_COMPARISON.md).
 
+Later work adds [source-backed feature cases and X4 Pro firmware research](docs/SOURCE_FEATURES.md)
+and [guest heap/network PR experiments](docs/HARDWARE_PR_TESTING.md). Initial
+limitations below are historical observations; consult those reports for new results.
+
 Date: 2026-10-04. Host: Intel macOS; native Linux emulator binaries run in Docker.
 
 ## Conclusion

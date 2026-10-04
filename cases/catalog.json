@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "retrieved": "2026-10-04",
+  "subjects": {
+    "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+    "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+    "x4": "v5.1.6 byte-pinned constructed flash fixture",
+    "x4pro_stock": "v7.4.4 public full image; boot probe only",
+    "x4pro_licorice": "260923 public full image; boot probe only"
+  },
+  "sources": {
+    "x4-manual-reading": {
+      "kind": "manufacturer_manual",
+      "url": "https://cdn.shopify.com/s/files/1/0759/9344/8689/files/X4_User_Guide.pdf?v=1783668551",
+      "locator": "PDF pp. 7-9",
+      "scope": "X4 manual; publication firmware not specified; executed subject v5.1.6",
+      "retrieved": "2026-10-04"
+    },
+    "x4pro-manual": {
+      "kind": "manufacturer_manual",
+      "url": "https://cdn.shopify.com/s/files/1/0759/9344/8689/files/X4_Pro_User_Guide_0818.pdf?v=1787034606",
+      "locator": "English PDF pp. 4, 6",
+      "scope": "X4 Pro stock ecosystem; do not apply automatically to Licorice",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-reader": {
+      "kind": "project_documentation",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/USER_GUIDE.md#L652-L698",
+      "locator": "Reader Menu, Chapters, Bookmarks",
+      "scope": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-fonts": {
+      "kind": "project_documentation",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/docs/sd-card-fonts.md#L3-L8",
+      "locator": "Direct font support and external-RAM requirement",
+      "scope": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-dictionary": {
+      "kind": "project_documentation",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/docs/dictionary.md#L3-L42",
+      "locator": "StarDict installation and lookup",
+      "scope": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-sessions": {
+      "kind": "project_documentation",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/docs/plugin-events.md#L60-L90",
+      "locator": "reader.session contract",
+      "scope": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-hyphenation": {
+      "kind": "project_source",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/src/CrossPointSettings.h#L304",
+      "locator": "hyphenation toggle; lib/Epub/Epub/hyphenation/LanguageRegistry.cpp",
+      "scope": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-dark": {
+      "kind": "project_source",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/src/CrossPointSettings.h#L227-L229",
+      "locator": "Night mode output polarity",
+      "scope": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "retrieved": "2026-10-04"
+    },
+    "pro-board": {
+      "kind": "sdk_documentation",
+      "url": "https://github.com/Free-Ink/freeink-sdk/blob/aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a/docs/xteink-x4pro-support.md#L1-L17",
+      "locator": "S3 / 8 MiB PSRAM / GT911 / frontlight",
+      "scope": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "retrieved": "2026-10-04"
+    },
+    "licorice-launch": {
+      "kind": "community_announcement",
+      "url": "https://www.reddit.com/r/xteinkereader/comments/1wo86sh/xt_licorice_is_now_rolling_out_to_x4_pro/",
+      "locator": "Launch post and comments",
+      "scope": "Early X4 Pro Licorice; account affiliation unverified; not a current exhaustive support list",
+      "retrieved": "2026-10-04"
+    },
+    "licorice-praise": {
+      "kind": "user_report",
+      "url": "https://www.reddit.com/r/XTEINK/comments/1wjpri2/tried_licorice_firmware_for_x4_pro/",
+      "locator": "User impressions",
+      "scope": "Reported TTF, EPUB styling and bookshelf preference; subjective, version not pinned",
+      "retrieved": "2026-10-04"
+    },
+    "licorice-typography": {
+      "kind": "user_report",
+      "url": "https://www.reddit.com/r/XTEINK/comments/1wa1mu9/licorice_is_coming_to_the_x4pro/",
+      "locator": "Early typography impressions",
+      "scope": "Reported responsive font changes; unmeasured performance, firmware unpinned",
+      "retrieved": "2026-10-04"
+    },
+    "user-dictionary": {
+      "kind": "user_request",
+      "url": "https://www.reddit.com/r/XTEINK/comments/1vjlspr/how_to_use_dictionaries_on_the_xteink_x4_pro/",
+      "locator": "Dictionary workflow discussion",
+      "scope": "Automatic dictionary fallback is a requested improvement, not proved stock behavior",
+      "retrieved": "2026-10-04"
+    },
+    "user-hyphenation": {
+      "kind": "user_request",
+      "url": "https://www.reddit.com/r/XTEINK/comments/1wsuhjf/really_enjoying_the_new_xt_licorice_firmware_on/",
+      "locator": "Typography/dictionary/stats discussion",
+      "scope": "Requests and impressions; requested hyphenation is not an implemented Licorice claim",
+      "retrieved": "2026-10-04"
+    },
+    "pro-public-packages": {
+      "kind": "manufacturer_public_api",
+      "url": "https://api-prod.xteink.cc/api/v2/public/firmware/full-packages/latest?model_code=ESP32S3_X4_TL&lang=en",
+      "locator": "Public XTCloud flashing UI API",
+      "scope": "Retrieved XT stock v7.4.4 and Licorice 260923; separate stock V7.6.8 OTA found but not executed",
+      "retrieved": "2026-10-04"
+    }
+  },
+  "features": [
+    {
+      "id": "epub-reading",
+      "name": "EPUB opening and page navigation",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "Known ALPHA chapter text opens; a page turn reveals later numbered paragraphs.",
+      "closed_result": "observed_pass",
+      "crosspoint_result": "observed_pass",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/sd-book/screen.png",
+        "evidence/2026-10-04/crosspoint-reading-current/page.png"
+      ]
+    },
+    {
+      "id": "toc-target",
+      "name": "Chapter selection",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "Selecting Chapter Two reaches its unique marker.",
+      "closed_result": "observed_pass",
+      "crosspoint_result": "observed_pass",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/stock-chapter-two/screen.png",
+        "evidence/2026-10-04/crosspoint-toc/chapter-two.png"
+      ]
+    },
+    {
+      "id": "bookmark",
+      "name": "Bookmark and resume",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "Bookmark confirmation is visible; leaving and reopening preserves the page within the same process.",
+      "closed_result": "observed_pass",
+      "crosspoint_result": "observed_pass",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/stock-bookmark-current/screen.png",
+        "evidence/2026-10-04/stock-reopen/screen.png",
+        "evidence/2026-10-04/crosspoint-reopen/reopen.png"
+      ]
+    },
+    {
+      "id": "dark",
+      "name": "Dark/night mode",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-dark"
+      ],
+      "expected_semantic_result": "Reading body returns with light text on dark background.",
+      "closed_result": "observed_pass",
+      "crosspoint_result": "observed_pass",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/manual-stock-dark/screen.png",
+        "evidence/2026-10-04/manual-crosspoint-dark-reading/dark.png"
+      ]
+    },
+    {
+      "id": "orientation",
+      "name": "Reading orientation",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "Select landscape; chapter text reflows into a landscape reading viewport.",
+      "closed_result": "partial_dialog_and_cache_rebuild_only",
+      "crosspoint_result": "observed_pass",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/manual-stock-landscape/screen.png",
+        "evidence/2026-10-04/manual-crosspoint-orientation-reading/orientation.png"
+      ]
+    },
+    {
+      "id": "font-selector",
+      "name": "Font selection and external-font entry",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-fonts"
+      ],
+      "expected_semantic_result": "Font selector exposes built-in and external choices; installed-font loading needs a separate fixture.",
+      "closed_result": "observed_selector_only",
+      "crosspoint_result": "documented_not_executed",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/manual-stock-fonts/screen.png"
+      ]
+    },
+    {
+      "id": "epub-styling",
+      "name": "EPUB styling and images",
+      "models": [
+        "X4",
+        "X4 Pro Licorice"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "licorice-praise",
+        "licorice-launch",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "BETA renders its real checker PNG and known CSS/text-style markers.",
+      "closed_result": "X4_partial_styles_image_absent_in_fixture_Pro_blocked",
+      "crosspoint_result": "observed_styles_and_image",
+      "priority": "high_user_interest_already_implemented",
+      "evidence": [
+        "evidence/2026-10-04/stock-css/screen.png",
+        "evidence/2026-10-04/crosspoint-css/style.png"
+      ]
+    },
+    {
+      "id": "footnotes",
+      "name": "Internal links and footnotes",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "ALPHA internal link opens second.xhtml#note; Back restores the source page.",
+      "closed_result": "unverified_action_not_reached",
+      "crosspoint_result": "observed_pass",
+      "priority": "regression",
+      "evidence": [
+        "evidence/2026-10-04/crosspoint-links-current/target.png",
+        "evidence/2026-10-04/crosspoint-links-current/return.png"
+      ]
+    },
+    {
+      "id": "chapter-stride",
+      "name": "Large-TOC jump controls",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "GAMMA target Chapter 101 is reached through a documented jump control.",
+      "closed_result": "controls_x1_x10_x100_observed_target_inconclusive",
+      "crosspoint_result": "held_scrolling_observed",
+      "priority": "candidate_validate_exact_target_first",
+      "evidence": [
+        "evidence/2026-10-04/stock-stride-cycle/screen.png",
+        "evidence/2026-10-04/stock-stride-jump-inconclusive/screen.png",
+        "evidence/2026-10-04/crosspoint-gamma/held-navigation.png"
+      ]
+    },
+    {
+      "id": "auto-turn",
+      "name": "Automatic page turns",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "Configured interval produces successive unique paragraphs without additional input.",
+      "closed_result": "documented_not_executed",
+      "crosspoint_result": "documented_not_executed",
+      "priority": "next_functional_case_no_timing_claim",
+      "evidence": []
+    },
+    {
+      "id": "goto",
+      "name": "Go to reading position",
+      "models": [
+        "X4"
+      ],
+      "sources": [
+        "x4-manual-reading",
+        "crosspoint-reader"
+      ],
+      "expected_semantic_result": "Documented page/percentage navigation lands on the corresponding chapter marker.",
+      "closed_result": "documented_not_executed",
+      "crosspoint_result": "documented_not_executed",
+      "priority": "regression",
+      "evidence": []
+    },
+    {
+      "id": "direct-fonts",
+      "name": "Direct TTF/OTF/TTC loading",
+      "models": [
+        "X4 Pro Licorice"
+      ],
+      "sources": [
+        "licorice-praise",
+        "licorice-launch",
+        "crosspoint-fonts"
+      ],
+      "expected_semantic_result": "A supplied open-license font is selected and its unique glyph metrics render.",
+      "closed_result": "blocked_before_reader",
+      "crosspoint_result": "already_documented_on_external_RAM_not_executed",
+      "priority": "existing_S3_feature_C3_requires_measured_memory_design",
+      "evidence": []
+    },
+    {
+      "id": "font-adjustment",
+      "name": "Font size/weight adjustment without manual indexing",
+      "models": [
+        "X4 Pro Licorice"
+      ],
+      "sources": [
+        "licorice-typography",
+        "licorice-launch"
+      ],
+      "expected_semantic_result": "Change size/weight; confirm text metrics change and reading location stays anchored; observe any required manual rebuild.",
+      "closed_result": "user_report_only_blocked",
+      "crosspoint_result": "comparison_not_executed",
+      "priority": "high_validate_before_proposing",
+      "evidence": []
+    },
+    {
+      "id": "bookshelf",
+      "name": "Bookshelf and local reading history",
+      "models": [
+        "X4 Pro Licorice"
+      ],
+      "sources": [
+        "licorice-praise",
+        "licorice-launch"
+      ],
+      "expected_semantic_result": "Open two supplied books; inspect documented sort/history fields and persistence after reopen.",
+      "closed_result": "user_report_only_blocked",
+      "crosspoint_result": "recent_books_exist_richer_history_uncompared",
+      "priority": "high_compare_semantics_not_visual_preference",
+      "evidence": []
+    },
+    {
+      "id": "reading-reports",
+      "name": "Reading progress synchronization and reports",
+      "models": [
+        "X4 Pro stock"
+      ],
+      "sources": [
+        "x4pro-manual",
+        "crosspoint-sessions"
+      ],
+      "expected_semantic_result": "Controlled reading creates a progress/session record and syncs it to an isolated supported endpoint.",
+      "closed_result": "manufacturer_claim_not_executed",
+      "crosspoint_result": "session_events_and_KOSync_documented_not_executed",
+      "priority": "compare_existing_contract_before_new_feature",
+      "evidence": []
+    },
+    {
+      "id": "dictionary",
+      "name": "Offline dictionary and fallback workflow",
+      "models": [
+        "X4 Pro",
+        "X4"
+      ],
+      "sources": [
+        "user-dictionary",
+        "crosspoint-dictionary"
+      ],
+      "expected_semantic_result": "Synthetic dictionary hit, miss, synonym and second-dictionary fallback behave explicitly.",
+      "closed_result": "fallback_requested_not_claimed_available",
+      "crosspoint_result": "single_dictionary_lookup_documented_fallback_uncompared",
+      "priority": "user_requested_not_closed_firmware_parity",
+      "evidence": []
+    },
+    {
+      "id": "hyphenation",
+      "name": "Language-aware hyphenation",
+      "models": [
+        "X4 Pro Licorice",
+        "X4"
+      ],
+      "sources": [
+        "user-hyphenation",
+        "crosspoint-hyphenation"
+      ],
+      "expected_semantic_result": "Language-tagged long words break at known legal points; disabling hyphenation removes optional breaks.",
+      "closed_result": "community_request_not_implemented_claim",
+      "crosspoint_result": "already_implemented_not_executed_here",
+      "priority": "existing_feature_regression",
+      "evidence": []
+    },
+    {
+      "id": "frontlight-touch",
+      "name": "Touch and frontlight controls",
+      "models": [
+        "X4 Pro"
+      ],
+      "sources": [
+        "pro-board"
+      ],
+      "expected_semantic_result": "Actual touch coordinates and warm/cold light channels respond correctly.",
+      "closed_result": "hardware_feature_not_executed",
+      "crosspoint_result": "SDK_documented",
+      "priority": "physical_hardware_required_not_portable_to_absent_hardware",
+      "evidence": []
+    }
+  ],
+  "policy": [
+    "A request is not an available feature.",
+    "User praise motivates a test; it does not establish correctness or speed.",
+    "Manual claims are version-scoped; current manuals can describe features absent from older firmware.",
+    "Process exit is not a semantic pass.",
+    "Native screenshots do not validate embedded RAM, radio or optical display behavior.",
+    "CrossInk excluded by user request."
+  ]
+}

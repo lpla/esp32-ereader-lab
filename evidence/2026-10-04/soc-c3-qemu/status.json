@@ -1,0 +1,13 @@
+{
+  "engine": "qemu",
+  "exit": 0,
+  "timeout": true,
+  "done": false,
+  "image_sha256": "3f13ff7fbb5ec2bd65d4686bd5b0cad2ac3735ef9ea6cc81a18e7bff0d2b97f9",
+  "image_unchanged": true,
+  "http_requests": 0,
+  "records": [],
+  "hardware_substitutions": false,
+  "physical_radio_validated": false,
+  "physical_performance_validated": false
+}

@@ -1,0 +1,16 @@
+{
+  "source_run": "x4pro-licorice-recorded",
+  "files_sha256": {
+    "command.json": "eec87eeb3d274f1483672d00b59abafdedec68f42623c5eb687044611a059226",
+    "status.json": "9590513288171e09641c3b009efd23ab7accc66c801485451a7a1010d7e783b5",
+    "uart.log": "6d1c945e6edcf98d0ac8051c222b291651a9dd986a56f1855a720df1446a7f95"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

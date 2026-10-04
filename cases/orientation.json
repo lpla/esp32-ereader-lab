@@ -1,0 +1,83 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "Direction supports portrait and landscape reading",
+  "expected": "ALPHA text reflows in landscape after selecting Direction",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Right",
+      "start": 430,
+      "end": 450
+    },
+    {
+      "button": "Right",
+      "start": 510,
+      "end": 530
+    },
+    {
+      "button": "Right",
+      "start": 590,
+      "end": 610
+    },
+    {
+      "button": "Right",
+      "start": 670,
+      "end": 690
+    },
+    {
+      "button": "Right",
+      "start": 750,
+      "end": 770
+    },
+    {
+      "button": "Right",
+      "start": 830,
+      "end": 850
+    },
+    {
+      "button": "Confirm",
+      "start": 950,
+      "end": 970
+    },
+    {
+      "button": "Confirm",
+      "start": 1050,
+      "end": 1070
+    },
+    {
+      "button": "Back",
+      "start": 1250,
+      "end": 1270
+    }
+  ],
+  "stop": 1350,
+  "id": "stock-orientation",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "alpha",
+  "clock_substitution": true
+}

@@ -1,0 +1,68 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "Dark mode uses light text on a dark background",
+  "expected": "ALPHA text remains legible; panel background changes to dark",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Right",
+      "start": 430,
+      "end": 450
+    },
+    {
+      "button": "Right",
+      "start": 510,
+      "end": 530
+    },
+    {
+      "button": "Right",
+      "start": 590,
+      "end": 610
+    },
+    {
+      "button": "Right",
+      "start": 670,
+      "end": 690
+    },
+    {
+      "button": "Confirm",
+      "start": 750,
+      "end": 770
+    },
+    {
+      "button": "Back",
+      "start": 850,
+      "end": 870
+    }
+  ],
+  "stop": 950,
+  "id": "stock-dark",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "alpha",
+  "clock_substitution": true
+}

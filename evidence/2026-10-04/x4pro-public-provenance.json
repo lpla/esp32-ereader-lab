@@ -1,0 +1,23 @@
+{
+  "api": "https://api-prod.xteink.cc/api/v2/public/firmware/full-packages/latest?model_code=ESP32S3_X4_TL&lang=en",
+  "files": [
+    {
+      "file": "x4pro-xtos-v7.4.4.bin",
+      "url": "https://overseas-static-file.oss-ap-southeast-1.aliyuncs.com/admin_uploads/firmware/full/202609/23/94c64c80-21ce-46ac-aeb1-55c6ce1e35d3/xteink_app_full_x4pro_7.4.4_20260827_133901.bin",
+      "version": "v7.4.4",
+      "firmware_type": "xtos",
+      "bytes": 16662528,
+      "sha256": "f583b8c635111c99054fe12467ee89bad1aef7fd3f74ce2f8c2748199120539a",
+      "publisher_checksum": null
+    },
+    {
+      "file": "x4pro-xtos_licorice-260923.bin",
+      "url": "https://overseas-static-file.oss-ap-southeast-1.aliyuncs.com/admin_uploads/firmware/full/202609/23/94c64c80-21ce-46ac-aeb1-55c6ce1e35d3/XT%20Licorice%20260923-X4PRO-EN-PROD-0923_115317_full.bin",
+      "version": "260923",
+      "firmware_type": "xtos_licorice",
+      "bytes": 3970704,
+      "sha256": "17d81c50c95ecb39da46679d22db1a96ed9a782bf7bcecc1e6d2f2da02d5f34f",
+      "publisher_checksum": null
+    }
+  ]
+}

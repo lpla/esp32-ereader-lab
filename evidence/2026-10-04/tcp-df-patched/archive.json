@@ -1,0 +1,16 @@
+{
+  "source_run": "tcp-df-patched",
+  "files_sha256": {
+    "command.json": "6061c663f39a654bd07ef43c22761681d51e660efa7c5464ff2913b84c3cd818",
+    "status.json": "477ae0094f5597245e7c2a03e307674a0678df2dae0975a6f77778871792c234",
+    "uart.log": "eaf22d5ca55d37cfdc8b9a13454e12688659d0099002bddb059e2499d5f5713f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

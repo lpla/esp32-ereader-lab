@@ -4,6 +4,10 @@ Automate stock e-reader firmware in Espressif QEMU or `esp-emulator`, inject inp
 
 This is a research harness. It currently targets the **pinned Xteink X4 stock v5.1.6 application** on ESP32-C3. The application bytes remain unchanged; hardware responses are substituted at version-specific HAL boundaries. The X4 application runs in a constructed flash layout using a public X3 bootloader/data image. It is not an original X4 full dump.
 
+The [source-driven audit](docs/SOURCE_FEATURES.md) also includes public X4 Pro
+stock/Licorice images with recorded bring-up blockers. Independent C3 guest
+probes exercise allocator fragmentation and an actual CrossPoint networking PR.
+
 ## What works
 
 | Capability | QEMU | esp-emulator v0.45.0 |
@@ -14,6 +18,9 @@ This is a research harness. It currently targets the **pinned Xteink X4 stock v5
 | Change displayed language | Observed; persistence unverified | Not validated |
 | SD-backed EPUB reading and page turn | Verified via sector adapter | Not validated |
 | EPUB chapter/menu/bookmark/reopen probes | Verified with diagnostic reader-clock offset | Not validated |
+| Guest C3 allocator fragmentation/recovery control | No result from bounded probe | Verified in independent IDF/Arduino probe |
+| Guest Wi-Fi/DHCP/HTTP, isolated PR #3612 TCP DF A/B | Wi-Fi unsupported by documented model | Verified; full CrossPoint integration/carrier behavior untested |
+| X4 Pro stock/Licorice usable reader | Not attempted | Blocked during bring-up |
 | Physical display/power/timing accuracy | Not validated | Not validated |
 
 Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [executed EPUB comparison](docs/EPUB_COMPARISON.md).
@@ -59,6 +66,17 @@ Downloads are pinned and checked against SHA256 hashes. No emulator executables,
 The screenshots represent firmware requests to the display driver. They do not model e-paper waveforms, ghosting, BUSY timing or optical output. Raw framebuffer RAM is reused for partial windows, so repeatedly dumping the same buffer is insufficient.
 
 ## Current priority
+
+Feature testing now follows a [source-driven catalogue](docs/SOURCE_FEATURES.md),
+with claims from manufacturer manuals, pinned CrossPoint documentation and user
+reports, and explicit semantic expectations in `cases/`. It includes public X4 Pro
+stock/Licorice images, whose current machine bring-up failures are recorded.
+
+For hardware-related PR experiments, the newer emulator runs the real guest C3
+allocator and Wi-Fi/lwIP stack. An isolated A/B of CrossPoint PR #3612 passed TCP
+DF/checksum/UDP/reconnect checks. See [executed results and limits](docs/HARDWARE_PR_TESTING.md).
+SD-font memory PRs still require whole-CrossPoint machine/SD integration; the
+allocator control is not a claim that those PRs passed.
 
 Use **QEMU** to obtain practical SD/EPUB access and compare reading features. A storage transport adapter is acceptable for this phase: keep the firmware's filesystem, EPUB parser and rendering logic executing, and label the replaced hardware boundary. Complete board emulation and CrossPoint performance measurements come later.
 

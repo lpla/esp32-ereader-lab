@@ -1,0 +1,16 @@
+{
+  "source_run": "tcp-df-base",
+  "files_sha256": {
+    "command.json": "f87c45abefb9853d20136aebe67ec4fcc80d3717c5fe6201611ee129332363f1",
+    "status.json": "edb1b34cb01c44b44124f019e4af28677c00bdf467aaa6d84428f82d4f06e83e",
+    "uart.log": "65de0f6dc50dd9d7acf4cf66c224eaa31d73a66810be1b111a385d72295f26e0"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

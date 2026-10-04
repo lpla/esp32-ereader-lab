@@ -61,6 +61,17 @@ def main():
         assert hashlib.sha256((ROOT / "downloads" / archive).read_bytes()).hexdigest() == expected
         with tarfile.open(ROOT / "downloads" / archive) as tar:
             tar.extractall(ROOT / "tools", filter="data")
+    for source, name in [('x4pro-xtos-v7.4.4.bin', 'x4pro-stock-padded'),
+                         ('x4pro-xtos_licorice-260923.bin', 'x4pro-licorice-padded')]:
+        data = (ROOT / 'downloads' / source).read_bytes()
+        assert inspect(data)['images'][0]['chip_id'] == 9
+        assert len(data) <= 16 * 1024 * 1024
+        padded = data + b'\xff' * (16 * 1024 * 1024 - len(data))
+        (ROOT / 'firmware' / (name + '.bin')).write_bytes(padded)
+        provenance = dict(source=source, source_sha256=hashlib.sha256(data).hexdigest(),
+                          transformation='append FF to 16 MiB; preserve every downloaded byte',
+                          sha256=hashlib.sha256(padded).hexdigest(), **inspect(padded))
+        (ROOT / 'firmware' / (name + '.json')).write_text(json.dumps(provenance, indent=2) + '\n')
     x3 = (ROOT / "downloads/x3_en_v5.2.13_full.bin").read_bytes()
     x4 = (ROOT / "downloads/x4_en_v5.1.6_ota.bin").read_bytes()
     layout = {"x3-stock": inspect(x3), "x4-ota": inspect(x4)}

@@ -1,0 +1,13 @@
+[
+  "/work/tools/qemu/bin/qemu-system-riscv32",
+  "-nographic",
+  "-monitor",
+  "none",
+  "-icount",
+  "3",
+  "-machine",
+  "esp32c3",
+  "-drive",
+  "file=firmware/soc-c3-probe.bin,if=mtd,format=raw",
+  "-snapshot"
+]

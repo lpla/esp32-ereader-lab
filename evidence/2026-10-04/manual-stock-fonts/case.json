@@ -1,0 +1,53 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "Reader font menu offers system and custom fonts",
+  "expected": "Font selector offers system font entries; custom font is not asserted without a valid stock .bin",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Right",
+      "start": 430,
+      "end": 450
+    },
+    {
+      "button": "Right",
+      "start": 510,
+      "end": 530
+    },
+    {
+      "button": "Confirm",
+      "start": 590,
+      "end": 610
+    }
+  ],
+  "stop": 690,
+  "id": "stock-fonts",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "alpha",
+  "clock_substitution": true
+}

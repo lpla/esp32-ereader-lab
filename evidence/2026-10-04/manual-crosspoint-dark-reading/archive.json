@@ -1,0 +1,18 @@
+{
+  "source_run": "manual-crosspoint-dark-reading",
+  "files_sha256": {
+    "before.png": "7a398435c7f68b7551496ac1620c3709ba8d1cb81133ee9e3337fee054cb15e7",
+    "command.json": "ad1a48e5dc218bc33d78ab9cded461a3435a52efe78e8ce9da67053aa2ff4661",
+    "dark.png": "858dc929ddcebd6fe2dea3ed6e68724dc2ae7841db25c57ee3a628f26cf8f048",
+    "status.json": "411630410839875dfc0cec00cd9dcb12bfc14e57786e0efc82bc435ec9693fe1",
+    "uart.log": "eaf82c62b42efc3961f76d3fcd818ebc03e2d78ef8d84c08b939fddd8634d6a6"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

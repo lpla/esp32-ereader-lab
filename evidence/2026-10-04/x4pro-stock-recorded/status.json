@@ -1,0 +1,91 @@
+{
+  "exit": 0,
+  "engine": "esp-emu v0.45.0",
+  "image_sha256": "245b62281fb6f604c4a464cad875a8684cda79795d10e875d1d02ad11e5eba27",
+  "image_unchanged": true,
+  "layout": {
+    "bytes": 16777216,
+    "partitions": [
+      {
+        "type": 1,
+        "subtype": 2,
+        "offset": 36864,
+        "size": 20480,
+        "label": "nvs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 0,
+        "offset": 57344,
+        "size": 8192,
+        "label": "otadata",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 16,
+        "offset": 65536,
+        "size": 8257536,
+        "label": "app0",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 17,
+        "offset": 8323072,
+        "size": 8257536,
+        "label": "app1",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 130,
+        "offset": 16580608,
+        "size": 81920,
+        "label": "spiffs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 3,
+        "offset": 16662528,
+        "size": 114688,
+        "label": "coredump",
+        "flags": 0
+      }
+    ],
+    "images": [
+      {
+        "offset": 0,
+        "segments": 3,
+        "entry": "0x403c8870",
+        "chip_id": 9,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0
+      },
+      {
+        "offset": 65536,
+        "segments": 8,
+        "entry": "0x40379910",
+        "chip_id": 9,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "7.4.4",
+          "project": "xteink_app",
+          "time": "13:36:47",
+          "date": "Aug 27 2026",
+          "idf": "v6.0.1"
+        }
+      }
+    ]
+  },
+  "watchdog_panics": 0,
+  "emulator_timeout": true,
+  "feature_verdict": "blocked before usable reader; boot is not feature validation",
+  "gdb_substitutions": false,
+  "psram_model_bytes": 8388608
+}

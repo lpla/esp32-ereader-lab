@@ -1,0 +1,16 @@
+{
+  "source_run": "soc-c3-esp",
+  "files_sha256": {
+    "command.json": "da1c7eba3b4873cadbd7d650a4e053e9179864c01e6483b7ccf08379f1f5bc4a",
+    "status.json": "c78f458aa106a918c8368f18ccedcce682db416513cdfbe9977a6c5bd9dfd5b9",
+    "uart.log": "ebc914cf5ec9bb5448a8593ec505bde700b426607539d985d646e98da1fbedbd"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

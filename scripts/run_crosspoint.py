@@ -12,6 +12,8 @@ from create_media_fixture import create_media
 from create_chapter_fixture import create_chapters
 
 SCENARIOS = {
+    'dark': ('900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;3500:ENTER;4200:DOWN;4500:DOWN;4800:DOWN;5200:ENTER;5700:BACK;7200:QUIT', [(3100,'before'),(6700,'dark')]),
+    'orientation': ('900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;3500:ENTER;4200:DOWN;4500:DOWN;4800:DOWN;5100:DOWN;5400:DOWN;5800:ENTER;6300:DOWN;6700:ENTER;7400:BACK;9200:QUIT', [(3100,'before'),(8700,'orientation')]),
     'reading': ('900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;3500:DOWN;4500:ENTER;6500:QUIT',
                 [(3100,'book'),(4100,'page'),(5800,'menu')]),
     'links': ('900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;3500:ENTER;4500:DOWN;5000:ENTER;6300:BACK;7500:QUIT',

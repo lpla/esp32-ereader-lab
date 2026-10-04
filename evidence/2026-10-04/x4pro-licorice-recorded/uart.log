@@ -1,0 +1,371 @@
+
+    ╻ ╻ ╻ ╻
+   ┏┻━┻━┻━┻┓    ┏━╸┏━┓┏━┓   ┏━╸┏┳┓╻ ╻
+  ━┫       ┣━   ┣╸ ┗━┓┣━┛╺━╸┣╸ ┃┃┃┃ ┃
+  ━┫ ESP32 ┣━   ┗━╸┗━┛╹     ┗━╸╹ ╹┗━┛
+  ━┫       ┣━
+   ┗┳━┳━┳━┳┛    ESP32 series emulator · v0.45.0
+    ╹ ╹ ╹ ╹
+
+[INFO  esp_emu] Loaded firmware: 16777216 bytes
+[INFO  machine] WiFi SoftAP: WPA2/WPA3 transition enabled (PWE Both) for SSID 'myssid'
+[INFO  net_user] user-net: DNS forwarder upstream [192.168.65.7:53], restrict=true
+[INFO  net_user] user-net: backend ready (gateway 192.168.4.1, 0 hostfwd rules)
+[INFO  esp_emu] Network backend: user-mode (smoltcp NAT, 192.168.4.1 -> host loopback)
+[INFO  esp_emu] Loaded ROM ELF: <embedded esp32s3> (949552 bytes)
+[INFO  esp_emu] Booting from real ROM reset vector (use --skip-rom to bypass)
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  esp_emu] Starting emulation (chip=esp32s3, batch_size=50000)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c0  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1bd:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x4037d1c3  PS      : 0x00060624  A0      : 0x80376808  A1      : 0x3fca5d00  
+A2      : 0x00010000  A3      : 0x00000000  A4      : 0x00000000  A5      : 0x3fca5d20  
+A6      : 0x00000004  A7      : 0x00000005  A8      : 0x6000804c  A9      : 0x00000000  
+A10     : 0x60008044  A11     : 0x80000000  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x00000001  A15     : 0x3fca5cd0  SAR     : 0x0000000a  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x40056f5c  LEND    : 0x40056f72  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4037d1c0:0x3fca5d00 0x40376805:0x3fca5d20 0x40376827:0x3fca5d40 0x4200887a:0x3fca5d60 0x403768ad:0x3fca5db0 0x403768cd:0x3fca5dd0 0x420e9533:0x3fca5df0 0x420e96b2:0x3fca5e10 0x4201221c:0x3fca5e30 0x420121e3:0x3fca5e60 0x42009268:0x3fca5e80 0x4218f19d:0x3fca5eb0
+
+
+
+
+ELF file SHA256: 545cf3e826adc76c
+
+Rebooting...
+[INFO  machine] Restarting emulator...
+[INFO  machine] PSRAM configured as 8192 KB
+[INFO  machine] ROM ELF: 5227 symbols loaded
+[INFO  machine] ROM ELF loaded, 10 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000400, SP=0x3FCEB710
+[INFO  machine] Emulator restarted (chip=esp32s3)
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x53c
+load:0x403c8700,len:0xc28
+load:0x403cb700,len:0x2b00
+entry 0x403c8870
+[INFO  esp_emu] Timeout reached after 20.000114184s

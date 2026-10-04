@@ -1,0 +1,16 @@
+{
+  "source_run": "soc-c3-qemu",
+  "files_sha256": {
+    "command.json": "631488f95456ea3f56b9fb7e71f5f68db72e4c0a8c97c6c51db1d13164ff794e",
+    "status.json": "b859d6a81861f91460ace775ca1f2ed80591aaa7c1ea7dd4d868c38311b35cc2",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

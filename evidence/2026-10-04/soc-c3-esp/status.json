@@ -1,0 +1,182 @@
+{
+  "engine": "esp-emu",
+  "exit": 0,
+  "timeout": false,
+  "done": true,
+  "image_sha256": "3f13ff7fbb5ec2bd65d4686bd5b0cad2ac3735ef9ea6cc81a18e7bff0d2b97f9",
+  "image_unchanged": true,
+  "http_requests": 3,
+  "records": [
+    {
+      "kind": "LAB_START",
+      "idf": "v5.5.5",
+      "chip": "ESP32-C3",
+      "wifi_driver_substituted": false
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "baseline",
+      "cycle": -1,
+      "free": 263784,
+      "largest": 122868,
+      "minimum": 257228,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "allocated",
+      "cycle": -1,
+      "free": 5648,
+      "largest": 1652,
+      "minimum": 4332,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "holes",
+      "cycle": -1,
+      "free": 134652,
+      "largest": 2292,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_LARGE",
+      "requested": 3316,
+      "free_before": 134652,
+      "success": false
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "released",
+      "cycle": -1,
+      "free": 263784,
+      "largest": 122868,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "before_wifi",
+      "cycle": 0,
+      "free": 263784,
+      "largest": 122868,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_WIFI",
+      "cycle": 0,
+      "connected": true,
+      "status": 3,
+      "ip": "192.168.4.2"
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_active",
+      "cycle": 0,
+      "free": 207256,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_TCP",
+      "cycle": 0,
+      "connected": true,
+      "http_200": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_off",
+      "cycle": 0,
+      "free": 243192,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "before_wifi",
+      "cycle": 1,
+      "free": 243192,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_WIFI",
+      "cycle": 1,
+      "connected": true,
+      "status": 3,
+      "ip": "192.168.4.2"
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_active",
+      "cycle": 1,
+      "free": 206812,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_TCP",
+      "cycle": 1,
+      "connected": true,
+      "http_200": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_off",
+      "cycle": 1,
+      "free": 243160,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "before_wifi",
+      "cycle": 2,
+      "free": 243160,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_WIFI",
+      "cycle": 2,
+      "connected": true,
+      "status": 3,
+      "ip": "192.168.4.2"
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_active",
+      "cycle": 2,
+      "free": 206756,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_TCP",
+      "cycle": 2,
+      "connected": true,
+      "http_200": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_off",
+      "cycle": 2,
+      "free": 243128,
+      "largest": 114676,
+      "minimum": 4212,
+      "integrity": true
+    }
+  ],
+  "hardware_substitutions": false,
+  "physical_radio_validated": false,
+  "physical_performance_validated": false
+}

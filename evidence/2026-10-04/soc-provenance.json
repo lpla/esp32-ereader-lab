@@ -1,0 +1,32 @@
+{
+  "pr": {
+    "pr": "https://github.com/crosspoint-reader/crosspoint-reader/pull/3612",
+    "head": "85ff81e8aab78533476f4db57986f71f18ee231a",
+    "files": [
+      {
+        "file": "TcpDontFragment.cpp",
+        "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/85ff81e8aab78533476f4db57986f71f18ee231a/src/network/TcpDontFragment.cpp",
+        "bytes": 2885,
+        "sha256": "0e586db23da38d72bd98ba3260daac800a83d72ed2fb731494afcf98a1772b1e"
+      },
+      {
+        "file": "TcpDontFragment.h",
+        "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/85ff81e8aab78533476f4db57986f71f18ee231a/src/network/TcpDontFragment.h",
+        "bytes": 949,
+        "sha256": "de66862815d4d0ce39d077688a9e391d8b73f1866ab85c73ea557381ef67d5af"
+      }
+    ]
+  },
+  "images": {
+    "base": {
+      "file": "soc-c3-df-base.bin",
+      "sha256": "76b67f7a43fe4600e08db07362b7ae30b7879447770884718c40c8f8909b80e9",
+      "factory_bytes": 1060672
+    },
+    "patched": {
+      "file": "soc-c3-df-patched.bin",
+      "sha256": "ffd42eed157e132e392d818a158f9133b28e94ef1cbdad796b20b22870eb5c15",
+      "factory_bytes": 1061376
+    }
+  }
+}

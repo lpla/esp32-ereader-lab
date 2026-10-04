@@ -1,0 +1,143 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[0] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[0] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[2] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.fonts (flags=0x0 errno=2 No such file or directory)
+[2] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/fonts (flags=0x0 errno=2 No such file or directory)
+[2] [DBG] [SDREG] Fonts directory not found: /fonts
+[2] [DBG] [SDREG] Discovery complete: 0 families
+[2] [DBG] [SDFS] SD font system ready (0 families discovered)
+[2] [DBG] [MAIN] Fonts setup
+[2] [DBG] [ACT] Entering activity: Boot
+[3] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[15] [DBG] [ACT] Exiting activity: Boot
+[15] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[15] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[33] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[908] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[1388] [DBG] [ACT] Exiting activity: Home
+[1388] [DBG] [ACT] Entering activity: Library
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/library.idx (flags=0x0 errno=2 No such file or directory)
+[1388] [DBG] [GFX] Time = 480 ms from clearScreen to displayBuffer
+[1398] [DBG] [LIBIDX] phase prepare/prior: 0ms
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[1399] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[1399] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1399] [DBG] [EBP] Successfully parsed package metadata
+[1399] [DBG] [LIBIDX] phase walk/metadata/stage: 1ms
+[1399] [DBG] [LIBIDX] phase reconcile: 0ms
+[1399] [DBG] [LIBIDX] phase title order: 0ms
+[1401] [DBG] [LIBIDX] phase author/orders/emit: 2ms
+[1402] [INF] [LIBIDX] built: 1 books, 1 folders, 1 parsed, 0 metadata reused, replaced 1, 0 dup dropped, 0 unreadable, 4ms
+[1402] [INF] [LIB] reconciled: 0 unchanged, 1 added, 0 renamed, 0 removed, 1 enriched (0 dup, 0 unreadable)
+[1402] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1402] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1403] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1408] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1408] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1408] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1910] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1910] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1910] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[2388] [DBG] [ACT] Exiting activity: Library
+[2388] [DBG] [ACT] Entering activity: EpubReader
+[2388] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[2388] [DBG] [GFX] Time = 478 ms from clearScreen to displayBuffer
+[2399] [DBG] [EBP] Loading ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[2399] [DBG] [EBP] Cache not found, building spine/TOC cache
+[2399] [DBG] [BMC] Entering write mode
+[2399] [DBG] [BMC] Beginning content opf pass
+[2399] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[2399] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[2400] [DBG] [COF] Using fast index for 3 manifest items
+[2400] [DBG] [ZIP] Decompressed 330 bytes into 653 bytes
+[2400] [DBG] [EBP] Successfully parsed content.opf
+[2401] [DBG] [EBP] OPF pass completed in 2 ms
+[2401] [DBG] [BMC] Beginning toc pass
+[2401] [DBG] [EBP] Falling back to NCX TOC
+[2401] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2401] [DBG] [ZIP] Decompressed 259 bytes into 468 bytes
+[2401] [DBG] [EBP] Parsed TOC items
+[2401] [DBG] [EBP] TOC pass completed in 0 ms
+[2401] [DBG] [BMC] Wrote 2 spine, 2 TOC entries
+[2402] [DBG] [BMC] Successfully built book.bin
+[2402] [DBG] [EBP] buildBookBin completed in 1 ms
+[2402] [DBG] [EBP] Total indexing completed in 3 ms
+[2402] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[2402] [DBG] [EBP] CSS files to parse: 0
+[2402] [DBG] [CSS] Saved 0 rules to complete cache
+[2402] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[2403] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[2403] [DBG] [EBP] Loaded ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/epub_3165350815581513661/progress.bin (flags=0x0 errno=2 No such file or directory)
+[2403] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[2403] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[SIM] open failed: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/sd/.crosspoint/epub_3165350815581513661/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[2403] [DBG] [ERS] Cache not found, building...
+[2403] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[2404] [DBG] [ZIP] Decompressed 480 bytes into 4945 bytes
+[2404] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_3165350815581513661/html/.tmp_0.html (4945 bytes)
+[2404] [DBG] [CSS] Loaded 0 rules from complete cache
+[2409] [DBG] [SCT] Page 0 processed
+[2412] [DBG] [SCT] Page 1 processed
+[2415] [DBG] [SCT] Page 2 processed
+[2417] [DBG] [SCT] Page 3 processed
+[2420] [DBG] [SCT] Page 4 processed
+[2423] [DBG] [SCT] Page 5 processed
+[2425] [DBG] [SCT] Page 6 processed
+[2428] [DBG] [SCT] Page 7 processed
+[2430] [DBG] [FDC] Prewarm: 10 glyphs in 632 bytes from 1 groups (0 missed)
+[2430] [DBG] [FDC] Prewarm: 15 glyphs in 1293 bytes from 1 groups (0 missed)
+[2431] [DBG] [FDC] Prewarm: 46 glyphs in 3845 bytes from 2 groups (0 missed)
+[2432] [DBG] [GFX] Time = 3 ms from clearScreen to displayBuffer
+[2450] [DBG] [ERS] Page render (tiled): prewarm=2ms bw_render=1ms display=3ms gray_lsb=2ms gray_msb=2ms gray_display=10ms cleanup=1ms total=21ms
+[2450] [DBG] [ERS] Rendered page in 21ms
+[2450] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[SIM] Saved screenshot: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/before.bmp
+[3584] [DBG] [ACT] Pushed to activity stack, new size = 1
+[3584] [DBG] [ACT] Entering activity: EpubReaderMenu
+[3585] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[4208] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[4506] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[4814] [DBG] [GFX] Time = 2 ms from clearScreen to displayBuffer
+[5111] [DBG] [GFX] Time = 2 ms from clearScreen to displayBuffer
+[5410] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[5887] [DBG] [GFX] Time = 478 ms from clearScreen to displayBuffer
+[6308] [DBG] [GFX] Time = 899 ms from clearScreen to displayBuffer
+[6782] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[6786] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[7485] [DBG] [ACT] Exiting activity: EpubReaderMenu
+[7485] [DBG] [ACT] Popped from activity stack, new size = 0
+[7485] [DBG] [ACT] Handling result for popped activity
+[7486] [INF] [SCT] Suspended build: 8 pages persisted
+[7487] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[7487] [ERR] [SCT] Deserialization failed: Parameters do not match
+[7487] [DBG] [SCT] Cache cleared successfully
+[7487] [DBG] [ERS] Cache not found, building...
+[7487] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[7487] [DBG] [SCT] Reusing cached HTML /.crosspoint/epub_3165350815581513661/html/0.html
+[7487] [DBG] [CSS] Loaded 0 rules from complete cache
+[7490] [DBG] [SCT] Page 0 processed
+[7492] [DBG] [SCT] Page 1 processed
+[7495] [DBG] [SCT] Page 2 processed
+[7497] [DBG] [SCT] Page 3 processed
+[7499] [DBG] [SCT] Page 4 processed
+[7501] [DBG] [SCT] Page 5 processed
+[7503] [DBG] [SCT] Page 6 processed
+[7505] [DBG] [SCT] Page 7 processed
+[7506] [DBG] [FDC] Prewarm: 10 glyphs in 632 bytes from 1 groups (0 missed)
+[7507] [DBG] [FDC] Prewarm: 15 glyphs in 1293 bytes from 1 groups (0 missed)
+[7507] [DBG] [FDC] Prewarm: 45 glyphs in 3768 bytes from 2 groups (0 missed)
+[7525] [DBG] [ERS] Page render (tiled): prewarm=1ms bw_render=1ms display=4ms gray_lsb=2ms gray_msb=1ms gray_display=10ms cleanup=0ms total=19ms
+[7525] [DBG] [ERS] Rendered page in 19ms
+[7526] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[SIM] Saved screenshot: <LAB_ROOT>/results/manual-crosspoint-orientation-reading/orientation.bmp

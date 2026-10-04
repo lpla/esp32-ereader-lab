@@ -2,6 +2,10 @@
 
 ## Result and scope
 
+The follow-up [source-driven audit](SOURCE_FEATURES.md) adds manual-backed
+dark/font/orientation cases and wider X4 Pro/Licorice research. Its catalogue
+separates observed results from documented claims and user requests.
+
 SD/EPUB access works in QEMU with a sector adapter. The stock application's own FAT filesystem, ZIP reader, EPUB parser and renderer execute. Both firmwares open the same generated EPUB, turn pages, select Chapter Two, add a bookmark, and restore the displayed page after leaving and reopening the book in the same process. CrossPoint additionally renders the tested image and styles, and its internal-link jump/return works.
 
 This is an initial reading-feature comparison, not an exhaustive audit of all closed firmware. CrossInk is excluded. Use **Espressif QEMU** for further SD work: both tested engines reached Home/Settings, but QEMU was more convenient and the storage adapter is only validated there. Full peripheral accuracy and performance measurements are deferred.

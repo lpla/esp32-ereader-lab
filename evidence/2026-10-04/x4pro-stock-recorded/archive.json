@@ -1,0 +1,16 @@
+{
+  "source_run": "x4pro-stock-recorded",
+  "files_sha256": {
+    "command.json": "a5c7c8192c11f0277c100047e17f601bfb1112894e51256fed9521c7c162a4ac",
+    "status.json": "832819d7378afa46570620c08b524d68c6e9bc357d02aa69353f02a52d612b35",
+    "uart.log": "125442b3b8ab01a6496e216e00e3e9ab39e9167026337f057dd390edadcfdc7d"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

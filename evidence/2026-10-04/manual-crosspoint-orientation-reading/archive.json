@@ -1,0 +1,18 @@
+{
+  "source_run": "manual-crosspoint-orientation-reading",
+  "files_sha256": {
+    "before.png": "7a398435c7f68b7551496ac1620c3709ba8d1cb81133ee9e3337fee054cb15e7",
+    "command.json": "0f0c9e51e0e16cfd9b3f6c707ec01eabad0550a45ac0b52e98fe9d66123869db",
+    "orientation.png": "106d4c33032e8007a2501b2f8a6a1ad4d7067cab931e06fa6ce9a032eaeb6e13",
+    "status.json": "0e43b21aa22e269f12f41f7dee5c652d6b7101eea671358ba19be04849f7f195",
+    "uart.log": "de50429e52abab2445547bca0c26f3c0aebf632c168cf065a3efd3a8b744c9bb"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

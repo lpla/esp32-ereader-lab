@@ -1,0 +1,11 @@
+{
+  "probe_main_sha256": "61154f18c0eb9f32c2d3d2c882248a73b7ac6bb52631a74974f76efb529e9990",
+  "platformio_ini_sha256": "4e0de891d7ec44244dab918012c601d6cf9299cb6b8ddf686f3cca68fbaaeca0",
+  "arduino": "3.3.11",
+  "idf": "v5.5.5",
+  "chip": "ESP32-C3",
+  "PR": "3612",
+  "full_CrossPoint_application": false,
+  "observed_interface": "final guest IPv4 netif output before original output callback",
+  "isolation": "Docker --network none; local HTTP server inside container"
+}
