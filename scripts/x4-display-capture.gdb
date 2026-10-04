@@ -17,5 +17,7 @@ class ImageWrite(gdb.Breakpoint):
                                      invert=bool(invert), mirror_y=bool(mirror_y)))
             (capture_dir / 'display-writes.json').write_text(json.dumps(image_writes, indent=2))
         return False
+# Full-refresh writes both controller banks; normal writes update bank0x24.
 ImageWrite('*0x42066340', type=gdb.BP_HARDWARE_BREAKPOINT, internal=True)
+ImageWrite('*0x4206631a', type=gdb.BP_HARDWARE_BREAKPOINT, internal=True)
 end

@@ -1,5 +1,5 @@
 # Diagnostic GPIO/ADC substitution for the pinned X4 OTA only.
-# Drive one select-button pulse after the home screen starts polling.
+# Drive Right then Select after the home screen starts polling.
 set $gpio_calls = 0
 set $power_reads = 0
 set $adc_calls = 0
@@ -36,13 +36,22 @@ end
 if $a1 == 1
 set $front_reads = $front_reads + 1
 if $front_reads > 50 && $front_reads <= 70
+set $raw_adc = 5
+end
+if $front_reads > 90 && $front_reads <= 110
 set $raw_adc = 2694
 end
+if $front_reads > 130 && $front_reads <= 150
+set $raw_adc = 2694
+end
+end
+if $a1 == 2 && $front_reads > 250 && $front_reads <= 270
+set $raw_adc = 5
 end
 set {unsigned int} $a2 = $raw_adc
 set $a0 = 0
 set $pc = $ra
-if $front_reads < 100
+if $front_reads < 330
 continue
 end
 end

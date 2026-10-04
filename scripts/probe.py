@@ -19,6 +19,7 @@ def main():
     parser.add_argument('image')
     parser.add_argument('name')
     parser.add_argument('--break-at')
+    parser.add_argument('--card', type=Path)
     parser.add_argument('--commands', default='')
     parser.add_argument('--pre-commands', default='')
     parser.add_argument('--pre-file', type=Path)
@@ -71,7 +72,8 @@ def main():
                     gdb = subprocess.Popen(['gdb-multiarch', '-q', '-nx', '-batch',
                                             '-x', str(script)], stdout=out,
                                            stderr=subprocess.STDOUT,
-                                           env={**os.environ, 'LAB_RESULT_DIR': str(result_dir)})
+                                           env={**os.environ, 'LAB_RESULT_DIR': str(result_dir),
+                                                **({'LAB_CARD_IMAGE': str(args.card)} if args.card else {})})
                     code = gdb.wait(args.gdb_seconds)
                 except subprocess.TimeoutExpired:
                     # GDB interrupts the running guest, then executes the

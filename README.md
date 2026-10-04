@@ -12,7 +12,7 @@ This is a research harness. It currently targets the **pinned Xteink X4 stock v5
 | Settings screen | Verified | Verified |
 | Partial display update composition | Verified | Verified |
 | Change displayed language | Observed; persistence unverified | Not validated |
-| SD-backed EPUB reading | Work in progress | Not validated |
+| SD-backed EPUB reading and page turn | Verified via sector adapter | Not validated |
 | Physical display/power/timing accuracy | Not validated | Not validated |
 
 Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [ongoing EPUB work](docs/EPUB_COMPARISON.md).
@@ -32,7 +32,16 @@ docker build -t crosspoint-esp-emulation-lab:2026-10-04 .
 python3 scripts/run_lab.py --engine qemu --scenario settings --prefix first-settings
 ```
 
-Other scenarios: `baseline`, `right`, `language`, `read`. Engines: `qemu`, `esp-emu`, `both`. Each prefix must be new so prior evidence is preserved. Native ESP-EMU allows a longer debugger time budget.
+For the SD-backed book probe, rebuild the container after updating the repository, then:
+
+```sh
+python3 scripts/create_card.py
+python3 scripts/run_lab.py --engine qemu --scenario book --card cards/base.img --prefix first-book
+```
+
+The source card is copied per run. Firmware cache/bookmark writes go to `results/<run>/card.img`; inspect it using `mtools`, with the FAT partition offset `@@1048576`. An original synthetic EPUB and TXT control file are generated from source. No privileged mount or physical SD card is needed. See [SD adapter details](docs/SD_ADAPTER.md).
+
+Other scenarios: `baseline`, `right`, `language`, `read`, `folder`, `book`, `book-page`, `book-next`, `book-menu`. SD scenarios require `--card`; `book-page` uses the side Down button. Engines: `qemu`, `esp-emu`, `both`. Each prefix must be new so prior evidence is preserved. Native ESP-EMU allows a longer debugger time budget.
 
 The runner emits JSON with status and artifact paths. Screens are saved as `results/<run>/screen.png`; individual display writes, logs, commands and hashes accompany them. A successful process/GDB exit alone does not mean a feature passed: inspect the screen and the scenario's actual behavior.
 

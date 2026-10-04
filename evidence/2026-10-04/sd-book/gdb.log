@@ -1,0 +1,55 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420973e0
+Hardware assisted breakpoint 2 at 0x420a1bd4
+Hardware assisted breakpoint 3 at 0x420087d0
+ra             0x42098ce4	0x42098ce4
+sp             0x3fcb2520	0x3fcb2520
+gp             0x3fc92000	0x3fc92000
+tp             0x3f825fc0	0x3f825fc0
+t0             0x4005890e	1074104590
+t1             0x4038d0f0	1077465328
+t2             0x1030028	16973864
+fp             0x1800000	0x1800000
+s1             0x60040000	1610874880
+a0             0x0	0
+a1             0x1	1
+a2             0x3fcb252c	1070277932
+a3             0x4	4
+a4             0xfe7fffff	-25165825
+a5             0x0	0
+a6             0xfa000000	-100663296
+a7             0x3	3
+s2             0x1	1
+s3             0x3fcaa000	1070243840
+s4             0x3fca1fe8	1070211048
+s5             0x800000	8388608
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x3fca2088	1070211208
+s10            0x0	0
+s11            0x3fca1bb8	1070209976
+t3             0x0	0
+t4             0x0	0
+t5             0x14	20
+t6             0x3fca20c0	1070211264
+pc             0x42098ce4	0x42098ce4
+=> 0x42098ce4:	auipc	ra,0xfe2f5
+   0x42098ce8:	jalr	-1106(ra)
+   0x42098cec:	addi	a0,s3,1104
+   0x42098cf0:	auipc	ra,0xfe2eb
+   0x42098cf4:	jalr	-1108(ra)
+   0x42098cf8:	jal	0x420c6308
+   0x42098cfc:	li	a0,26
+   0x42098cfe:	jal	0x42097f06
+   0x42098d02:	lw	ra,44(sp)
+   0x42098d04:	lw	s0,40(sp)
+   0x42098d06:	lw	a0,12(sp)
+   0x42098d08:	lw	s1,36(sp)
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+[Inferior 1 (process 1) detached]
