@@ -1,0 +1,43 @@
+diff --git a/src/HalGPIO.h b/src/HalGPIO.h
+index 9d60c91..58f47ef 100644
+--- a/src/HalGPIO.h
++++ b/src/HalGPIO.h
+@@ -75,6 +75,8 @@ public:
+   bool wasHomeKeyPressed() const;
+   bool wasHomeKeyTapped() const;
+   bool wasHomeKeyLongPressed() const;
++  bool wasCapacitivePagePressed() const { return false; }
++  bool isCapacitivePagePressed(uint8_t) const { return false; }
+   bool wasTouchTap(float &nx, float &ny) const;
+   bool wasTouchDown(float &nx, float &ny) const;
+   bool wasTouchReleased() const;
+diff --git a/src/NetworkClient.h b/src/NetworkClient.h
+index b6766f7..d6d26ce 100644
+--- a/src/NetworkClient.h
++++ b/src/NetworkClient.h
+@@ -5,10 +5,11 @@
+ #include <memory>
+ 
+ #include "WString.h"
++#include "Print.h"
+ 
+ class Stream;
+ 
+-class NetworkClient {
++class NetworkClient : public Print {
+ public:
+   NetworkClient() {}
+   explicit NetworkClient(int fd);
+diff --git a/src/freertos/semphr.h b/src/freertos/semphr.h
+index bd03b35..1a3e950 100644
+--- a/src/freertos/semphr.h
++++ b/src/freertos/semphr.h
+@@ -38,6 +38,8 @@ struct SimBinarySemaphore : SimSemaphoreBase {
+ };
+ 
+ typedef SimSemaphoreBase *SemaphoreHandle_t;
++using StaticSemaphore_t = SimMutex;
++inline SemaphoreHandle_t xSemaphoreCreateMutexStatic(StaticSemaphore_t *storage) { return storage; }
+ 
+ namespace sim_semaphore_detail {
+ 

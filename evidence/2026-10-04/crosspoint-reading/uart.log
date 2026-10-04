@@ -1,0 +1,50 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[1] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.plugins (flags=0x0 errno=2 No such file or directory)
+[1] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[7] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.fonts (flags=0x0 errno=2 No such file or directory)
+[7] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/fonts (flags=0x0 errno=2 No such file or directory)
+[7] [DBG] [SDREG] Fonts directory not found: /fonts
+[7] [DBG] [SDREG] Discovery complete: 0 families
+[7] [DBG] [SDFS] SD font system ready (0 families discovered)
+[7] [DBG] [MAIN] Fonts setup
+[7] [DBG] [ACT] Entering activity: Boot
+[7] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[20] [DBG] [ACT] Exiting activity: Boot
+[20] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.plugins (flags=0x0 errno=2 No such file or directory)
+[20] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[40] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-alpha/home.bmp
+[909] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1386] [DBG] [ACT] Exiting activity: Home
+[1386] [DBG] [ACT] Entering activity: Library
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/library.idx (flags=0x0 errno=2 No such file or directory)
+[1387] [DBG] [GFX] Time = 479 ms from clearScreen to displayBuffer
+[1399] [DBG] [LIBIDX] phase prepare/prior: 0ms
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[1400] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[1400] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1400] [DBG] [EBP] Successfully parsed package metadata
+[1400] [DBG] [LIBIDX] phase walk/metadata/stage: 1ms
+[1400] [DBG] [LIBIDX] phase reconcile: 0ms
+[1401] [DBG] [LIBIDX] title sort alloc: 28 bytes, heap 1048576, max block 1048576
+[1404] [DBG] [LIBIDX] phase title order: 4ms
+[1404] [DBG] [LIBIDX] author sort alloc: 28 bytes, heap 1048576, max block 1048576
+[1416] [DBG] [LIBIDX] phase author/orders/emit: 12ms
+[1416] [INF] [LIBIDX] built: 2 books, 1 folders, 1 parsed, 0 metadata reused, replaced 1, 0 dup dropped, 0 unreadable, 17ms
+[1416] [INF] [LIB] reconciled: 0 unchanged, 2 added, 0 renamed, 0 removed, 1 enriched (0 dup, 0 unreadable)
+[1417] [DBG] [LIB] page tab=0 top=0 full=2 loaded=2 body=158..721 next=-1 title=<none>
+[1417] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1417] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1423] [DBG] [LIB] page tab=0 top=0 full=2 loaded=2 body=158..721 next=-1 title=<none>
+[1423] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1423] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-alpha/after.bmp

@@ -1,0 +1,18 @@
+{
+  "source_run": "crosspoint-gamma-navigation",
+  "files_sha256": {
+    "command.json": "ba7f1d790708f0af816130cd94cb65eae2895197a1de0f91b3ee0985ca55bad5",
+    "held-navigation.png": "1e2b6c91beb46c03ad7837c99d3447a58738d1761131acea7c88ba934fd9cf4f",
+    "status.json": "ecfa75fdcb854db2c96dcac99f643869b40aaedd006a5624ad1d31ce3c9dec46",
+    "toc.png": "31afe564d6bc3fb75bc610e5f18b3a3f9e9268676df838b93cecbd40e1c2d7a5",
+    "uart.log": "88879042c0ad95f01a8cbf6d461762d204f8ce37084d6c9525959647cfaf83e6"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

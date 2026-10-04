@@ -1,0 +1,11 @@
+{
+  "scenario": "book-bookmark",
+  "engine": "qemu",
+  "fixture": "x4-app-x3-layout",
+  "card_source_sha256": "6d2b7d607cfc03cdd4178c8ce12a8a39989bf1ea4604e754e0f47dd8fb7e231e",
+  "card_result_sha256": "28222af3405f2d1fdb1557e15cda3b896902e02cb942cb27e65cc57d747d3e3b",
+  "flash_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+  "input_script": "x4-book-bookmark.gdb",
+  "arduino_clock_offset_substitution": true,
+  "performance_valid": false
+}

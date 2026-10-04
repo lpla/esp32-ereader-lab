@@ -1,0 +1,40 @@
+{
+  "source_run": "sd-held-confirm",
+  "files_sha256": {
+    "clock-substitution.json": "9bf8c8952e523d5965ace59dbab2016c2c59dc5eca60fa8fd81c9fdc3c2a2bd8",
+    "command.json": "9cab416413dfe1517f3e59d0dfd728a27969fc899dcf112a4292ce4763cbfbf9",
+    "display-writes.json": "194713d20fd94c60999fae72f9d5d779d3e853eaa34aa02d042a23d6a0174541",
+    "gdb.log": "434820f6e813b4560b9774d1c0621dd785a217ff88aae4dec645f4e3f4241330",
+    "probe.gdb": "ff9bac590f0d0b7126ccf681dafdcad26a06add1fc048eef75b3913fff5e6c2a",
+    "screen-000.png": "b516d5fb710245aaaa53286fbbd576b3930c2cff8413f128da68ea2f98935ee8",
+    "screen-001.png": "b516d5fb710245aaaa53286fbbd576b3930c2cff8413f128da68ea2f98935ee8",
+    "screen-002.png": "83785378e29b58347f5866e919732b26280bc265a3ecef57a4d2d509c4ea0742",
+    "screen-003.png": "83785378e29b58347f5866e919732b26280bc265a3ecef57a4d2d509c4ea0742",
+    "screen-004.png": "7334beffb079141b49d8bca17c1ebaf80450d40736e8a384dbf608987bf4b36f",
+    "screen-005.png": "7334beffb079141b49d8bca17c1ebaf80450d40736e8a384dbf608987bf4b36f",
+    "screen-006.png": "df10426ee5db79f825c362ccc673b9e78cbd787c1e6b4c8cab34ee0147c3d3b4",
+    "screen-007.png": "df10426ee5db79f825c362ccc673b9e78cbd787c1e6b4c8cab34ee0147c3d3b4",
+    "screen-008.png": "d54f42c3c889fb1a5f79ffbf3fb1a9b452042cd30cbf2d976534e12715627f41",
+    "screen-009.png": "d54f42c3c889fb1a5f79ffbf3fb1a9b452042cd30cbf2d976534e12715627f41",
+    "screen-010.png": "50693ff5572ef17fedae7caf8a156e32c5c0b90bfbc59c639a5af046a1d2db94",
+    "screen-011.png": "50693ff5572ef17fedae7caf8a156e32c5c0b90bfbc59c639a5af046a1d2db94",
+    "screen-012.png": "6a826f92c8c540575478173ff8d490ea3d7ea9b972abbf157e0e1fd83328e670",
+    "screen-013.png": "6a826f92c8c540575478173ff8d490ea3d7ea9b972abbf157e0e1fd83328e670",
+    "screen-014.png": "7801b299ca191862f0851e183f55a678d3976037f54e76c7216d287addb6fa34",
+    "screen-015.png": "7801b299ca191862f0851e183f55a678d3976037f54e76c7216d287addb6fa34",
+    "screen-016.png": "990ea975290b17c932d4af323e31f6d23ba3fbf66fc1e31b7387a45b3a37c371",
+    "screen-017.png": "990ea975290b17c932d4af323e31f6d23ba3fbf66fc1e31b7387a45b3a37c371",
+    "screen.png": "990ea975290b17c932d4af323e31f6d23ba3fbf66fc1e31b7387a45b3a37c371",
+    "sd-events.json": "078c1ae797698cfdfcab63365edc510edd5bdc9d025134fba7780f239cbb6ced",
+    "status.json": "b091ac3fb9ae55e9457923a7a7321fa964e647326837a29b261608c8c21751c4",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

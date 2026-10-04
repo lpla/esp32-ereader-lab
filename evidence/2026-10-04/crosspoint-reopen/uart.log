@@ -1,0 +1,161 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[0] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[0] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[2] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.fonts (flags=0x0 errno=2 No such file or directory)
+[2] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/fonts (flags=0x0 errno=2 No such file or directory)
+[2] [DBG] [SDREG] Fonts directory not found: /fonts
+[2] [DBG] [SDREG] Discovery complete: 0 families
+[2] [DBG] [SDFS] SD font system ready (0 families discovered)
+[2] [DBG] [MAIN] Fonts setup
+[2] [DBG] [ACT] Entering activity: Boot
+[3] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[14] [DBG] [ACT] Exiting activity: Boot
+[14] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[15] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[37] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[904] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[1383] [DBG] [ACT] Exiting activity: Home
+[1384] [DBG] [ACT] Entering activity: Library
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/library.idx (flags=0x0 errno=2 No such file or directory)
+[1384] [DBG] [GFX] Time = 480 ms from clearScreen to displayBuffer
+[1395] [DBG] [LIBIDX] phase prepare/prior: 1ms
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[1395] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[1395] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1395] [DBG] [EBP] Successfully parsed package metadata
+[1396] [DBG] [LIBIDX] phase walk/metadata/stage: 1ms
+[1396] [DBG] [LIBIDX] phase reconcile: 0ms
+[1396] [DBG] [LIBIDX] phase title order: 0ms
+[1397] [DBG] [LIBIDX] phase author/orders/emit: 1ms
+[1397] [INF] [LIBIDX] built: 1 books, 1 folders, 1 parsed, 0 metadata reused, replaced 1, 0 dup dropped, 0 unreadable, 3ms
+[1397] [INF] [LIB] reconciled: 0 unchanged, 1 added, 0 renamed, 0 removed, 1 enriched (0 dup, 0 unreadable)
+[1398] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1398] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1399] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1402] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1402] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1402] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[1905] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1905] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1905] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[2385] [DBG] [ACT] Exiting activity: Library
+[2385] [DBG] [ACT] Entering activity: EpubReader
+[2385] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[2385] [DBG] [GFX] Time = 480 ms from clearScreen to displayBuffer
+[2393] [DBG] [EBP] Loading ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[2393] [DBG] [EBP] Cache not found, building spine/TOC cache
+[2393] [DBG] [BMC] Entering write mode
+[2393] [DBG] [BMC] Beginning content opf pass
+[2394] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[2394] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[2395] [DBG] [COF] Using fast index for 3 manifest items
+[2395] [DBG] [ZIP] Decompressed 330 bytes into 653 bytes
+[2395] [DBG] [EBP] Successfully parsed content.opf
+[2395] [DBG] [EBP] OPF pass completed in 2 ms
+[2395] [DBG] [BMC] Beginning toc pass
+[2396] [DBG] [EBP] Falling back to NCX TOC
+[2396] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2396] [DBG] [ZIP] Decompressed 259 bytes into 468 bytes
+[2396] [DBG] [EBP] Parsed TOC items
+[2396] [DBG] [EBP] TOC pass completed in 1 ms
+[2396] [DBG] [BMC] Wrote 2 spine, 2 TOC entries
+[2397] [DBG] [BMC] Successfully built book.bin
+[2397] [DBG] [EBP] buildBookBin completed in 1 ms
+[2397] [DBG] [EBP] Total indexing completed in 4 ms
+[2397] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[2397] [DBG] [EBP] CSS files to parse: 0
+[2397] [DBG] [CSS] Saved 0 rules to complete cache
+[2397] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[2397] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[2397] [DBG] [EBP] Loaded ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/epub_3165350815581513661/progress.bin (flags=0x0 errno=2 No such file or directory)
+[2397] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[2397] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/epub_3165350815581513661/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[2398] [DBG] [ERS] Cache not found, building...
+[2398] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[2398] [DBG] [ZIP] Decompressed 480 bytes into 4945 bytes
+[2398] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_3165350815581513661/html/.tmp_0.html (4945 bytes)
+[2399] [DBG] [CSS] Loaded 0 rules from complete cache
+[2403] [DBG] [SCT] Page 0 processed
+[2406] [DBG] [SCT] Page 1 processed
+[2409] [DBG] [SCT] Page 2 processed
+[2412] [DBG] [SCT] Page 3 processed
+[2414] [DBG] [SCT] Page 4 processed
+[2416] [DBG] [SCT] Page 5 processed
+[2419] [DBG] [SCT] Page 6 processed
+[2421] [DBG] [SCT] Page 7 processed
+[2422] [DBG] [FDC] Prewarm: 10 glyphs in 632 bytes from 1 groups (0 missed)
+[2423] [DBG] [FDC] Prewarm: 15 glyphs in 1293 bytes from 1 groups (0 missed)
+[2423] [DBG] [FDC] Prewarm: 46 glyphs in 3845 bytes from 2 groups (0 missed)
+[2424] [DBG] [GFX] Time = 3 ms from clearScreen to displayBuffer
+[2439] [DBG] [ERS] Page render (tiled): prewarm=1ms bw_render=1ms display=3ms gray_lsb=2ms gray_msb=1ms gray_display=9ms cleanup=0ms total=17ms
+[2439] [DBG] [ERS] Rendered page in 17ms
+[2440] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[3512] [DBG] [FDC] Prewarm: 35 glyphs in 2937 bytes from 2 groups (0 missed)
+[3530] [DBG] [ERS] Page render (tiled): prewarm=1ms bw_render=1ms display=3ms gray_lsb=2ms gray_msb=2ms gray_display=10ms cleanup=0ms total=19ms
+[3530] [DBG] [ERS] Rendered page in 19ms
+[3531] [DBG] [ERS] Progress saved: spine=0 offset=357 page=1
+[SIM] Saved screenshot: <LAB_ROOT>/results/verified-crosspoint-reopen/page.bmp
+[4591] [DBG] [ACT] Exiting activity: EpubReader
+[4591] [INF] [MEM] reader exit: free=1048576 max_block=1048576
+[4591] [INF] [SCT] Suspended build: 8 pages persisted
+[4592] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-reopen/sd/.crosspoint/epub_3165350815581513661/thumb_226.bmp (flags=0x0 errno=2 No such file or directory)
+[4592] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[4612] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[4615] [DBG] [EBP] Loading ePub: /alpha.epub
+[4615] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[4615] [DBG] [EBP] Loaded ePub: /alpha.epub
+[4615] [DBG] [GFX] Time = 4 ms from clearScreen to displayBuffer
+[4619] [DBG] [GFX] Time = 8 ms from clearScreen to displayBuffer
+[4622] [DBG] [EBP] No known cover image for thumbnail
+[4629] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[5383] [DBG] [ACT] Exiting activity: Home
+[5384] [DBG] [ACT] Entering activity: EpubReader
+[5384] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[5384] [DBG] [EBP] Loading ePub: /alpha.epub
+[5384] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[5384] [DBG] [CSS] Loaded 0 rules from complete cache
+[5384] [DBG] [EBP] Loaded ePub: /alpha.epub
+[5384] [DBG] [ERS] Loaded cache: 0, 1
+[5384] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[5384] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[5384] [DBG] [SCT] Deserialization succeeded: 8 pages (partial)
+[5384] [DBG] [ERS] Partial cache found (8 pages), resuming build...
+[5384] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[5384] [DBG] [SCT] Reusing cached HTML /.crosspoint/epub_3165350815581513661/html/0.html
+[5385] [DBG] [CSS] Loaded 0 rules from complete cache
+[5387] [DBG] [FDC] Prewarm: 35 glyphs in 2937 bytes from 2 groups (0 missed)
+[5388] [DBG] [GFX] Time = 3 ms from clearScreen to displayBuffer
+[5406] [DBG] [ERS] Page render (tiled): prewarm=1ms bw_render=1ms display=3ms gray_lsb=2ms gray_msb=2ms gray_display=11ms cleanup=0ms total=20ms
+[5406] [DBG] [ERS] Rendered page in 20ms
+[5407] [DBG] [ERS] Progress saved: spine=0 offset=357 page=1
+[5417] [DBG] [SCT] Page 0 processed
+[5421] [DBG] [SCT] Page 1 processed
+[5424] [DBG] [SCT] Page 2 processed
+[5434] [DBG] [SCT] Page 3 processed
+[5437] [DBG] [SCT] Page 4 processed
+[5439] [DBG] [SCT] Page 5 processed
+[5443] [DBG] [SCT] Page 6 processed
+[5449] [DBG] [SCT] Page 7 processed
+[5471] [DBG] [SCT] Page 8 processed
+[5474] [DBG] [SCT] Page 9 processed
+[5474] [DBG] [EHP] Time to parse and build pages: 89 ms
+[5476] [DBG] [SCT] Page 10 processed
+[5812] [DBG] [FDC] Prewarm: 36 glyphs in 2999 bytes from 2 groups (0 missed)
+[5812] [DBG] [ERS] Idle prewarm: page 2 in 1ms
+[SIM] Saved screenshot: <LAB_ROOT>/results/verified-crosspoint-reopen/reopen.bmp

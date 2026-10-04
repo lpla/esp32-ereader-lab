@@ -13,9 +13,10 @@ This is a research harness. It currently targets the **pinned Xteink X4 stock v5
 | Partial display update composition | Verified | Verified |
 | Change displayed language | Observed; persistence unverified | Not validated |
 | SD-backed EPUB reading and page turn | Verified via sector adapter | Not validated |
+| EPUB chapter/menu/bookmark/reopen probes | Verified with diagnostic reader-clock offset | Not validated |
 | Physical display/power/timing accuracy | Not validated | Not validated |
 
-Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [ongoing EPUB work](docs/EPUB_COMPARISON.md).
+Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [executed EPUB comparison](docs/EPUB_COMPARISON.md).
 
 ![Stock Settings screen](evidence/2026-10-04/qemu-x4-settings/screen.png)
 
@@ -39,9 +40,9 @@ python3 scripts/create_card.py
 python3 scripts/run_lab.py --engine qemu --scenario book --card cards/base.img --prefix first-book
 ```
 
-The source card is copied per run. Firmware cache/bookmark writes go to `results/<run>/card.img`; inspect it using `mtools`, with the FAT partition offset `@@1048576`. An original synthetic EPUB and TXT control file are generated from source. No privileged mount or physical SD card is needed. See [SD adapter details](docs/SD_ADAPTER.md).
+The source card is copied per run. Firmware cache/bookmark writes go to `results/<run>/card.img`; inspect it using `mtools`, with the FAT partition offset `@@1048576`. Original EPUB/TXT fixtures are generated from source; `create_card.py --fixture beta --name beta` adds the CSS/image probe and `--fixture gamma --name gamma` adds the 120-chapter probe. No privileged mount or physical SD card is needed. See [SD adapter details](docs/SD_ADAPTER.md).
 
-Other scenarios: `baseline`, `right`, `language`, `read`, `folder`, `book`, `book-page`, `book-next`, `book-menu`. SD scenarios require `--card`; `book-page` uses the side Down button. Engines: `qemu`, `esp-emu`, `both`. Each prefix must be new so prior evidence is preserved. Native ESP-EMU allows a longer debugger time budget.
+Other scenarios include `baseline`, `right`, `language`, `folder`, `book-page`, `book-controls`, `book-chapters`, `book-chapter-two`, `book-bookmark`, `book-reopen`, and `book-stride-cycle`. See the runner help for diagnostic probes. SD scenarios require `--card`; `book-page` uses the side Down button. Engines: `qemu`, `esp-emu`, `both`. Each prefix must be new so prior evidence is preserved. Reader menu/held-input scenarios use a documented Arduino-millis offset; they are unsuitable for timing or performance measurements.
 
 The runner emits JSON with status and artifact paths. Screens are saved as `results/<run>/screen.png`; individual display writes, logs, commands and hashes accompany them. A successful process/GDB exit alone does not mean a feature passed: inspect the screen and the scenario's actual behavior.
 
@@ -61,7 +62,7 @@ The screenshots represent firmware requests to the display driver. They do not m
 
 Use **QEMU** to obtain practical SD/EPUB access and compare reading features. A storage transport adapter is acceptable for this phase: keep the firmware's filesystem, EPUB parser and rendering logic executing, and label the replaced hardware boundary. Complete board emulation and CrossPoint performance measurements come later.
 
-CrossInk comparison is outside the current scope. No reading-feature equivalence is claimed until the same EPUB and action sequence have been exercised in the stock firmware and CrossPoint.
+CrossInk comparison is outside the current scope. The [comparison matrix](docs/EPUB_COMPARISON.md) records results for stock v5.1.6 and pinned CrossPoint source, using the same EPUB fixtures. The [native compatibility patch and runner](compat/README.md) make the CrossPoint side reproducible. No full-firmware or physical-device equivalence is claimed.
 
 ## Contributing
 

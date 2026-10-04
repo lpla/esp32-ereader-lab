@@ -1,0 +1,120 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[0] [DBG] [CPS] Resaving settings to update format
+[0] [DBG] [CPS] Settings loaded from file
+[1] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[1] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[3] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.fonts (flags=0x0 errno=2 No such file or directory)
+[3] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/fonts (flags=0x0 errno=2 No such file or directory)
+[3] [DBG] [SDREG] Fonts directory not found: /fonts
+[3] [DBG] [SDREG] Discovery complete: 0 families
+[3] [DBG] [SDFS] SD font system ready (0 families discovered)
+[3] [DBG] [MAIN] Fonts setup
+[3] [DBG] [ACT] Entering activity: Boot
+[3] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[16] [DBG] [ACT] Exiting activity: Boot
+[16] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[16] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[40] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[908] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1388] [DBG] [ACT] Exiting activity: Home
+[1388] [DBG] [ACT] Entering activity: Library
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/library.idx (flags=0x0 errno=2 No such file or directory)
+[1388] [DBG] [GFX] Time = 481 ms from clearScreen to displayBuffer
+[1400] [DBG] [LIBIDX] phase prepare/prior: 0ms
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[1401] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[1401] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1401] [DBG] [EBP] Successfully parsed package metadata
+[1401] [DBG] [LIBIDX] phase walk/metadata/stage: 1ms
+[1401] [DBG] [LIBIDX] phase reconcile: 0ms
+[1401] [DBG] [LIBIDX] phase title order: 0ms
+[1403] [DBG] [LIBIDX] phase author/orders/emit: 2ms
+[1403] [INF] [LIBIDX] built: 1 books, 1 folders, 1 parsed, 0 metadata reused, replaced 1, 0 dup dropped, 0 unreadable, 3ms
+[1403] [INF] [LIB] reconciled: 0 unchanged, 1 added, 0 renamed, 0 removed, 1 enriched (0 dup, 0 unreadable)
+[1404] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1404] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1404] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1408] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1408] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1408] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1909] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1909] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1909] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[2387] [DBG] [ACT] Exiting activity: Library
+[2387] [DBG] [ACT] Entering activity: EpubReader
+[2387] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[2388] [DBG] [GFX] Time = 480 ms from clearScreen to displayBuffer
+[2402] [DBG] [EBP] Loading ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[2402] [DBG] [EBP] Cache not found, building spine/TOC cache
+[2402] [DBG] [BMC] Entering write mode
+[2402] [DBG] [BMC] Beginning content opf pass
+[2402] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[2402] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[2403] [DBG] [COF] Using fast index for 3 manifest items
+[2403] [DBG] [ZIP] Decompressed 330 bytes into 653 bytes
+[2403] [DBG] [EBP] Successfully parsed content.opf
+[2403] [DBG] [EBP] OPF pass completed in 1 ms
+[2403] [DBG] [BMC] Beginning toc pass
+[2404] [DBG] [EBP] Falling back to NCX TOC
+[2404] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2404] [DBG] [ZIP] Decompressed 259 bytes into 468 bytes
+[2404] [DBG] [EBP] Parsed TOC items
+[2404] [DBG] [EBP] TOC pass completed in 1 ms
+[2404] [DBG] [BMC] Wrote 2 spine, 2 TOC entries
+[2405] [DBG] [BMC] Successfully built book.bin
+[2405] [DBG] [EBP] buildBookBin completed in 1 ms
+[2405] [DBG] [EBP] Total indexing completed in 3 ms
+[2405] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[2405] [DBG] [EBP] CSS files to parse: 0
+[2405] [DBG] [CSS] Saved 0 rules to complete cache
+[2405] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[2405] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[2405] [DBG] [EBP] Loaded ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/epub_3165350815581513661/progress.bin (flags=0x0 errno=2 No such file or directory)
+[2405] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[2405] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/epub_3165350815581513661/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[2406] [DBG] [ERS] Cache not found, building...
+[2406] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[2406] [DBG] [ZIP] Decompressed 480 bytes into 4945 bytes
+[2406] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_3165350815581513661/html/.tmp_0.html (4945 bytes)
+[2407] [DBG] [CSS] Loaded 0 rules from complete cache
+[2410] [DBG] [SCT] Page 0 processed
+[2413] [DBG] [SCT] Page 1 processed
+[2416] [DBG] [SCT] Page 2 processed
+[2418] [DBG] [SCT] Page 3 processed
+[2420] [DBG] [SCT] Page 4 processed
+[2422] [DBG] [SCT] Page 5 processed
+[2424] [DBG] [SCT] Page 6 processed
+[2427] [DBG] [SCT] Page 7 processed
+[2428] [DBG] [FDC] Prewarm: 10 glyphs in 632 bytes from 1 groups (0 missed)
+[2428] [DBG] [FDC] Prewarm: 15 glyphs in 1293 bytes from 1 groups (0 missed)
+[2429] [DBG] [FDC] Prewarm: 46 glyphs in 3845 bytes from 2 groups (0 missed)
+[2429] [DBG] [GFX] Time = 2 ms from clearScreen to displayBuffer
+[2444] [DBG] [ERS] Page render (tiled): prewarm=2ms bw_render=0ms display=3ms gray_lsb=2ms gray_msb=2ms gray_display=8ms cleanup=0ms total=17ms
+[2444] [DBG] [ERS] Rendered page in 17ms
+[2445] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[3903] [DBG] [ERS] Toggle bookmark at spine 0, page 0
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-configured-bookmark/sd/.crosspoint/epub_3165350815581513661/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[3904] [DBG] [ZIP] Decompressed 480 bytes into 4945 bytes
+[3904] [DBG] [KOX] Resolved visible offset 0 in spine 0 -> /body/DocFragment[1]/body/p[1]/text()[1].0
+[3904] [DBG] [PM] -> Progress: spine=0 page=0/9 0.00% /body/DocFragment[1]/body/p[1]/text()[1].0
+[3905] [DBG] [BKM] Saving 1 bookmarks to file
+[3907] [DBG] [FDC] Prewarm: 10 glyphs in 632 bytes from 1 groups (0 missed)
+[3908] [DBG] [FDC] Prewarm: 15 glyphs in 1293 bytes from 1 groups (0 missed)
+[3909] [DBG] [FDC] Prewarm: 46 glyphs in 3845 bytes from 2 groups (0 missed)
+[3932] [DBG] [ERS] Page render (tiled): prewarm=2ms bw_render=1ms display=4ms gray_lsb=3ms gray_msb=3ms gray_display=12ms cleanup=0ms total=25ms
+[3932] [DBG] [ERS] Rendered page in 25ms
+[3933] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[3933] [DBG] [GFX] Time = 14 ms from clearScreen to displayBuffer
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-configured-bookmark/bookmark.bmp

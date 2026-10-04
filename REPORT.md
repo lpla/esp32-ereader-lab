@@ -1,5 +1,7 @@
 # ESP32 stock firmware emulation experiment
 
+This report preserves the initial engine experiments. Subsequent SD reading and CrossPoint comparisons are recorded in [the executed EPUB comparison](docs/EPUB_COMPARISON.md).
+
 Date: 2026-10-04. Host: Intel macOS; native Linux emulator binaries run in Docker.
 
 ## Conclusion

@@ -1,0 +1,15 @@
+{
+  "source_run": "crosspoint-native-build",
+  "files_sha256": {
+    "build.log": "028ef2b690caec5d15f79d21dae91ff33ca4b1dc31b2fed8ea94c678b7d0b0b0"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ],
+  "build_log_trailing_whitespace_removed": true
+}

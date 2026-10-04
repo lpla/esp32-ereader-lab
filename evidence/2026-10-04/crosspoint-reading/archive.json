@@ -1,0 +1,20 @@
+{
+  "source_run": "crosspoint-alpha",
+  "files_sha256": {
+    "after.png": "12ea9097d0176e3c551fb5ee1359d7050aed150cf00e7d6341ecf7a0eccd7a6b",
+    "book.log": "3daa0fab8a516cbb25296a8845844e313c81eed231cab5ad8300fb269dfdede5",
+    "book.png": "7a398435c7f68b7551496ac1620c3709ba8d1cb81133ee9e3337fee054cb15e7",
+    "home.png": "6da59a711389b7157cf33793bd81d8621a2935968ab4426313b84518d6b413c6",
+    "menu.png": "dde071a1e2de6540aee0dd32b0830c24cde62ce6484978116274837856109084",
+    "page.png": "923714a4736729af6f28dd0df1195090eeebed8ff163cce2cd686e6991c509ec",
+    "uart.log": "731e0584f9a3b5abeb02e041e3f0c49fc58b57eb3a17a6e9a3f2d16074038e9a"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

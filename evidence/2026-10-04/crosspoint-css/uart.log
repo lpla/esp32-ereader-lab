@@ -1,0 +1,134 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[0] [DBG] [CPS] Resaving settings to update format
+[0] [DBG] [CPS] Settings loaded from file
+[1] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[1] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[3] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.fonts (flags=0x0 errno=2 No such file or directory)
+[3] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/fonts (flags=0x0 errno=2 No such file or directory)
+[3] [DBG] [SDREG] Fonts directory not found: /fonts
+[3] [DBG] [SDREG] Discovery complete: 0 families
+[3] [DBG] [SDFS] SD font system ready (0 families discovered)
+[3] [DBG] [MAIN] Fonts setup
+[3] [DBG] [ACT] Entering activity: Boot
+[3] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[13] [DBG] [ACT] Exiting activity: Boot
+[14] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[14] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[35] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[916] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1380] [DBG] [ACT] Exiting activity: Home
+[1380] [DBG] [ACT] Entering activity: Library
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/library.idx (flags=0x0 errno=2 No such file or directory)
+[1381] [DBG] [GFX] Time = 466 ms from clearScreen to displayBuffer
+[1394] [DBG] [LIBIDX] phase prepare/prior: 0ms
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/epub_15017684382864463921/book.bin (flags=0x0 errno=2 No such file or directory)
+[1395] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[1395] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1395] [DBG] [EBP] Successfully parsed package metadata
+[1395] [DBG] [LIBIDX] phase walk/metadata/stage: 1ms
+[1395] [DBG] [LIBIDX] phase reconcile: 0ms
+[1395] [DBG] [LIBIDX] phase title order: 0ms
+[1398] [DBG] [LIBIDX] phase author/orders/emit: 3ms
+[1398] [INF] [LIBIDX] built: 1 books, 1 folders, 1 parsed, 0 metadata reused, replaced 1, 0 dup dropped, 0 unreadable, 4ms
+[1398] [INF] [LIB] reconciled: 0 unchanged, 1 added, 0 renamed, 0 removed, 1 enriched (0 dup, 0 unreadable)
+[1399] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1399] [DBG] [LIB] page first=0 title=BETA Style and Image Probe
+[1399] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1404] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1404] [DBG] [LIB] page first=0 title=BETA Style and Image Probe
+[1404] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1902] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1902] [DBG] [LIB] page first=0 title=BETA Style and Image Probe
+[1902] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[2387] [DBG] [ACT] Exiting activity: Library
+[2387] [DBG] [ACT] Entering activity: EpubReader
+[2387] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[2387] [DBG] [GFX] Time = 486 ms from clearScreen to displayBuffer
+[2400] [DBG] [EBP] Loading ePub: /beta.epub
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/epub_15017684382864463921/book.bin (flags=0x0 errno=2 No such file or directory)
+[2400] [DBG] [EBP] Cache not found, building spine/TOC cache
+[2400] [DBG] [BMC] Entering write mode
+[2400] [DBG] [BMC] Beginning content opf pass
+[2401] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[2401] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[2402] [DBG] [COF] Using fast index for 5 manifest items
+[2402] [DBG] [ZIP] Decompressed 373 bytes into 771 bytes
+[2402] [DBG] [EBP] Successfully parsed content.opf
+[2403] [DBG] [EBP] OPF pass completed in 3 ms
+[2403] [DBG] [BMC] Beginning toc pass
+[2403] [DBG] [EBP] Falling back to NCX TOC
+[2403] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2403] [DBG] [ZIP] Decompressed 261 bytes into 474 bytes
+[2403] [DBG] [EBP] Parsed TOC items
+[2403] [DBG] [EBP] TOC pass completed in 0 ms
+[2403] [DBG] [BMC] Wrote 2 spine, 2 TOC entries
+[2404] [DBG] [BMC] Successfully built book.bin
+[2404] [DBG] [EBP] buildBookBin completed in 1 ms
+[2404] [DBG] [EBP] Total indexing completed in 4 ms
+[2404] [DBG] [EBP] CSS files to parse: 1
+[2404] [DBG] [EBP] Parsing CSS file: OEBPS/styles.css
+[2405] [DBG] [ZIP] Decompressed 57 bytes into 106 bytes
+[2405] [DBG] [CSS] Parsed 4 rules from 106 bytes
+[2406] [DBG] [CSS] Saved 4 rules to complete cache
+[2406] [DBG] [EBP] Loaded 4 CSS style rules from 1 files (0 identical duplicates skipped, complete)
+[2406] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[2406] [DBG] [EBP] Loaded ePub: /beta.epub
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/epub_15017684382864463921/progress.bin (flags=0x0 errno=2 No such file or directory)
+[2406] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[2406] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/epub_15017684382864463921/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[2406] [DBG] [ERS] Cache not found, building...
+[2406] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[2407] [DBG] [ZIP] Decompressed 341 bytes into 535 bytes
+[2407] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_15017684382864463921/html/.tmp_0.html (535 bytes)
+[2408] [DBG] [CSS] Loaded 4 rules from complete cache
+[2408] [DBG] [EHP] Found image: src=probe.png
+[2409] [DBG] [EHP] Image dimensions: 128x80
+[2409] [DBG] [EHP] Display size: 128x80 (scale 1.00)
+[2409] [DBG] [EHP] Time to parse and build pages: 1 ms
+[2411] [DBG] [SCT] Page 0 processed
+[2412] [DBG] [FDC] Prewarm: 5 glyphs in 484 bytes from 1 groups (0 missed)
+[2413] [DBG] [FDC] Prewarm: 10 glyphs in 1046 bytes from 1 groups (0 missed)
+[2414] [DBG] [FDC] Prewarm: 34 glyphs in 2673 bytes from 2 groups (0 missed)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/epub_15017684382864463921/img_0_0.pxc (flags=0x0 errno=2 No such file or directory)
+[2414] [DBG] [GFX] Time = 3 ms from clearScreen to displayBuffer
+[2419] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[SIM] open failed: <LAB_ROOT>/results/verified-crosspoint-css/sd/.crosspoint/epub_15017684382864463921/img_0_0.pxc (flags=0x0 errno=2 No such file or directory)
+[2419] [DBG] [IMG] Lazy-extracting OEBPS/probe.png -> /.crosspoint/epub_15017684382864463921/img_0_0.png
+[2420] [DBG] [ZIP] Decompressed 98 bytes into 102 bytes
+[2420] [DBG] [IMG] Decoding and caching: /.crosspoint/epub_15017684382864463921/img_0_0.png
+[2420] [DBG] [IMG] Using PNG decoder
+[2420] [DBG] [PNG] Decoding PNG: /.crosspoint/epub_15017684382864463921/img_0_0.png
+[2420] [DBG] [PNG] PNG 128x80 (visible 128x80) -> 128x80 (scale 1.00), type: 0, bpp: 1
+[2420] [DBG] [IMG] Cache stream started: /.crosspoint/epub_15017684382864463921/img_0_0.pxc (128x80, band 16 rows)
+[2421] [DBG] [PNG] PNG decoding complete - render time: 1 ms
+[2422] [DBG] [IMG] Cache written: /.crosspoint/epub_15017684382864463921/img_0_0.pxc (128x80, 2564 bytes)
+[2422] [DBG] [IMG] Decode successful
+[2422] [DBG] [GFX] Time = 3 ms from clearScreen to displayBuffer
+[2426] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2426] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2426] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2426] [DBG] [IMG] Loading from cache: /.crosspoint/epub_15017684382864463921/img_0_0.pxc (128x80)
+[2426] [DBG] [IMG] Cache render complete (payload now in RAM)
+[2426] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2427] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2427] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2427] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2427] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2427] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2428] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2428] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2428] [DBG] [IMG] Rendering image at 176,354: /.crosspoint/epub_15017684382864463921/img_0_0.png (128x80)
+[2438] [DBG] [ERS] Page render (tiled): prewarm=2ms bw_render=8ms display=4ms gray_lsb=1ms gray_msb=1ms gray_display=10ms cleanup=0ms total=26ms
+[2438] [DBG] [ERS] Rendered page in 26ms
+[2439] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[SIM] Saved screenshot: <LAB_ROOT>/results/verified-crosspoint-css/style.bmp

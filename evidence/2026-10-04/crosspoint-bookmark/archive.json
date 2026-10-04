@@ -1,0 +1,17 @@
+{
+  "source_run": "crosspoint-configured-bookmark",
+  "files_sha256": {
+    "bookmark.png": "e4c86f6ede8fe00acd94f128402e702897e68de9105cc3bc15d182f8b1b30b4d",
+    "command.json": "0b630618c267e1add46ebc0ee6300ff2f2412be798916bfd22e4674e6ad679d6",
+    "status.json": "0cb0cb4139c61c359b10d8fefa55e7d8836dff19e3d9445f08fc1989930c6988",
+    "uart.log": "630477d99be295c75d373449d7687e2a27ebc25470da0f487fd96013131e538e"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

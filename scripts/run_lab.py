@@ -12,16 +12,21 @@ from render_display import render
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE = 'crosspoint-esp-emulation-lab:2026-10-04'
 X4_SHA = 'be3dd62437914ffe7ac23d2713cf63f97f7eccc06fd1cf4b0924e7cce9878822'
+SD_SCENARIOS = ('folder', 'book', 'book-next', 'book-menu', 'book-page', 'book-back',
+                'book-menu-long', 'book-controls', 'book-bookmark', 'book-chapters',
+                'book-chapter-two', 'book-reopen', 'book-stride-cycle', 'book-stride-jump')
+CLOCK_SCENARIOS = ('book-controls', 'book-bookmark', 'book-chapters', 'book-chapter-two',
+                   'book-reopen', 'book-stride-cycle', 'book-stride-jump')
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--engine', choices=['qemu', 'esp-emu', 'both'], default='qemu')
-    parser.add_argument('--scenario', choices=['baseline', 'right', 'settings', 'language', 'read', 'folder', 'book', 'book-next', 'book-menu', 'book-page'], default='right')
+    parser.add_argument('--scenario', choices=('baseline', 'right', 'settings', 'language', 'read') + SD_SCENARIOS, default='right')
     parser.add_argument('--prefix', default='rerun')
     parser.add_argument('--card', type=Path, help='source SD image; copied for each run')
     args = parser.parse_args()
-    if args.scenario in ('folder', 'book', 'book-next', 'book-menu', 'book-page') and not args.card:
+    if args.scenario in SD_SCENARIOS and not args.card:
         parser.error('SD scenarios require --card cards/base.img')
     if args.card and args.engine != 'qemu':
         parser.error('SD adapter is currently validated only with QEMU')
@@ -53,13 +58,23 @@ def main():
                 script = 'x4-input.gdb' if args.scenario == 'right' else f'x4-{args.scenario}.gdb'
                 command += ['--pre-file', f'scripts/{script}', '--pre-commands',
                             ('source /work/scripts/x4-sd.gdb;' if args.card else '') +
+                            ('source /work/scripts/x4-longpress-clock.gdb;' if args.scenario in CLOCK_SCENARIOS else '') +
                             'source /work/scripts/x4-display-capture.gdb',
                             '--break-at', '0x420087d0', '--commands',
                             'print $front_reads;print $gpio_calls;print $adc_calls',
-                            '--gdb-seconds', '70' if engine == 'esp-emu' else ('55' if args.card else '16'),
-                            '--emulator-seconds', '90']
+                            '--gdb-seconds', '70' if engine == 'esp-emu' else ('95' if args.card else '16'),
+                            '--emulator-seconds', '115']
             completed = subprocess.run(command, cwd=ROOT, stdout=subprocess.PIPE,
-                                       stderr=subprocess.STDOUT, text=True, timeout=85)
+                                       stderr=subprocess.STDOUT, text=True, timeout=110)
+            (directory / 'runner-output.log').write_text(completed.stdout)
+            (directory / 'input.json').write_text(json.dumps(dict(
+                scenario=args.scenario, engine=engine, fixture=fixture,
+                card_source_sha256=hashlib.sha256(args.card.read_bytes()).hexdigest() if args.card else None,
+                card_result_sha256=hashlib.sha256((directory / 'card.img').read_bytes()).hexdigest() if args.card else None,
+                flash_sha256=hashlib.sha256((ROOT / f'firmware/{fixture}.bin').read_bytes()).hexdigest(),
+                input_script=script if args.scenario != 'baseline' else None,
+                arduino_clock_offset_substitution=args.scenario in CLOCK_SCENARIOS,
+                performance_valid=False), indent=2) + '\n')
             status_path = directory / 'status.json'
             status = json.loads(status_path.read_text()) if status_path.exists() else {}
             writes = render(directory) if (directory / 'display-writes.json').exists() else 0
@@ -69,6 +84,7 @@ def main():
                                 screen=str(directory / 'screen.png') if writes else None,
                                 diagnostic_hardware_substitution=args.scenario != 'baseline',
                                 sd_transport_substitution=bool(args.card),
+                                arduino_clock_offset_substitution=args.scenario in CLOCK_SCENARIOS,
                                 feature_success_requires_image_inspection=True))
     report = ROOT / 'results' / f'{args.prefix}-summary.json'
     report.write_text(json.dumps(results, indent=2) + '\n')

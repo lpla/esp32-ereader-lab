@@ -1,0 +1,484 @@
+Processing simulator_reading_images (platform: native)
+--------------------------------------------------------------------------------
+Library Manager: Installing symlink://../crosspoint-simulator
+Library Manager: Crosspoint Simulator@1.0.0 has been installed!
+Library Manager: Installing symlink://freeink-sdk/libs/font/FreeInkFont
+Library Manager: FreeInkFont@0.1.0 has been installed!
+Library Manager: Installing symlink://freeink-sdk/libs/network/JsonSax
+Library Manager: JsonSax@1.0.0 has been installed!
+Library Manager: Installing symlink://freeink-sdk/libs/network/CatalogList
+Library Manager: CatalogList@1.0.0 has been installed!
+Library Manager: Resolving dependencies...
+Library Manager: Installing symlink://freeink-sdk/libs/ui/FreeInkUI
+Library Manager: FreeInkUI@0.1.0 has been installed!
+Library Manager: Installing symlink://freeink-sdk/libs/assets/Icons
+Library Manager: Icons@1.0.0 has been installed!
+Library Manager: Installing bblanchon/ArduinoJson @ 7.4.2
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: ArduinoJson@7.4.2 has been installed!
+Library Manager: Installing ricmoo/QRCode @ ^0.0.1
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80%
+Library Manager: QRCode@0.0.1 has been installed!
+Library Manager: Installing git+https://github.com/bitbank2/AnimatedGIF.git#d01888f0255fd0781fc2b8600b9111b14c999584
+git version 2.50.1 (Apple Git-155)
+Initialized empty Git repository in <PLATFORMIO_HOME>/.cache/tmp/pkg-installing-1h7magy0/.git/
+From https://github.com/bitbank2/AnimatedGIF
+ * branch            d01888f0255fd0781fc2b8600b9111b14c999584 -> FETCH_HEAD
+HEAD is now at d01888f new library release
+Library Manager: AnimatedGIF@2.2.0+sha.d01888f has been installed!
+Library Manager: Installing links2004/WebSockets @ 2.7.3
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Library Manager: WebSockets@2.7.3 has been installed!
+Library Manager: Installing symlink://.pio/libdeps/default/PNGdec
+Library Manager: PNGdec@1.1.6 has been installed!
+Library Manager: Installing symlink://.pio/libdeps/default/JPEGDEC
+Library Manager: JPEGDEC@1.2.7+sha.8628297 has been installed!
+Verbose mode can be enabled via `-v, --verbose` option
+Language              Code  BCP47        Own  Fallback  Unused  Data (B)
+--------------------  ----  -----------  ---  --------  ------  --------
+English               EN    en           544  0         8       8996
+العربية               AR    ar           443  101       5       13362
+Беларуская            BE    be           434  110       5       15049
+Български             BG    bg           424  120       5       15386
+Bosanski              BS    bs           434  110       5       8932
+Català                CA    ca           544  0         8       11832
+Valencià              CAV   ca-valencia  544  0         8       11790
+Čeština               CS    cs           434  110       5       9304
+Dansk                 DA    da           323  221       4       5507
+Deutsch               DE    de           514  30        8       9417
+Español               ES    es           544  0         8       11276
+فارسی                 FA    fa           454  90        5       14503
+Suomi                 FI    fi           295  249       2       5665
+Français              FR    fr           491  53        8       9628
+עברית                 HE    he           515  29        8       13051
+Magyar                HU    hu           434  110       5       9780
+Bahasa Indonesia      ID    id           434  110       5       8355
+Italiano              IT    it           515  29        8       9681
+Қазақша               KK    kk           434  110       5       15203
+Lietuvių              LT    lt           434  110       5       7725
+Norsk bokmål          NB    nb           434  110       5       7919
+Nederlands            NL    nl           323  221       4       5573
+Orangutan             OOK   ook          327  217       4       2583
+Polski                PL    pl           434  110       5       8813
+Português (Brasil)    PT    pt-BR        515  29        8       10026
+Português (Portugal)  P2    pt-PT        515  29        8       10785
+Română                RO    ro           323  221       4       6320
+Русский               RU    ru           536  8         8       17393
+Slovenčina            SK    sk           434  110       5       9436
+Slovenščina           SI    sl           434  110       5       8866
+Svenska               SV    sv           453  91        5       8687
+Türkçe                TR    tr           435  109       5       8864
+Українська            UK    uk           436  108       5       15473
+Tiếng Việt            VI    vi           515  29        8       11388
+
+  Total: 544  |  Used in code: 536  |  Never used: 8
+  Flash: 346,568 B strings (deduped)  +  36,992 B offset tables  =  383,560 B
+
+  Stripping 8 unused string(s) from output.
+
+Code generation complete!
+  Languages: 34
+  String keys: 536
+Generated: src/network/html/HomePageHtml.generated.h
+  Original: 4514 bytes
+  Minified: 4226 bytes (93.6%)
+  Compressed: 1446 bytes (32.0%)
+Generated: src/network/html/SettingsPageHtml.generated.h
+  Original: 26295 bytes
+  Minified: 33788 bytes (128.5%)
+  Compressed: 8366 bytes (31.8%)
+Generated: src/network/html/FontsPageHtml.generated.h
+  Original: 10940 bytes
+  Minified: 10772 bytes (98.5%)
+  Compressed: 3285 bytes (30.0%)
+Generated: src/network/html/RunnerPageHtml.generated.h
+  Original: 860 bytes
+  Minified: 8163 bytes (949.2%)
+  Compressed: 3072 bytes (357.2%)
+Generated: src/network/html/FilesPageHtml.generated.h
+  Original: 228244 bytes
+  Minified: 231626 bytes (101.5%)
+  Compressed: 54576 bytes (23.9%)
+Generated: src/network/html/js/jszip_minJs.generated.h
+  Original: 97630 bytes
+  Minified: 97630 bytes (100.0%)
+  Compressed: 28379 bytes (29.1%)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ deep+, Compatibility ~ off
+Found 39 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- Crosspoint Simulator @ 1.0.0
+|-- FreeInkFont @ 0.1.0
+|-- JsonSax @ 1.0.0
+|-- CatalogList @ 1.0.0
+|-- FreeInkUI @ 0.1.0
+|-- Icons @ 1.0.0
+|-- ArduinoJson @ 7.4.2
+|-- QRCode @ 0.0.1
+|-- AnimatedGIF @ 2.2.0+sha.d01888f
+|-- PNGdec @ 1.1.6
+|-- JPEGDEC @ 1.2.7+sha.8628297
+|-- Epub
+|-- Serialization
+|-- Logging
+|-- I18n
+|-- EpdFont
+|-- KOReaderSync
+|-- GfxRenderer
+|-- Memory
+|-- FsHelpers
+|-- OpdsParser
+|-- expat @ 2.7.3
+|-- LibraryIndex
+|-- Xtc
+|-- Utf8
+|-- TrustedTime
+|-- MiniBidi
+|-- InflateReader
+|-- uzlib @ 2.9.8
+Building in release mode
+Compiling .pio/build/simulator_reading_images/src/CrossPointSettings.o
+Compiling .pio/build/simulator_reading_images/src/CrossPointState.o
+Compiling .pio/build/simulator_reading_images/src/FontInstaller.o
+Compiling .pio/build/simulator_reading_images/src/MappedInputManager.o
+Compiling .pio/build/simulator_reading_images/src/OpdsServerStore.o
+Compiling .pio/build/simulator_reading_images/src/ReaderFontSizes.o
+Compiling .pio/build/simulator_reading_images/src/RecentBooksStore.o
+Compiling .pio/build/simulator_reading_images/src/SdCardFontSystem.o
+Compiling .pio/build/simulator_reading_images/src/WifiCredentialStore.o
+Compiling .pio/build/simulator_reading_images/src/activities/Activity.o
+Compiling .pio/build/simulator_reading_images/src/activities/ActivityManager.o
+Compiling .pio/build/simulator_reading_images/src/activities/CatalogActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/UiListActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/UiTabListActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/boot_sleep/BootActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/boot_sleep/SleepActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/browser/OpdsBookBrowserActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/home/CrashActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/home/FileBrowserActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/home/HomeActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/library/LibraryListActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/network/CalibreConnectActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/network/CrossPointWebServerActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/network/NetworkModeSelectionActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/network/UsbDriveActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/network/WifiSelectionActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/plugins/PluginCatalogActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/DictionaryDefinitionActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/DictionaryWordSelectActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EndOfBookOptions.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EpubReaderActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EpubReaderBookmarksActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EpubReaderChapterSelectionActivity.o
+src/activities/network/WifiSelectionActivity.cpp:865:11: warning: enumeration value 'PASSWORD_ENTRY' not handled in switch [-Wswitch]
+  865 |   switch (state) {
+      |           ^~~~~
+src/activities/network/WifiSelectionActivity.cpp:865:11: note: add missing switch cases
+  865 |   switch (state) {
+      |           ^
+1 warning generated.
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EpubReaderFootnoteSelectActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EpubReaderMenuActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/EpubReaderPercentSelectionActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/KOReaderSyncActivity.o
+src/activities/reader/EpubReaderActivity.cpp:853:11: warning: enumeration values 'AUTO_PAGE_TURN' and 'ROTATE_SCREEN' not handled in switch [-Wswitch]
+  853 |   switch (action) {
+      |           ^~~~~~
+src/activities/reader/EpubReaderActivity.cpp:853:11: note: add missing switch cases
+  853 |   switch (action) {
+      |           ^
+Compiling .pio/build/simulator_reading_images/src/activities/reader/QrDisplayActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/ReaderActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/ReaderSession.o
+1 warning generated.
+Compiling .pio/build/simulator_reading_images/src/activities/reader/ReaderToolbarUi.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/XtcReaderActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/reader/XtcReaderChapterSelectionActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/AboutActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/ButtonRemapActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/ClearCacheActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/ClockSettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/ClockSyncActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/FontDownloadActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/HomeButtonSettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/KOReaderAuthActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/KOReaderSettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/KeyboardLayoutsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/LanguageSelectActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/OpdsServerListActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/OpdsSettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/OtaUpdateActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/SdFirmwareUpdateActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/SettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/StatusBarSettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/TextSettingsActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/TextSettingsPreview.o
+Compiling .pio/build/simulator_reading_images/src/activities/settings/TimezonePickerActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/BmpViewerActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/ConfirmationActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/FrontlightPanelActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/FullScreenMessageActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/IntervalSelectionActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/KeyboardEntryActivity.o
+Compiling .pio/build/simulator_reading_images/src/activities/util/KeyboardLayoutSet.o
+Compiling .pio/build/simulator_reading_images/src/components/CatalogScreens.o
+Compiling .pio/build/simulator_reading_images/src/components/CoverGridHomeUi.o
+Compiling .pio/build/simulator_reading_images/src/components/HomeCoverCache.o
+Compiling .pio/build/simulator_reading_images/src/components/UITheme.o
+Compiling .pio/build/simulator_reading_images/src/components/UiAppHost.o
+Compiling .pio/build/simulator_reading_images/src/components/themes/BaseTheme.o
+Compiling .pio/build/simulator_reading_images/src/components/themes/lyra/Lyra3CoversTheme.o
+Compiling .pio/build/simulator_reading_images/src/components/themes/lyra/LyraTheme.o
+Compiling .pio/build/simulator_reading_images/src/components/themes/roundedraff/RoundedRaffTheme.o
+Compiling .pio/build/simulator_reading_images/src/main.o
+Compiling .pio/build/simulator_reading_images/src/network/FirmwareBoardTag.o
+Compiling .pio/build/simulator_reading_images/src/network/HttpDownloader.o
+Compiling .pio/build/simulator_reading_images/src/network/WebDAVHandler.o
+Compiling .pio/build/simulator_reading_images/src/platform/UsbSerialJtagHandoff.o
+Compiling .pio/build/simulator_reading_images/src/util/BookCacheUtils.o
+Compiling .pio/build/simulator_reading_images/src/util/BookProgress.o
+Compiling .pio/build/simulator_reading_images/src/util/BookmarkFile.o
+Compiling .pio/build/simulator_reading_images/src/util/BookmarkUtil.o
+Compiling .pio/build/simulator_reading_images/src/util/ButtonNavigator.o
+Compiling .pio/build/simulator_reading_images/src/util/DictHtmlPages.o
+Compiling .pio/build/simulator_reading_images/src/util/DictZip.o
+Compiling .pio/build/simulator_reading_images/src/util/Dictionary.o
+Compiling .pio/build/simulator_reading_images/src/util/DictionaryRegistry.o
+Compiling .pio/build/simulator_reading_images/src/util/HtmlToPlainText.o
+Compiling .pio/build/simulator_reading_images/src/util/NextBookFinder.o
+Compiling .pio/build/simulator_reading_images/src/util/OpdsFilename.o
+Compiling .pio/build/simulator_reading_images/src/util/PluginEvents.o
+Compiling .pio/build/simulator_reading_images/src/util/PluginHttp.o
+Compiling .pio/build/simulator_reading_images/src/util/PluginLocations.o
+Compiling .pio/build/simulator_reading_images/src/util/QrUtils.o
+Compiling .pio/build/simulator_reading_images/src/util/ScreenshotUtil.o
+Compiling .pio/build/simulator_reading_images/src/util/StringUtils.o
+Compiling .pio/build/simulator_reading_images/src/util/Timezones.o
+Compiling .pio/build/simulator_reading_images/src/util/UrlUtils.o
+Compiling .pio/build/simulator_reading_images/lib45a/Logging/Logging.o
+Compiling .pio/build/simulator_reading_images/lib1d9/Memory/BuildScratch.o
+Compiling .pio/build/simulator_reading_images/lib6c3/Utf8/Utf8.o
+Compiling .pio/build/simulator_reading_images/libfb8/uzlib/tinflate.o
+Compiling .pio/build/simulator_reading_images/lib235/InflateReader/InflateReader.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/FontAlloc.o
+Archiving .pio/build/simulator_reading_images/libfb8/libuzlib.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/FtFont.o
+Indexing .pio/build/simulator_reading_images/libfb8/libuzlib.a
+Archiving .pio/build/simulator_reading_images/lib235/libInflateReader.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/Gpos.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/Gsub.o
+Indexing .pio/build/simulator_reading_images/lib235/libInflateReader.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/TtfFont.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_autofit.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftbase.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftbitmap.o
+Archiving .pio/build/simulator_reading_images/lib6c3/libUtf8.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftdebug.o
+Indexing .pio/build/simulator_reading_images/lib6c3/libUtf8.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftglyph.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftgzip.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftinit.o
+Archiving .pio/build/simulator_reading_images/lib45a/libLogging.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftmm.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_ftsystem.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_psnames.o
+Indexing .pio/build/simulator_reading_images/lib45a/libLogging.a
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_raster.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_sfnt.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_smooth.o
+Compiling .pio/build/simulator_reading_images/lib185/FreeInkFont/freetype/ft_truetype.o
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/EpdFont.o
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/EpdFontFamily.o
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/FontDecompressor.o
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/SdCardFont.o
+Archiving .pio/build/simulator_reading_images/lib1d9/libMemory.a
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/SdCardFontManager.o
+Indexing .pio/build/simulator_reading_images/lib1d9/libMemory.a
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/SdCardFontRegistry.o
+Compiling .pio/build/simulator_reading_images/libfb7/EpdFont/TtfEpdFont.o
+Archiving .pio/build/simulator_reading_images/lib185/libFreeInkFont.a
+Compiling .pio/build/simulator_reading_images/lib7b3/MiniBidi/BidiUtils.o
+Indexing .pio/build/simulator_reading_images/lib185/libFreeInkFont.a
+Compiling .pio/build/simulator_reading_images/lib7b3/MiniBidi/minibidi.o
+Compiling .pio/build/simulator_reading_images/lib3a6/GfxRenderer/Bitmap.o
+Compiling .pio/build/simulator_reading_images/lib3a6/GfxRenderer/BitmapHelpers.o
+Compiling .pio/build/simulator_reading_images/lib3a6/GfxRenderer/FontCacheManager.o
+Compiling .pio/build/simulator_reading_images/lib3a6/GfxRenderer/GfxRenderer.o
+Archiving .pio/build/simulator_reading_images/lib7b3/libMiniBidi.a
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/CrossPointWebServer.o
+Indexing .pio/build/simulator_reading_images/lib7b3/libMiniBidi.a
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/ESP.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalClock.o
+Archiving .pio/build/simulator_reading_images/libfb7/libEpdFont.a
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalDisplay.o
+Indexing .pio/build/simulator_reading_images/libfb7/libEpdFont.a
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalFrontlight.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalGPIO.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalMemory.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalPowerManager.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalStorage.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalSystem.o
+Archiving .pio/build/simulator_reading_images/lib3a6/libGfxRenderer.a
+Indexing .pio/build/simulator_reading_images/lib3a6/libGfxRenderer.a
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/HalTiltSensor.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/NetworkClient.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/SimulatorImageDecode.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/SimulatorLifecycle.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/WebServer.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/WebSocketsServer.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/firmware_link_stubs.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/qrcode.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/simulator_firmware.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/simulator_main.o
+Compiling .pio/build/simulator_reading_images/libb5a/crosspoint-simulator/simulator_ota.o
+Compiling .pio/build/simulator_reading_images/lib17d/JsonSax/StreamingJsonParser.o
+Compiling .pio/build/simulator_reading_images/lib539/expat/xmlparse.o
+Archiving .pio/build/simulator_reading_images/lib17d/libJsonSax.a
+Indexing .pio/build/simulator_reading_images/lib17d/libJsonSax.a
+Compiling .pio/build/simulator_reading_images/lib539/expat/xmlrole.o
+Compiling .pio/build/simulator_reading_images/lib539/expat/xmltok.o
+Compiling .pio/build/simulator_reading_images/libfbc/CatalogList/JsonListParser.o
+Archiving .pio/build/simulator_reading_images/lib539/libexpat.a
+Indexing .pio/build/simulator_reading_images/lib539/libexpat.a
+Compiling .pio/build/simulator_reading_images/libfbc/CatalogList/XmlListParser.o
+Compiling .pio/build/simulator_reading_images/lib3ee/FreeInkUI/FreeInkUI.o
+Archiving .pio/build/simulator_reading_images/lib3ee/libFreeInkUI.a
+Indexing .pio/build/simulator_reading_images/lib3ee/libFreeInkUI.a
+Compiling .pio/build/simulator_reading_images/lib7d7/QRCode/qrcode.o
+Compiling .pio/build/simulator_reading_images/lib383/AnimatedGIF/AnimatedGIF.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/PNGdec.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/adler32.o
+Archiving .pio/build/simulator_reading_images/lib7d7/libQRCode.a
+Archiving .pio/build/simulator_reading_images/lib383/libAnimatedGIF.a
+Indexing .pio/build/simulator_reading_images/lib7d7/libQRCode.a
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/crc32.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/infback.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/inffast.o
+Indexing .pio/build/simulator_reading_images/lib383/libAnimatedGIF.a
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/inflate.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/inftrees.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/s3_simd_rgb565.o
+Compiling .pio/build/simulator_reading_images/lib0a0/PNGdec/zutil.o
+Compiling .pio/build/simulator_reading_images/libd90/JPEGDEC/JPEGDEC.o
+Compiling .pio/build/simulator_reading_images/libd90/JPEGDEC/s3_simd_420.o
+Compiling .pio/build/simulator_reading_images/libd90/JPEGDEC/s3_simd_444.o
+Compiling .pio/build/simulator_reading_images/libd90/JPEGDEC/s3_simd_dequant.o
+Archiving .pio/build/simulator_reading_images/libfbc/libCatalogList.a
+Archiving .pio/build/simulator_reading_images/libb5a/libcrosspoint-simulator.a
+Compiling .pio/build/simulator_reading_images/lib877/DeviceSecret/DeviceSecret.o
+Archiving .pio/build/simulator_reading_images/lib0a0/libPNGdec.a
+Compiling .pio/build/simulator_reading_images/lib2f4/TrustedTime/TrustedTime.o
+Indexing .pio/build/simulator_reading_images/libfbc/libCatalogList.a
+Indexing .pio/build/simulator_reading_images/libb5a/libcrosspoint-simulator.a
+Compiling .pio/build/simulator_reading_images/lib3fc/miniz/InflateStream.o
+Compiling .pio/build/simulator_reading_images/lib3fc/miniz/miniz_impl.o
+Indexing .pio/build/simulator_reading_images/lib0a0/libPNGdec.a
+Archiving .pio/build/simulator_reading_images/libd90/libJPEGDEC.a
+Compiling .pio/build/simulator_reading_images/lib6ef/ZipFile/ZipFile.o
+Compiling .pio/build/simulator_reading_images/lib3c1/Serialization/ObfuscationUtils.o
+Compiling .pio/build/simulator_reading_images/lib3c1/Serialization/PersistableStore.o
+Indexing .pio/build/simulator_reading_images/libd90/libJPEGDEC.a
+In file included from lib/miniz/src/miniz_impl.c:4:
+lib/miniz/src/MinizConfig.h:13:9: warning: 'MINIZ_NO_ZLIB_COMPATIBLE_NAMES' macro redefined [-Wmacro-redefined]
+   13 | #define MINIZ_NO_ZLIB_COMPATIBLE_NAMES
+      |         ^
+<command line>:9:9: note: previous definition is here
+    9 | #define MINIZ_NO_ZLIB_COMPATIBLE_NAMES 1
+      |         ^
+1 warning generated.
+Compiling .pio/build/simulator_reading_images/libd27/FsHelpers/FsHelpers.o
+Compiling .pio/build/simulator_reading_images/libfac/GifToBmpConverter/GifToBmpConverter.o
+Archiving .pio/build/simulator_reading_images/lib877/libDeviceSecret.a
+In file included from lib/miniz/src/InflateStream.cpp:10:
+lib/miniz/src/MinizConfig.h:13:9: warning: 'MINIZ_NO_ZLIB_COMPATIBLE_NAMES' macro redefined [-Wmacro-redefined]
+   13 | #define MINIZ_NO_ZLIB_COMPATIBLE_NAMES
+      |         ^
+<command line>:9:9: note: previous definition is here
+    9 | #define MINIZ_NO_ZLIB_COMPATIBLE_NAMES 1
+      |         ^
+Archiving .pio/build/simulator_reading_images/lib2f4/libTrustedTime.a
+Indexing .pio/build/simulator_reading_images/lib877/libDeviceSecret.a
+1 warning generated.
+Indexing .pio/build/simulator_reading_images/lib2f4/libTrustedTime.a
+Compiling .pio/build/simulator_reading_images/lib8fa/JpegToBmpConverter/JpegToBmpConverter.o
+Archiving .pio/build/simulator_reading_images/lib3fc/libminiz.a
+Archiving .pio/build/simulator_reading_images/libd27/libFsHelpers.a
+Compiling .pio/build/simulator_reading_images/lib868/PngToBmpConverter/PngToBmpConverter.o
+Indexing .pio/build/simulator_reading_images/lib3fc/libminiz.a
+Indexing .pio/build/simulator_reading_images/libd27/libFsHelpers.a
+Compiling .pio/build/simulator_reading_images/lib65b/Txt/Txt.o
+Compiling .pio/build/simulator_reading_images/lib65b/Txt/TxtToHtml.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/BookKey.o
+Archiving .pio/build/simulator_reading_images/lib6ef/libZipFile.a
+Indexing .pio/build/simulator_reading_images/lib6ef/libZipFile.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub.o
+Archiving .pio/build/simulator_reading_images/libfac/libGifToBmpConverter.a
+Indexing .pio/build/simulator_reading_images/libfac/libGifToBmpConverter.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/BookMetadataCache.o
+Archiving .pio/build/simulator_reading_images/lib3c1/libSerialization.a
+Indexing .pio/build/simulator_reading_images/lib3c1/libSerialization.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/Page.o
+Archiving .pio/build/simulator_reading_images/lib8fa/libJpegToBmpConverter.a
+Archiving .pio/build/simulator_reading_images/lib868/libPngToBmpConverter.a
+Indexing .pio/build/simulator_reading_images/lib8fa/libJpegToBmpConverter.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/ParsedText.o
+Indexing .pio/build/simulator_reading_images/lib868/libPngToBmpConverter.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/Section.o
+Archiving .pio/build/simulator_reading_images/lib65b/libTxt.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/WordStore.o
+Indexing .pio/build/simulator_reading_images/lib65b/libTxt.a
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/blocks/ImageBlock.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/blocks/TextBlock.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/converters/GifToFramebufferConverter.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/converters/ImageDecoderFactory.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/converters/ImageDimsProbe.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/converters/ImageToFramebufferDecoder.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/converters/JpegToFramebufferConverter.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/converters/PngToFramebufferConverter.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/css/CssParser.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/htmlEntities.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/hyphenation/HyphenationCommon.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/hyphenation/Hyphenator.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/hyphenation/LanguageRegistry.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/hyphenation/LiangHyphenation.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/parsers/ChapterHtmlSlimParser.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/parsers/ContainerParser.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/parsers/ContentOpfParser.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/parsers/TocNavParser.o
+Compiling .pio/build/simulator_reading_images/lib4f9/Epub/Epub/parsers/TocNcxParser.o
+Compiling .pio/build/simulator_reading_images/lib5dd/I18n/I18n.o
+Compiling .pio/build/simulator_reading_images/lib5dd/I18n/I18nStrings.o
+Archiving .pio/build/simulator_reading_images/lib5dd/libI18n.a
+Compiling .pio/build/simulator_reading_images/libb7a/KOReaderSync/ChapterXPathResolver.o
+Indexing .pio/build/simulator_reading_images/lib5dd/libI18n.a
+Compiling .pio/build/simulator_reading_images/libb7a/KOReaderSync/KOReaderCredentialStore.o
+Compiling .pio/build/simulator_reading_images/libb7a/KOReaderSync/KOReaderDocumentId.o
+Compiling .pio/build/simulator_reading_images/libb7a/KOReaderSync/KOReaderSyncClient.o
+Compiling .pio/build/simulator_reading_images/libb7a/KOReaderSync/ProgressComparison.o
+Compiling .pio/build/simulator_reading_images/libb7a/KOReaderSync/ProgressMapper.o
+Compiling .pio/build/simulator_reading_images/libdab/OpdsParser/OpdsParser.o
+Compiling .pio/build/simulator_reading_images/libdab/OpdsParser/OpdsStream.o
+Archiving .pio/build/simulator_reading_images/lib4f9/libEpub.a
+Indexing .pio/build/simulator_reading_images/lib4f9/libEpub.a
+Compiling .pio/build/simulator_reading_images/lib795/LibraryIndex/LibraryBuilder.o
+Compiling .pio/build/simulator_reading_images/lib795/LibraryIndex/LibraryFormat.o
+Compiling .pio/build/simulator_reading_images/lib795/LibraryIndex/LibraryIndexFile.o
+Compiling .pio/build/simulator_reading_images/lib795/LibraryIndex/LibraryText.o
+Compiling .pio/build/simulator_reading_images/lib09a/Xtc/Xtc.o
+Compiling .pio/build/simulator_reading_images/lib09a/Xtc/Xtc/XtcParser.o
+Archiving .pio/build/simulator_reading_images/libdab/libOpdsParser.a
+Indexing .pio/build/simulator_reading_images/libdab/libOpdsParser.a
+Archiving .pio/build/simulator_reading_images/libb7a/libKOReaderSync.a
+Indexing .pio/build/simulator_reading_images/libb7a/libKOReaderSync.a
+Archiving .pio/build/simulator_reading_images/lib795/libLibraryIndex.a
+Indexing .pio/build/simulator_reading_images/lib795/libLibraryIndex.a
+Archiving .pio/build/simulator_reading_images/lib09a/libXtc.a
+Indexing .pio/build/simulator_reading_images/lib09a/libXtc.a
+Linking .pio/build/simulator_reading_images/program
+========================= [SUCCESS] Took 87.09 seconds =========================
+
+Environment               Status    Duration
+------------------------  --------  ------------
+simulator_reading_images  SUCCESS   00:01:27.091
+========================= 1 succeeded in 00:01:27.091 =========================

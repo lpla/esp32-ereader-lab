@@ -1,0 +1,18 @@
+{
+  "source_run": "verified-crosspoint-reopen",
+  "files_sha256": {
+    "command.json": "4889cab16122a3a861352a9eff1622ba1ed6d31ae8aae5ec5b6aa901b06f3a40",
+    "page.png": "923714a4736729af6f28dd0df1195090eeebed8ff163cce2cd686e6991c509ec",
+    "reopen.png": "923714a4736729af6f28dd0df1195090eeebed8ff163cce2cd686e6991c509ec",
+    "status.json": "c8560d60e21fe0bfa4baf682796c95187c78ffe4d02bbe9f93a794d56b8c400e",
+    "uart.log": "f99e0e7a41df833d278ee5a29dec7e81436ed85b5ab0ad9311792c2c5d5e3c60"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

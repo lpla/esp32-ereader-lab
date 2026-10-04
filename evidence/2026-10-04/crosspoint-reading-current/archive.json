@@ -1,0 +1,19 @@
+{
+  "source_run": "final-crosspoint-reading",
+  "files_sha256": {
+    "book.png": "7a398435c7f68b7551496ac1620c3709ba8d1cb81133ee9e3337fee054cb15e7",
+    "command.json": "043b225355451aff3e8f7f895f4ce2475ca22be462295d7b8e911148afe14b0d",
+    "menu.png": "dde071a1e2de6540aee0dd32b0830c24cde62ce6484978116274837856109084",
+    "page.png": "923714a4736729af6f28dd0df1195090eeebed8ff163cce2cd686e6991c509ec",
+    "status.json": "47a0282fd00b1fe8f61b1db4580e26b884574b2f9a00eff8ec479aac564e6adb",
+    "uart.log": "93dead58813548c34cfcb78ab1e5b73b3494c525ed224ff7a79739ea83e69c5f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "scenario": "book-stride-jump",
+  "engine": "qemu",
+  "fixture": "x4-app-x3-layout",
+  "card_source_sha256": "c2a498f3d2b5cab0837c8316ce27f3b8abce6f6b915df43f04f34f08f1395492",
+  "card_result_sha256": "2728a5e6ecb758d6843487c9468dcedf6da72b70138e164738f8f4f64a9aaa3c",
+  "flash_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+  "input_script": "x4-book-stride-jump.gdb",
+  "arduino_clock_offset_substitution": true,
+  "performance_valid": false
+}

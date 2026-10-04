@@ -1,0 +1,101 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[0] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.plugins (flags=0x0 errno=2 No such file or directory)
+[0] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[2] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.fonts (flags=0x0 errno=2 No such file or directory)
+[2] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/fonts (flags=0x0 errno=2 No such file or directory)
+[2] [DBG] [SDREG] Fonts directory not found: /fonts
+[2] [DBG] [SDREG] Discovery complete: 0 families
+[2] [DBG] [SDFS] SD font system ready (0 families discovered)
+[2] [DBG] [MAIN] Fonts setup
+[2] [DBG] [ACT] Entering activity: Boot
+[2] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[14] [DBG] [ACT] Exiting activity: Boot
+[14] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.plugins (flags=0x0 errno=2 No such file or directory)
+[14] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[34] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[905] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1386] [DBG] [ACT] Exiting activity: Home
+[1386] [DBG] [ACT] Entering activity: Library
+[1387] [DBG] [LIB] page tab=0 top=0 full=2 loaded=2 body=158..721 next=-1 title=<none>
+[1388] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1388] [DBG] [GFX] Time = 2 ms from clearScreen to displayBuffer
+[1394] [DBG] [LIB] page tab=0 top=0 full=2 loaded=2 body=158..721 next=-1 title=<none>
+[1394] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1394] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1904] [DBG] [LIB] page tab=0 top=0 full=2 loaded=2 body=158..721 next=-1 title=<none>
+[1904] [DBG] [LIB] page first=0 title=ALPHA Feature Probe
+[1904] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[2392] [DBG] [ACT] Exiting activity: Library
+[2392] [DBG] [ACT] Entering activity: EpubReader
+[2392] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[2392] [DBG] [GFX] Time = 488 ms from clearScreen to displayBuffer
+[2404] [DBG] [EBP] Loading ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/epub_3165350815581513661/book.bin (flags=0x0 errno=2 No such file or directory)
+[2404] [DBG] [EBP] Cache not found, building spine/TOC cache
+[2404] [DBG] [BMC] Entering write mode
+[2404] [DBG] [BMC] Beginning content opf pass
+[2405] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[2405] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[2405] [DBG] [COF] Using fast index for 3 manifest items
+[2405] [DBG] [ZIP] Decompressed 330 bytes into 653 bytes
+[2405] [DBG] [EBP] Successfully parsed content.opf
+[2406] [DBG] [EBP] OPF pass completed in 2 ms
+[2406] [DBG] [BMC] Beginning toc pass
+[2406] [DBG] [EBP] Falling back to NCX TOC
+[2406] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2406] [DBG] [ZIP] Decompressed 259 bytes into 468 bytes
+[2406] [DBG] [EBP] Parsed TOC items
+[2406] [DBG] [EBP] TOC pass completed in 0 ms
+[2406] [DBG] [BMC] Wrote 2 spine, 2 TOC entries
+[2407] [DBG] [BMC] Successfully built book.bin
+[2407] [DBG] [EBP] buildBookBin completed in 1 ms
+[2407] [DBG] [EBP] Total indexing completed in 3 ms
+[2407] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[2407] [DBG] [EBP] CSS files to parse: 0
+[2407] [DBG] [CSS] Saved 0 rules to complete cache
+[2407] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[2408] [DBG] [BMC] Loaded cache data: 2 spine, 2 TOC entries
+[2408] [DBG] [EBP] Loaded ePub: /alpha.epub
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/epub_3165350815581513661/progress.bin (flags=0x0 errno=2 No such file or directory)
+[2408] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[2408] [DBG] [ERS] Loading file: OEBPS/first.xhtml, index: 0
+[SIM] open failed: <LAB_ROOT>/cards/crosspoint-alpha/.crosspoint/epub_3165350815581513661/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[2408] [DBG] [ERS] Cache not found, building...
+[2408] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[2409] [DBG] [ZIP] Decompressed 480 bytes into 4945 bytes
+[2409] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_3165350815581513661/html/.tmp_0.html (4945 bytes)
+[2409] [DBG] [CSS] Loaded 0 rules from complete cache
+[2413] [DBG] [SCT] Page 0 processed
+[2416] [DBG] [SCT] Page 1 processed
+[2419] [DBG] [SCT] Page 2 processed
+[2422] [DBG] [SCT] Page 3 processed
+[2424] [DBG] [SCT] Page 4 processed
+[2426] [DBG] [SCT] Page 5 processed
+[2428] [DBG] [SCT] Page 6 processed
+[2431] [DBG] [SCT] Page 7 processed
+[2432] [DBG] [FDC] Prewarm: 10 glyphs in 632 bytes from 1 groups (0 missed)
+[2432] [DBG] [FDC] Prewarm: 15 glyphs in 1293 bytes from 1 groups (0 missed)
+[2433] [DBG] [FDC] Prewarm: 46 glyphs in 3845 bytes from 2 groups (0 missed)
+[2434] [DBG] [GFX] Time = 3 ms from clearScreen to displayBuffer
+[2449] [DBG] [ERS] Page render (tiled): prewarm=2ms bw_render=1ms display=3ms gray_lsb=1ms gray_msb=2ms gray_display=9ms cleanup=0ms total=18ms
+[2449] [DBG] [ERS] Rendered page in 18ms
+[2450] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-alpha/book.bmp
+[3512] [DBG] [FDC] Prewarm: 35 glyphs in 2937 bytes from 2 groups (0 missed)
+[3529] [DBG] [ERS] Page render (tiled): prewarm=0ms bw_render=1ms display=3ms gray_lsb=2ms gray_msb=2ms gray_display=9ms cleanup=0ms total=17ms
+[3529] [DBG] [ERS] Rendered page in 17ms
+[3530] [DBG] [ERS] Progress saved: spine=0 offset=357 page=1
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-alpha/page.bmp
+[4586] [DBG] [ACT] Pushed to activity stack, new size = 1
+[4586] [DBG] [ACT] Entering activity: EpubReaderMenu
+[4588] [DBG] [GFX] Time = 2 ms from clearScreen to displayBuffer
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-alpha/menu.bmp

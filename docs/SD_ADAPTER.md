@@ -41,3 +41,11 @@ The [book-open evidence](../evidence/2026-10-04/sd-book/screen.png) displays “
 Card reads are copied to the guest's requested RAM buffer and read back for equality. Requests beyond the image or above128 sectors fail. Writes modify only the disposable per-run card. There is no erase, card register, power-loss, concurrency, SPI CRC or performance fidelity claim. Additional firmware routines may require additional hooks; a failed adapter path must not be reported as missing firmware functionality.
 
 Only generated fixtures are suitable for publishing full storage traces. Personal books or SD images can expose filenames and content; keep their run artifacts local.
+
+## Reader input clock
+
+Front ADC polling in the reader advances roughly one virtual millisecond per sample in the traced path. A20-sample pulse is too short for several reader menu actions. `x4-longpress-clock.gdb` intercepts the verified Arduino-millis boundary at `0x42095246`, immediately after `esp_timer_get_time` returns its64-bit microseconds in A0/A1 and before conversion to milliseconds. It adds `max(0, front_reads-250) * 20000` microseconds; the underlying ESP timer remains unmodified. `x4-time-trace.gdb` records the original boundary for inspection.
+
+Menu/chapter/bookmark/reopen/stride scenarios explicitly install this diagnostic offset and write `clock-substitution.json`. This permits deterministic software input-state testing, but invalidates timing/performance comparisons and can cause repeated held-page movement. It does not validate watchdog, button debounce, auto-flip speed or physical input timing. The basic book/page probes do not use this substitution.
+
+`create_card.py --fixture beta --name beta` creates the CSS/image card; `--fixture gamma --name gamma` creates a120-chapter book. A new output name is required; existing cards/results are preserved. Source card bytes are copied per run, and the runner records source/result hashes in `input.json`.

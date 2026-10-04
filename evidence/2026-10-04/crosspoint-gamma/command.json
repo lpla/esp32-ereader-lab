@@ -1,0 +1,19 @@
+{
+  "scenario": "chapters",
+  "binary_sha256": "57ca2e54ae11f397c964c77f568d3967512ebdad60ebf3f5081ce4a37ce93951",
+  "fixture": "gamma.epub",
+  "fixture_sha256": "6024897e5383a73ee944c0d96a194ed020614b22acfa969ffc83bc7ad26c6df3",
+  "input": "900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;3500:ENTER;4200:ENTER;5200:DOWN:850;6900:QUIT",
+  "screenshots": [
+    [
+      4900,
+      "toc"
+    ],
+    [
+      6400,
+      "held-navigation"
+    ]
+  ],
+  "heap_and_timing_are_host_only": true,
+  "firmware_commit": "223c20b4864da9e7ee400d8234f7544fbbe54b62"
+}

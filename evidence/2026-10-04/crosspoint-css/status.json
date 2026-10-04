@@ -1,0 +1,17 @@
+{
+  "scenario": "media-css",
+  "binary_sha256": "57ca2e54ae11f397c964c77f568d3967512ebdad60ebf3f5081ce4a37ce93951",
+  "fixture": "beta.epub",
+  "fixture_sha256": "7f36a1727e0f1821e04581ca7f46e00441b0f109843693efbe100d6ba9737fa5",
+  "input": "900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;4000:QUIT",
+  "screenshots": [
+    [
+      3200,
+      "style"
+    ]
+  ],
+  "heap_and_timing_are_host_only": true,
+  "firmware_commit": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+  "exit": 0,
+  "feature_success_requires_image_inspection": true
+}

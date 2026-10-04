@@ -1,0 +1,50 @@
+{
+  "scope": "Pinned X4 stock v5.1.6 fixture versus pinned CrossPoint native source; synthetic EPUBs only",
+  "stock_flash_constructed": true,
+  "physical_device_tested": false,
+  "performance_valid": false,
+  "observations": [
+    {
+      "feature": "same_run_reopen",
+      "stock": "pass",
+      "crosspoint": "pass"
+    },
+    {
+      "feature": "chapter_two",
+      "stock": "pass",
+      "crosspoint": "pass"
+    },
+    {
+      "feature": "embedded_1bit_png",
+      "stock": "not_visible_in_beta",
+      "crosspoint": "rendered"
+    },
+    {
+      "feature": "italic_underline",
+      "stock": "not_visible_in_alpha_beta",
+      "crosspoint": "rendered"
+    },
+    {
+      "feature": "css_center_right",
+      "stock": "left_aligned_in_beta",
+      "crosspoint": "rendered_with_books_style"
+    },
+    {
+      "feature": "chapter_stride_100",
+      "stock": "control_visible_jump_inconclusive",
+      "crosspoint": "held_navigation_by_visible_rows"
+    }
+  ],
+  "reading_position_identity": {
+    "stock": {
+      "before": "stock-reopen/screen-018.png",
+      "after": "stock-reopen/screen.png",
+      "sha256": "900e52357e2e6035bb811cc02d41e22145902ddcef36148ffe024db71240e902"
+    },
+    "crosspoint": {
+      "before": "crosspoint-reopen/page.png",
+      "after": "crosspoint-reopen/reopen.png",
+      "sha256": "923714a4736729af6f28dd0df1195090eeebed8ff163cce2cd686e6991c509ec"
+    }
+  }
+}

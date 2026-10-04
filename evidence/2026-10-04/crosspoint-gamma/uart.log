@@ -1,0 +1,111 @@
+[0] [DBG] [UI] Using Lyra theme
+[0] [INF] [MAIN] Hardware detect: X4
+[1] [DBG] [UI] Using Lyra theme
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[1] [DBG] [MAIN] Starting CrossPoint version dev-simulator
+[3] [DBG] [MAIN] Display initialized
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.fonts (flags=0x0 errno=2 No such file or directory)
+[3] [DBG] [SDREG] Fonts directory not found: /.fonts
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/fonts (flags=0x0 errno=2 No such file or directory)
+[3] [DBG] [SDREG] Fonts directory not found: /fonts
+[3] [DBG] [SDREG] Discovery complete: 0 families
+[3] [DBG] [SDFS] SD font system ready (0 families discovered)
+[3] [DBG] [MAIN] Fonts setup
+[3] [DBG] [ACT] Entering activity: Boot
+[3] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[15] [DBG] [ACT] Exiting activity: Boot
+[15] [DBG] [ACT] Entering activity: Home
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/plugins (flags=0x0 errno=2 No such file or directory)
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.plugins (flags=0x0 errno=2 No such file or directory)
+[15] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[32] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[901] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[1387] [DBG] [ACT] Exiting activity: Home
+[1387] [DBG] [ACT] Entering activity: Library
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/library.idx (flags=0x0 errno=2 No such file or directory)
+[1388] [DBG] [GFX] Time = 488 ms from clearScreen to displayBuffer
+[1397] [DBG] [LIBIDX] phase prepare/prior: 1ms
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/epub_3386380504389209747/book.bin (flags=0x0 errno=2 No such file or directory)
+[1399] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[1399] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1401] [DBG] [EBP] Successfully parsed package metadata
+[1401] [DBG] [LIBIDX] phase walk/metadata/stage: 4ms
+[1402] [DBG] [LIBIDX] phase reconcile: 1ms
+[1402] [DBG] [LIBIDX] phase title order: 0ms
+[1403] [DBG] [LIBIDX] phase author/orders/emit: 1ms
+[1404] [INF] [LIBIDX] built: 1 books, 1 folders, 1 parsed, 0 metadata reused, replaced 1, 0 dup dropped, 0 unreadable, 8ms
+[1404] [INF] [LIB] reconciled: 0 unchanged, 1 added, 0 renamed, 0 removed, 1 enriched (0 dup, 0 unreadable)
+[1404] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1404] [DBG] [LIB] page first=0 title=GAMMA Chapter Stride Probe
+[1404] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[1408] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1408] [DBG] [LIB] page first=0 title=GAMMA Chapter Stride Probe
+[1408] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[1915] [DBG] [LIB] page tab=0 top=0 full=1 loaded=1 body=158..721 next=-1 title=<none>
+[1915] [DBG] [LIB] page first=0 title=GAMMA Chapter Stride Probe
+[1915] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[2391] [DBG] [ACT] Exiting activity: Library
+[2391] [DBG] [ACT] Entering activity: EpubReader
+[2391] [INF] [MEM] reader enter: free=1048576 max_block=1048576
+[2391] [DBG] [GFX] Time = 476 ms from clearScreen to displayBuffer
+[2402] [DBG] [EBP] Loading ePub: /gamma.epub
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/epub_3386380504389209747/book.bin (flags=0x0 errno=2 No such file or directory)
+[2402] [DBG] [EBP] Cache not found, building spine/TOC cache
+[2402] [DBG] [BMC] Entering write mode
+[2402] [DBG] [BMC] Beginning content opf pass
+[2402] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[2402] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[2406] [DBG] [COF] Using fast index for 121 manifest items
+[2407] [DBG] [ZIP] Decompressed 1282 bytes into 11423 bytes
+[2408] [DBG] [EBP] Successfully parsed content.opf
+[2410] [DBG] [EBP] OPF pass completed in 8 ms
+[2410] [DBG] [BMC] Beginning toc pass
+[2410] [DBG] [EBP] Falling back to NCX TOC
+[2410] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2442] [DBG] [ZIP] Decompressed 1530 bytes into 14304 bytes
+[2442] [DBG] [EBP] Parsed TOC items
+[2442] [DBG] [EBP] TOC pass completed in 32 ms
+[2442] [DBG] [BMC] Wrote 120 spine, 120 TOC entries
+[2445] [DBG] [BMC] Successfully built book.bin
+[2445] [DBG] [EBP] buildBookBin completed in 3 ms
+[2445] [DBG] [EBP] Total indexing completed in 43 ms
+[2445] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[2445] [DBG] [EBP] CSS files to parse: 0
+[2445] [DBG] [CSS] Saved 0 rules to complete cache
+[2445] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[2446] [DBG] [BMC] Loaded cache data: 120 spine, 120 TOC entries
+[2446] [DBG] [EBP] Loaded ePub: /gamma.epub
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/epub_3386380504389209747/progress.bin (flags=0x0 errno=2 No such file or directory)
+[2446] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[2446] [DBG] [LOOP] New max loop duration: 55 ms (activity: 55 ms)
+[2446] [DBG] [ERS] Loading file: OEBPS/c001.xhtml, index: 0
+[SIM] open failed: <LAB_ROOT>/results/crosspoint-gamma-navigation/sd/.crosspoint/epub_3386380504389209747/sections/0.bin (flags=0x0 errno=2 No such file or directory)
+[2446] [DBG] [ERS] Cache not found, building...
+[2446] [DBG] [ERS] Heap before section build: 1048576 (max block 1048576)
+[2447] [DBG] [ZIP] Decompressed 137 bytes into 175 bytes
+[2447] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_3386380504389209747/html/.tmp_0.html (175 bytes)
+[2447] [DBG] [CSS] Loaded 0 rules from complete cache
+[2448] [DBG] [EHP] Time to parse and build pages: 0 ms
+[2448] [DBG] [SCT] Page 0 processed
+[2449] [DBG] [FDC] Prewarm: 9 glyphs in 747 bytes from 1 groups (0 missed)
+[2450] [DBG] [FDC] Prewarm: 12 glyphs in 1097 bytes from 1 groups (0 missed)
+[2450] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[2464] [DBG] [ERS] Page render (tiled): prewarm=1ms bw_render=0ms display=4ms gray_lsb=0ms gray_msb=1ms gray_display=9ms cleanup=0ms total=15ms
+[2464] [DBG] [ERS] Rendered page in 15ms
+[2465] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[3589] [DBG] [ACT] Pushed to activity stack, new size = 1
+[3589] [DBG] [ACT] Entering activity: EpubReaderMenu
+[3590] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[4282] [DBG] [ACT] Exiting activity: EpubReaderMenu
+[4282] [DBG] [ACT] Popped from activity stack, new size = 0
+[4282] [DBG] [ACT] Handling result for popped activity
+[4282] [DBG] [ACT] Pushed to activity stack, new size = 1
+[4282] [DBG] [ACT] Entering activity: EpubReaderChapterSelection
+[4283] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-gamma-navigation/toc.bmp
+[5208] [DBG] [GFX] Time = 0 ms from clearScreen to displayBuffer
+[5717] [DBG] [GFX] Time = 1 ms from clearScreen to displayBuffer
+[SIM] Saved screenshot: <LAB_ROOT>/results/crosspoint-gamma-navigation/held-navigation.bmp

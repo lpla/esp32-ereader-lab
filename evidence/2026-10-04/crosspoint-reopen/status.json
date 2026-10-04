@@ -1,0 +1,21 @@
+{
+  "scenario": "reopen",
+  "binary_sha256": "57ca2e54ae11f397c964c77f568d3967512ebdad60ebf3f5081ce4a37ce93951",
+  "fixture": "alpha.epub",
+  "fixture_sha256": "9cfb793219cb30489e65e5568a469b0f2958be70ce44ed175fdcc220121ba604",
+  "input": "900:DOWN;1300:ENTER;1900:DOWN;2300:ENTER;3500:DOWN;4500:BACK;5300:ENTER;7000:QUIT",
+  "screenshots": [
+    [
+      4100,
+      "page"
+    ],
+    [
+      6500,
+      "reopen"
+    ]
+  ],
+  "heap_and_timing_are_host_only": true,
+  "firmware_commit": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+  "exit": 0,
+  "feature_success_requires_image_inspection": true
+}
