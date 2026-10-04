@@ -1,0 +1,27 @@
+{
+  "history-xtch6001-esp": {
+    "unmapped_zero_reads": 3267,
+    "all_bus_warnings": 3268,
+    "guest_panic": 1,
+    "interpretation": "model warnings unresolved; completion is not a clean invalid-access verdict",
+    "panic_after_debugger_detach": true
+  },
+  "history-xtch6001-turn-esp": {
+    "unmapped_zero_reads": 7131,
+    "all_bus_warnings": 7132,
+    "guest_panic": 0,
+    "interpretation": "model warnings unresolved; completion is not a clean invalid-access verdict"
+  },
+  "history-image-final-base-esp": {
+    "unmapped_zero_reads": 0,
+    "all_bus_warnings": 0,
+    "guest_panic": 0,
+    "interpretation": "no bus warnings or guest panic in this isolated component run"
+  },
+  "history-image-final-head-esp": {
+    "unmapped_zero_reads": 0,
+    "all_bus_warnings": 0,
+    "guest_panic": 0,
+    "interpretation": "no bus warnings or guest panic in this isolated component run"
+  }
+}

@@ -93,6 +93,17 @@ Final free heap differs by 64 bytes: QEMU 143,936, esp-emulator 144,000. We reta
 that difference instead of asserting equal heap snapshots. Its cause is not
 established; it supplies no candidate memory-saving claim.
 
+The esp-emulator XTCH logs also contain repeated unmapped byte-read warnings
+at address zero (3,267 in the first-page run, 7,131 in the turn/exit run).
+Their origin is unresolved. The first-page run panics **after** the debugger
+disconnects and removes the board adapters; the completed turn/exit run has no
+guest panic. Logs include this post-detach interval because the shared probe
+resumes briefly before terminating. These checkpoints establish workflow
+completion, **not a clean invalid-access or long-run memory-safety verdict**.
+The isolated ditherer runs have no bus warnings or guest panics.
+[Warning summary](../evidence/2026-10-04/model-warning-summary.json) retains the
+counts; do not hide them or attribute them to a CrossPoint bug without a PC trace.
+
 These are current-reader controls, not an A/B of #815, #2287 or #2361 and not a
 sleep/wake reproduction of #814. The original large-page problem in #1422 is not
 declared fixed. Real sleep/reset/RTC handling and controlled reader heap pressure
