@@ -1,0 +1,17 @@
+{
+  "source_run": "pro-rtc-observe",
+  "files_sha256": {
+    "command.json": "c6b6adc6eb10207eee4b7b8c803422e224ea5ac126f6b722224b5ab16a306592",
+    "rsp.json": "45fc703712cd385feabd3df2700db6272904cda21e0847fd20110611eb486251",
+    "status.json": "69484eca4528a2e38898f3a7ac4da4e43cc54468be78921ea1b1b52e56a2e31b",
+    "uart.log": "72da28671bea16cea8e77c62a9db96d4f6adaa616401497b880cf1565e324f32"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

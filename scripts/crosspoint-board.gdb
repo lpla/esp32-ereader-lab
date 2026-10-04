@@ -73,7 +73,7 @@ class Boundary(gdb.Breakpoint):
    with (d/'guest.log').open('ab') as f:f.write(data)
    ret(length)
    if ('Entering activity: '+checkpoint_activity).encode() in data:active=True
-   if b'Rendered page in' in data:
+   if b'Rendered page in' in data or (b'[XTR]' in data and b'Rendered page ' in data):
     rendered_pages+=1
     page_tick=struct.unpack('<I',bytes(guest.read_memory(address('xTickCount'),4)))[0]
     page_ready=True

@@ -1,0 +1,43 @@
+{
+  "normal": {
+    "atkinson1": {
+      "output_hash": 1183029984,
+      "base_retained": 5004,
+      "head_retained": 4868
+    },
+    "atkinson2": {
+      "output_hash": 3451566204,
+      "base_retained": 5004,
+      "head_retained": 4868
+    },
+    "floyd": {
+      "output_hash": 4222431649,
+      "base_retained": 3336,
+      "head_retained": 3332
+    }
+  },
+  "pressure": {
+    "atkinson1": {
+      "base": true,
+      "head": false
+    },
+    "atkinson2": {
+      "base": true,
+      "head": false
+    },
+    "floyd": {
+      "base": true,
+      "head": true
+    }
+  },
+  "heap_pressure": {
+    "kind": "IMAGE_HEAP",
+    "phase": "holes",
+    "free": 154460,
+    "largest": 4084,
+    "integrity": true
+  },
+  "all_cleanup_recovered": true,
+  "component_scope": "BitmapHelpers.h ditherers; not full PNG/BMP/XTC integration",
+  "physical_timing_valid": false
+}

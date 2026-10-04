@@ -1,0 +1,31 @@
+[268] [DBG] [UI] Using Lyra theme
+[570] [INF] [HW] Xteink probe scores: pass1=0 pass2=0 verdict=0
+[571] [XTDET] NVS hw_calib/screenType: not set
+[645] [XTDET] bus probe VER=FF FF FF FF FF FLG=FF -> default controller
+[646] [ERR] [GYR] SDK IMU not found
+[646] [INF] [CLK] RTC not found
+[646] [INF] [MAIN] Hardware detect: X4
+[646] [SD] SD card detected
+[651] [DBG] [UI] Using Lyra theme
+[652] [DBG] [MAIN] Starting CrossPoint version 1.6.5-dev-detached-223c20b48
+[694] [DBG] [MAIN] Display initialized
+[695] [DBG] [SDREG] Fonts directory not found: /.fonts
+[695] [DBG] [SDREG] Fonts directory not found: /fonts
+[695] [DBG] [SDREG] Discovery complete: 0 families
+[695] [DBG] [SDFS] SD font system ready (0 families discovered)
+[695] [DBG] [MAIN] Fonts setup
+[695] [DBG] [ACT] Entering activity: Boot
+[701] [DBG] [GFX] Time = 5 ms from clearScreen to displayBuffer
+[710] [DBG] [ACT] Exiting activity: Boot
+[710] [DBG] [ACT] Entering activity: XtcReader
+[710] [INF] [MEM] reader enter: free=160104 max_block=114676
+[711] [DBG] [XTC] Loading XTC: /table6001.xtc
+[711] [DBG] [XTC] Header: magic=0x00435458 (XTC), ver=1.0, pages=6001, bitDepth=1
+[711] [DBG] [XTC] Page table validated: 6001 pages, default 480x800
+[711] [DBG] [XTC] Opened file: /table6001.xtc (6001 pages, 480x800)
+[712] [DBG] [XTC] Loaded XTC: /table6001.xtc (6001 pages)
+[715] [XTC] Failed to open file for reading: /.crosspoint/xtc_422689289/progress.bin
+[883] [DBG] [GFX] Time = 161 ms from clearScreen to displayBuffer
+[885] [INF] [MEM] Free: 159392 bytes, Total: 264700 bytes, Min Free: 109792 bytes, MaxAlloc: 114676 bytes
+[887] [DBG] [XTR] Rendered page 1/6001 (1-bit)
+[895] [INF] [MEM] Free: 159176 bytes, Total: 264700 bytes, Min Free: 109792 bytes, MaxAlloc: 114676 bytes

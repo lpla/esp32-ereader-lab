@@ -22,5 +22,9 @@
   edits. Guest probe changes also require the appropriate PlatformIO build and
   bounded emulator scenario. Document physical-hardware limits without treating
   them as a reason to skip useful emulator tests.
+- Read CrossPoint SCOPE.md and ROADMAP.md before recommending firmware features.
+  Separate core candidates from deliberately excluded or fork-deferred features.
+  PR drafts must introduce the emulators briefly and report executed results;
+  keep test plans for unexecuted candidates private.
 - Publication is controlled by the user's authorization. Do not send PR comments
   or messages merely because a referenced PR is being investigated.

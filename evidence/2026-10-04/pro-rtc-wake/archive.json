@@ -1,0 +1,17 @@
+{
+  "source_run": "pro-rtc-wake",
+  "files_sha256": {
+    "command.json": "c6b6adc6eb10207eee4b7b8c803422e224ea5ac126f6b722224b5ab16a306592",
+    "rsp.json": "aed519aadbae6ba64177380abfd930a20aef9b96f95f17af5d14673978b27d35",
+    "status.json": "fcf402eda12f8f6e2e6b2234ade0a20dbf0af6024cd78d92c02cc113eec3e003",
+    "uart.log": "0f59d9b81f22099ac20daf4b67e7449bf511bf83a508c8c94db98b5ece5813db"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

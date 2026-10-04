@@ -14,7 +14,8 @@ def inspect(directory):
  heap=dict(zip(('free','total','minimum','largest'),map(int,lines[-1])))
  if not 0<heap['largest']<=heap['free']<=heap['total'] or heap['minimum']>heap['free']:
   raise ValueError('Inconsistent heap diagnostic')
- if checkpoint.get('rendered_pages',log.count('Rendered page in'))<1 or 'Rendered page in' not in log:
+ renders=log.count('Rendered page in')+len(re.findall(r'\[XTR\] Rendered page \d+/\d+',log))
+ if checkpoint.get('rendered_pages',renders)<1 or renders<1:
   raise ValueError('No reader render completed')
  if checkpoint.get('scenario')=='turn-exit' and (checkpoint['rendered_pages']<2 or 'Entering activity: Home' not in log):
   raise ValueError('Reader turn/exit did not complete')
@@ -22,7 +23,7 @@ def inspect(directory):
  if not events or not all(e['result'] for e in events):raise ValueError('Failed SD boundary operation')
  inputs=json.loads((directory/'input.json').read_text())
  checkpoint.setdefault('scenario',inputs.get('scenario','read'))
- checkpoint.setdefault('rendered_pages',log.count('Rendered page in'))
+ checkpoint.setdefault('rendered_pages',renders)
  return dict(heap=heap,checkpoint=checkpoint,source_inputs={k:inputs.get(k) for k in ('crosspoint','sdk','environment','card_source_sha256','resumed_book')},sd_operations=dict(collections.Counter(e['operation'] for e in events)),
   sd_read_sectors=sum(e.get('count',0) for e in events if e['operation']=='read'),
   sd_write_sectors=sum(e.get('count',0) for e in events if e['operation']=='write'),

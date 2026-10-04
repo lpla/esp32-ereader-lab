@@ -31,7 +31,9 @@ def main():
   rel=d.relative_to(ROOT)
   subprocess.run(['docker','run','--rm','--network','none','-v',f'{ROOT}:/work',IMAGE,'bash','-c',
    f'mmd -i {rel}/card.img@@1048576 ::/.crosspoint; mcopy -o -i {rel}/card.img@@1048576 {rel}/state-seed.json ::/.crosspoint/state.json'],check=True)
- activity='EpubReader' if a.book and a.scenario=='read' else 'Home'
+ book_activity='XtcReader' if a.book and a.book.lower().endswith(('.xtc','.xtch')) else 'EpubReader'
+ render_marker='Rendered page ' if book_activity=='XtcReader' else 'Rendered page in'
+ activity=book_activity if a.book and a.scenario=='read' else 'Home'
  cmd=['docker','run','--rm','--network','none','--cpus','2','--memory','1g','-e',f'LAB_CHECKPOINT_ACTIVITY={activity}',
       '-e',f'LAB_MACHINE_SCENARIO={a.scenario}','-v',f'{ROOT}:/work',IMAGE,'python3','scripts/probe.py',a.engine,'firmware/crosspoint-machine.bin',a.name,
       '--card',f'results/{a.name}/card.img','--pre-file','scripts/crosspoint-board.gdb','--commands','continue',
@@ -39,7 +41,7 @@ def main():
  with (d/'runner.log').open('w') as f:subprocess.run(cmd,check=True,stdout=f,stderr=subprocess.STDOUT,timeout=a.seconds+15)
  if (d/'display-writes.json').exists():render(d)
  status=json.loads((d/'status.json').read_text());logs=(d/'guest.log').read_text() if (d/'guest.log').exists() else ''
- completed=status['gdb_exit']==0 and (d/'checkpoint.json').exists() and (not a.book or 'Rendered page in' in logs)
+ completed=status['gdb_exit']==0 and (d/'checkpoint.json').exists() and (not a.book or render_marker in logs)
  if a.scenario=='turn-exit':
   checkpoint=json.loads((d/'checkpoint.json').read_text()) if (d/'checkpoint.json').exists() else {}
   completed=completed and checkpoint.get('rendered_pages',0)>=2 and 'Entering activity: Home' in logs

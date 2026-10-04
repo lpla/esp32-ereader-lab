@@ -1,0 +1,68 @@
+{
+  "first": {
+    "heap": {
+      "free": 143936,
+      "total": 264700,
+      "minimum": 45536,
+      "largest": 114676
+    },
+    "checkpoint": {
+      "reason": "guest heap diagnostic",
+      "front_reads": 212,
+      "rendered_pages": 2,
+      "scenario": "turn-exit"
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "0fb1f8e39fc7b546cb3636cbeafb8c39b40ed8624734e20181f86bdb39376892",
+      "resumed_book": "/table6001.xtch"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 500,
+      "write": 81
+    },
+    "sd_read_sectors": 500,
+    "sd_write_sectors": 81,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "physical_performance_valid": false
+  },
+  "second": {
+    "heap": {
+      "free": 144000,
+      "total": 264700,
+      "minimum": 45536,
+      "largest": 114676
+    },
+    "checkpoint": {
+      "reason": "guest heap diagnostic",
+      "front_reads": 173,
+      "rendered_pages": 2,
+      "scenario": "turn-exit"
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "0fb1f8e39fc7b546cb3636cbeafb8c39b40ed8624734e20181f86bdb39376892",
+      "resumed_book": "/table6001.xtch"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 500,
+      "write": 81
+    },
+    "sd_read_sectors": 500,
+    "sd_write_sectors": 81,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "physical_performance_valid": false
+  },
+  "heap_equal": false,
+  "logical_sd_counts_equal": true,
+  "semantic_screen_requires_image_inspection": true,
+  "physical_performance_valid": false
+}

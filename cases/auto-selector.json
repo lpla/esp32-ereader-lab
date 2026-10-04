@@ -1,0 +1,43 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "X4 manual Auto Flip offers a reading interval",
+  "expected": "Auto Flip interval choices appear; automatic page advancement is a separate assertion",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Confirm",
+      "start": 430,
+      "end": 450
+    }
+  ],
+  "stop": 530,
+  "id": "stock-auto-selector",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "alpha",
+  "clock_substitution": true
+}

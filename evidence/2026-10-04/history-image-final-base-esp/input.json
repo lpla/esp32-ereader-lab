@@ -1,0 +1,61 @@
+{
+  "source": {
+    "pr": 2332,
+    "head": "fa1c69adb68a7032e67d170d1249bc0bfd114bbc",
+    "base": "3e60e13025e2b5715352386dc49d687d8849b4e5",
+    "files": [
+      {
+        "label": "base",
+        "ref": "3e60e13025e2b5715352386dc49d687d8849b4e5",
+        "file": "lib/GfxRenderer/BitmapHelpers.h",
+        "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/3e60e13025e2b5715352386dc49d687d8849b4e5/lib/GfxRenderer/BitmapHelpers.h",
+        "sha256": "7d621d8ef928b861946eedb1352137b35761de83c92c9ce99c9ef36fa037b7eb",
+        "bytes": 10315
+      },
+      {
+        "label": "base",
+        "ref": "3e60e13025e2b5715352386dc49d687d8849b4e5",
+        "file": "lib/Memory/Memory.h",
+        "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/3e60e13025e2b5715352386dc49d687d8849b4e5/lib/Memory/Memory.h",
+        "sha256": "09acc493f12ba52bfa8e0a065e63c0e6b19b3a0034d63c07b6272380f5dc4587",
+        "bytes": 1693
+      },
+      {
+        "label": "head",
+        "ref": "fa1c69adb68a7032e67d170d1249bc0bfd114bbc",
+        "file": "lib/GfxRenderer/BitmapHelpers.h",
+        "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/fa1c69adb68a7032e67d170d1249bc0bfd114bbc/lib/GfxRenderer/BitmapHelpers.h",
+        "sha256": "6867bff4923c6ab5780b4cde3872a65da512b6c8743cb32f39f060690fc8e1eb",
+        "bytes": 11057
+      },
+      {
+        "label": "head",
+        "ref": "fa1c69adb68a7032e67d170d1249bc0bfd114bbc",
+        "file": "lib/Memory/Memory.h",
+        "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/fa1c69adb68a7032e67d170d1249bc0bfd114bbc/lib/Memory/Memory.h",
+        "sha256": "09acc493f12ba52bfa8e0a065e63c0e6b19b3a0034d63c07b6272380f5dc4587",
+        "bytes": 1693
+      }
+    ]
+  },
+  "probe_sha256": "137d5d79c0464f19eed8f290ace0393ebb24ea8a79447644209ea21f708731db",
+  "images": {
+    "base": {
+      "file": "image-heap-base.bin",
+      "sha256": "1807a250a8db7aa5db7eae84ae462156e2452bf639f60e1f8ec23885cb0374ec",
+      "elf_sha256": "9f6845969eade1211f6c4b5b33d77ff79a66584132b4d2a30949d4918e2ca44a",
+      "factory_bytes": 362032
+    },
+    "head": {
+      "file": "image-heap-head.bin",
+      "sha256": "5143b19561c076b968e9337de306a30b7625f46f4e5d35a12dbc090584e2af87",
+      "elf_sha256": "5c805ea1c2e4a6b034c5d29b47eea22ae47a20b02c051124370d21c107886181",
+      "factory_bytes": 361792
+    }
+  },
+  "label": "base",
+  "engine": "esp-emu",
+  "allocator_substituted": false,
+  "tone_adjustment": "identity",
+  "component_scope": "BitmapHelpers.h ditherers; not full PNG/BMP/XTC integration"
+}

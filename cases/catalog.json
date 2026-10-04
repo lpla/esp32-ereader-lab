@@ -113,6 +113,41 @@
       "locator": "Public XTCloud flashing UI API",
       "scope": "Retrieved XT stock v7.4.4 and Licorice 260923; separate stock V7.6.8 OTA found but not executed",
       "retrieved": "2026-10-04"
+    },
+    "crosspoint-scope": {
+      "kind": "project_scope",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/50823ffa125b437b4c9fe5882f326458780198da/SCOPE.md",
+      "locator": "lines 15-17, 30-59, 73-81",
+      "scope": "50823ffa125b437b4c9fe5882f326458780198da",
+      "retrieved": "2026-10-04"
+    },
+    "crosspoint-roadmap": {
+      "kind": "project_roadmap",
+      "url": "https://github.com/crosspoint-reader/crosspoint-reader/blob/50823ffa125b437b4c9fe5882f326458780198da/ROADMAP.md",
+      "locator": "Phase 0 closed; Phase 1 footprint; SD plugins; Out of Roadmap",
+      "scope": "50823ffa125b437b4c9fe5882f326458780198da",
+      "retrieved": "2026-10-04"
+    },
+    "kobo-reading-menu": {
+      "kind": "manufacturer_documentation",
+      "url": "https://help.kobo.com/hc/en-us/articles/360020494854-About-the-Kobo-eReader-Reading-Menu",
+      "locator": "Search and reading stats icons",
+      "scope": "Kobo eReaders; not ESP32 emulator targets",
+      "retrieved": "2026-10-04"
+    },
+    "kobo-highlights": {
+      "kind": "manufacturer_documentation",
+      "url": "https://help.kobo.com/hc/en-us/articles/360017481334-Highlight-text-on-your-Kobo-eReader",
+      "locator": "Highlight, add note, search selection",
+      "scope": "Kobo EPUB reading; non-ESP32; PDF highlighting excluded by document",
+      "retrieved": "2026-10-04"
+    },
+    "pocketbook-mini-manual": {
+      "kind": "manufacturer_manual",
+      "url": "https://download.pocketbook-int.com/515/ug/ww/User_Guide_PocketBook_515_ww%28EN%29.pdf",
+      "locator": "printed pp. 17, 40-43",
+      "scope": "PocketBook Mini 515 Linux; historical manual, not an ESP32 target",
+      "retrieved": "2026-10-04"
     }
   },
   "features": [
@@ -305,10 +340,12 @@
         "crosspoint-reader"
       ],
       "expected_semantic_result": "Configured interval produces successive unique paragraphs without additional input.",
-      "closed_result": "documented_not_executed",
+      "closed_result": "page_advance_without_page_button_pass_clock_substituted",
       "crosspoint_result": "documented_not_executed",
       "priority": "next_functional_case_no_timing_claim",
-      "evidence": []
+      "evidence": [
+        "evidence/2026-10-04/stock-auto-advance-long/screen.png"
+      ]
     },
     {
       "id": "goto",
@@ -388,8 +425,9 @@
       "expected_semantic_result": "Controlled reading creates a progress/session record and syncs it to an isolated supported endpoint.",
       "closed_result": "manufacturer_claim_not_executed",
       "crosspoint_result": "session_events_and_KOSync_documented_not_executed",
-      "priority": "compare_existing_contract_before_new_feature",
-      "evidence": []
+      "priority": "comparison_only_not_core_statistics_PR",
+      "evidence": [],
+      "scope_assessment": "defer core statistics to forks; reuse session events/server or SD plugin"
     },
     {
       "id": "dictionary",
@@ -439,6 +477,42 @@
       "crosspoint_result": "SDK_documented",
       "priority": "physical_hardware_required_not_portable_to_absent_hardware",
       "evidence": []
+    },
+    {
+      "id": "in-book-search",
+      "name": "Search EPUB text and jump to a match",
+      "models": [
+        "Kobo eReaders",
+        "PocketBook Mini 515"
+      ],
+      "sources": [
+        "kobo-reading-menu",
+        "crosspoint-scope",
+        "pocketbook-mini-manual"
+      ],
+      "expected_semantic_result": "Repeated phrase split across XHTML tags and inflate boundaries is found; jump reaches exact occurrence; cancellation releases heap",
+      "closed_result": "documented_not_emulated_non_ESP32",
+      "crosspoint_result": "not_in_develop_reader_menu; existing issue1984 and open PR3441",
+      "priority": "evaluate_existing_PR_avoid_duplicate",
+      "scope_assessment": "core reading interaction; discuss existing implementation, preserve memory limits",
+      "evidence": []
+    },
+    {
+      "id": "annotations",
+      "name": "Highlight text and add typed notes",
+      "models": [
+        "Kobo eReaders"
+      ],
+      "sources": [
+        "kobo-highlights",
+        "crosspoint-scope"
+      ],
+      "expected_semantic_result": "Selected span persists with book position and can be reopened",
+      "closed_result": "documented_not_emulated_non_ESP32",
+      "crosspoint_result": "multiple open clipping PRs; typed notes excluded",
+      "priority": "separate_clipping_from_out_of_scope_authoring",
+      "scope_assessment": "typed notes explicitly out of scope; simple clippings need maintainer decision, not presumed acceptance",
+      "evidence": []
     }
   ],
   "policy": [
@@ -447,6 +521,9 @@
     "Manual claims are version-scoped; current manuals can describe features absent from older firmware.",
     "Process exit is not a semantic pass.",
     "Native screenshots do not validate embedded RAM, radio or optical display behavior.",
-    "CrossInk excluded by user request."
+    "CrossInk excluded by user request.",
+    "Feature availability and upstream scope are independent questions.",
+    "Statistics are explicitly deferred to forks by current SCOPE.md.",
+    "Never claim these ESP32 machines run Kobo or PocketBook firmware."
   ]
 }

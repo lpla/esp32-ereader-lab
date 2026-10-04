@@ -1,0 +1,16 @@
+{
+  "source_run": "history-image-final-base-esp",
+  "files_sha256": {
+    "input.json": "b1e6b52cb9d2425c46d4eb3955c7651c5c28ad1281e8e7d6280aef37b07cc08f",
+    "result.json": "231d106a628695774b1ee1f71e1c39f858dd6151eab3e0c06631f0ba7f9b3961",
+    "uart.log": "70607de2b0dcbc279a61d7e12398484d00085aa307da4f177252d914e4c7be07"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

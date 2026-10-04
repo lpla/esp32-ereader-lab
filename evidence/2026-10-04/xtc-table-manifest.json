@@ -1,0 +1,24 @@
+{
+  "table6001.xtc": {
+    "bytes": 192116,
+    "sha256": "feae139da691aba6d1ba51294ebb480d29a06cd15c82e322e53dfd326a26a41d",
+    "table_entries": 6001,
+    "distinct_payloads": 2,
+    "dimensions": [
+      480,
+      800
+    ],
+    "bit_depth": 1
+  },
+  "table6001.xtch": {
+    "bytes": 288116,
+    "sha256": "002a77f6d2b5908099a8574ebd4eac5a3b5e7dd2dae90348c297f4ffb130eb38",
+    "table_entries": 6001,
+    "distinct_payloads": 2,
+    "dimensions": [
+      480,
+      800
+    ],
+    "bit_depth": 2
+  }
+}

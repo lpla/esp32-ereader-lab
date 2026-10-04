@@ -1,0 +1,36 @@
+{
+  "develop": "50823ffa125b437b4c9fe5882f326458780198da",
+  "executed_source": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+  "files": [
+    {
+      "file": "SCOPE.md",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/50823ffa125b437b4c9fe5882f326458780198da/SCOPE.md",
+      "sha256": "7af6e84348404dc8ff906df08f47d41b3db2d91ccc2a459832c258723fa313c8"
+    },
+    {
+      "file": "ROADMAP.md",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/50823ffa125b437b4c9fe5882f326458780198da/ROADMAP.md",
+      "sha256": "f329e065f923e59c4839ff7f8c115daa388af034be6013c4dce31507d305989f"
+    },
+    {
+      "file": ".github/PULL_REQUEST_TEMPLATE.md",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/50823ffa125b437b4c9fe5882f326458780198da/.github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "311e195df4a9465873ee996aa77146252bdbd249638d40d14089bd1508dd310d"
+    },
+    {
+      "file": "src/activities/reader/EpubReaderMenuActivity.cpp",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/50823ffa125b437b4c9fe5882f326458780198da/src/activities/reader/EpubReaderMenuActivity.cpp",
+      "sha256": "cdb8d0dcdfa2d5af29706e39065f9e538bd346c8bc919c9495fcc78462729d72"
+    },
+    {
+      "file": "src/activities/reader/EpubReaderActivity.cpp",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/50823ffa125b437b4c9fe5882f326458780198da/src/activities/reader/EpubReaderActivity.cpp",
+      "sha256": "ae10c80f9f461b70c49104556ff419dba75f6d878955a060b8418d346733e742"
+    },
+    {
+      "file": "docs/plugin-events.md",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/50823ffa125b437b4c9fe5882f326458780198da/docs/plugin-events.md",
+      "sha256": "8c25dd7b0ae198ddae2967513b33f2e20bef0f88b2e00077d516356e3d746b74"
+    }
+  ]
+}

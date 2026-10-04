@@ -1,5 +1,8 @@
 # Full CrossPoint machine workloads and PR evidence — 2026-10-04
 
+New follow-up: [older PR/issue experiments](HISTORICAL_TESTS.md) and
+[scope-aware feature investigation](FEATURE_SCOPE.md).
+
 Both Espressif QEMU and esp-emulator now run the **full embedded CrossPoint C3
 firmware**, including cold EPUB indexing/layout, SD cache writes, a page turn,
 reader exit and guest heap diagnostics. These are machine-emulator workloads

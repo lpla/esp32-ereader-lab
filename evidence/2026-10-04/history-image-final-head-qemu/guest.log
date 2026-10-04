@@ -1,0 +1,14 @@
+IMAGE_HEAP {"phase":"before_oom_warmup","free":301324,"largest":155636,"integrity":true}
+IMAGE_HEAP {"phase":"baseline","free":300904,"largest":155636,"integrity":true}
+IMAGE_CASE {"name":"atkinson1","fragmented":false,"valid":true,"retained":4868,"hash":1183029984,"recovered":true}
+IMAGE_CASE {"name":"atkinson2","fragmented":false,"valid":true,"retained":4868,"hash":3451566204,"recovered":true}
+IMAGE_CASE {"name":"floyd","fragmented":false,"valid":true,"retained":3332,"hash":4222431649,"recovered":true}
+IMAGE_HEAP {"phase":"normal_released","free":300904,"largest":155636,"integrity":true}
+IMAGE_PRESSURE 135
+IMAGE_HEAP {"phase":"holes","free":154460,"largest":4084,"integrity":true}
+IMAGE_CASE {"name":"atkinson1","fragmented":true,"valid":false,"retained":0,"hash":2166136261,"recovered":true}
+IMAGE_CASE {"name":"atkinson2","fragmented":true,"valid":false,"retained":0,"hash":2166136261,"recovered":true}
+IMAGE_CASE {"name":"floyd","fragmented":true,"valid":true,"retained":3332,"hash":4222431649,"recovered":true}
+IMAGE_HEAP {"phase":"holes_released","free":154460,"largest":4084,"integrity":true}
+IMAGE_HEAP {"phase":"all_released","free":300904,"largest":155636,"integrity":true}
+LAB_DONE

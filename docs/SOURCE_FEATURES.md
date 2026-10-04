@@ -1,8 +1,11 @@
 # Source-driven feature comparison — 2026-10-04
 
+Follow-up: [broader feature comparison and current CrossPoint scope](FEATURE_SCOPE.md),
+including existing in-book search work, executed Auto Flip and Pro RTC diagnosis.
+
 Tests now start with a claim, an applicable firmware/model, a fixture and an
 observable result. The machine-readable [catalogue](../cases/catalog.json)
-contains 18 features and 16 sources. It distinguishes manufacturer documentation,
+contains 20 features and 20 sources. It distinguishes manufacturer documentation,
 project documentation/source, community announcements, user impressions and user
 requests. CrossInk remains excluded.
 
@@ -51,7 +54,7 @@ The historical `docs/comparison.md` in CrossPoint explicitly compares versions
 | CSS, italic/underline and PNG | Partial styles; checker PNG absent in this fixture | Styles and actual PNG rendered | [BETA comparison](EPUB_COMPARISON.md); X4 manual also cautions about images |
 | Internal-link target and Back | Unverified | Pass | ALPHA unique target/return, earlier comparison |
 | Large-TOC target jump | ×1/×10/×100 controls observed; target not established | Held list navigation observed | GAMMA; controls alone do not prove a 100-chapter jump |
-| Auto-turn / Go to position | Documented, pending semantic cases | Documented, pending semantic cases | Need successive paragraph/target markers; no performance claim |
+| Auto-turn / Go to position | Auto-turn advances without page input; Go to position pending | Already documented; machine cases pending | [Executed Auto Flip](FEATURE_SCOPE.md); clock-substituted, no interval claim |
 | X4 Pro stock / Licorice reading features | Blocked before usable reader | Pro source support is documented; this native comparison uses X4 | Boot evidence below is not a feature comparison |
 
 The stock orientation case intentionally retains its incomplete result. Choosing
@@ -126,8 +129,10 @@ or postpone all usable feature work.
 
 ## What merits a CrossPoint change?
 
-No firmware change is justified solely by this wider search. Several praised
-features already exist. The priorities below are an evaluation, not new PRs.
+Several praised features already exist, but the comparison is incomplete.
+[FEATURE_SCOPE.md](FEATURE_SCOPE.md) now tracks a concrete in-book search candidate
+and separates interesting features from changes admissible in core CrossPoint.
+The items below are investigation status, not an exhaustive absence claim.
 
 1. **Precise large-TOC navigation** is the strongest small-device candidate from
    the executable stock UI. First establish an exact GAMMA target, then compare
@@ -142,10 +147,11 @@ features already exist. The priorities below are an evaluation, not new PRs.
    comparison. CrossPoint already has a bounded recent-books store
    ([RecentBooksStore.h:8–30](https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/src/RecentBooksStore.h#L8-L30)).
    Preference for a screenshot is insufficient evidence of missing behavior.
-3. **Reading reports** should first be compared with existing `reader.session`
+3. **Reading reports** are explicitly deferred to forks by current SCOPE.md.
+   For an external/plugin comparison, start with existing `reader.session`
    events and KOSync. CrossPoint already counts eligible forward-page dwell time
    ([ReaderSession.cpp:16–36](https://github.com/crosspoint-reader/crosspoint-reader/blob/223c20b4864da9e7ee400d8234f7544fbbe54b62/src/activities/reader/ReaderSession.cpp#L16-L36))
-   and documents deferred delivery. Local-only reports, if wanted, need an
+   and documents deferred delivery. A fork or external report, if wanted, needs an
    explicit retention limit and throttled SD writes, not an unbounded session list.
 4. **Direct TTF on C3** is not a safe parity shortcut. CrossPoint already supports
    direct TTF/OTF/TTC when external RAM is enabled; every supported device can use

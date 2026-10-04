@@ -1,0 +1,39 @@
+{
+  "pr": 2332,
+  "head": "fa1c69adb68a7032e67d170d1249bc0bfd114bbc",
+  "base": "3e60e13025e2b5715352386dc49d687d8849b4e5",
+  "files": [
+    {
+      "label": "base",
+      "ref": "3e60e13025e2b5715352386dc49d687d8849b4e5",
+      "file": "lib/GfxRenderer/BitmapHelpers.h",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/3e60e13025e2b5715352386dc49d687d8849b4e5/lib/GfxRenderer/BitmapHelpers.h",
+      "sha256": "7d621d8ef928b861946eedb1352137b35761de83c92c9ce99c9ef36fa037b7eb",
+      "bytes": 10315
+    },
+    {
+      "label": "base",
+      "ref": "3e60e13025e2b5715352386dc49d687d8849b4e5",
+      "file": "lib/Memory/Memory.h",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/3e60e13025e2b5715352386dc49d687d8849b4e5/lib/Memory/Memory.h",
+      "sha256": "09acc493f12ba52bfa8e0a065e63c0e6b19b3a0034d63c07b6272380f5dc4587",
+      "bytes": 1693
+    },
+    {
+      "label": "head",
+      "ref": "fa1c69adb68a7032e67d170d1249bc0bfd114bbc",
+      "file": "lib/GfxRenderer/BitmapHelpers.h",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/fa1c69adb68a7032e67d170d1249bc0bfd114bbc/lib/GfxRenderer/BitmapHelpers.h",
+      "sha256": "6867bff4923c6ab5780b4cde3872a65da512b6c8743cb32f39f060690fc8e1eb",
+      "bytes": 11057
+    },
+    {
+      "label": "head",
+      "ref": "fa1c69adb68a7032e67d170d1249bc0bfd114bbc",
+      "file": "lib/Memory/Memory.h",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/fa1c69adb68a7032e67d170d1249bc0bfd114bbc/lib/Memory/Memory.h",
+      "sha256": "09acc493f12ba52bfa8e0a065e63c0e6b19b3a0034d63c07b6272380f5dc4587",
+      "bytes": 1693
+    }
+  ]
+}

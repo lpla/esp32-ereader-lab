@@ -16,3 +16,4 @@ __pycache__/
 /probes/esp32c3/src/pr/
 
 /drafts/
+/probes/image-heap/vendor/

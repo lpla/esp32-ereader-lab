@@ -1,0 +1,23 @@
+{
+  "source_run": "history-image-final-base-qemu",
+  "files_sha256": {
+    "command.json": "22408ba03e83bba3b1e4a642d46b69ea8700444948d5d33a8d3fe88ef3297f92",
+    "gdb.log": "47c9553adbf8213ec62e4a6e63573f7a8d0221b71496a5b4f5b88e52ab4ef334",
+    "guest.log": "11ae93ec642144f752a7fea49ad011bddc5bc7844545d99478f31bda66196688",
+    "input.json": "69995a2fef39d3783bdbacc450c94bb9d5985736fe5a8ab915cf1c056581e179",
+    "probe.gdb": "b7979dfbaa0f41225f70f75e1aa2728b7546b07aad51e2b7e9f91b6af9d9a28d",
+    "result.json": "231d106a628695774b1ee1f71e1c39f858dd6151eab3e0c06631f0ba7f9b3961",
+    "runner.log": "c8ebcc14cca46658725845ad462278c6043c58f7953c8d21b24429ba20c041bd",
+    "serial.gdb": "cb6bfde9bad9bb92534e01df6faaa3180ed726e937b796b85a9e7443640a1945",
+    "status.json": "44c2e02beeb05232e30260a4f2888ab8daccbe39d301b48c9d6755c1d428c446",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

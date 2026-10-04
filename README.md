@@ -8,6 +8,9 @@ The [source-driven audit](docs/SOURCE_FEATURES.md) also includes public X4 Pro
 stock/Licorice images with recorded bring-up blockers. Independent C3 guest
 probes exercise allocator fragmentation and an actual CrossPoint networking PR.
 
+New follow-up: [older allocator/XTC tests](docs/HISTORICAL_TESTS.md) and
+[feature comparison filtered through CrossPoint scope](docs/FEATURE_SCOPE.md).
+
 ## What works
 
 | Capability | QEMU | esp-emulator v0.45.0 |
@@ -22,6 +25,9 @@ probes exercise allocator fragmentation and an actual CrossPoint networking PR.
 | Guest Wi-Fi/DHCP/HTTP, isolated PR #3612 TCP DF A/B | Wi-Fi unsupported by documented model | Verified; full CrossPoint integration/carrier behavior untested |
 | X4 Pro stock/Licorice usable reader | Not attempted | Blocked during bring-up |
 | Full CrossPoint C3 cold EPUB / page turn / exit | Verified guest workflow | Verified guest workflow |
+| Historical #2332 ditherer output, cleanup and fragmented-heap tradeoff | Verified component A/B | Verified component A/B |
+| Full CrossPoint 6,001-entry XTCH page turn / exit | Verified; shared-payload table fixture | Verified; shared-payload table fixture |
+| Stock Auto Flip page advancement | Verified; clock substituted | Not validated |
 | Physical display/power/timing accuracy | Not validated | Not validated |
 
 Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [executed EPUB comparison](docs/EPUB_COMPARISON.md).

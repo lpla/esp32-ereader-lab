@@ -1,0 +1,12 @@
+{
+  "verdict": "pass: later paragraphs without page-button input",
+  "first_marker": "ALPHA EPUB BASELINE; Paragraph 01",
+  "last_markers": [
+    "Paragraph 05",
+    "Paragraph 06"
+  ],
+  "inspected_image": "screen.png",
+  "clock_substitution": true,
+  "interval_timing_valid": false,
+  "auto_case_back_exits_reader": true
+}

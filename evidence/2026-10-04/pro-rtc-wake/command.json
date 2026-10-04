@@ -1,0 +1,16 @@
+[
+  "/work/tools/esp-emu-0.45.0-x86_64-unknown-linux-gnu/esp-emu",
+  "--chip",
+  "esp32s3",
+  "--firmware",
+  "/work/firmware/x4pro-licorice-padded.bin",
+  "--psram-size",
+  "8M",
+  "--gdb",
+  "1234",
+  "--gdb-halt",
+  "--timeout",
+  "25s",
+  "--log-color",
+  "never"
+]

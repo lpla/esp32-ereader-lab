@@ -1,5 +1,6 @@
 # Guest heap and networking PR experiments — 2026-10-04
 
+> Older backlog: [historical allocator/XTC cases](HISTORICAL_TESTS.md).
 > Follow-up: [full CrossPoint machine workflows, TOC investigation and expanded PR tests](MACHINE_IMPROVEMENTS.md). The initial status below is historical.
 
 **esp-emulator v0.45.0 is useful for controlled guest allocator and network-stack

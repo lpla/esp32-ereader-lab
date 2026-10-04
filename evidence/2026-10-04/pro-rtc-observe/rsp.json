@@ -1,0 +1,30 @@
+[
+  {
+    "command": "qSupported",
+    "reply": "PacketSize=4000;swbreak+;QStartNoAckMode+;vContSupported+"
+  },
+  {
+    "command": "qXfer:features:read:target.xml:0,ffff",
+    "reply": "l<?xml version=\"1.0\"?><!DOCTYPE target SYSTEM \"gdb-target.dtd\"><target version=\"1.0\"><architecture>riscv:rv32</architecture><feature name=\"org.gnu.gdb.riscv.cpu\"><reg name=\"zero\" bitsize=\"32\" type=\"int\" regnum=\"0\"/><reg name=\"ra\" bitsize=\"32\" type=\"int\" regnum=\"1\"/><reg name=\"sp\" bitsize=\"32\" type=\"int\" regnum=\"2\"/><reg name=\"gp\" bitsize=\"32\" type=\"int\" regnum=\"3\"/><reg name=\"tp\" bitsize=\"32\" type=\"int\" regnum=\"4\"/><reg name=\"t0\" bitsize=\"32\" type=\"int\" regnum=\"5\"/><reg name=\"t1\" bitsize=\"32\" type=\"int\" regnum=\"6\"/><reg name=\"t2\" bitsize=\"32\" type=\"int\" regnum=\"7\"/><reg name=\"fp\" bitsize=\"32\" type=\"int\" regnum=\"8\"/><reg name=\"s1\" bitsize=\"32\" type=\"int\" regnum=\"9\"/><reg name=\"a0\" bitsize=\"32\" type=\"int\" regnum=\"10\"/><reg name=\"a1\" bitsize=\"32\" type=\"int\" regnum=\"11\"/><reg name=\"a2\" bitsize=\"32\" type=\"int\" regnum=\"12\"/><reg name=\"a3\" bitsize=\"32\" type=\"int\" regnum=\"13\"/><reg name=\"a4\" bitsize=\"32\" type=\"int\" regnum=\"14\"/><reg name=\"a5\" bitsize=\"32\" type=\"int\" regnum=\"15\"/><reg name=\"a6\" bitsize=\"32\" type=\"int\" regnum=\"16\"/><reg name=\"a7\" bitsize=\"32\" type=\"int\" regnum=\"17\"/><reg name=\"s2\" bitsize=\"32\" type=\"int\" regnum=\"18\"/><reg name=\"s3\" bitsize=\"32\" type=\"int\" regnum=\"19\"/><reg name=\"s4\" bitsize=\"32\" type=\"int\" regnum=\"20\"/><reg name=\"s5\" bitsize=\"32\" type=\"int\" regnum=\"21\"/><reg name=\"s6\" bitsize=\"32\" type=\"int\" regnum=\"22\"/><reg name=\"s7\" bitsize=\"32\" type=\"int\" regnum=\"23\"/><reg name=\"s8\" bitsize=\"32\" type=\"int\" regnum=\"24\"/><reg name=\"s9\" bitsize=\"32\" type=\"int\" regnum=\"25\"/><reg name=\"s10\" bitsize=\"32\" type=\"int\" regnum=\"26\"/><reg name=\"s11\" bitsize=\"32\" type=\"int\" regnum=\"27\"/><reg name=\"t3\" bitsize=\"32\" type=\"int\" regnum=\"28\"/><reg name=\"t4\" bitsize=\"32\" type=\"int\" regnum=\"29\"/><reg name=\"t5\" bitsize=\"32\" type=\"int\" regnum=\"30\"/><reg name=\"t6\" bitsize=\"32\" type=\"int\" regnum=\"31\"/><reg name=\"pc\" bitsize=\"32\" type=\"code_ptr\" regnum=\"32\"/></feature></target>"
+  },
+  {
+    "command": "Z1,4037d1c0,1",
+    "reply": "OK"
+  },
+  {
+    "command": "c",
+    "reply": "T05swbreak:;"
+  },
+  {
+    "command": "g",
+    "reply": "c0d137404006000037ffe1043c4dc93f010000000600000004000000000000001b000000f4a6c93f02000000000000000300000023000600ac5bc93f504dc93f020c0000b0683780605dca3f0000000001000000504dc93f14000050785dca3f630c04007d880082405dca3f0000000001000000785dca3fffffffbfb002b7bf000019002a683780205dca3f0000000000000000dc800060045dca3fc89000603100000008683780005dca3f000001000000000000000000205dca3f04000000050000004c800060188000604480006000000080000000000100000001000000d05cca3fbcbef13f0000000044bcf13fbae224000100000004000000000000001b0000005c6f0540726f0540000000000a0000000a00000050050000000000000000000023060600c85eca3f00000000ffff3fb30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001500000000000000000000000000000000000000000000000000000000000000eece3740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001064ca3ff44f0340c450034090510340005303400000000000000000000000000000000000000000000000002e010013004037400400000000000000cb2ce204cdcd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "command": "m4037d1c0,3",
+    "reply": "922a00"
+  },
+  {
+    "command": "m60008044,4",
+    "reply": "00000000"
+  }
+]

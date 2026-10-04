@@ -1,0 +1,58 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+
+Temporary breakpoint -15, 0x420a1bd4 in ?? ()
+Hardware assisted breakpoint 1 at 0x50001624
+ra             0x42098ce4	0x42098ce4
+sp             0x3fcb2760	0x3fcb2760
+gp             0x3fc92000	0x3fc92000
+tp             0x3f825fc0	0x3f825fc0
+t0             0x4005890e	1074104590
+t1             0x40038e56	1073974870
+t2             0xffffffff	-1
+fp             0x1800000	0x1800000
+s1             0x60040000	1610874880
+a0             0x0	0
+a1             0x1	1
+a2             0x3fcb276c	1070278508
+a3             0x4	4
+a4             0xfe7fffff	-25165825
+a5             0x0	0
+a6             0x2	2
+a7             0x0	0
+s2             0x1	1
+s3             0x3fcaa000	1070243840
+s4             0x1	1
+s5             0x3c166000	1008099328
+s6             0x3c168000	1008107520
+s7             0x3fcaa214	1070244372
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x1c	28
+t4             0x0	0
+t5             0x0	0
+t6             0x0	0
+pc             0x420a1bd4	0x420a1bd4
+=> 0x420a1bd4:	lui	t0,0x50001
+   0x420a1bd8:	addi	t0,t0,1536
+   0x420a1bdc:	jr	t0
+   0x420a1be0:	lui	s2,0x40000
+   0x420a1be4:	bnez	a0,0x420a1bea
+   0x420a1be6:	lui	s2,0x80000
+   0x420a1bea:	lui	a4,0x60040
+   0x420a1bee:	mv	a3,a4
+   0x420a1bf2:	lw	a0,76(a3)
+   0x420a1bf4:	lui	a7,0x80000
+   0x420a1bf8:	not	a5,a7
+   0x420a1bfc:	or	a0,a0,s2
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+
+Breakpoint 1, 0x50001624 in ?? ()
+0x50001bc0:	0x00000212
+[Inferior 1 (process 1) detached]
