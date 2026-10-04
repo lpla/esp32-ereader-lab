@@ -1,0 +1,53 @@
+The target architecture is set to "riscv:rv32".
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x42006dda
+
+Breakpoint 1, 0x42006dda in setup() ()
+ra             0x4200bf72	0x4200bf72 <loopTask(void*)+48>
+sp             0x3fca1120	0x3fca1120
+gp             0x3fc8fa00	0x3fc8fa00
+tp             0x3fca1160	0x3fca1160
+t0             0x0	0
+t1             0x403882cc	1077445324
+t2             0x0	0
+fp             0x0	0x0
+s1             0x0	0
+a0             0x1	1
+a1             0x0	0
+a2             0x15	21
+a3             0xffffffff	-1
+a4             0x0	0
+a5             0x3fc8f2dc	1070133980
+a6             0x0	0
+a7             0x0	0
+s2             0x0	0
+s3             0x0	0
+s4             0x0	0
+s5             0x0	0
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x0	0
+t4             0x0	0
+t5             0x0	0
+t6             0x0	0
+pc             0x42006dda	0x42006dda <setup()>
+=> 0x42006dda <_Z5setupv>:	addi	sp,sp,-272
+   0x42006ddc <_Z5setupv+2>:	li	a4,-1
+   0x42006dde <_Z5setupv+4>:	sw	s0,264(sp)
+   0x42006de2 <_Z5setupv+8>:	sw	s3,252(sp)
+   0x42006de4 <_Z5setupv+10>:	lui	s0,0x3fc93
+   0x42006de8 <_Z5setupv+14>:	lui	s3,0x3fc98
+   0x42006dec <_Z5setupv+18>:	lui	a6,0x5
+   0x42006dee <_Z5setupv+20>:	lui	a2,0x8000
+   0x42006df2 <_Z5setupv+24>:	lui	a1,0x1c
+   0x42006df4 <_Z5setupv+26>:	lw	a5,-192(s3)
+   0x42006df8 <_Z5setupv+30>:	sw	a5,204(sp)
+   0x42006dfa <_Z5setupv+32>:	li	a5,0
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+[Inferior 1 (process 1) detached]

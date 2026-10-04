@@ -1,0 +1,33 @@
+{
+  "source_run": "machine-turn-exit-qemu",
+  "files_sha256": {
+    "checkpoint.json": "2c66b6a75b0cd9be744b355cc2e7449d42419bb31e3b6ef359387abdeaa2d3eb",
+    "command.json": "b06f93db3f16aa41c65f1e73ffcf0f068925a667d03118e5549b9fc8469d9bfb",
+    "display-writes.json": "331ea7b17d0763914300b78ce14717bbeb65e021014dca12788ae774664ca6ce",
+    "gdb.log": "00ed6a9c422d7f8157ffa75a652f045613e7b1651b37a8190905d805fcd9fe4c",
+    "guest.log": "f2615d29135d6c7c475092d563e1fb29cefb3b305e3b06bc8a8699dcb0a01664",
+    "input.json": "dd2f4bbcb1d759f970dfb34cd0ea96b089c01c2137929472120b05606b8add60",
+    "probe.gdb": "8eea799cd59a8ca7dbc52f31ad84737e0c7ef9dca97fae782944087e2c300d30",
+    "runner.log": "7d7b96e082791802e454eb7f98de6368890cc72ff44e5eb78174e3d98297c1c7",
+    "screen-000.png": "258ed828d6f52d5a62f29fa413b5d70b0efed39c39c0def6e2038e9fe74ccf74",
+    "screen-001.png": "ab52f981fcdaa77fe0c79ef4479d537477d4bba5d28acab2745799f2cafead3a",
+    "screen-002.png": "68195485098e0458a662c3ca5dcbf308a21ac2a53a226505b3fc794efa640d1e",
+    "screen-003.png": "929294c24b270951e6e106bb0027ce7fdb80c4c89d6c06b6ece15b60ca842bee",
+    "screen-004.png": "c8a899a9b2af6f74825037aacd1d1b9da6c0a6bedf478f91d1f26652b4407434",
+    "screen.png": "c8a899a9b2af6f74825037aacd1d1b9da6c0a6bedf478f91d1f26652b4407434",
+    "sd-events.json": "2921170b84b434f2e2934012efe2f0985d7fa11c409780dbc8e6b1c0be6027fe",
+    "semantic-verdict.json": "dde444dfac7a9b1ff5067c02df65069d44218406badbf0698461064f2ce89222",
+    "state-seed.json": "03eaecc1165ac66404cbbecc876729a97c5e2d8805a1aedd2f6a090d102297ea",
+    "status.json": "d6111d8ed30bc12785c4c94453a2a9435d14ea93966a373773ecdcc96fd0f36b",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f",
+    "verdict.json": "22db0803e9f9c5a38a32de6aa4721c729ade3e24fd54d1c7de982bf4be2224de"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

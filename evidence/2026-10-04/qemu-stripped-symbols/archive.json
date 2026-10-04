@@ -1,0 +1,18 @@
+{
+  "source_run": "qemu-symbols-stripped",
+  "files_sha256": {
+    "command.json": "0f85848176803b5f39e75cd8ab9c95ff070d8090f6df12660de5eb90960f74f7",
+    "gdb.log": "cf826167ab631331b1aabf2e497f34195021b9bb8d6d220f4559ef43174975c1",
+    "probe.gdb": "90966b873672ba8b556d51a2cd468b9f1b413c2cddf16b732af3809d664cd25b",
+    "status.json": "147e9dc481e4463d66e2b4405f68b894307cb5fb9d6927b33f7f162397bd4494",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

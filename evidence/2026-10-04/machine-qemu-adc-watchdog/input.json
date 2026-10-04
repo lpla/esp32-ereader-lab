@@ -1,0 +1,6 @@
+{
+  "firmware_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+  "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+  "verdict": "failed old ADC boundary; fixed by intercepting adc_oneshot_read",
+  "diagnosis": "ADC conversion interrupt watchdog"
+}

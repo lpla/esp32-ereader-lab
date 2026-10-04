@@ -1,0 +1,23 @@
+{
+  "source_run": "toc-locate-fast-esp",
+  "files_sha256": {
+    "case.json": "aaa2481b0a0284c4fd1bc5b6f4b7f5cfea9f5f68f1ed35800a9a850f7ab39229",
+    "command.json": "a14c567c961e934280dcf7a3fb45d5e3d7d5513c20330e42433aa2045fed694c",
+    "gdb.log": "9ad05ce3ca2844c5fec76278303c02c63185f14053dd5f67fbc1e3fb2cffee3b",
+    "input.json": "d482e6b344d3a671eba76c4c18d77d5791e586c9f5f59782c8d1b280b15ce30e",
+    "inputs.gdb": "c4c5fc11bc16a2270a8cf60b59ce48aa196804afd2aab68f3645b41e9d06a8ec",
+    "probe.gdb": "b817e976ac947a295df8e772ba9054ad1e1f16b1f2aace9029cd22f8db958893",
+    "runner.log": "1499fe01aabb463b7053ba6236697704b26ae002717e43d74f76a76ace376344",
+    "runtime-input-substitutions.json": "2f0bba81c8e413e0fe8f90b9ce35f9ae847324631f99239e98045da4acce58da",
+    "status.json": "3a08dc65dc0da3d58a29aecaa52f155d17c174c4ad87f9b622ce8af567921fa1",
+    "uart.log": "68f4c693d9836dae8d4f68084ff4217ea3b79ff1246f46e874c8872d2834f1f2"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

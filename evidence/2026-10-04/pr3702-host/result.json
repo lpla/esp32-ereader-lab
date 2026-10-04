@@ -1,0 +1,32 @@
+{
+  "pr": 3702,
+  "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+  "command": "python3 downloads/pr3702/test/test_heap_trace.py",
+  "exit": 0,
+  "tests": 9,
+  "result": "OK",
+  "recording": "metadata transcribed from observed host test output",
+  "guest_hooks_and_unwinder_executed": false,
+  "sources": {
+    "3702/scripts/heap_trace.py": {
+      "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/scripts/heap_trace.py",
+      "sha256": "7c4aa98b710d56e3e74ddab556531a5268715287a2aa25da854ec79eafd3ed50"
+    },
+    "3702/test/test_heap_trace.py": {
+      "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/test/test_heap_trace.py",
+      "sha256": "d1e49a540b4e59a856503ed365a194112ce9e196fb370c14a489b959167546e4"
+    },
+    "3702/src/util/HeapTrace.cpp": {
+      "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/src/util/HeapTrace.cpp",
+      "sha256": "bfa61ca15a4ee02009263d5a6a24a479badf30b2c4227d6de4609ebe37ab22fe"
+    },
+    "3702/src/util/HeapTrace.h": {
+      "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+      "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/src/util/HeapTrace.h",
+      "sha256": "a8e8ee8d699dd3800d29c038390c2a2b99a1091bdd21c7e890f66074d7a880dd"
+    }
+  }
+}

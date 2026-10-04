@@ -1,0 +1,68 @@
+{
+  "first": {
+    "heap": {
+      "free": 153792,
+      "total": 264700,
+      "minimum": 86992,
+      "largest": 114676
+    },
+    "checkpoint": {
+      "reason": "guest heap diagnostic",
+      "front_reads": 9,
+      "scenario": "read",
+      "rendered_pages": 1
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "c2a498f3d2b5cab0837c8316ce27f3b8abce6f6b915df43f04f34f08f1395492",
+      "resumed_book": "/gamma.epub"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 806,
+      "write": 155
+    },
+    "sd_read_sectors": 806,
+    "sd_write_sectors": 155,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "physical_performance_valid": false
+  },
+  "second": {
+    "heap": {
+      "free": 153792,
+      "total": 264700,
+      "minimum": 86992,
+      "largest": 114676
+    },
+    "checkpoint": {
+      "reason": "guest heap diagnostic",
+      "front_reads": 5,
+      "scenario": "read",
+      "rendered_pages": 1
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "c2a498f3d2b5cab0837c8316ce27f3b8abce6f6b915df43f04f34f08f1395492",
+      "resumed_book": "/gamma.epub"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 806,
+      "write": 155
+    },
+    "sd_read_sectors": 806,
+    "sd_write_sectors": 155,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "physical_performance_valid": false
+  },
+  "heap_equal": true,
+  "logical_sd_counts_equal": true,
+  "semantic_screen_requires_image_inspection": true,
+  "physical_performance_valid": false
+}

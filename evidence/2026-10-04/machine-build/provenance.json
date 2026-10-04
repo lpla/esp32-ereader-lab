@@ -1,0 +1,11 @@
+{
+  "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+  "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+  "environment": "default",
+  "factory_bytes": 5885056,
+  "flash_bytes": 16777216,
+  "flash_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+  "factory_sha256": "60074b330c3c08cb0e65c53ac07f87430b2b2ca03cd16631e21a111200e06f98",
+  "elf_sha256": "cee8ed02a1e0867294fa31c57dab318269ef53ffeacd713c7faf1c47f3077f88",
+  "factory_prefix_preserved": true
+}

@@ -1,5 +1,7 @@
 # ESP32 stock firmware emulation experiment
 
+> Follow-up: [full CrossPoint machine workflows, TOC investigation and expanded PR tests](docs/MACHINE_IMPROVEMENTS.md). The initial status below is historical.
+
 This report preserves the initial engine experiments. Subsequent SD reading and CrossPoint comparisons are recorded in [the executed EPUB comparison](docs/EPUB_COMPARISON.md).
 
 Later work adds [source-backed feature cases and X4 Pro firmware research](docs/SOURCE_FEATURES.md)

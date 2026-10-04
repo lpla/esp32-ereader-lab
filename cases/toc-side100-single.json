@@ -1,0 +1,84 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "Chapter multiplier can move by 100 chapters",
+  "expected": "Side Down with \u00d7100 selected exposes Chapter 101 in GAMMA TOC",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Right",
+      "start": 390,
+      "end": 410
+    },
+    {
+      "button": "Confirm",
+      "start": 430,
+      "end": 450
+    },
+    {
+      "button": "Right",
+      "start": 530,
+      "end": 550
+    },
+    {
+      "button": "Right",
+      "start": 570,
+      "end": 590
+    },
+    {
+      "button": "Right",
+      "start": 610,
+      "end": 630
+    },
+    {
+      "button": "Confirm",
+      "start": 650,
+      "end": 670
+    },
+    {
+      "button": "Left",
+      "start": 690,
+      "end": 710
+    },
+    {
+      "button": "Confirm",
+      "start": 730,
+      "end": 750
+    },
+    {
+      "button": "Down",
+      "start": 810,
+      "end": 818
+    }
+  ],
+  "stop": 900,
+  "id": "stock-toc-side100-single",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "gamma",
+  "clock_substitution": true,
+  "input_semantics_status": "hypothesis; expected target requires semantic verification"
+}

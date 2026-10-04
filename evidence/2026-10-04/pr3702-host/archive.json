@@ -1,0 +1,14 @@
+{
+  "source_run": "pr3702-host",
+  "files_sha256": {
+    "result.json": "74a109649afecc2579c096c81dc5f2852b6c38e7636bd3da0e07fd587faea491"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

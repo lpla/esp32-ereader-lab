@@ -1,0 +1,47 @@
+{
+  "3702/scripts/heap_trace.py": {
+    "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/scripts/heap_trace.py",
+    "sha256": "7c4aa98b710d56e3e74ddab556531a5268715287a2aa25da854ec79eafd3ed50"
+  },
+  "3702/test/test_heap_trace.py": {
+    "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/test/test_heap_trace.py",
+    "sha256": "d1e49a540b4e59a856503ed365a194112ce9e196fb370c14a489b959167546e4"
+  },
+  "3702/src/util/HeapTrace.cpp": {
+    "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/src/util/HeapTrace.cpp",
+    "sha256": "bfa61ca15a4ee02009263d5a6a24a479badf30b2c4227d6de4609ebe37ab22fe"
+  },
+  "3702/src/util/HeapTrace.h": {
+    "head": "695d71298cbfb418f88a9dff1f7a6da22ad9e800",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/695d71298cbfb418f88a9dff1f7a6da22ad9e800/src/util/HeapTrace.h",
+    "sha256": "a8e8ee8d699dd3800d29c038390c2a2b99a1091bdd21c7e890f66074d7a880dd"
+  },
+  "3831/lib/EpdFont/SdCardFont.cpp": {
+    "head": "f2d55c34787c808ea6c5494e858da90b0981494e",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/f2d55c34787c808ea6c5494e858da90b0981494e/lib/EpdFont/SdCardFont.cpp",
+    "sha256": "6ab4aeeadae3ecdf27b553d81fc23831fba60434243a6c209b5ed74c9df5fde3"
+  },
+  "3831/lib/EpdFont/SdCardFont.h": {
+    "head": "f2d55c34787c808ea6c5494e858da90b0981494e",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/f2d55c34787c808ea6c5494e858da90b0981494e/lib/EpdFont/SdCardFont.h",
+    "sha256": "04532a161d5a5f6c6f8be6e56f07c2c414da1103176a05cddd0873670b352ddb"
+  },
+  "3705/lib/EpdFont/SdCardFont.cpp": {
+    "head": "bd4117603579d4a6ebd4b116e4dfd54b5a40e47c",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/bd4117603579d4a6ebd4b116e4dfd54b5a40e47c/lib/EpdFont/SdCardFont.cpp",
+    "sha256": "24f3283968266de75a39ce25dfe9c101f1ec8bea7516356cde0a416fd11de99d"
+  },
+  "3705/lib/EpdFont/SdCardFont.h": {
+    "head": "bd4117603579d4a6ebd4b116e4dfd54b5a40e47c",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/bd4117603579d4a6ebd4b116e4dfd54b5a40e47c/lib/EpdFont/SdCardFont.h",
+    "sha256": "6e2d10d99c3e9968da70262743494b77edcce234cd406be4afc7d674d13506bb"
+  },
+  "2127/src/activities/network/CrossPointWebServerActivity.cpp": {
+    "head": "606a0c871740f8049d3ee2757218b0b6d6ca03ce",
+    "url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/606a0c871740f8049d3ee2757218b0b6d6ca03ce/src/activities/network/CrossPointWebServerActivity.cpp",
+    "sha256": "84359e095bd6c4a72d83c0ec640d74dd3beda2ed7e055d46dd6b291b7dd3de39"
+  }
+}

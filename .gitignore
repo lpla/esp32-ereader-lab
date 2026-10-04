@@ -14,3 +14,5 @@ __pycache__/
 .cache/
 
 /probes/esp32c3/src/pr/
+
+/drafts/

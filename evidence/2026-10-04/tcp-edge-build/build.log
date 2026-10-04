@@ -1,0 +1,295 @@
+Processing c3_edges (platform: https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip; board: esp32-c3-devkitm-1; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-c3-devkitm-1.html
+PLATFORM: Espressif 32 (55.3.311) > Espressif ESP32-C3-DevKitM-1
+HARDWARE: ESP32C3 160MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, esp-prog-2, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - contrib-piohome @ 3.4.4 
+ - framework-arduinoespressif32 @ 3.3.11 
+ - framework-arduinoespressif32-libs @ 5.5.5+sha.b774170ff46 
+ - tool-esptoolpy @ 5.3.0 
+ - tool-riscv32-esp-elf-gdb @ 17.1.0+20260402 
+ - toolchain-riscv32-esp @ 14.2.0+20260121
+*** Reinstall Arduino framework ***
+Tool Manager: Installing https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-arduinoespressif32@3.3.11 has been installed!
+Tool Manager: Installing https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11-libs.tar.xz
+Unpacking 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Tool Manager: framework-arduinoespressif32-libs@5.5.5+sha.b774170ff46 has been installed!
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 44 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- WiFi @ 3.3.11
+Building in release mode
+Compiling .pio/build/c3_edges/lib0c8/Network/NetworkClient.cpp.o
+Compiling .pio/build/c3_edges/lib0c8/Network/NetworkEvents.cpp.o
+Compiling .pio/build/c3_edges/lib0c8/Network/NetworkInterface.cpp.o
+Compiling .pio/build/c3_edges/lib0c8/Network/NetworkManager.cpp.o
+Compiling .pio/build/c3_edges/lib0c8/Network/NetworkServer.cpp.o
+Compiling .pio/build/c3_edges/lib0c8/Network/NetworkUdp.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/AP.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/STA.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/WiFi.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/WiFiAP.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/c3_edges/libc47/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/c3_edges/src/main.cpp.o
+Building .pio/build/c3_edges/bootloader.bin
+esptool v5.3.0
+Creating ESP32-C3 image...
+Merged 2 ELF sections.
+Successfully created ESP32-C3 image.
+Generating partitions .pio/build/c3_edges/partitions.bin
+Compiling .pio/build/c3_edges/FrameworkArduino/ColorFormat.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/Esp.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/FirmwareMSC.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/FunctionalInterrupt.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/HEXBuilder.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/HWCDC.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/HashBuilder.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/MacAddress.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/StringUtils.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/USB.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/USBCDC.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/USBMSC.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/chip-debug-report.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-hosted.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-i2c-ng.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-ldo.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-log-wrapper.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-periman.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-touch-ng.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/freertos_stats.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/idf_openthread_mpool_wrapper.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/main.cpp.o
+Compiling .pio/build/c3_edges/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/c3_edges/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/c3_edges/libFrameworkArduino.a
+Indexing .pio/build/c3_edges/libFrameworkArduino.a
+Linking .pio/build/c3_edges/firmware.elf
+                            Memory Type Usage Summary                             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory Type/Section ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code          │       765732 │          │                │               │
+│    .text            │       765732 │          │                │               │
+│ Flash Data          │       155088 │          │                │               │
+│    .rodata          │       132036 │          │                │               │
+│    .eh_frame        │        22504 │          │                │               │
+│    .init_array      │          292 │          │                │               │
+│    .appdesc         │          256 │          │                │               │
+│ DRAM                │        99203 │    30.88 │         222093 │        321296 │
+│    .text            │        61778 │    19.23 │                │               │
+│    .bss             │        23896 │     7.44 │                │               │
+│    .data            │        13529 │     4.21 │                │               │
+└─────────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
+Total image size: 996127 bytes (.bin may be padded larger)
+Note: The reported total sizes may be smaller than those in the technical reference manual due to reserved memory and application configuration. The total flash size available for the application is not included by default, as it cannot be reliably determined due to the presence of other data like the bootloader, partition table, and application partition size.
+Retrieving maximum program size .pio/build/c3_edges/firmware.elf
+Checking size .pio/build/c3_edges/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  11.4% (used 37428 bytes from 327680 bytes)
+Flash: [=======   ]  74.2% (used 973075 bytes from 1310720 bytes)
+Building .pio/build/c3_edges/firmware.bin
+esptool v5.3.0
+Creating ESP32-C3 image...
+Merged 3 ELF sections.
+Successfully created ESP32-C3 image.
+Creating binary "firmware.factory.bin" with:
+    Offset   | File
+ -  0x0000   | bootloader.bin
+ -  0x8000   | partitions.bin
+ -  0xe000   | boot_app0.bin
+ -  0x10000  | firmware.bin
+Successfully created combined binary image.
+======================== [SUCCESS] Took 146.78 seconds ========================
+
+Processing c3_df_edges (platform: https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip; board: esp32-c3-devkitm-1; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-c3-devkitm-1.html
+PLATFORM: Espressif 32 (55.3.311) > Espressif ESP32-C3-DevKitM-1
+HARDWARE: ESP32C3 160MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, esp-prog-2, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - contrib-piohome @ 3.4.4 
+ - framework-arduinoespressif32 @ 3.3.11 
+ - framework-arduinoespressif32-libs @ 5.5.5+sha.b774170ff46 
+ - tool-esptoolpy @ 5.3.0 
+ - tool-riscv32-esp-elf-gdb @ 17.1.0+20260402 
+ - toolchain-riscv32-esp @ 14.2.0+20260121
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 44 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- WiFi @ 3.3.11
+Building in release mode
+Compiling .pio/build/c3_df_edges/lib0c8/Network/NetworkClient.cpp.o
+Compiling .pio/build/c3_df_edges/lib0c8/Network/NetworkEvents.cpp.o
+Compiling .pio/build/c3_df_edges/lib0c8/Network/NetworkInterface.cpp.o
+Compiling .pio/build/c3_df_edges/lib0c8/Network/NetworkManager.cpp.o
+Compiling .pio/build/c3_df_edges/lib0c8/Network/NetworkServer.cpp.o
+Compiling .pio/build/c3_df_edges/lib0c8/Network/NetworkUdp.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/AP.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/STA.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/WiFi.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/WiFiAP.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/c3_df_edges/libc47/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/c3_df_edges/src/main.cpp.o
+Compiling .pio/build/c3_df_edges/src/pr/TcpDontFragment.cpp.o
+Building .pio/build/c3_df_edges/bootloader.bin
+esptool v5.3.0
+Creating ESP32-C3 image...
+Merged 2 ELF sections.
+Successfully created ESP32-C3 image.
+Generating partitions .pio/build/c3_df_edges/partitions.bin
+Compiling .pio/build/c3_df_edges/FrameworkArduino/ColorFormat.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/Esp.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/FirmwareMSC.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/FunctionalInterrupt.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/HEXBuilder.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/HWCDC.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/HashBuilder.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/MacAddress.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/StringUtils.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/USB.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/USBCDC.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/USBMSC.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/chip-debug-report.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-hosted.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-i2c-ng.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-ldo.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-log-wrapper.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-periman.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-touch-ng.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/freertos_stats.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/idf_openthread_mpool_wrapper.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/main.cpp.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/c3_df_edges/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/c3_df_edges/libFrameworkArduino.a
+Indexing .pio/build/c3_df_edges/libFrameworkArduino.a
+Linking .pio/build/c3_df_edges/firmware.elf
+                            Memory Type Usage Summary                             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory Type/Section ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code          │       766270 │          │                │               │
+│    .text            │       766270 │          │                │               │
+│ Flash Data          │       155428 │          │                │               │
+│    .rodata          │       132228 │          │                │               │
+│    .eh_frame        │        22652 │          │                │               │
+│    .init_array      │          292 │          │                │               │
+│    .appdesc         │          256 │          │                │               │
+│ DRAM                │        99203 │    30.88 │         222093 │        321296 │
+│    .text            │        61778 │    19.23 │                │               │
+│    .bss             │        23896 │     7.44 │                │               │
+│    .data            │        13529 │     4.21 │                │               │
+└─────────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
+Total image size: 997005 bytes (.bin may be padded larger)
+Note: The reported total sizes may be smaller than those in the technical reference manual due to reserved memory and application configuration. The total flash size available for the application is not included by default, as it cannot be reliably determined due to the presence of other data like the bootloader, partition table, and application partition size.
+Retrieving maximum program size .pio/build/c3_df_edges/firmware.elf
+Checking size .pio/build/c3_df_edges/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  11.4% (used 37428 bytes from 327680 bytes)
+Flash: [=======   ]  74.3% (used 973805 bytes from 1310720 bytes)
+Building .pio/build/c3_df_edges/firmware.bin
+esptool v5.3.0
+Creating ESP32-C3 image...
+Merged 3 ELF sections.
+Successfully created ESP32-C3 image.
+Creating binary "firmware.factory.bin" with:
+    Offset   | File
+ -  0x0000   | bootloader.bin
+ -  0x8000   | partitions.bin
+ -  0xe000   | boot_app0.bin
+ -  0x10000  | firmware.bin
+Successfully created combined binary image.
+========================= [SUCCESS] Took 32.33 seconds =========================
+
+Environment    Status    Duration
+-------------  --------  ------------
+c3_edges       SUCCESS   00:02:26.782
+c3_df_edges    SUCCESS   00:00:32.327
+========================= 2 succeeded in 00:02:59.109 =========================

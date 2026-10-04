@@ -4,7 +4,10 @@ import json
 from pathlib import Path
 
 
-def check(base, patched):
+EDGE_NAMES = {'whole_tcp','unaligned_tcp','tcp_options','already_df','more_fragments','fragment_offset','udp','ipv6_tag','short_header','truncated','split_header'}
+
+
+def check(base, patched, require_edges=False):
     summaries = {}
     for label, data in [('base', base), ('patched', patched)]:
         if not (data['done'] and data['exit'] == 0 and not data['timeout'] and data['image_unchanged']):
@@ -35,7 +38,11 @@ def check(base, patched):
         large = next(r for r in records if r['kind'] == 'LAB_LARGE')
         if large['success'] or not phases['holes']['largest'] < large['requested'] < large['free_before']:
             raise ValueError(f'{label}: contiguity failure was not demonstrated')
-        summaries[label] = dict(tcp=sum(r['tcp'] for r in packets),
+        edges = [r for r in records if r['kind'] == 'LAB_EDGE']
+        if require_edges or edges:
+            if len(edges) != len(EDGE_NAMES) or {r['name'] for r in edges} != EDGE_NAMES or not all(r['pass'] for r in edges):
+                raise ValueError(f'{label}: missing or failed packet edge contract')
+        summaries[label] = dict(edge_cases_passed=len(edges),tcp=sum(r['tcp'] for r in packets),
             tcp_df=sum(r['tcp_df'] for r in packets), udp=sum(r['udp'] for r in packets),
             udp_df=sum(r['udp_df'] for r in packets), bad_ip_checksums=sum(r['bad_ip_checksums'] for r in packets),
             cycles=3, http_requests=data['http_requests'], fragmentation=large,
@@ -48,9 +55,10 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('base', type=Path)
     p.add_argument('patched', type=Path)
+    p.add_argument('--require-edges', action='store_true')
     p.add_argument('--output', type=Path)
     a = p.parse_args()
-    result = check(json.loads(a.base.read_text()), json.loads(a.patched.read_text()))
+    result = check(json.loads(a.base.read_text()), json.loads(a.patched.read_text()), a.require_edges)
     text = json.dumps(result, indent=2) + '\n'
     if a.output:
         a.output.write_text(text)

@@ -1,0 +1,15 @@
+{
+  "source_run": "tcp-edge-build",
+  "files_sha256": {
+    "build.log": "91f723d835b618a079250fb83fee493a0c035531e58f6344c7892ab61c1fd6cc",
+    "provenance.json": "d0cdcf63e7f43f061c7947920a7b9c9922cf0f45f5b9aeeb8031773a944c4cfc"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

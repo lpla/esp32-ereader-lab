@@ -1,0 +1,22 @@
+{
+  "patches": [
+    {
+      "address": "0x420973e0",
+      "original": "83a7c1d0370700047d179c43",
+      "replacement": "b71200509382026867800200"
+    },
+    {
+      "address": "0x420a1bd4",
+      "original": "797126d24ad006d622d4aa84",
+      "replacement": "b71200509382026067800200"
+    },
+    {
+      "address": "0x4209523a",
+      "original": "411106c697e02efee780403b",
+      "replacement": "b71200509382426a67800200"
+    }
+  ],
+  "rtc_start": "0x50001600",
+  "rtc_end": "0x50001fd8",
+  "performance_valid": false
+}

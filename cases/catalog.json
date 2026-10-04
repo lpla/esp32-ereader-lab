@@ -287,8 +287,12 @@
       "evidence": [
         "evidence/2026-10-04/stock-stride-cycle/screen.png",
         "evidence/2026-10-04/stock-stride-jump-inconclusive/screen.png",
-        "evidence/2026-10-04/crosspoint-gamma/held-navigation.png"
-      ]
+        "evidence/2026-10-04/crosspoint-gamma/held-navigation.png",
+        "evidence/2026-10-04/stock-toc-locate/screen.png",
+        "evidence/2026-10-04/stock-toc-held-four-seconds/screen.png",
+        "evidence/2026-10-04/stock-toc-wrong-target/screen.png"
+      ],
+      "investigation_followup": "Detailed source-backed sequences did not establish an exact 100-chapter jump in v5.1.6; activation contract remains unresolved. See docs/MACHINE_IMPROVEMENTS.md."
     },
     {
       "id": "auto-turn",

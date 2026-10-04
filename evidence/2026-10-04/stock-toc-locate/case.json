@@ -1,0 +1,53 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "TOC Locate permits a precise chapter target",
+  "expected": "Locate exposes a numeric target dialog",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Right",
+      "start": 390,
+      "end": 410
+    },
+    {
+      "button": "Confirm",
+      "start": 430,
+      "end": 450
+    },
+    {
+      "button": "Confirm",
+      "start": 530,
+      "end": 550
+    }
+  ],
+  "stop": 650,
+  "id": "stock-toc-locate",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "gamma",
+  "clock_substitution": true
+}

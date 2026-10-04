@@ -1,0 +1,17 @@
+{
+  "source_run": "tcp-edge-patched",
+  "files_sha256": {
+    "command.json": "b4b5aa3138f960e2ff67a8abef1cfb2709221374e8af9e33c67bb85037dbf564",
+    "input.json": "d0cdcf63e7f43f061c7947920a7b9c9922cf0f45f5b9aeeb8031773a944c4cfc",
+    "status.json": "d58f0973c2d7e9540f124ad03943f9cdc987dc5d5be2db6449eb009785bf25f0",
+    "uart.log": "a9689c5fad3e65c4ea3263afbb2e86cde404db4dff875e168d979a69333fa49e"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

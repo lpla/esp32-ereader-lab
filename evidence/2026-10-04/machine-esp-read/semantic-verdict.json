@@ -1,0 +1,7 @@
+{
+  "verdict": "pass",
+  "method": "screen inspection",
+  "expected": "Chapter001; then Chapter002 and Home for turn-exit",
+  "screen_sha256": "68195485098e0458a662c3ca5dcbf308a21ac2a53a226505b3fc794efa640d1e",
+  "physical_output_validated": false
+}

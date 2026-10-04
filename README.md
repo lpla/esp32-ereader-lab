@@ -2,7 +2,7 @@
 
 Automate stock e-reader firmware in Espressif QEMU or `esp-emulator`, inject inputs through GDB, and capture screens for feature comparison with open firmware such as CrossPoint.
 
-This is a research harness. It currently targets the **pinned Xteink X4 stock v5.1.6 application** on ESP32-C3. The application bytes remain unchanged; hardware responses are substituted at version-specific HAL boundaries. The X4 application runs in a constructed flash layout using a public X3 bootloader/data image. It is not an original X4 full dump.
+This is a research harness. It currently targets the **pinned Xteink X4 stock v5.1.6 application** on ESP32-C3. On-disk application bytes remain unchanged; hardware responses are substituted at version-specific boundaries. The optional QEMU fast-input adapter also records its runtime entry-point patches. The X4 application runs in a constructed flash layout using a public X3 bootloader/data image. It is not an original X4 full dump.
 
 The [source-driven audit](docs/SOURCE_FEATURES.md) also includes public X4 Pro
 stock/Licorice images with recorded bring-up blockers. Independent C3 guest
@@ -16,11 +16,12 @@ probes exercise allocator fragmentation and an actual CrossPoint networking PR.
 | Settings screen | Verified | Verified |
 | Partial display update composition | Verified | Verified |
 | Change displayed language | Observed; persistence unverified | Not validated |
-| SD-backed EPUB reading and page turn | Verified via sector adapter | Not validated |
+| Stock SD-backed EPUB reading and page turn | Verified via sector adapter | First-page render observed; full case incomplete |
 | EPUB chapter/menu/bookmark/reopen probes | Verified with diagnostic reader-clock offset | Not validated |
-| Guest C3 allocator fragmentation/recovery control | No result from bounded probe | Verified in independent IDF/Arduino probe |
+| Guest C3 allocator fragmentation/recovery control | Verified with UART transport observer | Verified in independent IDF/Arduino probe |
 | Guest Wi-Fi/DHCP/HTTP, isolated PR #3612 TCP DF A/B | Wi-Fi unsupported by documented model | Verified; full CrossPoint integration/carrier behavior untested |
 | X4 Pro stock/Licorice usable reader | Not attempted | Blocked during bring-up |
+| Full CrossPoint C3 cold EPUB / page turn / exit | Verified guest workflow | Verified guest workflow |
 | Physical display/power/timing accuracy | Not validated | Not validated |
 
 Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [executed EPUB comparison](docs/EPUB_COMPARISON.md).
@@ -75,12 +76,17 @@ stock/Licorice images, whose current machine bring-up failures are recorded.
 For hardware-related PR experiments, the newer emulator runs the real guest C3
 allocator and Wi-Fi/lwIP stack. An isolated A/B of CrossPoint PR #3612 passed TCP
 DF/checksum/UDP/reconnect checks. See [executed results and limits](docs/HARDWARE_PR_TESTING.md).
-SD-font memory PRs still require whole-CrossPoint machine/SD integration; the
-allocator control is not a claim that those PRs passed.
+Both engines now execute full CrossPoint C3 cold EPUB layout, page turning and
+reader exit with real guest allocator diagnostics and matching logical SD counts.
+See [machine improvements and expanded PR evidence](docs/MACHINE_IMPROVEMENTS.md).
+SD-font PRs still need exact-base/candidate font workloads; this control is not a
+claim that those candidates passed.
 
-Use **QEMU** to obtain practical SD/EPUB access and compare reading features. A storage transport adapter is acceptable for this phase: keep the firmware's filesystem, EPUB parser and rendering logic executing, and label the replaced hardware boundary. Complete board emulation and CrossPoint performance measurements come later.
+Use **QEMU** to obtain practical SD/EPUB access and compare reading features. A storage transport adapter is acceptable for this phase: keep the firmware's filesystem, EPUB parser and rendering logic executing, and label the replaced hardware boundary. The full CrossPoint machine runner is now available; physical timing and complete
+board emulation remain separate work.
 
-CrossInk comparison is outside the current scope. The [comparison matrix](docs/EPUB_COMPARISON.md) records results for stock v5.1.6 and pinned CrossPoint source, using the same EPUB fixtures. The [native compatibility patch and runner](compat/README.md) make the CrossPoint side reproducible. No full-firmware or physical-device equivalence is claimed.
+CrossInk comparison is outside the current scope. The [comparison matrix](docs/EPUB_COMPARISON.md) records results for stock v5.1.6 and pinned CrossPoint source, using the same EPUB fixtures. The [native compatibility patch and runner](compat/README.md) make the CrossPoint side reproducible. The native feature comparison and full C3 machine workloads have distinct evidence.
+No physical-device equivalence is claimed.
 
 ## Contributing
 

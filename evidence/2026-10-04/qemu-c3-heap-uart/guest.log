@@ -1,0 +1,7 @@
+LAB_START {"idf":"v5.5.5","chip":"ESP32-C3","wifi_driver_substituted":false}
+LAB_HEAP {"phase":"baseline","cycle":-1,"free":263448,"largest":122868,"minimum":256892,"integrity":true}
+LAB_ALLOCATED 118
+LAB_HEAP {"phase":"allocated","cycle":-1,"free":5312,"largest":1268,"minimum":3996,"integrity":true}
+LAB_HEAP {"phase":"holes","cycle":-1,"free":134316,"largest":2292,"minimum":3876,"integrity":true}
+LAB_LARGE {"requested":3316,"free_before":134316,"success":false}
+LAB_HEAP {"phase":"released","cycle":-1,"free":263448,"largest":122868,"minimum":3876,"integrity":true}

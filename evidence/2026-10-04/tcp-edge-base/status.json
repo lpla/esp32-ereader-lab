@@ -1,0 +1,264 @@
+{
+  "engine": "esp-emu",
+  "exit": 0,
+  "timeout": false,
+  "done": true,
+  "image_sha256": "ae49d74d9b1f6f471f0dc0a5aca3671d99917e0044d977dc8428e32d585376ac",
+  "image_unchanged": true,
+  "http_requests": 3,
+  "records": [
+    {
+      "kind": "LAB_START",
+      "idf": "v5.5.5",
+      "chip": "ESP32-C3",
+      "wifi_driver_substituted": false
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "baseline",
+      "cycle": -1,
+      "free": 263176,
+      "largest": 122868,
+      "minimum": 256620,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "allocated",
+      "cycle": -1,
+      "free": 5040,
+      "largest": 1268,
+      "minimum": 3724,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "holes",
+      "cycle": -1,
+      "free": 134044,
+      "largest": 2292,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_LARGE",
+      "requested": 3316,
+      "free_before": 134044,
+      "success": false
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "released",
+      "cycle": -1,
+      "free": 263176,
+      "largest": 122868,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "before_wifi",
+      "cycle": 0,
+      "free": 263176,
+      "largest": 122868,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_WIFI",
+      "cycle": 0,
+      "connected": true,
+      "status": 3,
+      "ip": "192.168.4.2"
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_active",
+      "cycle": 0,
+      "free": 206640,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_TCP",
+      "cycle": 0,
+      "connected": true,
+      "http_200": true
+    },
+    {
+      "kind": "LAB_PACKETS",
+      "cycle": 0,
+      "tcp": 6,
+      "tcp_df": 0,
+      "udp": 1,
+      "udp_df": 0,
+      "bad_ip_checksums": 0
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_off",
+      "cycle": 0,
+      "free": 242600,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "before_wifi",
+      "cycle": 1,
+      "free": 242600,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_WIFI",
+      "cycle": 1,
+      "connected": true,
+      "status": 3,
+      "ip": "192.168.4.2"
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_active",
+      "cycle": 1,
+      "free": 206220,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_TCP",
+      "cycle": 1,
+      "connected": true,
+      "http_200": true
+    },
+    {
+      "kind": "LAB_PACKETS",
+      "cycle": 1,
+      "tcp": 6,
+      "tcp_df": 0,
+      "udp": 1,
+      "udp_df": 0,
+      "bad_ip_checksums": 0
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_off",
+      "cycle": 1,
+      "free": 242556,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "before_wifi",
+      "cycle": 2,
+      "free": 242556,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_WIFI",
+      "cycle": 2,
+      "connected": true,
+      "status": 3,
+      "ip": "192.168.4.2"
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_active",
+      "cycle": 2,
+      "free": 206200,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    },
+    {
+      "kind": "LAB_TCP",
+      "cycle": 2,
+      "connected": true,
+      "http_200": true
+    },
+    {
+      "kind": "LAB_PACKETS",
+      "cycle": 2,
+      "tcp": 6,
+      "tcp_df": 0,
+      "udp": 1,
+      "udp_df": 0,
+      "bad_ip_checksums": 0
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "whole_tcp",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "unaligned_tcp",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "tcp_options",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "already_df",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "more_fragments",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "fragment_offset",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "udp",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "ipv6_tag",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "short_header",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "truncated",
+      "pass": true
+    },
+    {
+      "kind": "LAB_EDGE",
+      "name": "split_header",
+      "pass": true
+    },
+    {
+      "kind": "LAB_HEAP",
+      "phase": "wifi_off",
+      "cycle": 2,
+      "free": 242512,
+      "largest": 114676,
+      "minimum": 3604,
+      "integrity": true
+    }
+  ],
+  "gdb_hardware_substitutions": false,
+  "physical_radio_validated": false,
+  "physical_performance_validated": false
+}

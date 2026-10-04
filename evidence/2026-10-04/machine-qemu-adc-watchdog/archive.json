@@ -1,0 +1,23 @@
+{
+  "source_run": "crosspoint-panic2-qemu",
+  "files_sha256": {
+    "command.json": "b06f93db3f16aa41c65f1e73ffcf0f068925a667d03118e5549b9fc8469d9bfb",
+    "display-writes.json": "f6362e11f7675e1f5ad854dc118ed80b379fdee43ab6381eeb73ed0c84ff7cd3",
+    "gdb.log": "51153f5ea011cbf6acea576b104c36e19b3c6a3e48522c77b9a06913b26483c0",
+    "guest.log": "8734771fcbef34f7c1981257c8f2cd94dc981d534a25135e919c597020d5ad33",
+    "input.json": "a65744dd7c73cda9ea144723d48fe6ea0068dff7075bdb1a3a93615e65adc0bf",
+    "panic.json": "e63ffbaae317be43e2b4a2242d4de4bc986e6cd36076a40cf289bbc0fc798b61",
+    "probe.gdb": "2efb57cca25219f2ccb45bbc65201d88ad4908000c1639f4379a1e4b05aa6f1b",
+    "sd-events.json": "07cf5d2cae870a3b990bf1e1da916524ff3e80bf626818613c1bc7615b3c345e",
+    "status.json": "d6111d8ed30bc12785c4c94453a2a9435d14ea93966a373773ecdcc96fd0f36b",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

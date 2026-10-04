@@ -1,0 +1,94 @@
+{
+  "source": "x4-manual-reading",
+  "claim": "Chapter multiplier can move by 100 chapters",
+  "expected": "Exit chapter menu after Down\u00d7100 shows GAMMA CHAPTER101 TARGET",
+  "actions": [
+    {
+      "button": "Right",
+      "start": 50,
+      "end": 70
+    },
+    {
+      "button": "Confirm",
+      "start": 90,
+      "end": 110
+    },
+    {
+      "button": "Confirm",
+      "start": 130,
+      "end": 150
+    },
+    {
+      "button": "Confirm",
+      "start": 250,
+      "end": 270
+    },
+    {
+      "button": "Right",
+      "start": 350,
+      "end": 370
+    },
+    {
+      "button": "Right",
+      "start": 390,
+      "end": 410
+    },
+    {
+      "button": "Confirm",
+      "start": 430,
+      "end": 450
+    },
+    {
+      "button": "Right",
+      "start": 530,
+      "end": 550
+    },
+    {
+      "button": "Right",
+      "start": 570,
+      "end": 590
+    },
+    {
+      "button": "Right",
+      "start": 610,
+      "end": 630
+    },
+    {
+      "button": "Confirm",
+      "start": 650,
+      "end": 670
+    },
+    {
+      "button": "Left",
+      "start": 690,
+      "end": 710
+    },
+    {
+      "button": "Confirm",
+      "start": 730,
+      "end": 750
+    },
+    {
+      "button": "Left",
+      "start": 810,
+      "end": 830
+    },
+    {
+      "button": "Confirm",
+      "start": 850,
+      "end": 870
+    },
+    {
+      "button": "Back",
+      "start": 970,
+      "end": 990
+    }
+  ],
+  "stop": 1100,
+  "id": "stock-toc-down100-exit",
+  "model": "X4",
+  "firmware": "v5.1.6",
+  "fixture": "gamma",
+  "clock_substitution": true,
+  "input_semantics_status": "hypothesis; expected target requires semantic verification"
+}

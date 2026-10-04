@@ -1,0 +1,71 @@
+[268] [DBG] [UI] Using Lyra theme
+[570] [INF] [HW] Xteink probe scores: pass1=0 pass2=0 verdict=0
+[571] [XTDET] NVS hw_calib/screenType: not set
+[646] [XTDET] bus probe VER=FF FF FF FF FF FLG=FF -> default controller
+[646] [ERR] [GYR] SDK IMU not found
+[646] [INF] [CLK] RTC not found
+[646] [INF] [MAIN] Hardware detect: X4
+[647] [SD] SD card detected
+[651] [DBG] [UI] Using Lyra theme
+[652] [DBG] [MAIN] Starting CrossPoint version 1.6.5-dev-detached-223c20b48
+[694] [DBG] [MAIN] Display initialized
+[695] [DBG] [SDREG] Fonts directory not found: /.fonts
+[695] [DBG] [SDREG] Fonts directory not found: /fonts
+[695] [DBG] [SDREG] Discovery complete: 0 families
+[695] [DBG] [SDFS] SD font system ready (0 families discovered)
+[695] [DBG] [MAIN] Fonts setup
+[695] [DBG] [ACT] Entering activity: Boot
+[701] [DBG] [GFX] Time = 6 ms from clearScreen to displayBuffer
+[709] [DBG] [ACT] Exiting activity: Boot
+[710] [DBG] [ACT] Entering activity: EpubReader
+[710] [INF] [MEM] reader enter: free=158408 max_block=114676
+[711] [DBG] [GFX] Time = 16 ms from clearScreen to displayBuffer
+[714] [DBG] [EBP] Loading ePub: /gamma.epub
+[714] [INF] [CPRO] open: free=158172 max_block=114676
+[723] [BMC] Failed to open file for reading: /.crosspoint/epub_1756244624/book.bin
+[723] [DBG] [EBP] Cache not found, building spine/TOC cache
+[725] [DBG] [BMC] Entering write mode
+[725] [DBG] [BMC] Beginning content opf pass
+[729] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[729] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[755] [DBG] [COF] Using fast index for 121 manifest items
+[765] [DBG] [ZIP] Decompressed 1282 bytes into 11423 bytes
+[765] [DBG] [EBP] Successfully parsed content.opf
+[776] [DBG] [EBP] OPF pass completed in 51 ms
+[776] [DBG] [BMC] Beginning toc pass
+[778] [DBG] [EBP] Falling back to NCX TOC
+[778] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[1038] [DBG] [ZIP] Decompressed 1530 bytes into 14304 bytes
+[1038] [DBG] [EBP] Parsed TOC items
+[1039] [DBG] [EBP] TOC pass completed in 263 ms
+[1039] [DBG] [BMC] Wrote 120 spine, 120 TOC entries
+[1068] [DBG] [BMC] Successfully built book.bin
+[1068] [DBG] [EBP] buildBookBin completed in 29 ms
+[1069] [DBG] [EBP] Total indexing completed in 344 ms
+[1075] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[1075] [DBG] [EBP] CSS files to parse: 0
+[1081] [DBG] [CSS] Saved 0 rules to complete cache
+[1081] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[1086] [DBG] [BMC] Loaded cache data: 120 spine, 120 TOC entries
+[1086] [DBG] [EBP] Loaded ePub: /gamma.epub
+[1088] [ERS] Failed to open file for reading: /.crosspoint/epub_1756244624/progress.bin
+[1088] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[1089] [DBG] [LOOP] New max loop duration: 380 ms (activity: 380 ms)
+[1089] [DBG] [ERS] Loading file: OEBPS/c001.xhtml, index: 0
+[1090] [SCT] Failed to open file for reading: /.crosspoint/epub_1756244624/sections/0.bin
+[1090] [DBG] [ERS] Cache not found, building...
+[1091] [DBG] [ERS] Heap before section build: 154096 (max block 114676)
+[1099] [DBG] [ZIP] Decompressed 137 bytes into 175 bytes
+[1099] [INF] [MEM] Free: 153564 bytes, Total: 264700 bytes, Min Free: 136148 bytes, MaxAlloc: 114676 bytes
+[1100] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_1756244624/html/.tmp_0.html (175 bytes)
+[1105] [DBG] [CSS] Loaded 0 rules from complete cache
+[1108] [DBG] [EHP] Time to parse and build pages: 2 ms
+[1109] [DBG] [SCT] Page 0 processed
+[1127] [DBG] [FDC] Prewarm: 9 glyphs in 747 bytes from 1 groups (0 missed)
+[1138] [DBG] [FDC] Prewarm: 12 glyphs in 1097 bytes from 1 groups (0 missed)
+[1142] [DBG] [GFX] Time = 29 ms from clearScreen to displayBuffer
+[1149] [INF] [MEM] Free: 101968 bytes, Total: 264700 bytes, Min Free: 86992 bytes, MaxAlloc: 65524 bytes
+[1164] [DBG] [ERS] Page render (tiled async): prewarm=24ms bw_render=4ms display=3ms gray_render=5ms wait=0ms gray_write=6ms gray_display=7ms cleanup=1ms total=50ms (planes buffered: 1)
+[1165] [DBG] [ERS] Rendered page in 51ms
+[1169] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[1169] [INF] [MEM] Free: 153792 bytes, Total: 264700 bytes, Min Free: 86992 bytes, MaxAlloc: 114676 bytes

@@ -1,0 +1,8 @@
+{
+  "model_flash_bytes": 16777216,
+  "software_flash_bytes": 4194304,
+  "original_4m_prefix_preserved": true,
+  "transport": "HardwareSerial::write",
+  "allocator_substituted": false,
+  "network_not_executed": true
+}

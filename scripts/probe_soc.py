@@ -49,7 +49,7 @@ def main():
     lines=(d/'uart.log').read_text(errors='replace').splitlines()
     records=[]
     for line in lines:
-        for label in ('LAB_START','LAB_HEAP','LAB_WIFI','LAB_TCP','LAB_LARGE','LAB_PACKETS'):
+        for label in ('LAB_START','LAB_HEAP','LAB_WIFI','LAB_TCP','LAB_LARGE','LAB_PACKETS','LAB_EDGE'):
             at=line.find(label+' ')
             if at>=0:
                 try:records.append(dict(kind=label,**json.loads(line[at+len(label)+1:])))

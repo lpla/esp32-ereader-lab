@@ -1,5 +1,7 @@
 # Executed EPUB comparison — 2026-10-04
 
+> Follow-up: [full CrossPoint machine workflows, TOC investigation and expanded PR tests](MACHINE_IMPROVEMENTS.md). The initial status below is historical.
+
 ## Result and scope
 
 The follow-up [source-driven audit](SOURCE_FEATURES.md) adds manual-backed

@@ -1,0 +1,6373 @@
+[
+  {
+    "operation": "begin",
+    "caller": "0x42061d5a",
+    "object": "0x3fca233c",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 0,
+    "count": 1,
+    "pointer": "0x3fca20d0",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2048,
+    "count": 1,
+    "pointer": "0x3fca20d0",
+    "prefix": "eb58906d6b66732e66617400020120000200000000f800002000080000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 0,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2048,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "eb58906d6b66732e66617400020120000200000000f800002000080000000000",
+    "result": 1
+  },
+  {
+    "operation": "begin",
+    "caller": "0x42061d5a",
+    "object": "0x3fca233c",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 0,
+    "count": 1,
+    "pointer": "0x3fca20d0",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2048,
+    "count": 1,
+    "pointer": "0x3fca20d0",
+    "prefix": "eb58906d6b66732e66617400020120000200000000f800002000080000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 0,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2048,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "eb58906d6b66732e66617400020120000200000000f800002000080000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "begin",
+    "caller": "0x42061d5a",
+    "object": "0x3fca233c",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 0,
+    "count": 1,
+    "pointer": "0x3fca20d0",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2048,
+    "count": 1,
+    "pointer": "0x3fca20d0",
+    "prefix": "eb58906d6b66732e66617400020120000200000000f800002000080000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 0,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2048,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "eb58906d6b66732e66617400020120000200000000f800002000080000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c450000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c450000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c450000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c460000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c460000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c450000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c460000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4165,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c450000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4166,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c460000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c470000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4168,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c470000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4167,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4149,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "332e7868746d6c504b010214031400000008000000215c6845b25b89000000af",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4150,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0008000000215c03808f7889000000af000000100000000000000000000000a4",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4149,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "332e7868746d6c504b010214031400000008000000215c6845b25b89000000af",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4150,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0008000000215c03808f7889000000af000000100000000000000000000000a4",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4151,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000100000000000000000000000a401f61900004f454250532f633032302e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4150,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0008000000215c03808f7889000000af000000100000000000000000000000a4",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4151,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000100000000000000000000000a401f61900004f454250532f633032302e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4152,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "01b21f00004f454250532f633032382e7868746d6c504b010214031400000008",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4151,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000100000000000000000000000a401f61900004f454250532f633032302e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4152,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "01b21f00004f454250532f633032382e7868746d6c504b010214031400000008",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4153,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "7868746d6c504b010214031400000008000000215cebd5cf878a000000af0000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4154,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000215c6d6973668a000000af000000100000000000000000000000a401e1",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4153,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "7868746d6c504b010214031400000008000000215cebd5cf878a000000af0000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4154,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000215c6d6973668a000000af000000100000000000000000000000a401e1",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4155,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "00100000000000000000000000a401a03100004f454250532f633035332e7868",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4154,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000215c6d6973668a000000af000000100000000000000000000000a401e1",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4155,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "00100000000000000000000000a401a03100004f454250532f633035332e7868",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4156,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "3700004f454250532f633036312e7868746d6c504b0102140314000000080000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4155,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "00100000000000000000000000a401a03100004f454250532f633035332e7868",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4156,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "3700004f454250532f633036312e7868746d6c504b0102140314000000080000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4157,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "746d6c504b010214031400000008000000215c511c62828a000000af00000010",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4158,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "00215c3a6cdc6b8a000000af000000100000000000000000000000a401924300",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4157,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "746d6c504b010214031400000008000000215c511c62828a000000af00000010",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4158,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "00215c3a6cdc6b8a000000af000000100000000000000000000000a401924300",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4159,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000a401504900004f454250532f633038362e7868746d",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4158,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "00215c3a6cdc6b8a000000af000000100000000000000000000000a401924300",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4159,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000a401504900004f454250532f633038362e7868746d",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4160,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "004f454250532f633039342e7868746d6c504b01021403140000000800000021",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4159,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000a401504900004f454250532f633038362e7868746d",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4160,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "004f454250532f633039342e7868746d6c504b01021403140000000800000021",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4161,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "6c504b010214031400000008000000215c6f48feb289000000af000000100000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4161,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "6c504b010214031400000008000000215c6f48feb289000000af000000100000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c490000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c490000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c490000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4a0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4171,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4a0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4171,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4171,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c490000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4a0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4171,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4b0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4169,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c490000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4170,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4a0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4171,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4b0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4171,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0000000000000000000000000000000000000000000000000000000000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205f254",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4099,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "504b03041400000000000000215c6f61ab2c1400000014000000080000006d69",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4099,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "504b03041400000000000000215c6f61ab2c1400000014000000080000006d69",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x4205e484",
+    "sector": 4100,
+    "count": 1,
+    "pointer": "0x3fcb2c62",
+    "prefix": "c343b7683e2f7abf7c75eadae1705afef5e3bb7793ee6e7cb81eefd8b60fe70b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4101,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "c466556c01b145155b406c51c516105b54b105c416556c01b145155b406c51c5",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4174,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4102,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "70c3b770c3f770c33771c35bde3aa2f096370e29374e29378e2937ce29370e2a",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x4205e484",
+    "sector": 4103,
+    "count": 1,
+    "pointer": "0x3fcb2d35",
+    "prefix": "1432a0901185cc3364ca21030e1971c83c44a6243220911189cc5364ca220316",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4104,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "910a11a978918a12a900910abac6365c6453221520522122152f525122152052",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4174,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0affff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4174,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4175,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4176,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4104,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "910a11a978918a12a900910abac6365c6453221520522122152f525122152052",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4105,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "d0731bebb9c7a05b15dd068a6e6345f79874aba6db40d36dace91ea36e55751b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4176,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "302e7868746d6c0a34312c43686170746572203034312c633034312e7868746d",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4176,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4177,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4178,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4179,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4180,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4099,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "504b03041400000000000000215c6f61ab2c1400000014000000080000006d69",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x4205e484",
+    "sector": 4100,
+    "count": 1,
+    "pointer": "0x3fcb2c62",
+    "prefix": "c343b7683e2f7abf7c75eadae1705afef5e3bb7793ee6e7cb81eefd8b60fe70b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4101,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "c466556c01b145155b406c51c516105b54b105c416556c01b145155b406c51c5",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4182,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4182,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "656eff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4099,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "504b03041400000000000000215c6f61ab2c1400000014000000080000006d69",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4183,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4184,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4099,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "504b03041400000000000000215c6f61ab2c1400000014000000080000006d69",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x4205e484",
+    "sector": 4100,
+    "count": 1,
+    "pointer": "0x3fcb2c62",
+    "prefix": "c343b7683e2f7abf7c75eadae1705afef5e3bb7793ee6e7cb81eefd8b60fe70b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4101,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "c466556c01b145155b406c51c516105b54b105c416556c01b145155b406c51c5",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4184,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0affff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4184,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4185,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4186,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4187,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4101,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "c466556c01b145155b406c51c516105b54b105c416556c01b145155b406c51c5",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4102,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "70c3b770c3f770c33771c35bde3aa2f096370e29374e29378e2937ce29370e2a",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4187,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "68746d6c0a633130342c633130342e7868746d6c0a633130352c633130352e78",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4187,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4183,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0affff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4183,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4188,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "310a43686170746572203030310a633030312e7868746d6c0700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4184,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0a63312c633030312e7868746d6c0a63322c633030322e7868746d6c0a63332c",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4183,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0a312c63310a322c63320a332c63330a342c63340a352c63350a362c63360a37",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "310a43686170746572203030310a633030312e7868746d6c0700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4099,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "504b03041400000000000000215c6f61ab2c1400000014000000080000006d69",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x4205e484",
+    "sector": 4100,
+    "count": 1,
+    "pointer": "0x3fcb2c62",
+    "prefix": "c343b7683e2f7abf7c75eadae1705afef5e3bb7793ee6e7cb81eefd8b60fe70b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4101,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "c466556c01b145155b406c51c516105b54b105c416556c01b145155b406c51c5",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4102,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "70c3b770c3f770c33771c35bde3aa2f096370e29374e29378e2937ce29370e2a",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "310a43686170746572203030310a633030312e7868746d6c0a31000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4162,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "5c1136a40888000000af000000100000000000000000000000a401355b00004f",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4163,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "000000000000000000a401ec6000004f454250532f633131392e7868746d6c50",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4148,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f6c56d35e5aca28d441b73988b6dafa98dd1df00524a2c5d990b2fe04208384e",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4105,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "d0731bebb9c7a05b15dd068a6e6345f79874aba6db40d36dace91ea36e55751b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4182,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "656eff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f5a",
+    "sector": 3089,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4189,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4183,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0a312c63310a322c63320a332c63330a342c63340a352c63350a362c63360a37",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4188,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "37360a37372c6337370a37382c6337380a37392c6337390a38302c6338300a38",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "310a43686170746572203030310a633030312e7868746d6c0a31000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4105,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "d0731bebb9c7a05b15dd068a6e6345f79874aba6db40d36dace91ea36e55751b",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4189,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "3030303030303031f8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4189,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4189,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "3030303030303031303030303031373505000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4189,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "caller": "0x42061f24",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "310a43686170746572203030310a633030312e7868746d6c0a31000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4174,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0a312c43686170746572203030312c633030312e7868746d6c0a322c43686170",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4175,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "32312c43686170746572203032312c633032312e7868746d6c0a32322c436861",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4176,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "302e7868746d6c0a34312c43686170746572203034312c633034312e7868746d",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4177,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "203036302c633036302e7868746d6c0a36312c43686170746572203036312c63",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4178,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2c43686170746572203038302c633038302e7868746d6c0a38312c4368617074",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4179,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "7868746d6c0a3130302c43686170746572203130302c633130302e7868746d6c",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 2080,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "f8ffff0fffffff0ff8ffff0f0400000005000000060000000700000008000000",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4180,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e7868746d6c0a3131392c43686170746572203131392c633131392e7868746d",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4174,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0a312c43686170746572203030312c633030312e7868746d6c0a322c43686170",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4181,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "310a43686170746572203030310a633030312e7868746d6c0a31000008000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4098,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "455245414445524c4142200800005a4b6e466e4600005a4b6e46000000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4164,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201000000000215c215c00000000215c440000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4172,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4c0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4173,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "2e202020202020202020201008000000215c215c00000000215c4d0000000000",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "caller": "0x42061fae",
+    "sector": 4174,
+    "count": 1,
+    "pointer": "0x3fca20f8",
+    "prefix": "0a312c43686170746572203030312c633030312e7868746d6c0a322c43686170",
+    "result": 1
+  },
+  {
+    "operation": "sync",
+    "caller": "0x4205ec08",
+    "result": 1
+  }
+]

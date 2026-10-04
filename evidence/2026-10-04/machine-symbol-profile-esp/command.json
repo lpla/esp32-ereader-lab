@@ -1,0 +1,16 @@
+[
+  "/work/tools/esp-emu-0.45.0-x86_64-unknown-linux-gnu/esp-emu",
+  "--chip",
+  "esp32c3",
+  "--firmware",
+  "firmware/crosspoint-machine.bin",
+  "--gdb",
+  "1234",
+  "--timeout",
+  "130s",
+  "--net",
+  "user,restrict=yes",
+  "--log-color",
+  "never",
+  "--gdb-halt"
+]

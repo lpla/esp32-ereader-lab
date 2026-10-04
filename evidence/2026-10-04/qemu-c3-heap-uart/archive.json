@@ -1,0 +1,20 @@
+{
+  "source_run": "qemu-c3-heap-uart",
+  "files_sha256": {
+    "command.json": "0f85848176803b5f39e75cd8ab9c95ff070d8090f6df12660de5eb90960f74f7",
+    "gdb.log": "ec13f7bae1bd3313d27bf2fa3bb58bced46b6839c161664d18f5dc470293be09",
+    "guest.log": "ed57567df7fbf0b1545d9e43ac6918fc3ad65323a295f76d22b74067faf78ae9",
+    "input.json": "5dc7bbf3b11087ee4f56a1109eddf470317f8b86fceabd83e91460aa3774e9a4",
+    "probe.gdb": "f92465e4ad79a854cab62b9ba145ecb71b21afd48a6dec6194423d8424070a35",
+    "status.json": "147e9dc481e4463d66e2b4405f68b894307cb5fb9d6927b33f7f162397bd4494",
+    "uart.log": "3d2c3332eb49c784884c8ea3232e9f219cc111d36a46d8105972f8f84adce26f"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

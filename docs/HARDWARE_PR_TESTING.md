@@ -1,5 +1,7 @@
 # Guest heap and networking PR experiments — 2026-10-04
 
+> Follow-up: [full CrossPoint machine workflows, TOC investigation and expanded PR tests](MACHINE_IMPROVEMENTS.md). The initial status below is historical.
+
 **esp-emulator v0.45.0 is useful for controlled guest allocator and network-stack
 tests. An actual CrossPoint networking PR module passed a baseline/candidate
 experiment. Full CrossPoint SD-font workloads, physical radio behavior and

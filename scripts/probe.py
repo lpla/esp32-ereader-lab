@@ -19,6 +19,7 @@ def main():
     parser.add_argument('image')
     parser.add_argument('name')
     parser.add_argument('--break-at')
+    parser.add_argument('--elf', type=Path, help='Load an ELF before connecting; use --strip-debug output with Ubuntu GDB 15')
     parser.add_argument('--card', type=Path)
     parser.add_argument('--commands', default='')
     parser.add_argument('--pre-commands', default='')
@@ -52,8 +53,10 @@ def main():
             # Connecting and disconnecting a readiness socket resumes ESP-EMU.
             # Let GDB own the first connection so reset-state injection is valid.
             time.sleep(0.3 if args.break_at or args.pre_commands or args.pre_file else args.seconds)
-            commands = ['set pagination off', 'set confirm off',
-                        'set architecture riscv:rv32', 'target remote :1234']
+            commands = ['set pagination off', 'set confirm off', 'set architecture riscv:rv32']
+            if args.elf:
+                commands += [f'file {args.elf}']
+            commands += ['target remote :1234']
             commands += [c for c in args.pre_commands.split(';') if c]
             if args.pre_file:
                 commands += args.pre_file.read_text().splitlines()

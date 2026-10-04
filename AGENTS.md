@@ -10,9 +10,9 @@
   substitutions and semantic verdicts. A timeout or clean process exit alone
   never establishes a feature pass. Keep incomplete/blocked results visible.
 - QEMU is the validated X4 SD/EPUB path. esp-emulator v0.45.0 is the validated
-  isolated C3 heap/network path. X4 Pro reading and full CrossPoint machine/SD
-  integration are currently blocked/unimplemented; read their reports before
-  claiming either works.
+  isolated C3 heap/network path. Full CrossPoint C3 machine/SD reading, page turn and exit now run in both
+  engines; see docs/MACHINE_IMPROVEMENTS.md. Exact SD-font PR A/B and X4 Pro
+  reading remain unvalidated. Guest-resident stock inputs work only in QEMU.
 - The native CrossPoint simulator uses host memory/timing. To test embedded
   allocator/network behavior, execute guest code and preserve the component
   under test. Cite exact PR head/base and distinguish module tests from full

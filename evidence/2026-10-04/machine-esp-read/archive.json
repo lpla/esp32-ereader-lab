@@ -1,0 +1,32 @@
+{
+  "source_run": "machine-adc-gamma-esp",
+  "files_sha256": {
+    "build-provenance.json": "4f621ace1961c90ea9a37ed86f214650209f546e7b20b1a08bcec5ae366fa247",
+    "checkpoint.json": "28eb7c4aa0a681a878f2f8e70a56d2345dac2ad1c2bfae4c67f553e788f46d66",
+    "command.json": "538d90e8a3284d489dfdde661e14f111b41f8a5b60295073d1824f4ef6567fa8",
+    "display-writes.json": "0bbf9dfcc014e210d32b36f1f04f8890d3ec07d65b16b96a0a43b2e9085fe01f",
+    "gdb.log": "ba7576c89d435411a7de1a08c39c80ae472eb3ec8f97766dabf6e34a2577df58",
+    "guest.log": "538fefa047376cf95edd8746d372dfed007d3cb7f09b0835d4f1fe015d96ce2c",
+    "input.json": "4186383b9720b9198c49faae04832e9c80c4e9ca8495bcc1f01e26ff70347f96",
+    "probe.gdb": "42b012e87dafbad11093d60e21b5f11ce09e6b809bc1d24486ade96c0fad5f42",
+    "runner.log": "6c281b502c5c50f9ad99e0ca295a4a2e122864eaec885c48fd36f1339bf000d7",
+    "screen-000.png": "258ed828d6f52d5a62f29fa413b5d70b0efed39c39c0def6e2038e9fe74ccf74",
+    "screen-001.png": "ab52f981fcdaa77fe0c79ef4479d537477d4bba5d28acab2745799f2cafead3a",
+    "screen-002.png": "68195485098e0458a662c3ca5dcbf308a21ac2a53a226505b3fc794efa640d1e",
+    "screen.png": "68195485098e0458a662c3ca5dcbf308a21ac2a53a226505b3fc794efa640d1e",
+    "sd-events.json": "be03291503883280ab04438f9f0a8c27d0166e80fe999ede9916845be6aa2e53",
+    "semantic-verdict.json": "0ae76639fca0165a73cd85329c668729bc13eefc4317ad2ef5a15d200a5b435f",
+    "state-seed.json": "03eaecc1165ac66404cbbecc876729a97c5e2d8805a1aedd2f6a090d102297ea",
+    "status.json": "d6111d8ed30bc12785c4c94453a2a9435d14ea93966a373773ecdcc96fd0f36b",
+    "uart.log": "026f42057a8bb18b55a5aa9ed70527928d8ec24bc2f7b6a1f7bb67eb33f84bad",
+    "verdict.json": "22db0803e9f9c5a38a32de6aa4721c729ade3e24fd54d1c7de982bf4be2224de"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

@@ -1,0 +1,344 @@
+[
+  {
+    "file": "write-000.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-001.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-002.bin",
+    "x": 392,
+    "y": 0,
+    "width": 144,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-003.bin",
+    "x": 392,
+    "y": 0,
+    "width": 144,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-004.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-005.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-006.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-007.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-008.bin",
+    "x": 24,
+    "y": 111,
+    "width": 40,
+    "height": 258,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-009.bin",
+    "x": 24,
+    "y": 111,
+    "width": 40,
+    "height": 258,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-010.bin",
+    "x": 72,
+    "y": 60,
+    "width": 40,
+    "height": 361,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-011.bin",
+    "x": 72,
+    "y": 60,
+    "width": 40,
+    "height": 361,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-012.bin",
+    "x": 120,
+    "y": 44,
+    "width": 80,
+    "height": 393,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-013.bin",
+    "x": 120,
+    "y": 44,
+    "width": 80,
+    "height": 393,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-014.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-015.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-016.bin",
+    "x": 40,
+    "y": 56,
+    "width": 720,
+    "height": 424,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-017.bin",
+    "x": 40,
+    "y": 56,
+    "width": 720,
+    "height": 424,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-018.bin",
+    "x": 128,
+    "y": 265,
+    "width": 128,
+    "height": 208,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-019.bin",
+    "x": 128,
+    "y": 265,
+    "width": 128,
+    "height": 208,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-020.bin",
+    "x": 192,
+    "y": 265,
+    "width": 128,
+    "height": 208,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-021.bin",
+    "x": 192,
+    "y": 265,
+    "width": 128,
+    "height": 208,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-022.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-023.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-024.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-025.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-026.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-027.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-028.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-029.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-030.bin",
+    "x": 288,
+    "y": 5,
+    "width": 440,
+    "height": 90,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-031.bin",
+    "x": 288,
+    "y": 5,
+    "width": 440,
+    "height": 90,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-032.bin",
+    "x": 288,
+    "y": 5,
+    "width": 440,
+    "height": 90,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-033.bin",
+    "x": 288,
+    "y": 5,
+    "width": 440,
+    "height": 90,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-034.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-035.bin",
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-036.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  },
+  {
+    "file": "write-037.bin",
+    "x": 664,
+    "y": 0,
+    "width": 136,
+    "height": 480,
+    "invert": false,
+    "mirror_y": false
+  }
+]

@@ -8,7 +8,8 @@ import sys
 from run_lab import ROOT, IMAGE, X4_SHA
 from render_display import render
 
-BUTTONS = {'Back': 3512, 'Confirm': 2694, 'Left': 1493, 'Right': 5}
+BUTTONS = {'Back': (1, 3512), 'Confirm': (1, 2694), 'Left': (1, 1493),
+           'Right': (1, 5), 'Up': (2, 2242), 'Down': (2, 5)}
 
 
 def compile_case(case):
@@ -16,13 +17,15 @@ def compile_case(case):
     previous = 0
     for action in actions:
         if action['button'] not in BUTTONS or not previous <= action['start'] < action['end'] < case['stop']:
-            raise ValueError('Invalid or overlapping front-button schedule')
+            raise ValueError('Invalid or overlapping button schedule')
         previous = action['end']
     template = (ROOT / 'scripts/x4-book-controls.gdb').read_text()
     first = template.index('if $front_reads > 50')
     last = template.index('end\nset {unsigned int}', first)
-    schedule = ''.join(f"if $front_reads > {a['start']} && $front_reads <= {a['end']}\nset $raw_adc = {BUTTONS[a['button']]}\nend\n" for a in actions)
+    schedule = ''.join(f"if $front_reads > {a['start']} && $front_reads <= {a['end']}\nset $raw_adc = {BUTTONS[a['button']][1]}\nend\n" for a in actions if BUTTONS[a['button']][0] == 1)
     template = template[:first] + schedule + template[last:]
+    side = ''.join(f"if $a1 == 2 && $front_reads > {a['start']} && $front_reads <= {a['end']}\nset $raw_adc = {BUTTONS[a['button']][1]}\nend\n" for a in actions if BUTTONS[a['button']][0] == 2)
+    template = template.replace('set {unsigned int} $a2 = $raw_adc', side + 'set {unsigned int} $a2 = $raw_adc')
     return template.replace('if $front_reads < 330', f"if $front_reads < {case['stop']}")
 
 
@@ -31,7 +34,10 @@ def main():
     p.add_argument('case', type=Path)
     p.add_argument('--card', type=Path, required=True)
     p.add_argument('--prefix', required=True)
+    p.add_argument('--fast-inputs', action='store_true', help='RTC board-input transport; excludes performance measurements')
+    p.add_argument('--engine', choices=['qemu', 'esp-emu'], default='qemu')
     a = p.parse_args()
+    if a.fast_inputs and a.engine != 'qemu':p.error('Guest-resident inputs are validated only with QEMU; omit --fast-inputs for esp-emu')
     if not a.prefix.replace('-', '').isalnum():p.error('prefix must contain letters, digits, hyphens')
     case = json.loads(a.case.read_text())
     catalog = json.loads((ROOT / 'cases/catalog.json').read_text())
@@ -46,16 +52,24 @@ def main():
     import shutil
     shutil.copyfile(a.card, d/'card.img')
     (d/'case.json').write_text(json.dumps(case,indent=2)+'\n')
-    (d/'inputs.gdb').write_text(compile_case(case))
+    compiled = compile_case(case)
+    if a.fast_inputs:
+        from fast_inputs import build
+        compiled = build(case, d, BUTTONS)
+    (d/'inputs.gdb').write_text(compiled)
     (d/'input.json').write_text(json.dumps(dict(card_source_sha256=hashlib.sha256(a.card.read_bytes()).hexdigest(),
         firmware_sha256=hashlib.sha256(flash.read_bytes()).hexdigest(),performance_valid=False),indent=2)+'\n')
     hooks = 'source /work/scripts/x4-sd.gdb;source /work/scripts/x4-display-capture.gdb;'
-    if case['clock_substitution']:hooks += 'source /work/scripts/x4-longpress-clock.gdb;'
+    if case['clock_substitution'] and not a.fast_inputs:hooks += 'source /work/scripts/x4-longpress-clock.gdb;'
     cmd = ['docker','run','--rm','--network','none','--cpus','2','--memory','1g','-v',f'{ROOT}:/work',IMAGE,
-           'python3','scripts/probe.py','qemu','firmware/x4-app-x3-layout.bin',a.prefix,
+           'python3','scripts/probe.py',a.engine,'firmware/x4-app-x3-layout.bin',a.prefix,
            '--card',f'/work/results/{a.prefix}/card.img','--pre-file',f'results/{a.prefix}/inputs.gdb',
-           '--pre-commands',hooks,'--break-at','0x420087d0','--commands','print $front_reads',
+           '--pre-commands',hooks,
            '--gdb-seconds','105','--emulator-seconds','125']
+    if a.fast_inputs:
+        cmd += ['--commands', 'continue;x/wx 0x50001bc0']
+    else:
+        cmd += ['--break-at','0x420087d0','--commands','print $front_reads']
     with (d/'runner.log').open('w') as out:completed=subprocess.run(cmd,cwd=ROOT,stdout=out,stderr=subprocess.STDOUT,timeout=120)
     writes=render(d) if (d/'display-writes.json').exists() else 0
     status=json.loads((d/'status.json').read_text()) if (d/'status.json').exists() else {}
