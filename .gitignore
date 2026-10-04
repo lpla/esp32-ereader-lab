@@ -1,0 +1,9 @@
+/tools/
+/firmware/
+/results/
+/cards/
+/downloads/*
+!/downloads/manifest.json
+__pycache__/
+*.pyc
+.DS_Store

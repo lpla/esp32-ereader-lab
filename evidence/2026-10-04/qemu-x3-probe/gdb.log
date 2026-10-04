@@ -1,0 +1,10 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Warning: 'set target-async', an alias for the command 'set mi-async', is deprecated.
+Use 'set mi-async'.
+
+/work/results/qemu-x3-probe/probe.gdb:5: Error in sourced command file:
+Cannot change this setting while the inferior is running.
+[Inferior 1 (process 1) detached]

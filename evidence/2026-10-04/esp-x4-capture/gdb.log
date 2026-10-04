@@ -1,0 +1,9 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420973e0
+Hardware assisted breakpoint 2 at 0x420a1bd4
+Hardware assisted breakpoint 3 at 0x420087d0
+Quit
+[Inferior 1 (Remote target) detached]

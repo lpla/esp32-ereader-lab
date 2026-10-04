@@ -1,0 +1,19 @@
+[
+  {
+    "engine": "esp-emu",
+    "fixture": "x4-app-x3-layout",
+    "scenario": "settings",
+    "command_exit": 0,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    },
+    "driver_image_writes": 8,
+    "directory": "./results/validated-settings-native-esp-emu-x4-app-x3-layout-settings",
+    "screen": "./results/validated-settings-native-esp-emu-x4-app-x3-layout-settings/screen.png",
+    "diagnostic_hardware_substitution": true,
+    "feature_success_requires_image_inspection": true
+  }
+]

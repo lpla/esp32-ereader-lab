@@ -1,0 +1,16 @@
+[
+  "/work/tools/qemu/bin/qemu-system-riscv32",
+  "-nographic",
+  "-monitor",
+  "none",
+  "-icount",
+  "3",
+  "-machine",
+  "esp32c3",
+  "-drive",
+  "file=firmware/x3-app0-empty-otadata.bin,if=mtd,format=raw",
+  "-snapshot",
+  "-gdb",
+  "tcp:127.0.0.1:1234",
+  "-S"
+]

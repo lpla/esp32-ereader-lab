@@ -1,0 +1,55 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x403cff92 in ?? ()
+Hardware assisted breakpoint 1 at 0x403898c0
+
+Breakpoint 1, 0x403898c0 in ?? ()
+ra             0x40382f6e	0x40382f6e
+sp             0x3fca7d00	0x3fca7d00
+gp             0x3fc92800	0x3fc92800
+tp             0x3f85238c	0x3f85238c
+t0             0x7ff00100	2146435328
+t1             0x4038daa0	1077467808
+t2             0xffffffff	-1
+fp             0x3fc92908	0x3fc92908
+s1             0x0	0
+a0             0x600080c4	1610645700
+a1             0x100	256
+a2             0x7ff00000	2146435072
+a3             0x600c0048	1611399240
+a4             0x600c004c	1611399244
+a5             0x60008000	1610645504
+a6             0x60008018	1610645528
+a7             0x80000000	-2147483648
+s2             0x8	8
+s3             0x0	0
+s4             0x800	2048
+s5             0x1	1
+s6             0x0	0
+s7             0x16	22
+s8             0x64	100
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x60008044	1610645572
+t4             0x3	3
+t5             0x3fca7ce0	1070234848
+t6             0x1	1
+pc             0x403898c0	0x403898c0
+=> 0x403898c0:	lw	t0,0(a3)
+   0x403898c4:	lui	t1,0x80000
+   0x403898c8:	and	t0,t0,t1
+   0x403898cc:	beqz	t0,0x403898bc
+   0x403898d0:	not	a1,a1
+   0x403898d4:	and	t0,t0,a1
+   0x403898d8:	sw	t0,0(a3)
+   0x403898dc:	fence
+   0x403898e0:	not	a1,a1
+   0x403898e4:	lw	t0,0(a4)
+   0x403898e8:	sw	t0,0(a0)
+   0x403898ec:	fence
+0x600c0040:	0xfffffffd	0xffffffff	0x7ff00100	0xffffffff
+0x600c0050:	0xffffffff	0xffffffff	0x00028000	0xffffffff
+0x6000403c:	0xffffdfff	0x00000000	0x00000000	0x00000000
+[Inferior 1 (Remote target) detached]

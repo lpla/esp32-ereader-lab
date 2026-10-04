@@ -1,0 +1,136 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420973e0
+Hardware assisted breakpoint 2 at 0x420a1bd4
+Hardware assisted breakpoint 3 at 0x420087d0
+ADC_CALL unit=0 channel=1 output=0x3fcb276c
+ADC_CALL unit=0 channel=1 output=0x3fcb274c
+ADC_CALL unit=0 channel=2 output=0x3fcb275c
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcb27ac
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+ADC_CALL unit=0 channel=0 output=0x3fcaf44c
+
+Program received signal SIGINT, Interrupt.
+0x42095bf4 in ?? ()
+ra             0x42061562	0x42061562
+sp             0x3fcb2540	0x3fcb2540
+gp             0x3fc92000	0x3fc92000
+tp             0x3f825fc0	0x3f825fc0
+t0             0x40	64
+t1             0x0	0
+t2             0x10	16
+fp             0x3fca233c	0x3fca233c
+s1             0x7	7
+a0             0x3fc91d00	1070144768
+a1             0xff	255
+a2             0xfffc0000	-262144
+a3             0x1000000	16777216
+a4             0x1000000	16777216
+a5             0x60024000	1610760192
+a6             0x0	0
+a7             0x0	0
+s2             0x0	0
+s3             0x1	1
+s4             0x3fca2000	1070211072
+s5             0x0	0
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x6	6
+t4             0x3ffff	262143
+t5             0x3fffffff	1073741823
+t6             0xfffc0000	-262144
+pc             0x42095bf4	0x42095bf4
+=> 0x42095bf4:	lw	a4,0(a5)
+   0x42095bf6:	slli	a3,a4,0x7
+   0x42095bfa:	bltz	a3,0x42095bf4
+   0x42095bfe:	lw	a0,152(a5)
+   0x42095c02:	zext.b	a0,a0
+   0x42095c06:	ret
+   0x42095c08:	li	a0,0
+   0x42095c0a:	ret
+   0x42095c0c:	beqz	a0,0x42095c50
+   0x42095c0e:	andi	a5,a2,3
+   0x42095c12:	srli	a4,a2,0x2
+   0x42095c16:	beqz	a5,0x42095c1a
+0x600c0040:	0xfffffffd	0xffffffff	0xffffffff	0xffffffff
+0x600c0050:	0xffffffff	0xffffffff	0x00028400	0xffffffff
+0x6000403c:	0xffffeaff	0x00000000	0x00000000	0x00000000
+ra             0x42061562	0x42061562
+$1 = 103
+$2 = 45
+   0x42061538:	bnez	a4,0x42061516
+   0x4206153a:	addi	a2,a2,1
+   0x4206153c:	bne	a2,a0,0x4206150c
+   0x42061540:	slli	a5,a5,0x1
+   0x42061542:	ori	a5,a5,1
+   0x42061546:	li	a2,6
+   0x42061548:	addi	a1,sp,8
+   0x4206154a:	mv	a0,s0
+   0x4206154c:	sb	a5,13(sp)
+   0x42061550:	jal	0x4206114c
+   0x42061554:	mv	a0,s0
+   0x42061556:	jal	0x420610e4
+   0x4206155a:	li	s1,10
+   0x4206155c:	mv	a0,s0
+   0x4206155e:	jal	0x420610e4
+   0x42061562:	slli	a5,a0,0x18
+   0x42061566:	sb	a0,17(s0)
+   0x4206156a:	srai	a5,a5,0x18
+   0x4206156c:	bgez	a5,0x42061578
+   0x42061570:	addi	s1,s1,-1
+   0x42061572:	zext.b	s1,s1
+   0x42061576:	bnez	s1,0x4206155c
+   0x42061578:	lw	ra,28(sp)
+   0x4206157a:	lw	s0,24(sp)
+   0x4206157c:	lw	s1,20(sp)
+   0x4206157e:	lw	s2,16(sp)
+   0x42061580:	addi	sp,sp,32
+   0x42061582:	ret
+   0x42061584:	li	a5,12
+   0x42061586:	beq	s1,a5,0x420614e2
+[Inferior 1 (Remote target) detached]

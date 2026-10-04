@@ -1,0 +1,88 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420a7030
+Hardware assisted breakpoint 2 at 0x420b31ae
+Hardware assisted breakpoint 3 at 0x4200e6f8
+ADC_CALL unit=0 channel=1 output=0x3fcb404c
+ADC_CALL unit=0 channel=1 output=0x3fcb402c
+ADC_CALL unit=0 channel=2 output=0x3fcb403c
+
+Breakpoint 3, 0x4200e6f8 in ?? ()
+ra             0x42012f4a	0x42012f4a
+sp             0x3fcb3fe0	0x3fcb3fe0
+gp             0x3fc92800	0x3fc92800
+tp             0x3f816150	0x3f816150
+t0             0x4005890e	1074104590
+t1             0x4038b948	1077459272
+t2             0x1000000	16777216
+fp             0x3fcb3fec	0x3fcb3fec
+s1             0x50000040	1342177344
+a0             0x0	0
+a1             0x0	0
+a2             0x1	1
+a3             0x0	0
+a4             0x276813e4	661132260
+a5             0x276813e4	661132260
+a6             0xfa000000	-100663296
+a7             0x3	3
+s2             0x3fc966e0	1070163680
+s3             0x3fca4000	1070219264
+s4             0x3fcabb08	1070250760
+s5             0x3fca3f40	1070219072
+s6             0x3fcac000	1070252032
+s7             0x0	0
+s8             0x0	0
+s9             0x15e	350
+s10            0x3fcb407c	1070284924
+s11            0x15e	350
+t3             0x23	35
+t4             0x40	64
+t5             0x10	16
+t6             0xfffc0000	-262144
+pc             0x4200e6f8	0x4200e6f8
+=> 0x4200e6f8:	addi	sp,sp,-48
+   0x4200e6fa:	sw	s2,32(sp)
+   0x4200e6fc:	mv	s2,a0
+   0x4200e6fe:	li	a0,-1
+   0x4200e700:	sw	s0,40(sp)
+   0x4200e702:	sw	s4,24(sp)
+   0x4200e704:	sw	a3,12(sp)
+   0x4200e706:	sw	ra,44(sp)
+   0x4200e708:	sw	s1,36(sp)
+   0x4200e70a:	sw	s3,28(sp)
+   0x4200e70c:	mv	s0,a1
+   0x4200e70e:	mv	s4,a2
+0x600c0040:	0xfffffffd	0xffffffff	0xffffffff	0xffffffff
+0x600c0050:	0xffffffff	0xffffffff	0x00028400	0xffffffff
+0x6000403c:	0xfffffaff	0x00000000	0x00000000	0x00000000
+0x3fcabb08:	0x00000000	0x00000000	0x3fcafb74	0x00000000
+0x3fcabb18:	0x00000000	0x00000000	0x3fcae094	0x3fcae0ac
+   0x42012f1a:	addi	a0,sp,156
+   0x42012f1c:	jal	0x420a2f2a
+   0x42012f20:	li	a0,1
+   0x42012f22:	jal	0x42012826
+   0x42012f26:	jal	0x42005940
+   0x42012f2a:	lui	a0,0x3fc96
+   0x42012f2e:	addi	a0,a0,1796
+   0x42012f32:	jal	0x4206f3ee
+   0x42012f36:	or	s7,s7,s8
+   0x42012f3a:	bnez	s7,0x42012f4e
+   0x42012f3e:	li	a3,0
+   0x42012f40:	li	a2,1
+   0x42012f42:	li	a0,0
+   0x42012f44:	li	a1,0
+   0x42012f46:	jal	0x4200e6f8
+   0x42012f4a:	mv	s1,a0
+   0x42012f4c:	j	0x42012fa4
+   0x42012f4e:	lui	a0,0x1
+   0x42012f50:	addi	a0,a0,-1096
+   0x42012f54:	jal	0x420a4df0
+   0x42012f58:	addi	s1,sp,156
+   0x42012f5a:	addi	s1,s1,-16
+   0x42012f5c:	mv	a0,s1
+   0x42012f5e:	jal	0x420a2f2a
+$1 = 108
+$2 = 3
+[Inferior 1 (Remote target) detached]

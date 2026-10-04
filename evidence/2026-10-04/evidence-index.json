@@ -1,0 +1,86 @@
+[
+  {
+    "run": "qemu-x4-capture-right",
+    "screen": "qemu-x4-capture-right/screen.png",
+    "screen_sha256": "83785378e29b58347f5866e919732b26280bc265a3ecef57a4d2d509c4ea0742",
+    "display_writes": 3,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  },
+  {
+    "run": "esp-x4-right-integer-timeout",
+    "screen": "esp-x4-right-integer-timeout/screen.png",
+    "screen_sha256": "83785378e29b58347f5866e919732b26280bc265a3ecef57a4d2d509c4ea0742",
+    "display_writes": 3,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  },
+  {
+    "run": "qemu-x4-settings",
+    "screen": "qemu-x4-settings/screen.png",
+    "screen_sha256": "2dc4eb10a7d5f21d0bffa40c775acb6588c4934efa914e0604ec72de1d7fbe40",
+    "display_writes": 8,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  },
+  {
+    "run": "qemu-x4-language",
+    "screen": "qemu-x4-language/screen.png",
+    "screen_sha256": "3ed4f9e23ec77f254bbceb185e35d2c2a6d2e695cfcdc4b7e2ee5291f1cc8886",
+    "display_writes": 9,
+    "status": {
+      "gdb_exit": "interrupted_for_snapshot",
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  },
+  {
+    "run": "qemu-x4-read",
+    "screen": "qemu-x4-read/screen.png",
+    "screen_sha256": "b516d5fb710245aaaa53286fbbd576b3930c2cff8413f128da68ea2f98935ee8",
+    "display_writes": 4,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  },
+  {
+    "run": "validated-native-esp-emu-x4-app-x3-layout-language",
+    "screen": "validated-native-esp-emu-x4-app-x3-layout-language/screen.png",
+    "screen_sha256": "f42030f9650167c2d36430bf87d5c663dfc57921eec5b201defd388f0074e7a7",
+    "display_writes": 7,
+    "status": {
+      "gdb_exit": "interrupted_for_snapshot",
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  },
+  {
+    "run": "validated-settings-native-esp-emu-x4-app-x3-layout-settings",
+    "screen": "validated-settings-native-esp-emu-x4-app-x3-layout-settings/screen.png",
+    "screen_sha256": "2dc4eb10a7d5f21d0bffa40c775acb6588c4934efa914e0604ec72de1d7fbe40",
+    "display_writes": 8,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    }
+  }
+]

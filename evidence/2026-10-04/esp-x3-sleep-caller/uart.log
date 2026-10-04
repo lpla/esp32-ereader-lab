@@ -1,0 +1,410 @@
+
+    ╻ ╻ ╻ ╻
+   ┏┻━┻━┻━┻┓    ┏━╸┏━┓┏━┓   ┏━╸┏┳┓╻ ╻
+  ━┫       ┣━   ┣╸ ┗━┓┣━┛╺━╸┣╸ ┃┃┃┃ ┃
+  ━┫ ESP32 ┣━   ┗━╸┗━┛╹     ┗━╸╹ ╹┗━┛
+  ━┫       ┣━
+   ┗┳━┳━┳━┳┛    ESP32 series emulator · v0.45.0
+    ╹ ╹ ╹ ╹
+
+[INFO  esp_emu] Loaded firmware: 16777216 bytes
+[INFO  machine] WiFi SoftAP: WPA2/WPA3 transition enabled (PWE Both) for SSID 'myssid'
+[INFO  net_user] user-net: DNS forwarder upstream [192.168.65.7:53], restrict=true
+[INFO  net_user] user-net: backend ready (gateway 192.168.4.1, 0 hostfwd rules)
+[INFO  esp_emu] Network backend: user-mode (smoltcp NAT, 192.168.4.1 -> host loopback)
+[INFO  esp_emu] Loaded ROM ELF: <embedded esp32c3> (556332 bytes)
+[INFO  esp_emu] Booting from real ROM reset vector (use --skip-rom to bypass)
+[INFO  machine] ROM ELF: 4468 symbols loaded
+[INFO  machine] ROM ELF loaded, 15 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000000, SP=0x3FCDE710
+[INFO  esp_emu] Starting emulation (chip=esp32c3, batch_size=50000)
+[INFO  gdb_stub] GDB stub listening on :1234 (target halted, waiting for debugger)
+[INFO  gdb_stub] GDB client connected from 127.0.0.1:51092
+[WARN  mem::bus] Bus fault: read8 unmapped 0x3FFFFFFC
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5810,len:0x38c
+load:0x403cc710,len:0x6a0
+load:0x403ce710,len:0x2624
+entry 0x403cc710
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[WARN  mem::bus] Bus fault: read8 unmapped 0x00000000
+[INFO  gdb_stub] GDB client disconnected; target resumes free-running
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+MEPC    : 0x403898bc  RA      : 0x40382f6e  SP      : 0x3fcb3f50  GP      : 0x3fc92800  
+TP      : 0x3f816150  T0      : 0x00000000  T1      : 0x80000000  T2      : 0x01000000  
+S0/FP   : 0x3fc928d8  S1      : 0x00000000  A0      : 0x600080c4  A1      : 0x00000100  
+A2      : 0x7ff00000  A3      : 0x600c0048  A4      : 0x600c004c  A5      : 0x60008000  
+A6      : 0x60008018  A7      : 0x80000000  S2      : 0x00000008  S3      : 0x00000000  
+S4      : 0x00000800  S5      : 0x00000001  S6      : 0x00000000  S7      : 0x00000016  
+S8      : 0x00000000  S9      : 0x0000015e  S10     : 0x3fcb407c  S11     : 0x0000015e  
+T3      : 0x60008044  T4      : 0x00000003  T5      : 0x00000010  T6      : 0xfffc0000  
+MSTATUS : 0x00001880  MTVEC   : 0x40380001  MCAUSE  : 0x00000018  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fcb3f50: 0x00000000 0x50000040 0xdff20570 0x00000001 0x00000001 0x00000140 0x00000003 0x000000a0
+3fcb3f70: 0x00000000 0x00000000 0x00000000 0x00000000 0x3fcac000 0x3fca3f40 0x00000001 0x3fca4000
+3fcb3f90: 0x00000000 0x00000c02 0x3fc928d8 0x403830ae 0x00000000 0x50000040 0x00000000 0x4200e7d4
+3fcb3fb0: 0x3fcac000 0x3fca3f40 0x3fcabb08 0x00000000 0x3fcb41ac 0x00000001 0x3fcabb08 0x3fca4000
+3fcb3fd0: 0x3fc966e0 0x50000040 0x3fcb3fec 0x42012f4a 0x3fcac000 0x00000004 0x3fcb40bc 0x3fcb0968
+3fcb3ff0: 0x0000001f 0x00000012 0x00cac000 0x65776f50 0x20646572 0x0066666f 0x8b000062 0x00000000
+3fcb4010: 0x00000000 0x00000000 0x80456d65 0x00000000 0x00000000 0x00000000 0x80ffffff 0x00000000
+3fcb4030: 0x00000000 0x00000000 0x80cae01c 0x00000000 0x00000000 0x00000000 0x80cae01c 0x00000000
+3fcb4050: 0x00000000 0x00000000 0x80cae01c 0x00000000 0x00000000 0x00000000 0x80cae01c 0x00000000
+3fcb4070: 0x00000000 0x00000000 0x80cae01c 0x00000000 0x00000000 0x00000000 0x01cad080 0x00000000
+3fcb4090: 0x00000000 0x00000000 0x01cad080 0x00000000 0x00000000 0x00000000 0x02000001 0xaa6cfebd
+3fcb40b0: 0x3fcac000 0x00000000 0x3fcabaf0 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb40d0: 0x00000000 0x00000000 0x00000001 0x3fca4000 0x3fcac000 0x3fca35c0 0x50000028 0x4205534e
+3fcb40f0: 0x420a5dea 0x4038dec4 0x00000000 0x3fc92800 0x3f816150 0x00000000 0x00000000 0x00000000
+3fcb4110: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb4130: 0x00000000 0x00000000 0x00000000 0xaa6cfebd 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb4150: 0x00000000 0x3fcac000 0x00000000 0x420a5dfa 0x00000000 0x00000000 0x00000000 0x4038dec4
+3fcb4170: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fcb4190: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xbaad5678 0x00000160 0xabba1234 0x00000154 0x3fcb3f00
+3fcb41b0: 0x000002c9 0x3fca796c 0x3fca796c 0x3fcb41ac 0x3fca7964 0x00000018 0x00000000 0x00000000
+3fcb41d0: 0x3fcb41ac 0x00000000 0x00000001 0x3fcb219c 0x706f6f6c 0x6b736154 0x00000000 0x00000000
+3fcb41f0: 0x00000000 0x3fcb4190 0x00000001 0x00000001 0x00000000 0x00000000 0x00000000 0x3fcad744
+3fcb4210: 0x3fcad7ac 0x3fcad814 0x00000000 0x00000000 0x00000001 0x00000000 0x00000000 0x00000000
+3fcb4230: 0x4215277c 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fcb4250: 0x000000[INFO  esp_emu] Interrupted (signal)

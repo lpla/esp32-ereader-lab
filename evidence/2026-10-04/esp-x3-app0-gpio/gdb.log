@@ -1,0 +1,57 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420a7030
+
+Breakpoint 1, 0x420a7030 in ?? ()
+ra             0x4200eb26	0x4200eb26
+sp             0x3fcb40c0	0x3fcb40c0
+gp             0x3fc92800	0x3fc92800
+tp             0x3f816150	0x3f816150
+t0             0x4005890e	1074104590
+t1             0x4ec00000	1321205760
+t2             0xffffffff	-1
+fp             0x3fc92092	0x3fc92092
+s1             0x3fcabb08	1070250760
+a0             0x3	3
+a1             0x0	0
+a2             0x0	0
+a3             0x1d9	473
+a4             0x1d9	473
+a5             0x4ec00000	1321205760
+a6             0xfa000000	-100663296
+a7             0x3	3
+s2             0x3fcac000	1070252032
+s3             0x1	1
+s4             0x3c172000	1008148480
+s5             0x3c176000	1008164864
+s6             0x3c179000	1008177152
+s7             0x1d9	473
+s8             0x64	100
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x1c	28
+t4             0x0	0
+t5             0x0	0
+t6             0x0	0
+pc             0x420a7030	0x420a7030
+=> 0x420a7030:	lw	a5,-736(gp)
+   0x420a7034:	lui	a4,0x4000
+   0x420a7038:	addi	a4,a4,-1
+   0x420a703a:	lw	a5,0(a5)
+   0x420a703c:	lw	a5,60(a5)
+   0x420a703e:	and	a5,a5,a4
+   0x420a7040:	sra	a0,a5,a0
+   0x420a7044:	andi	a0,a0,1
+   0x420a7046:	ret
+   0x420a7048:	addi	sp,sp,-16
+   0x420a704a:	sw	s0,8(sp)
+   0x420a704c:	mv	a2,a0
+0x600c0040:	0xfffffffd	0xffffffff	0xffffffff	0xffffffff
+0x600c0050:	0xffffffff	0xffffffff	0x00028400	0xffffffff
+0x6000403c:	0xffffffff	0x00000000	0x00000000	0x00000000
+a0             0x3	3
+ra             0x4200eb26	0x4200eb26
+[Inferior 1 (Remote target) detached]

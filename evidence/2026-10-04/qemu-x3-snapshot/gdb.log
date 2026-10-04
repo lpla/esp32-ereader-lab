@@ -1,0 +1,52 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x420f9dee in ?? ()
+ra             0x4038c608	0x4038c608
+sp             0x3fca5070	0x3fca5070
+gp             0x3fc92800	0x3fc92800
+tp             0x3f84f5dc	0x3f84f5dc
+t0             0x0	0
+t1             0x0	0
+t2             0x0	0
+fp             0x3fca4654	0x3fca4654
+s1             0x3fc9f8a0	1070200992
+a0             0x1	1
+a1             0x3fca464c	1070220876
+a2             0x3fca464c	1070220876
+a3             0x80	128
+a4             0x3fc9f874	1070200948
+a5             0x0	0
+a6             0x0	0
+a7             0x0	0
+s2             0x3fc9b414	1070183444
+s3             0x7fffffff	2147483647
+s4             0x3fc9b41c	1070183452
+s5             0x3fca0000	1070202880
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x0	0
+t4             0x0	0
+t5             0x0	0
+t6             0x0	0
+pc             0x420f9dee	0x420f9dee
+=> 0x420f9dee:	ret
+   0x420f9df0:	lui	a5,0x3fc9f
+   0x420f9df4:	lw	a4,1656(a5)
+   0x420f9df8:	addi	sp,sp,-336
+   0x420f9dfa:	sw	s1,324(sp)
+   0x420f9dfe:	sw	s2,320(sp)
+   0x420f9e02:	sw	ra,332(sp)
+   0x420f9e06:	sw	s0,328(sp)
+   0x420f9e0a:	sw	a4,316(sp)
+   0x420f9e0e:	mv	s2,a0
+   0x420f9e10:	mv	s1,a5
+   0x420f9e12:	li	a0,258
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+[Inferior 1 (process 1) detached]

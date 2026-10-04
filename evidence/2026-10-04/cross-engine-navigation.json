@@ -1,0 +1,13 @@
+{
+  "frames_byte_identical": true,
+  "frames": [
+    {
+      "run": "qemu-x4-capture-right",
+      "sha256": "38a00f333f09a32838d1cfaedd22195b2d8694def29f989ab12740aa63ef978e"
+    },
+    {
+      "run": "esp-x4-right-integer-timeout",
+      "sha256": "38a00f333f09a32838d1cfaedd22195b2d8694def29f989ab12740aa63ef978e"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "x3-stock": {
+    "bytes": 16777216,
+    "partitions": [
+      {
+        "type": 1,
+        "subtype": 2,
+        "offset": 36864,
+        "size": 20480,
+        "label": "nvs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 0,
+        "offset": 57344,
+        "size": 8192,
+        "label": "otadata",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 16,
+        "offset": 65536,
+        "size": 7798784,
+        "label": "app0",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 17,
+        "offset": 7864320,
+        "size": 7798784,
+        "label": "app1",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 130,
+        "offset": 15663104,
+        "size": 1048576,
+        "label": "spiffs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 3,
+        "offset": 16711680,
+        "size": 65536,
+        "label": "coredump",
+        "flags": 0
+      }
+    ],
+    "images": [
+      {
+        "offset": 0,
+        "segments": 3,
+        "entry": "0x403cc710",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0
+      },
+      {
+        "offset": 65536,
+        "segments": 6,
+        "entry": "0x40381e52",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "esp-idf: v4.4.7 38eeba213a",
+          "project": "arduino-lib-builder",
+          "time": "12:29:20",
+          "date": "Mar  5 2024",
+          "idf": "v4.4.7-dirty"
+        }
+      },
+      {
+        "offset": 7864320,
+        "segments": 6,
+        "entry": "0x40381e52",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "esp-idf: v4.4.7 38eeba213a",
+          "project": "arduino-lib-builder",
+          "time": "12:29:20",
+          "date": "Mar  5 2024",
+          "idf": "v4.4.7-dirty"
+        }
+      }
+    ]
+  },
+  "x4-ota": {
+    "bytes": 6368656,
+    "partitions": [],
+    "images": [
+      {
+        "offset": 0,
+        "segments": 6,
+        "entry": "0x40381a38",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "esp-idf: v4.4.7 38eeba213a",
+          "project": "arduino-lib-builder",
+          "time": "12:29:20",
+          "date": "Mar  5 2024",
+          "idf": "v4.4.7-dirty"
+        }
+      }
+    ]
+  },
+  "x4-app-x3-layout": {
+    "bytes": 16777216,
+    "partitions": [
+      {
+        "type": 1,
+        "subtype": 2,
+        "offset": 36864,
+        "size": 20480,
+        "label": "nvs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 0,
+        "offset": 57344,
+        "size": 8192,
+        "label": "otadata",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 16,
+        "offset": 65536,
+        "size": 7798784,
+        "label": "app0",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 17,
+        "offset": 7864320,
+        "size": 7798784,
+        "label": "app1",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 130,
+        "offset": 15663104,
+        "size": 1048576,
+        "label": "spiffs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 3,
+        "offset": 16711680,
+        "size": 65536,
+        "label": "coredump",
+        "flags": 0
+      }
+    ],
+    "images": [
+      {
+        "offset": 0,
+        "segments": 3,
+        "entry": "0x403cc710",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0
+      },
+      {
+        "offset": 65536,
+        "segments": 6,
+        "entry": "0x40381a38",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "esp-idf: v4.4.7 38eeba213a",
+          "project": "arduino-lib-builder",
+          "time": "12:29:20",
+          "date": "Mar  5 2024",
+          "idf": "v4.4.7-dirty"
+        }
+      },
+      {
+        "offset": 7864320,
+        "segments": 6,
+        "entry": "0x40381a38",
+        "chip_id": 5,
+        "flash_size_code": 4,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "esp-idf: v4.4.7 38eeba213a",
+          "project": "arduino-lib-builder",
+          "time": "12:29:20",
+          "date": "Mar  5 2024",
+          "idf": "v4.4.7-dirty"
+        }
+      }
+    ]
+  }
+}

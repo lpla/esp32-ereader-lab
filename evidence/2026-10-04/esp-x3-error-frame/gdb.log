@@ -1,0 +1,62 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420a7030
+Hardware assisted breakpoint 2 at 0x420b31ae
+Hardware assisted breakpoint 3 at 0x4200e6f8
+
+Breakpoint 3, 0x4200e6f8 in ?? ()
+ra             0x42012f4a	0x42012f4a
+sp             0x3fcb3fe0	0x3fcb3fe0
+gp             0x3fc92800	0x3fc92800
+tp             0x3f816150	0x3f816150
+t0             0x4005890e	1074104590
+t1             0x4038b948	1077459272
+t2             0x1000000	16777216
+fp             0x3fcb3fec	0x3fcb3fec
+s1             0x50000040	1342177344
+a0             0x0	0
+a1             0x0	0
+a2             0x1	1
+a3             0x0	0
+a4             0x27d4931	41765169
+a5             0x27d4931	41765169
+a6             0xfa000000	-100663296
+a7             0x3	3
+s2             0x3fc966e0	1070163680
+s3             0x3fca4000	1070219264
+s4             0x3fcabb08	1070250760
+s5             0x3fca3f40	1070219072
+s6             0x3fcac000	1070252032
+s7             0x0	0
+s8             0x0	0
+s9             0x15e	350
+s10            0x3fcb407c	1070284924
+s11            0x15e	350
+t3             0x23	35
+t4             0x40	64
+t5             0x10	16
+t6             0xfffc0000	-262144
+pc             0x4200e6f8	0x4200e6f8
+=> 0x4200e6f8:	addi	sp,sp,-48
+   0x4200e6fa:	sw	s2,32(sp)
+   0x4200e6fc:	mv	s2,a0
+   0x4200e6fe:	li	a0,-1
+   0x4200e700:	sw	s0,40(sp)
+   0x4200e702:	sw	s4,24(sp)
+   0x4200e704:	sw	a3,12(sp)
+   0x4200e706:	sw	ra,44(sp)
+   0x4200e708:	sw	s1,36(sp)
+   0x4200e70a:	sw	s3,28(sp)
+   0x4200e70c:	mv	s0,a1
+   0x4200e70e:	mv	s4,a2
+0x600c0040:	0xfffffffd	0xffffffff	0xffffffff	0xffffffff
+0x600c0050:	0xffffffff	0xffffffff	0x00028400	0xffffffff
+0x6000403c:	0xfffffaff	0x00000000	0x00000000	0x00000000
+0x3fcabb08:	0x00000000	0x00000000	0x3fcafb74	0x00000000
+0x3fcabb18:	0x00000000	0x00000000	0x3fcae094	0x3fcae0ac
+0x3fc966e0:	0x1ad0	0x3c17	0x0000	0x0000	0x0318	0x0210	0x0210	0x0318
+$1 = 108
+$2 = 3
+[Inferior 1 (Remote target) detached]

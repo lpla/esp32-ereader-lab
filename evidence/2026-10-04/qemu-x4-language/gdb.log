@@ -1,0 +1,61 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420973e0
+Hardware assisted breakpoint 2 at 0x420a1bd4
+Hardware assisted breakpoint 3 at 0x420087d0
+
+Program received signal SIGINT, Interrupt.
+0x4038c482 in ?? ()
+ra             0x4038c41a	0x4038c41a
+sp             0x3fca6000	0x3fca6000
+gp             0x3fc92000	0x3fc92000
+tp             0x3f823610	0x3f823610
+t0             0x7fffffff	2147483647
+t1             0xacf80000	-1393033216
+t2             0x2	2
+fp             0x0	0x0
+s1             0x3fcaa6bc	1070245564
+a0             0x2	2
+a1             0xe7ffffff	-402653185
+a2             0x4b0	1200
+a3             0x4	4
+a4             0x1	1
+a5             0x3fcaa6f8	1070245624
+a6             0xfa000000	-100663296
+a7             0x3e	62
+s2             0x3ffffff	67108863
+s3             0x3fcaa000	1070243840
+s4             0x90a	2314
+s5             0x3fcaa000	1070243840
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x3fcaa6a8	1070245544
+t4             0x0	0
+t5             0x1	1
+t6             0x0	0
+pc             0x4038c482	0x4038c482
+=> 0x4038c482:	lui	s3,0x3fcaa
+   0x4038c486:	addi	a5,s3,1764
+   0x4038c48a:	lw	a5,0(a5)
+   0x4038c48c:	lui	s1,0x3fca6
+   0x4038c490:	lui	s5,0x3fcaa
+   0x4038c494:	addi	s3,s3,1764
+   0x4038c498:	addi	s1,s1,112
+   0x4038c49c:	addi	s5,s5,1728
+   0x4038c4a0:	li	s0,0
+   0x4038c4a2:	bgeu	s4,a5,0x4038c4ea
+   0x4038c4a6:	lw	a5,0(s5)
+   0x4038c4aa:	li	a4,20
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+$1 = 382
+$2 = 360
+$3 = 674
+[Inferior 1 (process 1) detached]

@@ -1,0 +1,65 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+Hardware assisted breakpoint 1 at 0x420a7030
+Hardware assisted breakpoint 2 at 0x420b31ae
+Hardware assisted breakpoint 3 at 0x403898c0
+
+Program received signal SIGINT, Interrupt.
+0x420f673a in ?? ()
+ra             0x4038c608	0x4038c608
+sp             0x3fcb17a0	0x3fcb17a0
+gp             0x3fc92800	0x3fc92800
+tp             0x3f8137a0	0x3f8137a0
+t0             0x0	0
+t1             0x0	0
+t2             0x0	0
+fp             0x3fcb0d84	0x3fcb0d84
+s1             0x3fcabfd0	1070251984
+a0             0x1	1
+a1             0x3fcb0d7c	1070271868
+a2             0x3fcb0d7c	1070271868
+a3             0x80	128
+a4             0x3fcabfa4	1070251940
+a5             0x0	0
+a6             0x0	0
+a7             0x0	0
+s2             0x3fca7b94	1070234516
+s3             0x7fffffff	2147483647
+s4             0x3fca7b9c	1070234524
+s5             0x3fcac000	1070252032
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x0	0
+t4             0x0	0
+t5             0x0	0
+t6             0x0	0
+pc             0x420f673a	0x420f673a
+=> 0x420f673a:	ret
+   0x420f673c:	lui	a5,0x3fcac
+   0x420f6740:	lw	a4,-600(a5)
+   0x420f6744:	addi	sp,sp,-336
+   0x420f6746:	sw	s1,324(sp)
+   0x420f674a:	sw	s2,320(sp)
+   0x420f674e:	sw	ra,332(sp)
+   0x420f6752:	sw	s0,328(sp)
+   0x420f6756:	sw	a4,316(sp)
+   0x420f675a:	mv	s2,a0
+   0x420f675c:	mv	s1,a5
+   0x420f675e:	li	a0,258
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+$1 = 102
+$2 = 102
+$3 = 3
+0x60024000:	0x00000000	0x00000000	0x00000000	0x00000000
+0x60024010:	0x00000000	0x00000000	0x00000000	0x00000000
+0x60040020:	0x00000000	0x00000000	0x00000000	0x00000000
+0x60040030:	0x00000000	0x00000000	0x00000000	0x00000000
+[Inferior 1 (process 1) detached]

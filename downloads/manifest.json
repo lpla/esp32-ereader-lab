@@ -1,0 +1,59 @@
+{
+  "firmware_repository_commit": "79d2f5b8f1df08d2c8fb33146ac5f887790ddb9e",
+  "files": [
+    {
+      "file": "esp-emu.tar.gz",
+      "url": "https://github.com/espressif/esp-emulator/releases/download/v0.45.0/esp-emu-0.45.0-x86_64-unknown-linux-gnu.tar.gz",
+      "bytes": 3934359,
+      "sha256": "33f7d9c3fac881e694b882da92cac3e0a19a1001d70dec44957cc12e776ff7be"
+    },
+    {
+      "file": "esp-emu-SHA256SUMS",
+      "url": "https://github.com/espressif/esp-emulator/releases/download/v0.45.0/SHA256SUMS",
+      "bytes": 429,
+      "sha256": "d16b0a667fc390b772c452de10bf169f2a39521631e225af5fd59e56471d9c1a"
+    },
+    {
+      "file": "qemu.tar.xz",
+      "url": "https://github.com/espressif/qemu/releases/download/esp-develop-9.2.2-20260417/qemu-riscv32-softmmu-esp_develop_9.2.2_20260417-x86_64-linux-gnu.tar.xz",
+      "bytes": 16842920,
+      "sha256": "547f03e04701a92cbb699f7f7d015adc1f5b5ef93cbb94c0dd9b7107e2d84e77"
+    },
+    {
+      "file": "qemu-SHA256SUMS",
+      "url": "https://github.com/espressif/qemu/releases/download/esp-develop-9.2.2-20260417/qemu-esp_develop_9.2.2_20260417-checksum.sha256",
+      "bytes": 2477,
+      "sha256": "d12160e1dc0b3dd1eca1917652c4bb9f3dae02f800caeb5b78a9d4b384e852e2"
+    },
+    {
+      "file": "x3_en_v5.2.13_full.bin",
+      "url": "https://media.githubusercontent.com/media/zocs/eink-quick-flasher/79d2f5b8f1df08d2c8fb33146ac5f887790ddb9e/firmware/x3_en_v5.2.13_full.bin",
+      "bytes": 16777216,
+      "sha256": "37efcb7db2422b6c7b86b23b2e82b0fb4453ebde350014e7f8e8ad3f06ca2dac"
+    },
+    {
+      "file": "x4_en_v5.1.6_ota.bin",
+      "url": "https://media.githubusercontent.com/media/zocs/eink-quick-flasher/79d2f5b8f1df08d2c8fb33146ac5f887790ddb9e/firmware/x4_en_v5.1.6_ota.bin",
+      "bytes": 6368656,
+      "sha256": "be3dd62437914ffe7ac23d2713cf63f97f7eccc06fd1cf4b0924e7cce9878822"
+    },
+    {
+      "file": "esp-emulator-README.md",
+      "url": "https://raw.githubusercontent.com/espressif/esp-emulator/8b20ca7c40b8a3d3b2d865984cbc5ed1ddd780b0/README.md",
+      "bytes": 39318,
+      "sha256": "4cff1b176040863224a447fcecb4afd66f5f1c5c68dd9859bb834e909d48e82a"
+    },
+    {
+      "file": "qemu-README.md",
+      "url": "https://raw.githubusercontent.com/espressif/esp-toolchain-docs/main/qemu/README.md",
+      "bytes": 7147,
+      "sha256": "f636f5d9796f49376005d2fe8959579f2b922fa6050f1884b40acaeff52aa1f0"
+    },
+    {
+      "file": "esp-emu-wasm.tar.gz",
+      "url": "https://github.com/espressif/esp-emulator/releases/download/v0.45.0/esp-emu-0.45.0-wasm.tar.gz",
+      "bytes": 2254243,
+      "sha256": "21bb04f1d8e7027d552cd64c944e9fb751a50cd5a3fb48588532df719796b346"
+    }
+  ]
+}

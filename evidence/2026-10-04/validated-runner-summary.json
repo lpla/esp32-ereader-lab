@@ -1,0 +1,53 @@
+[
+  {
+    "engine": "qemu",
+    "fixture": "x3-stock",
+    "scenario": "baseline",
+    "command_exit": 0,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "37efcb7db2422b6c7b86b23b2e82b0fb4453ebde350014e7f8e8ad3f06ca2dac",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    },
+    "driver_image_writes": 0,
+    "directory": "./results/validated-runner-qemu-x3-stock-baseline",
+    "screen": null,
+    "diagnostic_hardware_substitution": false,
+    "feature_success_requires_image_inspection": true
+  },
+  {
+    "engine": "qemu",
+    "fixture": "x3-app0-empty-otadata",
+    "scenario": "baseline",
+    "command_exit": 0,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "ac3a15cbfa43f6ab327830ad73f5631fc34794250a7c0c2679e854938e3945ab",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    },
+    "driver_image_writes": 0,
+    "directory": "./results/validated-runner-qemu-x3-app0-empty-otadata-baseline",
+    "screen": null,
+    "diagnostic_hardware_substitution": false,
+    "feature_success_requires_image_inspection": true
+  },
+  {
+    "engine": "qemu",
+    "fixture": "x4-app-x3-layout",
+    "scenario": "baseline",
+    "command_exit": 0,
+    "status": {
+      "gdb_exit": 0,
+      "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+      "image_unchanged": true,
+      "timeout_is_not_feature_success": true
+    },
+    "driver_image_writes": 0,
+    "directory": "./results/validated-runner-qemu-x4-app-x3-layout-baseline",
+    "screen": null,
+    "diagnostic_hardware_substitution": false,
+    "feature_success_requires_image_inspection": true
+  }
+]

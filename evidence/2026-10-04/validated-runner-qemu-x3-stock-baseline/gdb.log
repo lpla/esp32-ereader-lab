@@ -1,0 +1,52 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40380268 in ?? ()
+ra             0x40381dc4	0x40381dc4
+sp             0x3fc9b150	0x3fc9b150
+gp             0x3fc92800	0x3fc92800
+tp             0x3f84f5dc	0x3f84f5dc
+t0             0x7fffffff	2147483647
+t1             0xf4e80000	-186122240
+t2             0x2	2
+fp             0x3fc999bc	0x3fc999bc
+s1             0x3fc999dc	1070176732
+a0             0x1	1
+a1             0x0	0
+a2             0x0	0
+a3             0x2	2
+a4             0x0	0
+a5             0x60043000	1610887168
+a6             0xfa000000	-100663296
+a7             0x3e	62
+s2             0x3ffffff	67108863
+s3             0x3fca0000	1070202880
+s4             0x3fc9b41c	1070183452
+s5             0x3fca0000	1070202880
+s6             0x0	0
+s7             0x0	0
+s8             0x0	0
+s9             0x0	0
+s10            0x0	0
+s11            0x0	0
+t3             0x3fc9f878	1070200952
+t4             0x0	0
+t5             0x1	1
+t6             0x0	0
+pc             0x40380268	0x40380268
+=> 0x40380268:	sw	a3,20(a5)
+   0x4038026a:	lui	a3,0x3fc9f
+   0x4038026e:	addi	a3,a3,1488
+   0x40380272:	lbu	a5,0(a3)
+   0x40380276:	srli	a4,a4,0x1
+   0x40380278:	andi	a4,a4,1
+   0x4038027a:	zext.b	a5,a5
+   0x4038027e:	beq	a4,a5,0x40380296
+   0x40380282:	lui	a5,0x3fc9f
+   0x40380286:	addi	a5,a5,1492
+   0x4038028a:	bnez	a4,0x4038029e
+   0x4038028c:	lw	a4,0(a5)
+0x600c0040:	0x00000000	0x00000000	0x00000000	0x00000000
+0x600c0050:	0x00000000	0x00000000	0x000a8401	0x00000000
+0x6000403c:	0x00000000	0x00000000	0x00000000	0x00000000
+[Inferior 1 (process 1) detached]

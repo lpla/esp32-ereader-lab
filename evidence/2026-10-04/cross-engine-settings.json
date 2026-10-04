@@ -1,0 +1,13 @@
+{
+  "frames_byte_identical": true,
+  "frames": [
+    {
+      "run": "qemu-x4-settings",
+      "sha256": "b812565f2c1f9b1da3b2174bfb60820e1e1ec5a0de4bfb0ad78ba6d726861d40"
+    },
+    {
+      "run": "validated-settings-native-esp-emu-x4-app-x3-layout-settings",
+      "sha256": "b812565f2c1f9b1da3b2174bfb60820e1e1ec5a0de4bfb0ad78ba6d726861d40"
+    }
+  ]
+}

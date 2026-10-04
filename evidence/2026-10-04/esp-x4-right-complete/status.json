@@ -1,0 +1,6 @@
+{
+  "gdb_exit": 1,
+  "image_sha256": "8dc0b01a08bb06bb17226289446541b752acb073701841e2b4402919bc206c8d",
+  "image_unchanged": true,
+  "timeout_is_not_feature_success": true
+}
