@@ -76,6 +76,18 @@
       "publisher_checksum": null,
       "publisher": "Xteink public XTCloud full-package API",
       "discovery_api": "https://api-prod.xteink.cc/api/v2/public/firmware/full-packages/latest?model_code=ESP32S3_X4_TL&lang=en"
+    },
+    {
+      "file": "esp-emu-0.48.0-x86_64-unknown-linux-gnu.tar.gz",
+      "url": "https://github.com/espressif/esp-emulator/releases/download/v0.48.0/esp-emu-0.48.0-x86_64-unknown-linux-gnu.tar.gz",
+      "bytes": 3968282,
+      "sha256": "d29d41dbc5f6926284a5daeaf199a1500740992087e088c1211ffc2546e764bd"
+    },
+    {
+      "file": "esp-emulator-0.48-README.md",
+      "url": "https://raw.githubusercontent.com/espressif/esp-emulator/0933dd1/README.md",
+      "bytes": 39930,
+      "sha256": "c32226db637e35ff1a8cc8d046601f942dbabe5b24229498e22a9cb27365c749"
     }
   ]
 }

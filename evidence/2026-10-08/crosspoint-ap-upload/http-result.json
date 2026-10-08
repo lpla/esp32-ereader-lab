@@ -1,0 +1,18 @@
+{
+  "completed": true,
+  "payload_sha256": "9cfb793219cb30489e65e5568a469b0f2958be70ce44ed175fdcc220121ba604",
+  "bytes": 2074,
+  "status": {
+    "version": "1.6.5-dev-detached-223c20b48",
+    "ip": "192.168.4.1",
+    "mode": "AP",
+    "rssi": 0,
+    "freeHeap": 75272,
+    "uptime": 4,
+    "device": "X4",
+    "serial": "Not found"
+  },
+  "upload_response": "File uploaded successfully: LABUPLOAD.epub",
+  "downloaded_bytes": 2074,
+  "downloaded_sha256": "9cfb793219cb30489e65e5568a469b0f2958be70ce44ed175fdcc220121ba604"
+}

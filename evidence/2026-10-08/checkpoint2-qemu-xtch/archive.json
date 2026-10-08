@@ -1,0 +1,30 @@
+{
+  "source_run": "checkpoint2-qemu-xtch",
+  "files_sha256": {
+    "checkpoint.json": "14187d4940012f417d540e626c2a141d78d7160957f5adb5c702c04373733a2b",
+    "command.json": "b06f93db3f16aa41c65f1e73ffcf0f068925a667d03118e5549b9fc8469d9bfb",
+    "display-writes.json": "21be4f117503c8a0f4e7877310e1252f5c81f99b34ed69f4d05f155cacbc9e5f",
+    "gdb.log": "89b5758aa083c28b174aaca7258446e0fff0ef31dc11ebabc5b4cdb25adb7cf4",
+    "guest.log": "74d814cdd028459719cf3083c3614c641800c95659de84dc64a67fec0fb6482b",
+    "input.json": "cba156c598e13bd4a872f9067913d6253563c1000459932628eda445f29e2908",
+    "probe.gdb": "1b2b17bb6eb434ff3cce49b2240af7de0766b8c709fe06d6bfeec79da4991e80",
+    "runner.log": "1e363a548d71bf2b6e588329dffc1380d03e191e60c92dcb3b03d3d036901cf7",
+    "screen-000.png": "258ed828d6f52d5a62f29fa413b5d70b0efed39c39c0def6e2038e9fe74ccf74",
+    "screen-001.png": "34cdbbbdd72a5557eb10956965c8dfc5f6ef100ceb62967e3c9f70048baf21a3",
+    "screen-002.png": "15557882efa038e3be89d7a6bbcd2d785cafb511b506e5c43cac25c36afb59ae",
+    "screen.png": "15557882efa038e3be89d7a6bbcd2d785cafb511b506e5c43cac25c36afb59ae",
+    "sd-events.json": "616e51dcaafe09748131a3b58f000e8d7e0f549fa79ee9487d40a143a667902d",
+    "state-seed.json": "a7c117067088cbcc2265838b507cbe870b76662b5bdfd170ada4daaafad290b8",
+    "status.json": "8b47e523024008c8a40eef2144c16008f88f1c44eff8845963578fe18d146e37",
+    "uart.log": "c6d3ec70b63e9cfcba2024d149028f6be07b0ae3d867d12b181430d4bc87c3e3",
+    "verdict.json": "62b8ba4f2ef196182e9c9c0482e4b7dfe205fe18fe77c4a78752c96d3c2e19a9"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

@@ -7,10 +7,11 @@ import os
 import hashlib
 import subprocess
 import time
+import threading
+from engines import engine, ESP_VERSIONS, DEFAULT_ESP
+from diagnostics import diagnostics
 
 ROOT = Path('/work')
-ESP = ROOT / 'tools/esp-emu-0.45.0-x86_64-unknown-linux-gnu/esp-emu'
-QEMU = ROOT / 'tools/qemu/bin/qemu-system-riscv32'
 
 
 def main():
@@ -18,6 +19,10 @@ def main():
     parser.add_argument('engine', choices=['esp-emu', 'qemu'])
     parser.add_argument('image')
     parser.add_argument('name')
+    parser.add_argument('--esp-version', choices=ESP_VERSIONS, default=DEFAULT_ESP)
+    parser.add_argument('--debug-remote', action='store_true', help='Record GDB packets for bus-warning attribution')
+    parser.add_argument('--snapshot-startup', action='store_true')
+    parser.add_argument('--crosspoint-http',type=Path,help='Upload/download these EPUB bytes through the actual guest AP')
     parser.add_argument('--break-at')
     parser.add_argument('--elf', type=Path, help='Load an ELF before connecting; use --strip-debug output with Ubuntu GDB 15')
     parser.add_argument('--card', type=Path)
@@ -29,15 +34,20 @@ def main():
     parser.add_argument('--gdb-seconds', type=float, default=15)
     parser.add_argument('--emulator-seconds', type=float, default=20)
     args = parser.parse_args()
+    executable, engine_identity = engine(args.engine, args.esp_version)
     image_hash = hashlib.sha256(Path(args.image).read_bytes()).hexdigest()
     if args.engine == 'esp-emu':
-        command = [str(ESP), '--chip', 'esp32c3', '--firmware', args.image,
+        command = [str(executable), '--chip', 'esp32c3', '--firmware', args.image,
                    '--gdb', '1234', '--timeout', f'{args.emulator_seconds:g}s',
                    '--net', 'user,restrict=yes', '--log-color', 'never']
         if args.break_at or args.pre_commands or args.pre_file:
             command += ['--gdb-halt']
+        if args.crosspoint_http:
+            if args.esp_version!='0.48.0':parser.error('Full AP workflow requires esp-emulator 0.48.0')
+            command[command.index('user,restrict=yes')]='user,restrict=yes,hostfwd=tcp:127.0.0.1:18080-:80'
+            command+=['--wifi-fw-ap-password','']
     else:
-        command = [str(QEMU), '-nographic', '-monitor', 'none', '-icount', '3',
+        command = [str(executable), '-nographic', '-monitor', 'none', '-icount', '3',
                    '-machine', 'esp32c3', '-drive',
                    f'file={args.image},if=mtd,format=raw', '-snapshot',
                    '-gdb', 'tcp:127.0.0.1:1234']
@@ -49,25 +59,35 @@ def main():
     with (result_dir / 'uart.log').open('w') as log:
         process = subprocess.Popen(command, stdin=subprocess.DEVNULL,
                                    stdout=log, stderr=subprocess.STDOUT)
+        if args.crosspoint_http:
+            from crosspoint_http import exercise
+            threading.Thread(target=exercise,args=(result_dir,args.crosspoint_http.read_bytes(),args.gdb_seconds-10),daemon=True).start()
         try:
             # Connecting and disconnecting a readiness socket resumes ESP-EMU.
             # Let GDB own the first connection so reset-state injection is valid.
             time.sleep(0.3 if args.break_at or args.pre_commands or args.pre_file else args.seconds)
             commands = ['set pagination off', 'set confirm off', 'set architecture riscv:rv32']
+            if args.debug_remote:
+                commands += ['set debug remote 1']
             if args.elf:
-                commands += [f'file {args.elf}']
+                commands += [f'file {args.elf}', 'set trust-readonly-sections on']
             commands += ['target remote :1234']
             commands += [c for c in args.pre_commands.split(';') if c]
             if args.pre_file:
                 commands += args.pre_file.read_text().splitlines()
             if args.break_at:
                 commands += [f'hbreak *{args.break_at}', 'continue']
-            commands += ['info registers', 'x/12i $pc', 'x/8wx 0x600c0040',
-                         'x/4wx 0x6000403c']
+            if args.snapshot_startup or not args.pre_file:
+                commands += ['info registers', 'x/12i $pc', 'x/8wx 0x600c0040',
+                             'x/4wx 0x6000403c']
             commands += [c for c in args.commands.split(';') if c]
             if args.post_file:
                 commands += args.post_file.read_text().splitlines()
-            commands += ['detach', 'quit']
+            # Kill while GDB still owns the stopped guest. Detach resumes it
+            # after removing transport breakpoints and can manufacture panics.
+            commands += ['python', 'import os,signal,time',
+                         "os.kill(int(os.environ['LAB_EMULATOR_PID']), signal.SIGTERM)",
+                         'time.sleep(0.1)', 'end', 'quit']
             script = result_dir / 'probe.gdb'
             script.write_text('\n'.join(commands) + '\n')
             with (result_dir / 'gdb.log').open('w') as out:
@@ -76,6 +96,7 @@ def main():
                                             '-x', str(script)], stdout=out,
                                            stderr=subprocess.STDOUT,
                                            env={**os.environ, 'LAB_RESULT_DIR': str(result_dir),
+                                                'LAB_EMULATOR_PID': str(process.pid),
                                                 **({'LAB_CARD_IMAGE': str(args.card)} if args.card else {})})
                     code = gdb.wait(args.gdb_seconds)
                 except subprocess.TimeoutExpired:
@@ -90,10 +111,21 @@ def main():
                         gdb.kill()
                         gdb.wait()
                         code = 'timeout'
-            time.sleep(0.5)
+            # On a debugger error, terminate before its connection goes away.
+            if process.poll() is None:
+                process.terminate()
+            try:
+                process.wait(2)
+            except subprocess.TimeoutExpired:
+                process.kill(); process.wait()
             after_hash = hashlib.sha256(Path(args.image).read_bytes()).hexdigest()
             (result_dir / 'status.json').write_text(json.dumps({
                 'gdb_exit': code, 'image_sha256': image_hash,
+                'engine': engine_identity,
+                'termination': 'terminate emulator before debugger disconnect' if code==0 else 'bounded debugger failure; forced host cleanup',
+                'diagnostics': diagnostics((result_dir/'uart.log').read_text(errors='replace'),
+                    (result_dir/'guest.log').read_text(errors='replace') if (result_dir/'guest.log').exists() else '',
+                    (result_dir/'gdb.log').read_text(errors='replace') if args.debug_remote else ''),
                 'image_unchanged': after_hash == image_hash,
                 'timeout_is_not_feature_success': True}, indent=2) + '\n')
             print(args.name, 'GDB result:', code, flush=True)

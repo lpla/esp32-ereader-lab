@@ -1,0 +1,45 @@
+
+    ╻ ╻ ╻ ╻
+   ┏┻━┻━┻━┻┓    ┏━╸┏━┓┏━┓   ┏━╸┏┳┓╻ ╻
+  ━┫       ┣━   ┣╸ ┗━┓┣━┛╺━╸┣╸ ┃┃┃┃ ┃
+  ━┫ ESP32 ┣━   ┗━╸┗━┛╹     ┗━╸╹ ╹┗━┛
+  ━┫       ┣━
+   ┗┳━┳━┳━┳┛    ESP32 series emulator · v0.48.0
+    ╹ ╹ ╹ ╹     https://github.com/espressif/esp-emulator
+
+[INFO  esp_emu] Loaded firmware: 16777216 bytes
+[INFO  machine] WiFi SoftAP: WPA2/WPA3 transition enabled (PWE Both) for SSID 'myssid'
+[INFO  esp_emu] TAP auto-probe failed (Failed to open /dev/net/tun: No such file or directory (os error 2)); falling back to --net user
+[INFO  net_user] user-net: DNS forwarder upstream [192.168.65.7:53], restrict=false
+[INFO  net_user] user-net: backend ready (gateway 192.168.4.1, 0 hostfwd rules)
+[INFO  esp_emu] Network backend: user-mode (smoltcp NAT, 192.168.4.1 -> host loopback)
+[INFO  esp_emu] Loaded ROM ELF: <embedded esp32c3> (556332 bytes)
+[INFO  esp_emu] Booting from real ROM reset vector (use --skip-rom to bypass)
+[INFO  machine] ROM ELF: 4468 symbols loaded
+[INFO  machine] ROM ELF loaded, 15 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000000, SP=0x3FCDE710
+[INFO  esp_emu] Starting emulation (chip=esp32c3, batch_size=50000)
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x110c
+load:0x403cbf10,len:0xb54
+load:0x403ce710,len:0x2f9c
+entry 0x403cbf10
+IMAGE_HEAP {"phase":"before_oom_warmup","free":301324,"largest":155636,"integrity":true}
+IMAGE_HEAP {"phase":"baseline","free":300904,"largest":155636,"integrity":true}
+IMAGE_CASE {"name":"atkinson1","fragmented":false,"valid":true,"retained":5004,"hash":1183029984,"recovered":true}
+IMAGE_CASE {"name":"atkinson2","fragmented":false,"valid":true,"retained":5004,"hash":3451566204,"recovered":true}
+IMAGE_CASE {"name":"floyd","fragmented":false,"valid":true,"retained":3336,"hash":4222431649,"recovered":true}
+IMAGE_HEAP {"phase":"normal_released","free":300904,"largest":155636,"integrity":true}
+IMAGE_PRESSURE 135
+IMAGE_HEAP {"phase":"holes","free":154460,"largest":4084,"integrity":true}
+IMAGE_CASE {"name":"atkinson1","fragmented":true,"valid":true,"retained":5004,"hash":1183029984,"recovered":true}
+IMAGE_CASE {"name":"atkinson2","fragmented":true,"valid":true,"retained":5004,"hash":3451566204,"recovered":true}
+IMAGE_CASE {"name":"floyd","fragmented":true,"valid":true,"retained":3336,"hash":4222431649,"recovered":true}
+IMAGE_HEAP {"phase":"holes_released","free":154460,"largest":4084,"integrity":true}
+IMAGE_HEAP {"phase":"all_released","free":300904,"largest":155636,"integrity":true}
+LAB_DONE
+[INFO  esp_emu] Exit-on string 'LAB_DONE' found in output

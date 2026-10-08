@@ -1,0 +1,32 @@
+{
+  "source_run": "history3001-qemu",
+  "files_sha256": {
+    "checkpoint.json": "0ee2c7d7500c2d3232623a909261f0ef831747842d69c697ef812e780e8c8cab",
+    "command.json": "b06f93db3f16aa41c65f1e73ffcf0f068925a667d03118e5549b9fc8469d9bfb",
+    "display-writes.json": "331ea7b17d0763914300b78ce14717bbeb65e021014dca12788ae774664ca6ce",
+    "gdb.log": "89b5758aa083c28b174aaca7258446e0fff0ef31dc11ebabc5b4cdb25adb7cf4",
+    "guest.log": "1fe1354682880558db3f6c842679b795f33b637ffbabf3f59b01a5e697baecf0",
+    "input.json": "d8484e682ae5365b644a909f783a51111ec22568e53e5760f1e8ad523f9d62ec",
+    "probe.gdb": "961bdc142a950918abfbdb9976c29f8d6b64049423e7c60975aeaba7bbcc9d57",
+    "runner.log": "49d234b9214b9a765ff76638f2417a1a43f9abc3426d9b9d945fc3fa1a5eecba",
+    "screen-000.png": "258ed828d6f52d5a62f29fa413b5d70b0efed39c39c0def6e2038e9fe74ccf74",
+    "screen-001.png": "ab52f981fcdaa77fe0c79ef4479d537477d4bba5d28acab2745799f2cafead3a",
+    "screen-002.png": "fc159dacd053d372051603b69604b801d9a097cea0a279a4e35b50ce44178d14",
+    "screen-003.png": "133256d624b14c689a100f2c50bba19a878ded94a22a0a5cd2a2280d67b2e57a",
+    "screen-004.png": "c8a899a9b2af6f74825037aacd1d1b9da6c0a6bedf478f91d1f26652b4407434",
+    "screen.png": "c8a899a9b2af6f74825037aacd1d1b9da6c0a6bedf478f91d1f26652b4407434",
+    "sd-events.json": "e2daadf09d8b0bee69ea4878369a53dd8f82eeb1b1c7dc40a8d07e1d83ab277e",
+    "state-seed.json": "64f86231b6f4519b4e5e4c37ee8ecaa3dd1f594d768cf259f1fa1f9b78052ad5",
+    "status.json": "998a3566003fe518918a343ed2f5f025c4d1803f4d3b9c1731359748f1ef88dd",
+    "uart.log": "c6d3ec70b63e9cfcba2024d149028f6be07b0ae3d867d12b181430d4bc87c3e3",
+    "verdict.json": "76843090cfd669109053f0914075f8de514da006f1ea94babe864d5259513e8d"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

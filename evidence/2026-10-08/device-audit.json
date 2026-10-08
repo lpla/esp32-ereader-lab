@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-08",
+  "crosspoint_develop": "43694c9018d26446ab30cce2fa65ee608355ae50",
+  "sdk": "425d200a8ea447326b4b9696e4e47dc84ad9d7f6",
+  "simulator_main": "097f44e08492d9dde40d45c1bce189fd1e782e0e",
+  "metalio_pr": 43,
+  "metalio_state": "merged",
+  "eego_pr": 44,
+  "eego_state": "open",
+  "eego_correction": "hasHomeKey true at current SDK BoardConfig.h:1427",
+  "executed_machine_firmware": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+  "core_changes": false,
+  "firmware_device_flags": [
+    "FREEINK_DEVICE_EEGO_A4",
+    "FREEINK_DEVICE_METALIO_EINK4",
+    "FREEINK_DEVICE_PAPERMONO",
+    "FREEINK_DEVICE_STICKY",
+    "FREEINK_DEVICE_X3",
+    "FREEINK_DEVICE_X4",
+    "FREEINK_DEVICE_X4CLASSIC",
+    "FREEINK_DEVICE_X4PRO"
+  ],
+  "source_url": "https://raw.githubusercontent.com/crosspoint-reader/crosspoint-reader/43694c9018d26446ab30cce2fa65ee608355ae50/platformio.ini"
+}

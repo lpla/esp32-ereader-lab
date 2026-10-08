@@ -1,0 +1,16 @@
+{
+  "source_run": "history2332-48-head",
+  "files_sha256": {
+    "input.json": "a0f939869347d1a029c474d361cfc7054e2b68d8dd037eefc1dc5746ea80b402",
+    "result.json": "04d8e6d70a3e16078d948bf5efc748a190b9e60b909c4fd70f1186894c9c6937",
+    "uart.log": "6f12082287102ee061eb16e14516085e7e7bd1b77aa0985363159d6c294ddc65"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

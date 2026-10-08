@@ -1,17 +1,40 @@
 # ESP32 e-reader lab
 
-Automate stock e-reader firmware in Espressif QEMU or `esp-emulator`, inject inputs through GDB, and capture screens for feature comparison with open firmware such as CrossPoint.
+Run CrossPoint's embedded firmware and focused regression probes in Espressif
+QEMU and esp-emulator. Guest tests add the C3 allocator, 32-bit ABI, FreeRTOS and
+Wi-Fi/lwIP behavior to the native simulator's fast UI coverage.
 
-This is a research harness. It currently targets the **pinned Xteink X4 stock v5.1.6 application** on ESP32-C3. On-disk application bytes remain unchanged; hardware responses are substituted at version-specific boundaries. The optional QEMU fast-input adapter also records its runtime entry-point patches. The X4 application runs in a constructed flash layout using a public X3 bootloader/data image. It is not an original X4 full dump.
+Current work is emulator reliability and reproducing CrossPoint problems.
+Closed-stock feature comparisons stopped on 2026-10-08; the earlier experiments
+remain archived in [SOURCE_FEATURES.md](docs/SOURCE_FEATURES.md) and
+[FEATURE_SCOPE.md](docs/FEATURE_SCOPE.md).
 
-The [source-driven audit](docs/SOURCE_FEATURES.md) also includes public X4 Pro
-stock/Licorice images with recorded bring-up blockers. Independent C3 guest
-probes exercise allocator fragmentation and an actual CrossPoint networking PR.
+Start with [the current runner improvements and evidence](docs/REGRESSION_RUNNERS.md).
+The default newer engine is hash-pinned esp-emulator **0.48.0**. QEMU remains
+`esp-develop-9.2.2-20260417`; 0.45.0 stays available for explicit engine-version
+controls. These are harness and adapter improvements, not emulator-core forks.
 
-New follow-up: [older allocator/XTC tests](docs/HISTORICAL_TESTS.md) and
-[feature comparison filtered through CrossPoint scope](docs/FEATURE_SCOPE.md).
+A firmware-created AP now supports automated host uploads and real guest AP
+teardown/restart. The full CrossPoint web activity also uploads/downloads an
+EPUB through its actual SD filesystem and reaches the AP-exit restart request.
+Full-reader checkpoints require a paint from the current
+activity, and debugger register handling avoids speculative zero-address reads.
+See [older issue/PR results and feedback decisions](docs/REGRESSION_RUNNERS.md#older-work-and-feedback).
 
-## What works
+Download engines without closed firmware:
+
+```sh
+python3 scripts/download.py --emulators-only
+python3 scripts/prepare.py --emulators-only
+docker build -t crosspoint-esp-emulation-lab:2026-10-04 .
+pio run -d probes/wifi-ap
+python3 scripts/prepare_ap.py
+docker run --rm --network none -v "$PWD:/work" \
+  crosspoint-esp-emulation-lab:2026-10-04 \
+  python3 scripts/probe_ap.py --name my-ap-test
+```
+
+## Earlier coverage (0.45.0; historical)
 
 | Capability | QEMU | esp-emulator v0.45.0 |
 |---|---|---|
@@ -74,25 +97,23 @@ The screenshots represent firmware requests to the display driver. They do not m
 
 ## Current priority
 
-Feature testing now follows a [source-driven catalogue](docs/SOURCE_FEATURES.md),
-with claims from manufacturer manuals, pinned CrossPoint documentation and user
-reports, and explicit semantic expectations in `cases/`. It includes public X4 Pro
-stock/Licorice images, whose current machine bring-up failures are recorded.
+Use **QEMU** for practical SD/EPUB regressions and **esp-emulator 0.48.0** for
+embedded Wi-Fi/AP workflows. Keep CrossPoint's allocator, filesystem, parser,
+rendering and activity code executing; label the board transport supplied by the
+adapter. The [current report](docs/REGRESSION_RUNNERS.md) records exact source
+pins, completed and incomplete runs, and older issue/PR feedback decisions.
 
-For hardware-related PR experiments, the newer emulator runs the real guest C3
-allocator and Wi-Fi/lwIP stack. An isolated A/B of CrossPoint PR #3612 passed TCP
-DF/checksum/UDP/reconnect checks. See [executed results and limits](docs/HARDWARE_PR_TESTING.md).
-Both engines now execute full CrossPoint C3 cold EPUB layout, page turning and
-reader exit with real guest allocator diagnostics and matching logical SD counts.
-See [machine improvements and expanded PR evidence](docs/MACHINE_IMPROVEMENTS.md).
-SD-font PRs still need exact-base/candidate font workloads; this control is not a
-claim that those candidates passed.
+Exact candidate comparisons remain necessary before commenting on a PR. The
+existing [hardware PR results](docs/HARDWARE_PR_TESTING.md) and
+[historical tests](docs/HISTORICAL_TESTS.md) distinguish component probes from
+full firmware integration. Controls do not establish that an unexecuted
+candidate passed. Physical timing, RF, reset/RTC retention and complete board
+emulation remain separate validation work.
 
-Use **QEMU** to obtain practical SD/EPUB access and compare reading features. A storage transport adapter is acceptable for this phase: keep the firmware's filesystem, EPUB parser and rendering logic executing, and label the replaced hardware boundary. The full CrossPoint machine runner is now available; physical timing and complete
-board emulation remain separate work.
-
-CrossInk comparison is outside the current scope. The [comparison matrix](docs/EPUB_COMPARISON.md) records results for stock v5.1.6 and pinned CrossPoint source, using the same EPUB fixtures. The [native compatibility patch and runner](compat/README.md) make the CrossPoint side reproducible. The native feature comparison and full C3 machine workloads have distinct evidence.
-No physical-device equivalence is claimed.
+The earlier stock/CrossPoint feature catalogue and comparison are archived in
+[SOURCE_FEATURES.md](docs/SOURCE_FEATURES.md) and
+[EPUB_COMPARISON.md](docs/EPUB_COMPARISON.md). CrossInk comparison is outside the
+current scope.
 
 ## Contributing
 

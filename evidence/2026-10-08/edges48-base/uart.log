@@ -1,0 +1,70 @@
+
+    ╻ ╻ ╻ ╻
+   ┏┻━┻━┻━┻┓    ┏━╸┏━┓┏━┓   ┏━╸┏┳┓╻ ╻
+  ━┫       ┣━   ┣╸ ┗━┓┣━┛╺━╸┣╸ ┃┃┃┃ ┃
+  ━┫ ESP32 ┣━   ┗━╸┗━┛╹     ┗━╸╹ ╹┗━┛
+  ━┫       ┣━
+   ┗┳━┳━┳━┳┛    ESP32 series emulator · v0.48.0
+    ╹ ╹ ╹ ╹     https://github.com/espressif/esp-emulator
+
+[INFO  esp_emu] Loaded firmware: 4194304 bytes
+[INFO  machine] WiFi SoftAP: WPA2/WPA3 transition enabled (PWE Both) for SSID 'myssid'
+[INFO  net_user] user-net: DNS forwarder upstream [192.168.65.7:53], restrict=false
+[INFO  net_user] user-net: backend ready (gateway 192.168.4.1, 0 hostfwd rules)
+[INFO  esp_emu] Network backend: user-mode (smoltcp NAT, 192.168.4.1 -> host loopback)
+[INFO  esp_emu] Loaded ROM ELF: <embedded esp32c3> (556332 bytes)
+[INFO  esp_emu] Booting from real ROM reset vector (use --skip-rom to bypass)
+[INFO  machine] ROM ELF: 4468 symbols loaded
+[INFO  machine] ROM ELF loaded, 15 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000000, SP=0x3FCDE710
+[INFO  esp_emu] Starting emulation (chip=esp32c3, batch_size=50000)
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x110c
+load:0x403cbf10,len:0xb54
+load:0x403ce710,len:0x2f9c
+entry 0x403cbf10
+LAB_START {"idf":"v5.5.5","chip":"ESP32-C3","wifi_driver_substituted":false}
+LAB_HEAP {"phase":"baseline","cycle":-1,"free":263176,"largest":122868,"minimum":256620,"integrity":true}
+LAB_ALLOCATED 118
+LAB_HEAP {"phase":"allocated","cycle":-1,"free":5040,"largest":1268,"minimum":3724,"integrity":true}
+LAB_HEAP {"phase":"holes","cycle":-1,"free":134044,"largest":2292,"minimum":3604,"integrity":true}
+LAB_LARGE {"requested":3316,"free_before":134044,"success":false}
+LAB_HEAP {"phase":"released","cycle":-1,"free":263176,"largest":122868,"minimum":3604,"integrity":true}
+LAB_HEAP {"phase":"before_wifi","cycle":0,"free":263176,"largest":122868,"minimum":3604,"integrity":true}
+LAB_WIFI {"cycle":0,"connected":true,"status":3,"ip":"192.168.4.2"}
+LAB_HEAP {"phase":"wifi_active","cycle":0,"free":206640,"largest":114676,"minimum":3604,"integrity":true}
+LAB_TCP {"cycle":0,"connected":true,"http_200":true}
+LAB_PACKETS {"cycle":0,"tcp":5,"tcp_df":0,"udp":1,"udp_df":0,"bad_ip_checksums":0}
+[  1721][W][STA.cpp:145] _onStaArduinoEvent(): Reason: 8 - ASSOC_LEAVE
+LAB_HEAP {"phase":"wifi_off","cycle":0,"free":242340,"largest":114676,"minimum":3604,"integrity":true}
+LAB_HEAP {"phase":"before_wifi","cycle":1,"free":242340,"largest":114676,"minimum":3604,"integrity":true}
+LAB_WIFI {"cycle":1,"connected":true,"status":3,"ip":"192.168.4.2"}
+LAB_HEAP {"phase":"wifi_active","cycle":1,"free":205912,"largest":114676,"minimum":3604,"integrity":true}
+LAB_TCP {"cycle":1,"connected":true,"http_200":true}
+LAB_PACKETS {"cycle":1,"tcp":5,"tcp_df":0,"udp":1,"udp_df":0,"bad_ip_checksums":0}
+[  3420][W][STA.cpp:145] _onStaArduinoEvent(): Reason: 8 - ASSOC_LEAVE
+LAB_HEAP {"phase":"wifi_off","cycle":1,"free":242040,"largest":114676,"minimum":3604,"integrity":true}
+LAB_HEAP {"phase":"before_wifi","cycle":2,"free":242040,"largest":114676,"minimum":3604,"integrity":true}
+LAB_WIFI {"cycle":2,"connected":true,"status":3,"ip":"192.168.4.2"}
+LAB_HEAP {"phase":"wifi_active","cycle":2,"free":205588,"largest":114676,"minimum":3604,"integrity":true}
+LAB_TCP {"cycle":2,"connected":true,"http_200":true}
+LAB_PACKETS {"cycle":2,"tcp":6,"tcp_df":0,"udp":1,"udp_df":0,"bad_ip_checksums":0}
+LAB_EDGE {"name":"whole_tcp","pass":true}
+LAB_EDGE {"name":"unaligned_tcp","pass":true}
+LAB_EDGE {"name":"tcp_options","pass":true}
+LAB_EDGE {"name":"already_df","pass":true}
+LAB_EDGE {"name":"more_fragments","pass":true}
+LAB_EDGE {"name":"fragment_offset","pass":true}
+LAB_EDGE {"name":"udp","pass":true}
+LAB_EDGE {"name":"ipv6_tag","pass":true}
+LAB_EDGE {"name":"short_header","pass":true}
+LAB_EDGE {"name":"truncated","pass":true}
+LAB_EDGE {"name":"split_header","pass":true}
+[  5119][W][STA.cpp:145] _onStaArduinoEvent(): Reason: 8 - ASSOC_LEAVE
+LAB_HEAP {"phase":"wifi_off","cycle":2,"free":241992,"largest":114676,"minimum":3604,"integrity":true}
+LAB_DONE
+[INFO  esp_emu] Exit-on string 'LAB_DONE' found in output

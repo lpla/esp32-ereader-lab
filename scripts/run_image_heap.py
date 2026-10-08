@@ -5,6 +5,7 @@ import json
 import re
 import subprocess
 from run_lab import ROOT, IMAGE
+from engines import engine,ESP_VERSIONS,DEFAULT_ESP
 
 
 def records(log):
@@ -21,7 +22,9 @@ def main():
     parser.add_argument('--engine', choices=['qemu', 'esp-emu'], required=True)
     parser.add_argument('--label', choices=['base', 'head'], required=True)
     parser.add_argument('--name', required=True)
+    parser.add_argument('--esp-version', choices=ESP_VERSIONS, default=DEFAULT_ESP)
     args = parser.parse_args()
+    executable,identity=engine(args.engine,args.esp_version)
     if not args.name.replace('-', '').isalnum():
         parser.error('Use letters, digits and hyphens')
     metadata = json.loads((ROOT / 'firmware/image-heap-provenance.json').read_text())
@@ -41,12 +44,12 @@ def main():
     directory = ROOT / 'results' / args.name
     directory.mkdir(exist_ok=False)
     (directory / 'input.json').write_text(json.dumps(dict(**metadata, label=args.label,
-        engine=args.engine, allocator_substituted=False, tone_adjustment='identity',
+        engine=args.engine, engine_identity=identity, allocator_substituted=False, tone_adjustment='identity',
         component_scope='BitmapHelpers.h ditherers; not full PNG/BMP/XTC integration'), indent=2) + '\n')
     docker = ['docker', 'run', '--rm', '--network', 'none', '--cpus', '2', '--memory', '1g',
               '-v', f'{ROOT}:/work', IMAGE]
     if args.engine == 'esp-emu':
-        command = docker + ['tools/esp-emu-0.45.0-x86_64-unknown-linux-gnu/esp-emu',
+        command = docker + [str(executable.relative_to(ROOT)),
             '--chip', 'esp32c3', '--firmware', str(image.relative_to(ROOT)),
             '--timeout', '25s', '--exit-on', 'LAB_DONE', '--log-color', 'never']
         with (directory / 'uart.log').open('w') as out:

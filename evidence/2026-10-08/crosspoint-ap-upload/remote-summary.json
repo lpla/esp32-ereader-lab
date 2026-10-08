@@ -1,0 +1,23 @@
+{
+  "diagnostics": {
+    "bus_faults": 1,
+    "bus_fault_examples": [
+      "Bus fault: read8 unmapped 0x3FFFFFFC"
+    ],
+    "debugger_read_faults": 1,
+    "debugger_read_addresses": {
+      "0x3ffffffc": 1
+    },
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": false,
+    "physical_memory_safety_validated": false
+  },
+  "remote_log_sha256": "9bbd0ecb3cc03d70743f518cb932a67bfdb4aa08241d9cfd810cbbde9da31bec",
+  "remote_log_bytes": 2397909,
+  "packet_excerpts": [
+    "1\n  [remote] Packet received: 6f101069\n  [remote] Sending packet: $m3ffffffc,4#c7\n  [remote] Packet received: E14\n0x40000000 in ?? ()\n[remote] start_remote_1: exit\n[remote] Sending packet: $m4200d680,40#c5\n[remote] Packet received"
+  ],
+  "interpretation": "Invalid GDB reads match warning addresses/counts; not physical memory safety evidence"
+}

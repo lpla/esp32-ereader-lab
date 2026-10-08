@@ -1,0 +1,17 @@
+{
+  "esp-emu-0.45.0": {
+    "path": "tools/esp-emu-0.45.0-x86_64-unknown-linux-gnu/esp-emu",
+    "version": "0.45.0",
+    "sha256": "e9e0509eae3994d88be2ef7944f2e84fc6c6616690e7719c6ae4acd3c8a622a8"
+  },
+  "esp-emu-0.48.0": {
+    "path": "tools/esp-emu-0.48.0-x86_64-unknown-linux-gnu/esp-emu",
+    "version": "0.48.0",
+    "sha256": "858d84e3d99539511870c6042b629ee94d35cc204f258a977f68b082fe3d8750"
+  },
+  "qemu": {
+    "path": "tools/qemu/bin/qemu-system-riscv32",
+    "version": "esp-develop-9.2.2-20260417",
+    "sha256": "834699a726720f5273b79bb1e8b3f735f6e0540f17fdf466dfd20055605f2b4d"
+  }
+}

@@ -3,7 +3,7 @@
 # Substitute SD sectors, ADC/GPIO, panel transport and USB logging; keep guest
 # FreeRTOS, allocator, FAT, HAL mutexes, EPUB engine and framebuffer allocation.
 python
-import gdb,json,os,struct
+import gdb,json,os,struct,re
 from pathlib import Path
 d=Path(os.environ['LAB_RESULT_DIR'])
 profile=json.loads((d/'input.json').read_text())
@@ -11,22 +11,34 @@ symbols=profile['symbols']
 def address(name):return int(symbols[name])
 card=Path(os.environ['LAB_CARD_IMAGE']).open('r+b',buffering=0)
 sectors=os.fstat(card.fileno()).st_size//512
-sd_events=[];writes=[];front=0;active=False;painted=False;page_ready=False;rendered_pages=0;page_tick=0
+sd_events=[];writes=[];front=0;active=False;painted=False;page_ready=False;rendered_pages=0;page_tick=0;current_activity=None
 scenario=os.environ.get('LAB_MACHINE_SCENARIO','read')
 checkpoint_activity=os.environ.get('LAB_CHECKPOINT_ACTIVITY','Home')
+activity_tick=0;exit_tick=None
 
-def reg(n):return int(gdb.parse_and_eval('$'+n))&0xffffffff
+
+registers=[]
+REGISTER_INDEX={'ra':1,'a0':10,'a1':11,'a2':12,'a3':13}
+def reg(n):return registers[REGISTER_INDEX[n]]
 
 def ret(value=None):
- if value is not None:gdb.execute('set $a0 = %d'%value)
- gdb.execute('set $pc = $ra')
+ ra=reg('ra')
+ # Raw RV32 register packets avoid GDB's speculative stack/prologue scans.
+ for number,data in ([(10,value)] if value is not None else [])+[(32,ra)]:
+  reply=gdb.execute('maintenance packet P%x=%s'%(number,struct.pack('<I',data&0xffffffff).hex()),to_string=True)
+  if '"OK"' not in reply:raise RuntimeError('Remote register write rejected: '+reply)
+ gdb.execute('maintenance flush register-cache',to_string=True)
 
 class Boundary(gdb.Breakpoint):
  def __init__(self,address,kind,multiple=False):
   super().__init__('*'+hex(address),type=gdb.BP_HARDWARE_BREAKPOINT,internal=True)
   self.kind=kind;self.multiple=multiple
  def stop(self):
-  global front,active,painted,page_ready,rendered_pages,page_tick
+  global front,active,painted,page_ready,rendered_pages,page_tick,registers,current_activity,activity_tick,exit_tick
+  packet=gdb.execute('maintenance packet g',to_string=True)
+  match=re.search(r'received: "([0-9a-fA-F]+)"',packet)
+  if not match or len(match[1])<33*8:raise RuntimeError('Unsupported RV32 register packet')
+  registers=struct.unpack('<33I',bytes.fromhex(match[1][:33*8]))
   guest=gdb.selected_inferior();kind=self.kind
   if kind=='sd-begin':
    obj=reg('a0');cs=bytes(guest.read_memory(reg('a1'),1))[0]
@@ -50,6 +62,16 @@ class Boundary(gdb.Breakpoint):
     elapsed=(tick-page_tick)&0xffffffff
     if rendered_pages==1 and channel==2 and 100<=elapsed<240:raw=5
     if rendered_pages>=2 and channel==1 and 400<=elapsed<540:raw=3512
+   if scenario=='web-ap':
+    tick=struct.unpack('<I',bytes(guest.read_memory(address('xTickCount'),4)))[0]
+    elapsed=(tick-activity_tick)&0xffffffff
+    if current_activity in ('Home','NetworkModeSelection'):
+     if channel==2 and (100<=elapsed<240 or 400<=elapsed<540):raw=5
+     if channel==1 and 800<=elapsed<940:raw=2694
+    done=d/'http-result.json'
+    if current_activity=='CrossPointWebServer' and done.exists() and json.loads(done.read_text()).get('completed'):
+     if exit_tick is None:exit_tick=tick
+     if channel==1 and 100<=((tick-exit_tick)&0xffffffff)<240:raw=3512
    guest.write_memory(reg('a2'),struct.pack('<I',raw))
    ret(0)
   elif kind=='gpio':ret(0 if reg('a0')==6 else 1)
@@ -60,7 +82,7 @@ class Boundary(gdb.Breakpoint):
    name='write-%03d.bin'%len(writes)
    (d/name).write_bytes(bytes(guest.read_memory(pointer,48000)))
    invert=bool(bytes(guest.read_memory(obj+69,1))[0])
-   writes.append(dict(file=name,x=0,y=0,width=width,height=height,invert=invert,mirror_y=False))
+   writes.append(dict(file=name,x=0,y=0,width=width,height=height,invert=invert,mirror_y=False,activity=current_activity))
    (d/'display-writes.json').write_text(json.dumps(writes,indent=2))
    if active:
     painted=True
@@ -72,15 +94,27 @@ class Boundary(gdb.Breakpoint):
    data=bytes(guest.read_memory(reg('a1'),length))
    with (d/'guest.log').open('ab') as f:f.write(data)
    ret(length)
-   if ('Entering activity: '+checkpoint_activity).encode() in data:active=True
+   entered=re.search(rb'Entering activity: ([A-Za-z0-9]+)',data)
+   if entered:
+    current_activity=entered[1].decode()
+    active=current_activity==checkpoint_activity
+    painted=False
+    activity_tick=struct.unpack('<I',bytes(guest.read_memory(address('xTickCount'),4)))[0]
+   if scenario=='web-ap' and b'Web server started successfully' in data:
+    current_activity='CrossPointWebServer';active=True;painted=False
    if b'Rendered page in' in data or (b'[XTR]' in data and b'Rendered page ' in data):
     rendered_pages+=1
     page_tick=struct.unpack('<I',bytes(guest.read_memory(address('xTickCount'),4)))[0]
     page_ready=True
     guest.write_memory(address('loop()::lastMemPrint'),struct.pack('<I',0xffffd000))
-   if painted and b'[MEM]' in data and (checkpoint_activity=='Home' or page_ready):
-    (d/'checkpoint.json').write_text(json.dumps(dict(reason='guest heap diagnostic',front_reads=front,rendered_pages=rendered_pages,scenario=scenario)))
+   if scenario!='web-ap' and active and painted and b'[MEM]' in data and (checkpoint_activity=='Home' or page_ready) and (scenario!='turn-exit' or rendered_pages>=2):
+    (d/'checkpoint.json').write_text(json.dumps(dict(protocol=2,activity=current_activity,display_after_activity_entered=True,
+     reason='guest heap diagnostic',front_reads=front,rendered_pages=rendered_pages,scenario=scenario)))
     return True
+  elif kind=='restart-observe':
+   (d/'checkpoint.json').write_text(json.dumps(dict(protocol=2,activity=current_activity,display_after_activity_entered=painted,
+    reason='guest requested restart after AP exit',reset_executed=False,scenario=scenario)))
+   return True
   elif kind=='boot':ret(1) # AfterFlash, explicit simulated cold flash boot.
   elif kind=='true':ret(1)
   elif kind=='sync':ret(1)
@@ -100,4 +134,5 @@ for hook_address,kind,multiple in [
  (address('freeink::EpdBus::endTxn()'),'void',False),(address('freeink::EpdBus::rawWriteBytes(unsigned char const*, unsigned short)'),'void',False),
  (address('freeink::EpdBus::waitBusy(freeink::BusyPolarity, char const*)'),'true',False),(address('freeink::EpdBus::waitBusy(char const*)'),'true',False),(address('freeink::EpdBus::waitRefreshComplete(char const*)'),'true',False)]:
  Boundary(hook_address,kind,multiple)
+if scenario=='web-ap':Boundary(address('esp_restart'),'restart-observe')
 end

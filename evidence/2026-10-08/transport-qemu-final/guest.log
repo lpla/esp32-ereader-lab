@@ -1,0 +1,38 @@
+[268] [DBG] [UI] Using Lyra theme
+[570] [INF] [HW] Xteink probe scores: pass1=0 pass2=0 verdict=0
+[571] [XTDET] NVS hw_calib/screenType: not set
+[653] [XTDET] bus probe VER=FF FF FF FF FF FLG=FF -> default controller
+[654] [ERR] [GYR] SDK IMU not found
+[654] [INF] [CLK] RTC not found
+[654] [INF] [MAIN] Hardware detect: X4
+[655] [SD] SD card detected
+[665] [DBG] [UI] Using Lyra theme
+[671] [DBG] [MAIN] Starting CrossPoint version 1.6.5-dev-detached-223c20b48
+[716] [DBG] [MAIN] Display initialized
+[717] [DBG] [SDREG] Fonts directory not found: /.fonts
+[717] [DBG] [SDREG] Fonts directory not found: /fonts
+[718] [DBG] [SDREG] Discovery complete: 0 families
+[718] [DBG] [SDFS] SD font system ready (0 families discovered)
+[718] [DBG] [MAIN] Fonts setup
+[718] [DBG] [ACT] Entering activity: Boot
+[724] [DBG] [GFX] Time = 6 ms from clearScreen to displayBuffer
+[751] [DBG] [ACT] Exiting activity: Boot
+[751] [DBG] [ACT] Entering activity: XtcReader
+[751] [INF] [MEM] reader enter: free=160104 max_block=114676
+[752] [DBG] [XTC] Loading XTC: /table6001.xtch
+[753] [DBG] [XTC] Header: magic=0x48435458 (XTCH), ver=1.0, pages=6001, bitDepth=2
+[753] [DBG] [XTC] Page table validated: 6001 pages, default 480x800
+[753] [DBG] [XTC] Opened file: /table6001.xtch (6001 pages, 480x800)
+[753] [DBG] [XTC] Loaded XTC: /table6001.xtch (6001 pages)
+[761] [XTC] Failed to open file for reading: /.crosspoint/xtc_1316158943/progress.bin
+[1033] [DBG] [GFX] Time = 241 ms from clearScreen to displayBuffer
+[1539] [DBG] [XTR] Rendered page 1/6001 (2-bit grayscale)
+[1545] [INF] [MEM] Free: 159268 bytes, Total: 264700 bytes, Min Free: 60640 bytes, MaxAlloc: 114676 bytes
+[2430] [DBG] [XTR] Rendered page 2/6001 (2-bit grayscale)
+[2433] [INF] [MEM] Free: 158780 bytes, Total: 264700 bytes, Min Free: 59084 bytes, MaxAlloc: 114676 bytes
+[2982] [DBG] [ACT] Exiting activity: XtcReader
+[2982] [INF] [MEM] reader exit: free=158804 max_block=114676
+[2993] [DBG] [ACT] Entering activity: Home
+[2999] [HOME] Failed to open file for reading: /.crosspoint/xtc_1316158943/thumb_226.bmp
+[3006] [DBG] [GFX] Time = 10 ms from clearScreen to displayBuffer
+[3017] [INF] [MEM] Free: 144000 bytes, Total: 264700 bytes, Min Free: 45536 bytes, MaxAlloc: 114676 bytes

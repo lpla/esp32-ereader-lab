@@ -1,5 +1,7 @@
 # Full CrossPoint machine workloads and PR evidence — 2026-10-04
 
+Follow-up: [current regression runners and corrected checkpoint contract](REGRESSION_RUNNERS.md).
+
 New follow-up: [older PR/issue experiments](HISTORICAL_TESTS.md) and
 [scope-aware feature investigation](FEATURE_SCOPE.md).
 

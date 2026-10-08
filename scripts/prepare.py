@@ -4,6 +4,7 @@ import hashlib
 import json
 import struct
 import tarfile
+import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -39,10 +40,12 @@ def inspect(data):
 
 
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--emulators-only',action='store_true');args=parser.parse_args()
     for directory in ('firmware', 'tools', 'results'):
         (ROOT / directory).mkdir(exist_ok=True)
     manifest = json.loads((ROOT / 'downloads/manifest.json').read_text())
     for entry in manifest['files']:
+        if args.emulators_only and not entry['file'].startswith(('esp-emu','qemu')):continue
         data = (ROOT / 'downloads' / entry['file']).read_bytes()
         assert len(data) == entry['bytes'], entry['file']
         assert hashlib.sha256(data).hexdigest() == entry['sha256'], entry['file']
@@ -61,6 +64,10 @@ def main():
         assert hashlib.sha256((ROOT / "downloads" / archive).read_bytes()).hexdigest() == expected
         with tarfile.open(ROOT / "downloads" / archive) as tar:
             tar.extractall(ROOT / "tools", filter="data")
+    # This release is pinned by GitHub's published asset digest in the manifest.
+    with tarfile.open(ROOT/'downloads/esp-emu-0.48.0-x86_64-unknown-linux-gnu.tar.gz') as tar:
+        tar.extractall(ROOT/'tools', filter='data')
+    if args.emulators_only:return
     for source, name in [('x4pro-xtos-v7.4.4.bin', 'x4pro-stock-padded'),
                          ('x4pro-xtos_licorice-260923.bin', 'x4pro-licorice-padded')]:
         data = (ROOT / 'downloads' / source).read_bytes()

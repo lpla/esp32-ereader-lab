@@ -1,5 +1,8 @@
 # Source-driven feature comparison — 2026-10-04
 
+Archived investigation: closed-stock feature search stopped on 2026-10-08.
+Current work is [CrossPoint emulator regression infrastructure](REGRESSION_RUNNERS.md).
+
 Follow-up: [broader feature comparison and current CrossPoint scope](FEATURE_SCOPE.md),
 including existing in-book search work, executed Auto Flip and Pro RTC diagnosis.
 

@@ -1,0 +1,42 @@
+{
+  "contract_pass": true,
+  "summaries": {
+    "base": {
+      "edge_cases_passed": 11,
+      "tcp": 16,
+      "tcp_df": 0,
+      "udp": 3,
+      "udp_df": 0,
+      "bad_ip_checksums": 0,
+      "cycles": 3,
+      "http_requests": 3,
+      "fragmentation": {
+        "kind": "LAB_LARGE",
+        "requested": 3316,
+        "free_before": 134044,
+        "success": false
+      },
+      "largest_at_holes": 2292,
+      "recovered_baseline": true
+    },
+    "patched": {
+      "edge_cases_passed": 11,
+      "tcp": 18,
+      "tcp_df": 18,
+      "udp": 3,
+      "udp_df": 0,
+      "bad_ip_checksums": 0,
+      "cycles": 3,
+      "http_requests": 3,
+      "fragmentation": {
+        "kind": "LAB_LARGE",
+        "requested": 3316,
+        "free_before": 134044,
+        "success": false
+      },
+      "largest_at_holes": 2292,
+      "recovered_baseline": true
+    }
+  },
+  "scope": "Isolated PR module in guest IDF/Arduino; full CrossPoint application and carrier/RF behavior untested"
+}

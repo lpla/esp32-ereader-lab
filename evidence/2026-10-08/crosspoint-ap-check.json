@@ -1,0 +1,56 @@
+{
+  "heap": {
+    "free": 79020,
+    "total": 264700,
+    "minimum": 74400,
+    "largest": 73716
+  },
+  "checkpoint": {
+    "protocol": 2,
+    "activity": "CrossPointWebServer",
+    "display_after_activity_entered": true,
+    "reason": "guest requested restart after AP exit",
+    "reset_executed": false,
+    "scenario": "web-ap",
+    "rendered_pages": 0
+  },
+  "activity_paint_verified": true,
+  "diagnostics": {
+    "bus_faults": 1,
+    "bus_fault_examples": [
+      "Bus fault: read8 unmapped 0x3FFFFFFC"
+    ],
+    "debugger_read_faults": 1,
+    "debugger_read_addresses": {
+      "0x3ffffffc": 1
+    },
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": false,
+    "physical_memory_safety_validated": false
+  },
+  "engine": {
+    "name": "esp-emu",
+    "version": "0.48.0",
+    "executable_sha256": "858d84e3d99539511870c6042b629ee94d35cc204f258a977f68b082fe3d8750"
+  },
+  "source_inputs": {
+    "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+    "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+    "environment": "default",
+    "card_source_sha256": "6d2b7d607cfc03cdd4178c8ce12a8a39989bf1ea4604e754e0f47dd8fb7e231e",
+    "resumed_book": null
+  },
+  "sd_operations": {
+    "begin": 1,
+    "read": 20,
+    "write": 21
+  },
+  "sd_read_sectors": 20,
+  "sd_write_sectors": 21,
+  "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+  "render_completed": false,
+  "web_ap_completed": true,
+  "physical_performance_valid": false
+}

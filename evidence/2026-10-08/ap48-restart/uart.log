@@ -1,0 +1,54 @@
+
+    ╻ ╻ ╻ ╻
+   ┏┻━┻━┻━┻┓    ┏━╸┏━┓┏━┓   ┏━╸┏┳┓╻ ╻
+  ━┫       ┣━   ┣╸ ┗━┓┣━┛╺━╸┣╸ ┃┃┃┃ ┃
+  ━┫ ESP32 ┣━   ┗━╸┗━┛╹     ┗━╸╹ ╹┗━┛
+  ━┫       ┣━
+   ┗┳━┳━┳━┳┛    ESP32 series emulator · v0.48.0
+    ╹ ╹ ╹ ╹     https://github.com/espressif/esp-emulator
+
+[INFO  esp_emu] Loaded firmware: 16777216 bytes
+[INFO  machine] WiFi SoftAP: WPA2/WPA3 transition enabled (PWE Both) for SSID 'myssid'
+[INFO  net_user] user-net: DNS forwarder upstream [192.168.65.7:53], restrict=true
+[INFO  net_user] user-net: hostfwd TCP 127.0.0.1:18080 -> guest:80
+[INFO  net_user] user-net: backend ready (gateway 192.168.4.1, 1 hostfwd rules)
+[INFO  esp_emu] Network backend: user-mode (smoltcp NAT, 192.168.4.1 -> host loopback)
+[INFO  esp_emu] Loaded ROM ELF: <embedded esp32c3> (556332 bytes)
+[INFO  esp_emu] Booting from real ROM reset vector (use --skip-rom to bypass)
+[INFO  machine] ROM ELF: 4468 symbols loaded
+[INFO  machine] ROM ELF loaded, 15 functions patched for interception
+[INFO  machine] CPU reset at ROM entry: PC=0x40000000, SP=0x3FCDE710
+[INFO  esp_emu] Starting emulation (chip=esp32c3, batch_size=50000)
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x110c
+load:0x403cbf10,len:0xb54
+load:0x403ce710,len:0x2f9c
+entry 0x403cbf10
+AP_HEAP {"phase":"baseline","cycle":0,"free":263864,"largest":122868,"minimum":257308,"integrity":true}
+AP_READY {"cycle":0,"started":true,"ip":"192.168.4.1"}
+AP_HEAP {"phase":"active","cycle":0,"free":207160,"largest":114676,"minimum":205584,"integrity":true}
+AP_UPLOAD {"cycle":0,"bytes":4097,"fnv32":925412639}
+AP_HEAP {"phase":"uploaded","cycle":0,"free":201252,"largest":114676,"minimum":188104,"integrity":true}
+AP_UPLOAD {"cycle":0,"bytes":262177,"fnv32":486019359}
+AP_HEAP {"phase":"uploaded","cycle":0,"free":201228,"largest":114676,"minimum":183052,"integrity":true}
+AP_HEAP {"phase":"off","cycle":0,"free":243628,"largest":114676,"minimum":183052,"integrity":true}
+AP_READY {"cycle":1,"started":true,"ip":"192.168.4.1"}
+AP_HEAP {"phase":"active","cycle":1,"free":206324,"largest":114676,"minimum":183052,"integrity":true}
+AP_UPLOAD {"cycle":1,"bytes":4097,"fnv32":969455586}
+AP_HEAP {"phase":"uploaded","cycle":1,"free":201072,"largest":114676,"minimum":183052,"integrity":true}
+AP_UPLOAD {"cycle":1,"bytes":262177,"fnv32":2032245922}
+AP_HEAP {"phase":"uploaded","cycle":1,"free":201076,"largest":114676,"minimum":182852,"integrity":true}
+AP_HEAP {"phase":"off","cycle":1,"free":243524,"largest":114676,"minimum":182852,"integrity":true}
+AP_READY {"cycle":2,"started":true,"ip":"192.168.4.1"}
+AP_HEAP {"phase":"active","cycle":2,"free":206376,"largest":114676,"minimum":182852,"integrity":true}
+AP_UPLOAD {"cycle":2,"bytes":4097,"fnv32":2780589145}
+AP_HEAP {"phase":"uploaded","cycle":2,"free":201080,"largest":114676,"minimum":182852,"integrity":true}
+AP_UPLOAD {"cycle":2,"bytes":262177,"fnv32":1478012793}
+AP_HEAP {"phase":"uploaded","cycle":2,"free":201080,"largest":114676,"minimum":182852,"integrity":true}
+AP_HEAP {"phase":"off","cycle":2,"free":243528,"largest":114676,"minimum":182852,"integrity":true}
+LAB_DONE
+[INFO  esp_emu] Exit-on string 'LAB_DONE' found in output

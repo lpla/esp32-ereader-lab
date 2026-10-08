@@ -1,5 +1,7 @@
 # Older CrossPoint problems now worth testing
 
+Follow-up: [current regression runners and corrected checkpoint contract](REGRESSION_RUNNERS.md).
+
 Espressif QEMU and esp-emulator run ESP32 machine code, FreeRTOS and the embedded
 allocator. The desktop CrossPoint simulator runs native code with host libraries
 and a simulated heap. It remains useful for UI/parser tests; these machines add

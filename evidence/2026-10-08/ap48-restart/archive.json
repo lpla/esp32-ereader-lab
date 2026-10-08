@@ -1,0 +1,17 @@
+{
+  "source_run": "ap48-restart",
+  "files_sha256": {
+    "command.json": "7f6dbb518a65ddc1e5cc181e932a0488f0aabde2a086a8aea29ed7c1fbe27788",
+    "input.json": "87db82da1a174d3c586edccaac10e9781cfe956a449720cca478a992e844c087",
+    "result.json": "3040a003f8cf7224a2abc038b6065f6b90bcc98e10f2063a075adecdf9c5b5b9",
+    "uart.log": "e96d7392369bde66fa928d709ba0412096a6ca17c35ddc1847d85d3d96d56eb0"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

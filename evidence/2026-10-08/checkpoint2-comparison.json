@@ -1,0 +1,112 @@
+{
+  "first": {
+    "heap": {
+      "free": 143936,
+      "total": 264700,
+      "minimum": 45536,
+      "largest": 114676
+    },
+    "checkpoint": {
+      "protocol": 2,
+      "activity": "Home",
+      "display_after_activity_entered": true,
+      "reason": "guest heap diagnostic",
+      "front_reads": 213,
+      "rendered_pages": 2,
+      "scenario": "turn-exit"
+    },
+    "activity_paint_verified": true,
+    "diagnostics": {
+      "bus_faults": 0,
+      "bus_fault_examples": [],
+      "debugger_read_faults": 0,
+      "debugger_read_addresses": {},
+      "unexplained_bus_faults": 0,
+      "guest_panics": 0,
+      "lockup_reports": 0,
+      "modeled_execution_clean": true,
+      "physical_memory_safety_validated": false
+    },
+    "engine": {
+      "name": "qemu",
+      "version": "esp-develop-9.2.2-20260417",
+      "executable_sha256": "834699a726720f5273b79bb1e8b3f735f6e0540f17fdf466dfd20055605f2b4d"
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "0fb1f8e39fc7b546cb3636cbeafb8c39b40ed8624734e20181f86bdb39376892",
+      "resumed_book": "/table6001.xtch"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 500,
+      "write": 81
+    },
+    "sd_read_sectors": 500,
+    "sd_write_sectors": 81,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "physical_performance_valid": false
+  },
+  "second": {
+    "heap": {
+      "free": 144000,
+      "total": 264700,
+      "minimum": 45536,
+      "largest": 114676
+    },
+    "checkpoint": {
+      "protocol": 2,
+      "activity": "Home",
+      "display_after_activity_entered": true,
+      "reason": "guest heap diagnostic",
+      "front_reads": 173,
+      "rendered_pages": 2,
+      "scenario": "turn-exit"
+    },
+    "activity_paint_verified": true,
+    "diagnostics": {
+      "bus_faults": 1,
+      "bus_fault_examples": [
+        "Bus fault: read8 unmapped 0x3FFFFFFC"
+      ],
+      "debugger_read_faults": 1,
+      "debugger_read_addresses": {
+        "0x3ffffffc": 1
+      },
+      "unexplained_bus_faults": 0,
+      "guest_panics": 0,
+      "lockup_reports": 0,
+      "modeled_execution_clean": false,
+      "physical_memory_safety_validated": false
+    },
+    "engine": {
+      "name": "esp-emu",
+      "version": "0.48.0",
+      "executable_sha256": "858d84e3d99539511870c6042b629ee94d35cc204f258a977f68b082fe3d8750"
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "0fb1f8e39fc7b546cb3636cbeafb8c39b40ed8624734e20181f86bdb39376892",
+      "resumed_book": "/table6001.xtch"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 500,
+      "write": 81
+    },
+    "sd_read_sectors": 500,
+    "sd_write_sectors": 81,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "physical_performance_valid": false
+  },
+  "heap_equal": false,
+  "logical_sd_counts_equal": true,
+  "semantic_screen_requires_image_inspection": true,
+  "physical_performance_valid": false
+}

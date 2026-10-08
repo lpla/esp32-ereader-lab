@@ -1,0 +1,97 @@
+[268] [DBG] [UI] Using Lyra theme
+[570] [INF] [HW] Xteink probe scores: pass1=0 pass2=0 verdict=0
+[571] [XTDET] NVS hw_calib/screenType: not set
+[645] [XTDET] bus probe VER=FF FF FF FF FF FLG=FF -> default controller
+[646] [ERR] [GYR] SDK IMU not found
+[646] [INF] [CLK] RTC not found
+[646] [INF] [MAIN] Hardware detect: X4
+[646] [SD] SD card detected
+[651] [DBG] [UI] Using Lyra theme
+[652] [DBG] [MAIN] Starting CrossPoint version 1.6.5-dev-detached-223c20b48
+[695] [DBG] [MAIN] Display initialized
+[695] [DBG] [SDREG] Fonts directory not found: /.fonts
+[695] [DBG] [SDREG] Fonts directory not found: /fonts
+[696] [DBG] [SDREG] Discovery complete: 0 families
+[696] [DBG] [SDFS] SD font system ready (0 families discovered)
+[696] [DBG] [MAIN] Fonts setup
+[696] [DBG] [ACT] Entering activity: Boot
+[701] [DBG] [GFX] Time = 5 ms from clearScreen to displayBuffer
+[713] [DBG] [ACT] Exiting activity: Boot
+[713] [DBG] [ACT] Entering activity: EpubReader
+[713] [INF] [MEM] reader enter: free=158408 max_block=114676
+[715] [DBG] [GFX] Time = 19 ms from clearScreen to displayBuffer
+[718] [DBG] [EBP] Loading ePub: /omega.epub
+[719] [INF] [CPRO] open: free=158172 max_block=114676
+[905] [BMC] Failed to open file for reading: /.crosspoint/epub_2586578863/book.bin
+[905] [DBG] [EBP] Cache not found, building spine/TOC cache
+[907] [DBG] [BMC] Entering write mode
+[907] [DBG] [BMC] Beginning content opf pass
+[918] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[918] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1458] [DBG] [COF] Using fast index for 3002 manifest items
+[1750] [DBG] [ZIP] Decompressed 25021 bytes into 285362 bytes
+[1750] [DBG] [EBP] Successfully parsed content.opf
+[1921] [DBG] [EBP] OPF pass completed in 1014 ms
+[1921] [DBG] [BMC] Beginning toc pass
+[2042] [DBG] [BMC] Using fast index for 3001 spine items
+[2042] [DBG] [EBP] Falling back to NCX TOC
+[2042] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2866] [DBG] [ZIP] Decompressed 34023 bytes into 365151 bytes
+[2866] [DBG] [EBP] Parsed TOC items
+[2868] [DBG] [EBP] TOC pass completed in 947 ms
+[2868] [DBG] [BMC] Wrote 3001 spine, 3001 TOC entries
+[3060] [DBG] [BMC] Using batch size lookup for 3001 spine items
+[3538] [DBG] [BMC] Batch lookup matched 3001/3001 spine items
+[3728] [DBG] [BMC] Successfully built book.bin
+[3728] [DBG] [EBP] buildBookBin completed in 860 ms
+[3728] [DBG] [EBP] Total indexing completed in 2821 ms
+[3737] [DBG] [EBP] No CSS files to parse, but CssParser created for inline styles
+[3737] [DBG] [EBP] CSS files to parse: 0
+[3744] [DBG] [CSS] Saved 0 rules to complete cache
+[3744] [DBG] [EBP] Loaded 0 CSS style rules from 0 files (0 identical duplicates skipped, complete)
+[3842] [DBG] [BMC] Loaded cache data: 3001 spine, 3001 TOC entries
+[3842] [DBG] [EBP] Loaded ePub: /omega.epub
+[3844] [ERS] Failed to open file for reading: /.crosspoint/epub_2586578863/progress.bin
+[3844] [DBG] [EBP] Core Metadata: cover(0)=, textReference(0)=
+[3845] [DBG] [LOOP] New max loop duration: 3132 ms (activity: 3132 ms)
+[3845] [DBG] [PWR] Going to low-power mode
+[3845] [DBG] [PWR] Restoring normal CPU frequency
+[3846] [DBG] [ERS] Loading file: OEBPS/c001.xhtml, index: 0
+[3847] [SCT] Failed to open file for reading: /.crosspoint/epub_2586578863/sections/0.bin
+[3847] [DBG] [ERS] Cache not found, building...
+[3848] [DBG] [ERS] Heap before section build: 142304 (max block 114676)
+[3861] [DBG] [ZIP] Decompressed 137 bytes into 175 bytes
+[3861] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_2586578863/html/.tmp_0.html (175 bytes)
+[3867] [DBG] [CSS] Loaded 0 rules from complete cache
+[3872] [DBG] [EHP] Time to parse and build pages: 2 ms
+[3872] [DBG] [SCT] Page 0 processed
+[3890] [DBG] [FDC] Prewarm: 9 glyphs in 747 bytes from 1 groups (0 missed)
+[3902] [DBG] [FDC] Prewarm: 12 glyphs in 1097 bytes from 1 groups (0 missed)
+[3905] [DBG] [GFX] Time = 28 ms from clearScreen to displayBuffer
+[3928] [DBG] [ERS] Page render (tiled async): prewarm=24ms bw_render=3ms display=4ms gray_render=5ms wait=0ms gray_write=5ms gray_display=8ms cleanup=1ms total=50ms (planes buffered: 1)
+[3928] [DBG] [ERS] Rendered page in 50ms
+[3930] [INF] [MEM] Free: 141684 bytes, Total: 264700 bytes, Min Free: 68696 bytes, MaxAlloc: 114676 bytes
+[3944] [DBG] [ERS] Progress saved: spine=0 offset=0 page=0
+[3952] [DBG] [PWR] Going to low-power mode
+[4043] [DBG] [PWR] Restoring normal CPU frequency
+[4043] [DBG] [ERS] Loading file: OEBPS/c002.xhtml, index: 1
+[4044] [SCT] Failed to open file for reading: /.crosspoint/epub_2586578863/sections/1.bin
+[4044] [DBG] [ERS] Cache not found, building...
+[4045] [DBG] [ERS] Heap before section build: 141608 (max block 114676)
+[4057] [DBG] [ZIP] Decompressed 137 bytes into 175 bytes
+[4058] [DBG] [SCT] Streamed temp HTML to /.crosspoint/epub_2586578863/html/.tmp_1.html (175 bytes)
+[4063] [DBG] [CSS] Loaded 0 rules from complete cache
+[4068] [DBG] [EHP] Time to parse and build pages: 2 ms
+[4068] [DBG] [SCT] Page 0 processed
+[4087] [DBG] [FDC] Prewarm: 9 glyphs in 751 bytes from 1 groups (0 missed)
+[4098] [DBG] [FDC] Prewarm: 12 glyphs in 1105 bytes from 1 groups (0 missed)
+[4123] [DBG] [ERS] Page render (tiled async): prewarm=23ms bw_render=4ms display=2ms gray_render=5ms wait=0ms gray_write=6ms gray_display=6ms cleanup=2ms total=48ms (planes buffered: 1)
+[4123] [DBG] [ERS] Rendered page in 48ms
+[4128] [DBG] [ERS] Progress saved: spine=1 offset=0 page=0
+[4132] [INF] [MEM] Free: 141656 bytes, Total: 264700 bytes, Min Free: 68696 bytes, MaxAlloc: 114676 bytes
+[4683] [DBG] [ACT] Exiting activity: EpubReader
+[4683] [INF] [MEM] reader exit: free=141460 max_block=114676
+[4689] [DBG] [ACT] Entering activity: Home
+[4693] [HOME] Failed to open file for reading: /.crosspoint/epub_2586578863/thumb_226.bmp
+[4701] [DBG] [GFX] Time = 10 ms from clearScreen to displayBuffer
+[4701] [INF] [MEM] Free: 143392 bytes, Total: 264700 bytes, Min Free: 68696 bytes, MaxAlloc: 114676 bytes

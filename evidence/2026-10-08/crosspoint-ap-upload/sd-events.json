@@ -1,0 +1,253 @@
+[
+  {
+    "operation": "begin",
+    "object": "0x3fc95c7c",
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 0,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 2048,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 0,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 2048,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 2080,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4107,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4108,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4109,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4110,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4111,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 2080,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 3089,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 2080,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 3089,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "write",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4107,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4108,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4109,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4110,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4111,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4112,
+    "count": 1,
+    "result": 1
+  },
+  {
+    "operation": "read",
+    "sector": 4098,
+    "count": 1,
+    "result": 1
+  }
+]

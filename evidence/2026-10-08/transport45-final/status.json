@@ -1,0 +1,27 @@
+{
+  "gdb_exit": 0,
+  "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+  "engine": {
+    "name": "esp-emu",
+    "version": "0.45.0",
+    "executable_sha256": "e9e0509eae3994d88be2ef7944f2e84fc6c6616690e7719c6ae4acd3c8a622a8"
+  },
+  "termination": "terminate emulator before debugger disconnect",
+  "diagnostics": {
+    "bus_faults": 1,
+    "bus_fault_examples": [
+      "Bus fault: read8 unmapped 0x3FFFFFFC"
+    ],
+    "debugger_read_faults": 1,
+    "debugger_read_addresses": {
+      "0x3ffffffc": 1
+    },
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": false,
+    "physical_memory_safety_validated": false
+  },
+  "image_unchanged": true,
+  "timeout_is_not_feature_success": true
+}

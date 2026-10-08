@@ -9,7 +9,7 @@ BASE = Path(__file__).resolve().parents[1] / 'evidence/2026-10-04'
 
 class EvidenceTests(unittest.TestCase):
     def test_archive_hashes(self):
-        for manifest in BASE.glob('*/archive.json'):
+        for manifest in BASE.parent.glob('*/*/archive.json'):
             data = json.loads(manifest.read_text())
             for name, expected in data['files_sha256'].items():
                 with self.subTest(archive=manifest.parent.name, file=name):

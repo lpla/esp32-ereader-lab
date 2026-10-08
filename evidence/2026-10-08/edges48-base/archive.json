@@ -1,0 +1,16 @@
+{
+  "source_run": "edges48-base",
+  "files_sha256": {
+    "command.json": "7210d115bbedb7dccd579c8692bcea16533e6fc68ad55e3ee56b5b0b1626cac5",
+    "status.json": "a4aa9ac30b12ce0b915d9fb0172027f988f8364a48876fcecb47f6d5261ad99a",
+    "uart.log": "327ae64646d11bd2c8270a1e75d09e43d468f43e25e9a546fdf39b8d94800ec2"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

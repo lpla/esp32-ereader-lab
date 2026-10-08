@@ -1,0 +1,16 @@
+{
+  "source_run": "edges48-patched",
+  "files_sha256": {
+    "command.json": "06b6699ed17d716b5267646f97439819c789bf35787e7dedab646af3f2e45aa8",
+    "status.json": "41a6b303d0cd1f0352089e73beebae2f5c7bb8cd35f666df9bd4c7831f3e3adc",
+    "uart.log": "6bef6009ab5b22c886ca6ae61887587ad1c1ff4630079e4dacc9f5591d901187"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

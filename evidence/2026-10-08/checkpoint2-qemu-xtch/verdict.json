@@ -1,0 +1,17 @@
+{
+  "guest_checkpoint_completed": true,
+  "semantic_page_requires_image_inspection": true,
+  "diagnostics": {
+    "bus_faults": 0,
+    "bus_fault_examples": [],
+    "debugger_read_faults": 0,
+    "debugger_read_addresses": {},
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": true,
+    "physical_memory_safety_validated": false
+  },
+  "physical_performance_valid": false,
+  "allocator_substituted": false
+}

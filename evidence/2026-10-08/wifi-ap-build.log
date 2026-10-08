@@ -1,0 +1,154 @@
+Processing c3 (platform: https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip; board: esp32-c3-devkitm-1; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-c3-devkitm-1.html
+PLATFORM: Espressif 32 (55.3.311) > Espressif ESP32-C3-DevKitM-1
+HARDWARE: ESP32C3 160MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-builtin, esp-prog, esp-prog-2, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - contrib-piohome @ 3.4.4 
+ - framework-arduinoespressif32 @ 3.3.11 
+ - framework-arduinoespressif32-libs @ 5.5.5+sha.b774170ff46 
+ - tool-esptoolpy @ 5.3.0 
+ - tool-riscv32-esp-elf-gdb @ 17.1.0+20260402 
+ - toolchain-riscv32-esp @ 14.2.0+20260121
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 44 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- WebServer @ 3.3.11
+|-- WiFi @ 3.3.11
+Building in release mode
+Compiling .pio/build/c3/lib310/FS/FS.cpp.o
+Compiling .pio/build/c3/lib310/FS/vfs_api.cpp.o
+Compiling .pio/build/c3/lib0c8/Network/NetworkClient.cpp.o
+Compiling .pio/build/c3/lib0c8/Network/NetworkEvents.cpp.o
+Compiling .pio/build/c3/lib0c8/Network/NetworkInterface.cpp.o
+Compiling .pio/build/c3/lib0c8/Network/NetworkManager.cpp.o
+Compiling .pio/build/c3/lib0c8/Network/NetworkServer.cpp.o
+Compiling .pio/build/c3/lib0c8/Network/NetworkUdp.cpp.o
+Compiling .pio/build/c3/lib28e/Hash/PBKDF2_HMACBuilder.cpp.o
+Compiling .pio/build/c3/lib28e/Hash/SHA1Builder.cpp.o
+Compiling .pio/build/c3/lib28e/Hash/SHA2Builder.cpp.o
+Compiling .pio/build/c3/lib28e/Hash/SHA3Builder.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/Parsing.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/WebServer.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/detail/mimetable.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/middleware/AuthenticationMiddleware.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/middleware/CorsMiddleware.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/middleware/LoggingMiddleware.cpp.o
+Compiling .pio/build/c3/libdab/WebServer/middleware/MiddlewareChain.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/AP.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/STA.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/WiFi.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/WiFiAP.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/c3/libc47/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/c3/src/main.cpp.o
+Building .pio/build/c3/bootloader.bin
+esptool v5.3.0
+Creating ESP32-C3 image...
+Merged 2 ELF sections.
+Successfully created ESP32-C3 image.
+Generating partitions .pio/build/c3/partitions.bin
+Compiling .pio/build/c3/FrameworkArduino/ColorFormat.c.o
+Compiling .pio/build/c3/FrameworkArduino/Esp.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/FirmwareMSC.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/FunctionalInterrupt.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/HEXBuilder.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/HWCDC.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/HashBuilder.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/MacAddress.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/StringUtils.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/Tone.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/USB.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/USBCDC.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/USBMSC.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/chip-debug-report.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-hosted.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-i2c-ng.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-i2c-slave.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-ldo.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-log-wrapper.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-periman.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-rgb-led.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-tinyusb.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-touch-ng.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/c3/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/c3/FrameworkArduino/firmware_msc_fat.c.o
+Compiling .pio/build/c3/FrameworkArduino/freertos_stats.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/idf_openthread_mpool_wrapper.c.o
+Compiling .pio/build/c3/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/c3/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/c3/FrameworkArduino/main.cpp.o
+Compiling .pio/build/c3/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/c3/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/c3/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/c3/libFrameworkArduino.a
+Indexing .pio/build/c3/libFrameworkArduino.a
+Linking .pio/build/c3/firmware.elf
+                            Memory Type Usage Summary                             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Memory Type/Section ┃ Used [bytes] ┃ Used [%] ┃ Remain [bytes] ┃ Total [bytes] ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ Flash Code          │       781560 │          │                │               │
+│    .text            │       781560 │          │                │               │
+│ Flash Data          │       163548 │          │                │               │
+│    .rodata          │       136260 │          │                │               │
+│    .eh_frame        │        26736 │          │                │               │
+│    .init_array      │          296 │          │                │               │
+│    .appdesc         │          256 │          │                │               │
+│ DRAM                │        98361 │    30.61 │         222935 │        321296 │
+│    .text            │        61624 │    19.18 │                │               │
+│    .bss             │        23200 │     7.22 │                │               │
+│    .data            │        13537 │     4.21 │                │               │
+└─────────────────────┴──────────────┴──────────┴────────────────┴───────────────┘
+Total image size: 1020269 bytes (.bin may be padded larger)
+Note: The reported total sizes may be smaller than those in the technical reference manual due to reserved memory and application configuration. The total flash size available for the application is not included by default, as it cannot be reliably determined due to the presence of other data like the bootloader, partition table, and application partition size.
+Retrieving maximum program size .pio/build/c3/firmware.elf
+Checking size .pio/build/c3/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [=         ]  11.2% (used 36740 bytes from 327680 bytes)
+Flash: [========  ]  75.8% (used 992981 bytes from 1310720 bytes)
+Building .pio/build/c3/firmware.bin
+esptool v5.3.0
+Creating ESP32-C3 image...
+Merged 3 ELF sections.
+Successfully created ESP32-C3 image.
+Creating binary "firmware.factory.bin" with:
+    Offset   | File
+ -  0x0000   | bootloader.bin
+ -  0x8000   | partitions.bin
+ -  0xe000   | boot_app0.bin
+ -  0x10000  | firmware.bin
+Successfully created combined binary image.
+======================== [SUCCESS] Took 125.20 seconds ========================

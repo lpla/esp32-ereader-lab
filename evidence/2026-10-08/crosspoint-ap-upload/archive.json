@@ -1,0 +1,37 @@
+{
+  "source_run": "crosspoint-ap-upload",
+  "files_sha256": {
+    "checkpoint.json": "44b5180a0d0a5b41d6905492143550b5c3f41d5495e53d6c181f7e4d22bf73e6",
+    "command.json": "9bb6e07308d88928b6a4134f7c450889c1967ec93fec0f503c04c7077193af7b",
+    "display-writes.json": "26b6e54b3db0ec47bb6cc60bb523ba7860fc650ab107dd7e41b1ed3595eb373a",
+    "guest.log": "49de52ab046cb0bee4a28113a6b398aac70d21104722b8c82b910dd621febd7a",
+    "http-result.json": "0dfcb423bc6b512cededc566163ca08884d19267ae6a931f493a27adda72ea94",
+    "input.json": "5f089524706082e7a671b3eefd9ba46a16c95f87816c6881cd71d13029cdfd59",
+    "probe.gdb": "3b07bde9de32f52c02b192a8a41cc30ba5a825dba9210a95df062f4a01bbe9d5",
+    "remote-summary.json": "c0f01a2daf3e831c9662909b9d0f8b0f22eb10e3ae988d4919b9daef0d4d62a8",
+    "runner.log": "8b5a2ee23aa5dc080980aaaba380016526989eb633a15cbcdef6b274c254c282",
+    "screen-000.png": "258ed828d6f52d5a62f29fa413b5d70b0efed39c39c0def6e2038e9fe74ccf74",
+    "screen-001.png": "3bfef99c405f1ad290334d58315486b4d4c319e318532acb8cab22dcdd3a30b5",
+    "screen-002.png": "3bfef99c405f1ad290334d58315486b4d4c319e318532acb8cab22dcdd3a30b5",
+    "screen-003.png": "ba8ee3f87350090aaa05a0df08c1b0784b14ae3079034ab42bbfa00e1f80fa79",
+    "screen-004.png": "c32cfca0a8c84d9345727f36eb2ca4a7e4e48d6553c917dde22af7d68479b3ff",
+    "screen-005.png": "6cc502d066dc3334794cb8734ac94be78b69befa9c22299db1c1d87141f8e2b6",
+    "screen-006.png": "43732c379021e58fa8f89f24ec3e995d3bd12a6e218ad13ac11b7e78fbcf9b57",
+    "screen-007.png": "f7660ba68c8dae774183d45f06dcda8583c8bd9569abd3c686f65d93ffb330f0",
+    "screen-008.png": "e385519aa90ba214feb61478f57e748e4a396013d981696e649d90770c93a2ba",
+    "screen-009.png": "ba702ca1af0cbd317201dd63511b8ad3cc83ba75965b9e2fff2a896b90b628e8",
+    "screen.png": "ba702ca1af0cbd317201dd63511b8ad3cc83ba75965b9e2fff2a896b90b628e8",
+    "sd-events.json": "04a10a9e964faf53d394220ea533b7b451e44b27fddf6fc0655d73f6af7b34b0",
+    "status.json": "507db95c962349e239e930e59ac6051d16c3e5c079faca26eb957f16b96964fe",
+    "uart.log": "838215396797b5959e9bfc9fb751b5514b5b912be1598bac37bfa406db86bb41",
+    "verdict.json": "865eabf89c790f3ac330b51afaad74326cbb5b6fd334c6a9b32021daafb4458d"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

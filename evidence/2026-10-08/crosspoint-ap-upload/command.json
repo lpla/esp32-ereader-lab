@@ -1,0 +1,18 @@
+[
+  "/work/tools/esp-emu-0.48.0-x86_64-unknown-linux-gnu/esp-emu",
+  "--chip",
+  "esp32c3",
+  "--firmware",
+  "firmware/crosspoint-machine.bin",
+  "--gdb",
+  "1234",
+  "--timeout",
+  "310s",
+  "--net",
+  "user,restrict=yes,hostfwd=tcp:127.0.0.1:18080-:80",
+  "--log-color",
+  "never",
+  "--gdb-halt",
+  "--wifi-fw-ap-password",
+  ""
+]

@@ -1,0 +1,79 @@
+[415] [DBG] [UI] Using Lyra theme
+[670] [INF] [HW] Xteink probe scores: pass1=0 pass2=0 verdict=0
+[671] [XTDET] NVS hw_calib/screenType: not set
+[739] [XTDET] bus probe VER=FF FF FF FF FF FLG=FF -> default controller
+[739] [ERR] [GYR] SDK IMU not found
+[739] [INF] [CLK] RTC not found
+[739] [INF] [MAIN] Hardware detect: X4
+[739] [SD] SD card detected
+[739] [DBG] [UI] Using Lyra theme
+[740] [DBG] [MAIN] Starting CrossPoint version 1.6.5-dev-detached-223c20b48
+[780] [DBG] [MAIN] Display initialized
+[780] [DBG] [SDREG] Fonts directory not found: /.fonts
+[780] [DBG] [SDREG] Fonts directory not found: /fonts
+[780] [DBG] [SDREG] Discovery complete: 0 families
+[780] [DBG] [SDFS] SD font system ready (0 families discovered)
+[780] [DBG] [MAIN] Fonts setup
+[780] [DBG] [ACT] Entering activity: Boot
+[784] [DBG] [GFX] Time = 4 ms from clearScreen to displayBuffer
+[784] [DBG] [ACT] Exiting activity: Boot
+[784] [DBG] [ACT] Entering activity: Home
+[789] [DBG] [GFX] Time = 5 ms from clearScreen to displayBuffer
+[798] [DBG] [GFX] Time = 4 ms from clearScreen to displayBuffer
+[898] [DBG] [GFX] Time = 4 ms from clearScreen to displayBuffer
+[1198] [DBG] [GFX] Time = 4 ms from clearScreen to displayBuffer
+[1734] [DBG] [ACT] Exiting activity: Home
+[1734] [DBG] [ACT] Entering activity: CrossPointWebServer
+[1734] [DBG] [WEBACT] Free heap at onEnter: 160012 bytes
+[1734] [DBG] [WEBACT] Free heap after SD font cache release: 160012 bytes
+[1734] [DBG] [WEBACT] Launching NetworkModeSelectionActivity...
+[1734] [DBG] [ACT] Pushed to activity stack, new size = 1
+[1734] [DBG] [ACT] Entering activity: NetworkModeSelection
+[1745] [DBG] [GFX] Time = 11 ms from clearScreen to displayBuffer
+[1855] [DBG] [GFX] Time = 11 ms from clearScreen to displayBuffer
+[2160] [DBG] [GFX] Time = 11 ms from clearScreen to displayBuffer
+[2689] [DBG] [ACT] Exiting activity: NetworkModeSelection
+[2689] [DBG] [ACT] Popped from activity stack, new size = 0
+[2689] [DBG] [ACT] Handling result for popped activity
+[2689] [DBG] [WEBACT] Network mode selected: Create Hotspot
+[2689] [DBG] [WEBACT] Starting Access Point mode...
+[2689] [DBG] [WEBACT] Free heap before AP start: 160012 bytes
+[2905] [DBG] [WEBACT] Access Point started!
+[2905] [DBG] [WEBACT] SSID: CrossPoint-Reader
+[2905] [DBG] [WEBACT] IP: 192.168.4.1
+[2905] [DBG] [WEBACT] mDNS started: http://crosspoint.local/
+[2905] [DBG] [WEBACT] DNS server started for captive portal
+[2905] [DBG] [WEBACT] Free heap after AP start: 93644 bytes
+[2905] [DBG] [WEBACT] Starting web server...
+[2905] [DBG] [WEBACT] Free heap before SD font cache release: 93644 bytes
+[2905] [DBG] [WEBACT] Free heap before server alloc: 93644 bytes
+[2905] [DBG] [WEB] [MEM] Free heap before begin: 90568 bytes
+[2905] [DBG] [WEB] Network mode: AP
+[2905] [DBG] [WEB] Creating web server on port 80...
+[2905] [DBG] [WEB] [MEM] Free heap after WebServer allocation: 90132 bytes
+[2905] [DBG] [WEB] Setting up routes...
+[2906] [DBG] [WEB] [MEM] Free heap after route setup: 84868 bytes
+[2907] [DBG] [WEB] WebDAV handler initialized
+[2907] [DBG] [WEB] Starting WebSocket server on port 81...
+[2907] [DBG] [WEB] WebSocket server started
+[2907] [DBG] [WEB] Discovery UDP enabled on port 8134
+[2907] [DBG] [WEB] Web server started on port 80
+[2907] [DBG] [WEB] Access at http://192.168.4.1/
+[2907] [DBG] [WEB] WebSocket at ws://192.168.4.1:81/
+[2907] [DBG] [WEB] [MEM] Free heap after server.begin(): 80244 bytes
+[2907] [DBG] [WEBACT] Web server started successfully
+[2907] [DBG] [LOOP] New max loop duration: 218 ms (activity: 218 ms)
+[2955] [DBG] [GFX] Time = 48 ms from clearScreen to displayBuffer
+[3475] [DBG] [LOOP] New max loop duration: 567 ms (activity: 567 ms)
+[3475] [INF] [MEM] Free: 79020 bytes, Total: 264700 bytes, Min Free: 74400 bytes, MaxAlloc: 73716 bytes
+[4617] [DBG] [WEB] [UPLOAD] START: LABUPLOAD.epub to path: /
+[4618] [DBG] [WEB] [UPLOAD] Free heap: 70196 bytes
+[4618] [DBG] [WEB] [UPLOAD] File created successfully: /LABUPLOAD.epub
+[4620] [DBG] [WEB] [UPLOAD] Complete: LABUPLOAD.epub (2074 bytes in 3 ms, avg 675.1 KB/s)
+[4620] [DBG] [WEB] [UPLOAD] Diagnostics: 1 writes, total write time: 0 ms (0.0%)
+[4620] [DBG] [EPB] Cache does not exist, no action needed
+[4620] [DBG] [BookCache] Done checking metadata cache for: /LABUPLOAD.epub
+[5004] [DBG] [ACT] Exiting activity: CrossPointWebServer
+[5004] [DBG] [WEBACT] Free heap at onExit start: 77672 bytes
+[5041] [DBG] [MAIN] Silent restart (target=home)
+[5041] [DBG] [GFX] Time = 2134 ms from clearScreen to displayBuffer

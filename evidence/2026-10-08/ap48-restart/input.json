@@ -1,0 +1,20 @@
+{
+  "image": "firmware/wifi-ap.bin",
+  "image_sha256": "7dcec20013448ebf3d345160adac27e3e0cedfdfbd12234369b7f3a72704d5a2",
+  "factory_sha256": "33c07603b19b78e0e42d9d190e0b476eedd21b09d99308a2e0aaf01f4bff2e05",
+  "elf_sha256": "14aa50f163063b7ecd379831b159fb4c1a46ddcde52a9d1d59d00217752ecaca",
+  "sources": {
+    "probes/wifi-ap/src/main.cpp": "7ae62ad609d20fd536cfde44f8e592f09b7e913ac4a0282159f67d3419dbf43a",
+    "probes/wifi-ap/platformio.ini": "e2a57ed5bac9d5baee2df8d3b37f25e6f614382c49fe245637a5f609af64418c"
+  },
+  "scope": "Arduino WebServer / actual guest Wi-Fi AP; no CrossPoint application candidate",
+  "engine": {
+    "name": "esp-emu",
+    "version": "0.48.0",
+    "executable_sha256": "858d84e3d99539511870c6042b629ee94d35cc204f258a977f68b082fe3d8750"
+  },
+  "wifi_driver_substituted": false,
+  "guest_network_isolated": true,
+  "physical_radio_validated": false,
+  "physical_performance_validated": false
+}

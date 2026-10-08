@@ -1,0 +1,16 @@
+{
+  "guest_checkpoint_completed": true,
+  "semantic_page_requires_image_inspection": true,
+  "diagnostics": {
+    "bus_faults": 1,
+    "bus_fault_examples": [
+      "Bus fault: read8 unmapped 0x3FFFFFFC"
+    ],
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": false,
+    "physical_memory_safety_validated": false
+  },
+  "physical_performance_valid": false,
+  "allocator_substituted": false
+}
