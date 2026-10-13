@@ -1,0 +1,17 @@
+{
+  "source_run": "GitHub Actions 38422604704",
+  "files_sha256": {
+    "build-0.log": "d53d95605cb79714436ca4e2a49b18d50aca5cc41fe8703a00e2cfddd84f3cb3",
+    "build-1.log": "d2c74ba5c8ae295dc8112079e2fd2ba439fa3201a22fdd7c185af7a39a0a828d",
+    "ci.json": "4e7113b9336e967a78c16b36afa7764220d2724a63dc056c4b6c804326f59401",
+    "command.json": "8cfe3f85e8c3c63730b423f555c4e4b85c777ff3350f88c5e15aa3ecfaad4d19",
+    "input.json": "6f775e2161337a78a19b873da4680c033c6393adc97c0721380770ba2c7bb41f",
+    "result.json": "9d3c3a2de3e67bd53db36a5e930fa6d284f1dc87ad31e8b836d7109a8c236232",
+    "uart.log": "1b5876295142e2b77e821988826369604851f677a4af8c2180bdd0a46f22e122"
+  },
+  "omitted": [
+    "binaries",
+    "SD images",
+    "raw RAM"
+  ]
+}

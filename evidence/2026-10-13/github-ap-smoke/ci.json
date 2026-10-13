@@ -1,0 +1,9 @@
+{
+  "source_commit": "d31bfc4a5b4685d0d32a5ffcdc3cf591ccc6200c",
+  "host_run": "https://github.com/lpla/esp32-ereader-lab/actions/runs/38422547708",
+  "ap_run": "https://github.com/lpla/esp32-ereader-lab/actions/runs/38422604704",
+  "host_conclusion": "success",
+  "ap_conclusion": "success",
+  "guest_result_revalidated_locally": true,
+  "scope": "Fresh Linux GitHub runner; standalone AP component; no full CrossPoint or physical device validation"
+}

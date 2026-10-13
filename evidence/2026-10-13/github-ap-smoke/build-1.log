@@ -1,0 +1,11 @@
+{
+  "image": "firmware/wifi-ap.bin",
+  "image_sha256": "c1532f9b12ee6a8420232f2d1fa8a3460fb9997eee5b9e09d16562aa09df1294",
+  "factory_sha256": "6baca0d1b4ee2ce07e64782329ab0b966fc2deb16a6d7cccd4fd0b94565e42df",
+  "elf_sha256": "35aa5f1d7ae0180016d37673a12b52639489a5529ef543d4fd54e99503c6e771",
+  "sources": {
+    "probes/wifi-ap/src/main.cpp": "7ae62ad609d20fd536cfde44f8e592f09b7e913ac4a0282159f67d3419dbf43a",
+    "probes/wifi-ap/platformio.ini": "e2a57ed5bac9d5baee2df8d3b37f25e6f614382c49fe245637a5f609af64418c"
+  },
+  "scope": "Arduino WebServer / actual guest Wi-Fi AP; no CrossPoint application candidate"
+}

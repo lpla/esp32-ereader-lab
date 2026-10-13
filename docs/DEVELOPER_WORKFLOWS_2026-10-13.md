@@ -47,6 +47,17 @@ manual AP guest workflow are separate checks; consult the
 A workflow definition alone is not executed CI evidence. No new physical-device
 result is claimed.
 
+Publication follow-up: source commit
+`d31bfc4a5b4685d0d32a5ffcdc3cf591ccc6200c` passed
+[host CI](https://github.com/lpla/esp32-ereader-lab/actions/runs/38422547708) and
+[fresh AP guest CI](https://github.com/lpla/esp32-ereader-lab/actions/runs/38422604704).
+The fresh Linux runner downloaded/verified 0.49.0, built the container and guest,
+and completed six matching transfers across three AP starts with valid guest
+heap integrity and no reported bus fault/panic. The downloaded result was also
+checked locally with the AP validator. [Preserved CI evidence](../evidence/2026-10-13/github-ap-smoke)
+includes input/engine hashes, build logs, UART and semantic results. This is the
+standalone component, not full CrossPoint or physical-device validation.
+
 Custom component firmware can now be supplied directly. Arbitrary latest-develop
 full-reader builds still need verified ABI adapters; S3 device workflows,
 reset/RTC recovery, physical timing/RF/e-paper and ARM/WSL end-to-end runs remain
