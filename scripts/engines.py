@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ESP_VERSIONS = ('0.45.0', '0.48.0')
-DEFAULT_ESP = '0.48.0'
+ESP_VERSIONS = ('0.45.0', '0.48.0', '0.49.0')
+DEFAULT_ESP = '0.49.0'
 
 
 def engine(engine_name, esp_version=DEFAULT_ESP, root=ROOT):
@@ -15,6 +15,8 @@ def engine(engine_name, esp_version=DEFAULT_ESP, root=ROOT):
         raise ValueError('Unsupported emulator version')
     pin = pins[key]
     path = root / pin['path']
+    if not path.is_file():
+        raise ValueError(f'Missing {key}: run scripts/download.py --engine {engine_name} --esp-version {esp_version}, then scripts/prepare.py with the same options')
     if hashlib.sha256(path.read_bytes()).hexdigest() != pin['sha256']:
         raise ValueError('Emulator executable differs from its verified package')
     return path, dict(name=engine_name, version=pin['version'], executable_sha256=pin['sha256'])

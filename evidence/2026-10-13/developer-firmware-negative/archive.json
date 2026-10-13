@@ -1,0 +1,18 @@
+{
+  "source_run": "developer-firmware-negative",
+  "files_sha256": {
+    "command.json": "64054321b1a86e90e718b6cd87fadacec78d92d035cc09f08bcb6da1ebae8a07",
+    "input.json": "60a369ba2c7308e7658891549deaeca3440159da19cde5fa9536e78820859756",
+    "result.json": "2235b53c6b9604b33305bbc4378a12a7b9cc39b826dcf613462b299dd781aa27",
+    "source-check.json": "e935ed741aecadcc618089a9cfae1e6a9ac8756798a8de5b88843e1221384a6f",
+    "uart.log": "0fe6cd4de42788c0b02ea39809a3500e3111df642347a35575d9de3ec31e1968"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

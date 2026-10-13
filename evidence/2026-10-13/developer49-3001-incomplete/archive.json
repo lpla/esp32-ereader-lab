@@ -1,0 +1,28 @@
+{
+  "source_run": "developer49-3001",
+  "files_sha256": {
+    "command.json": "16e43fdd5f485a786bd793ce5142250a68468108b8d04201bef98f9a0093d4f0",
+    "display-writes.json": "ac6403e171184ae8983ff05efb572f961fa6a5675bc5138bd20a7976f1746601",
+    "guest.log": "2ce40ac92495376ff88b35830eda87a3db3ea25aaf465a225c073f6369f00297",
+    "input.json": "46fed73654ba8489e6aa6d5778c9f6b86b80b33dcaa697f33681583c22c79968",
+    "probe.gdb": "3b07bde9de32f52c02b192a8a41cc30ba5a825dba9210a95df062f4a01bbe9d5",
+    "remote-summary.json": "59744b8d07fd89a9219ae013f49073f86da3403d012808dd8b19f2e85cf51933",
+    "runner.log": "02b8b35319bb2571c76279628f895a4f2d4c32e477a1e71b72d763bb1fcd5ad3",
+    "screen-000.png": "258ed828d6f52d5a62f29fa413b5d70b0efed39c39c0def6e2038e9fe74ccf74",
+    "screen-001.png": "ab52f981fcdaa77fe0c79ef4479d537477d4bba5d28acab2745799f2cafead3a",
+    "screen.png": "ab52f981fcdaa77fe0c79ef4479d537477d4bba5d28acab2745799f2cafead3a",
+    "sd-events.json": "aa045119caf43d0520fcd8c81a0545ac1f9d96cbd493983e9093b2b42664da60",
+    "state-seed.json": "64f86231b6f4519b4e5e4c37ee8ecaa3dd1f594d768cf259f1fa1f9b78052ad5",
+    "status.json": "09bf4cf2e45363cfddffef76f4464adb45d3133d270dbf1f6c5afc7d744b037b",
+    "uart.log": "73f8d57e1ca1c02571022686d88bceb6e6f5a11d9e8fa798f3ea1ad83937270b",
+    "verdict.json": "f3176ed14579fe183661058ec4abae4a4fd04d197a746cc7afcb45120b8b8270"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

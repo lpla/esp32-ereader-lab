@@ -1,0 +1,110 @@
+{
+  "first": {
+    "heap": {
+      "free": 143516,
+      "total": 264700,
+      "minimum": 70464,
+      "largest": 98292
+    },
+    "checkpoint": {
+      "protocol": 2,
+      "activity": "Home",
+      "display_after_activity_entered": true,
+      "reason": "guest heap diagnostic",
+      "front_reads": 105,
+      "rendered_pages": 2,
+      "scenario": "turn-exit"
+    },
+    "activity_paint_verified": true,
+    "diagnostics": {
+      "bus_faults": 0,
+      "bus_fault_examples": [],
+      "debugger_read_faults": 0,
+      "debugger_read_addresses": {},
+      "unexplained_bus_faults": 0,
+      "guest_panics": 0,
+      "lockup_reports": 0,
+      "modeled_execution_clean": true,
+      "physical_memory_safety_validated": false
+    },
+    "engine": {
+      "name": "qemu",
+      "version": "esp-develop-9.2.2-20260417",
+      "executable_sha256": "834699a726720f5273b79bb1e8b3f735f6e0540f17fdf466dfd20055605f2b4d"
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "6d2b7d607cfc03cdd4178c8ce12a8a39989bf1ea4604e754e0f47dd8fb7e231e",
+      "resumed_book": "/alpha.epub"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 345,
+      "write": 198
+    },
+    "sd_read_sectors": 345,
+    "sd_write_sectors": 198,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "web_ap_completed": false,
+    "physical_performance_valid": false
+  },
+  "second": {
+    "heap": {
+      "free": 143516,
+      "total": 264700,
+      "minimum": 70464,
+      "largest": 98292
+    },
+    "checkpoint": {
+      "protocol": 2,
+      "activity": "Home",
+      "display_after_activity_entered": true,
+      "reason": "guest heap diagnostic",
+      "front_reads": 107,
+      "rendered_pages": 2,
+      "scenario": "turn-exit"
+    },
+    "activity_paint_verified": true,
+    "diagnostics": {
+      "bus_faults": 0,
+      "bus_fault_examples": [],
+      "debugger_read_faults": 0,
+      "debugger_read_addresses": {},
+      "unexplained_bus_faults": 0,
+      "guest_panics": 0,
+      "lockup_reports": 0,
+      "modeled_execution_clean": true,
+      "physical_memory_safety_validated": false
+    },
+    "engine": {
+      "name": "qemu",
+      "version": "esp-develop-9.2.2-20260417",
+      "executable_sha256": "834699a726720f5273b79bb1e8b3f735f6e0540f17fdf466dfd20055605f2b4d"
+    },
+    "source_inputs": {
+      "crosspoint": "223c20b4864da9e7ee400d8234f7544fbbe54b62",
+      "sdk": "aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a",
+      "environment": "default",
+      "card_source_sha256": "6d2b7d607cfc03cdd4178c8ce12a8a39989bf1ea4604e754e0f47dd8fb7e231e",
+      "resumed_book": "/alpha.epub"
+    },
+    "sd_operations": {
+      "begin": 1,
+      "read": 345,
+      "write": 198
+    },
+    "sd_read_sectors": 345,
+    "sd_write_sectors": 198,
+    "image_sha256": "87dabf5962969615adc8d776ce20b3b54cb5d5d0b6795f1f84cd4b9d7932a948",
+    "render_completed": true,
+    "web_ap_completed": false,
+    "physical_performance_valid": false
+  },
+  "heap_equal": true,
+  "logical_sd_counts_equal": true,
+  "semantic_screen_requires_image_inspection": true,
+  "physical_performance_valid": false
+}

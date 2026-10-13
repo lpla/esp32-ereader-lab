@@ -1,26 +1,46 @@
 # Contributing
 
-The near-term goal is automated reading-feature comparison. Prefer small transport/input/capture adapters that let existing firmware logic execute. Broad SoC/peripheral fidelity and performance benchmarking are later work.
+Build reusable CrossPoint regression workflows that developers can reproduce.
+Start with the [developer guide](docs/DEVELOPER_GUIDE.md) and
+[architecture](docs/ARCHITECTURE.md). Keep firmware changes in the separate
+CrossPoint repository and emulator-core changes in their upstream projects.
 
-For new firmware support, provide:
+## Before changing a runner
 
-1. Public provenance or instructions for supplying a user's own firmware, with SHA256 and image layout.
-2. The exact supported chip, firmware revision and hook addresses. Verify the live code/ABI rather than assuming nearby versions match.
-3. Which hardware responses are substituted and which firmware behavior actually executed.
-4. A bounded reproducible scenario with input events, logs and correctly composed screens.
-5. Tests for the relevant host-side adapter and honest failure/timeout status.
+Establish the existing behavior and a concrete assertion. Preserve the component
+being tested: guest allocator, filesystem, protocol or driver. State whether the
+result comes from a component probe, full firmware with board substitutions, or
+physical hardware. Controls do not prove unexecuted candidates passed.
 
-Do not commit firmware, emulator executables, ROMs, private SD images, credentials or generated guest RAM dumps. Screenshots and narrowly selected logs are useful evidence; disclose their provenance. Avoid performance claims from hardware-substituted UI experiments.
+For a new adapter or workflow, include exact chip/source/SDK/image/engine inputs,
+verified ABI where hooks are used, substituted hardware responses, a bounded
+scenario, semantic verdicts and useful logs/screenshots. Preserve failed and
+incomplete runs. A timeout or normal process exit is not an assertion.
 
-The firmware checkout is separate from this repository. CrossPoint changes should be based on observed behavior and tested there, without copying proprietary implementations.
+## Checks
 
-For a feature comparison, start with `cases/catalog.json`: identify the source,
-firmware/model applicability, user value and observable assertion. Distinguish
-implemented claims from user requests and subjective praise. Add a deterministic
-fixture/semantic case, retain partial or blocked outcomes, and require an actual
-target/result rather than menu presence before marking a feature as passed.
+```sh
+python3 -m compileall -q scripts lab.py
+python3 lab.py test
+git diff --check
+```
 
-For hardware PR experiments, keep exact base/head commits and shared build inputs.
-Do not replace the allocator, driver or protocol component being tested. State
-whether the full application or an isolated module executed. An emulator pass
-does not establish physical RF, timing, optical-display or carrier behavior.
+Guest probe changes also require its PlatformIO build and bounded guest scenario.
+Runner changes require an appropriate real guest integration run. Host-only
+documentation changes use link/command review. The optional manual AP workflow
+adds a reproducible guest smoke test; host CI does not execute every workflow.
+
+## Evidence and ownership
+
+Use new run names; keep generated images, packages, binaries, private SD data,
+credentials and guest RAM out of Git. Commit only selected small evidence with
+provenance. Report exact base/head and shared inputs for a comparison. Avoid
+physical speed, RF or optical-display claims from substituted hardware tests.
+
+Agents may implement and verify authorized local tooling changes. The human
+owns maintenance and publication: creating or amending commits requires explicit
+approval, pushing requires an explicit push instruction, and agents must not
+open or close PRs or write PR descriptions. Give concise factual findings and
+checks for the human to use. Public comments/messages also require explicit
+authorization. Read-only reviewers inspect recorded checks; they do not build,
+write files or publish.

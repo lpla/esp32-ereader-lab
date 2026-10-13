@@ -1,0 +1,107 @@
+{
+  "image_sha256": "7dcec20013448ebf3d345160adac27e3e0cedfdfbd12234369b7f3a72704d5a2",
+  "original_path": "<LAB_ROOT>/firmware/wifi-ap.bin",
+  "layout": {
+    "bytes": 16777216,
+    "partitions": [
+      {
+        "type": 1,
+        "subtype": 2,
+        "offset": 36864,
+        "size": 20480,
+        "label": "nvs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 0,
+        "offset": 57344,
+        "size": 8192,
+        "label": "otadata",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 16,
+        "offset": 65536,
+        "size": 1310720,
+        "label": "app0",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 17,
+        "offset": 1376256,
+        "size": 1310720,
+        "label": "app1",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 130,
+        "offset": 2686976,
+        "size": 1441792,
+        "label": "spiffs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 3,
+        "offset": 4128768,
+        "size": 65536,
+        "label": "coredump",
+        "flags": 0
+      }
+    ],
+    "images": [
+      {
+        "offset": 0,
+        "segments": 3,
+        "entry": "0x403cbf10",
+        "chip_id": 5,
+        "flash_size_code": 2,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0
+      },
+      {
+        "offset": 65536,
+        "segments": 6,
+        "entry": "0x403807ce",
+        "chip_id": 5,
+        "flash_size_code": 2,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "ee57070",
+          "project": "arduino-lib-builder",
+          "time": "10:50:59",
+          "date": "Jul 20 2026",
+          "idf": "v5.5.5"
+        }
+      }
+    ]
+  },
+  "source": {
+    "path": "<LAB_ROOT>/probes/wifi-ap",
+    "head": "d365af5779d6356548d03eb1e089ddb493ee8751",
+    "status": " M .github/workflows/host-checks.yml\n M AGENTS.md\n M CONTRIBUTING.md\n M README.md\n M adapters/engines.json\n M downloads/manifest.json\n M scripts/download.py\n M scripts/engines.py\n M scripts/prepare.py\n M scripts/probe.py\n M scripts/run_machine.py\n M tests/test_reliability.py\n?? .github/workflows/ap-guest.yml\n?? config/\n?? docs/ARCHITECTURE.md\n?? docs/DEVELOPER_GUIDE.md\n?? docs/DEVELOPER_READINESS_2026-10-13.md\n?? docs/README.md\n?? docs/TESTING_YOUR_CODE.md\n?? evidence/2026-10-13/\n?? lab.py\n?? scripts/doctor.py\n?? scripts/engine_packages.py\n?? scripts/firmware_contract.py\n?? scripts/probe_firmware.py\n?? scripts/run_firmware.py\n?? tests/test_developer_setup.py\n?? tests/test_public_cli.py\n",
+    "diff_sha256": "12dd229b0c29b4dbe06c5e12e5e60e04372a268beca8bac66916d9ae663817aa",
+    "submodules": "",
+    "untracked_contents_hashed": false
+  },
+  "chip": "esp32c3",
+  "completion_marker": "AP_READY",
+  "seconds": 30,
+  "esp_version": "0.49.0",
+  "scope": "serial component test; no board transport adapter",
+  "guest_network_isolated": true,
+  "flash_state_saved": false,
+  "runner_sources_sha256": {
+    "run_firmware.py": "de759f32ced5d890c4907337a2b9b770a2fb82fdff51ff6e726dd76306a7646b",
+    "probe_firmware.py": "0dfb01422ced5d0647392358ba021bcc5567c2cd6fcd481225287842a98da819",
+    "firmware_contract.py": "99808df7705673e6f1f97ab57a980925949ced0ad3b050cc7d816d1348761168",
+    "engines.py": "2e0b79b4db7599c32950f44eb3a51e9534c76227eace38dd8c73308dda8f3a29",
+    "diagnostics.py": "c4ea6a6a083974a8cf66c0d6c9277b3185daf8872522c6bd84b6416a386091c0",
+    "prepare.py": "2af0af4aa72ad48a5e4645247806bb2b39f4db1d5680fffe42214b14c9c94221"
+  }
+}

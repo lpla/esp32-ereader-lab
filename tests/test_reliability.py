@@ -23,10 +23,10 @@ class ReliabilityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);(root/'adapters').mkdir();(root/'emu').write_bytes(b'pinned')
             (root/'adapters/engines.json').write_text(json.dumps({'esp-emu-0.48.0':dict(path='emu',version='0.48.0',sha256=hashlib.sha256(b'pinned').hexdigest())}))
-            self.assertEqual(engine('esp-emu',root=root)[1]['version'],'0.48.0')
+            self.assertEqual(engine('esp-emu','0.48.0',root=root)[1]['version'],'0.48.0')
             with self.assertRaises(ValueError):engine('esp-emu','0.49.0',root=root)
             (root/'emu').write_bytes(b'changed')
-            with self.assertRaises(ValueError):engine('esp-emu',root=root)
+            with self.assertRaises(ValueError):engine('esp-emu','0.48.0',root=root)
 
     def test_fault_attribution_does_not_hide_warnings_or_extra_faults(self):
         uart='Bus fault: read8 unmapped 0x00000000\n'

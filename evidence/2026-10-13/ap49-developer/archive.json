@@ -1,0 +1,17 @@
+{
+  "source_run": "ap49-developer",
+  "files_sha256": {
+    "command.json": "8cfe3f85e8c3c63730b423f555c4e4b85c777ff3350f88c5e15aa3ecfaad4d19",
+    "input.json": "5cedc4db42a3bbc88e151a4b4a37af2e3438d0c07bf5731ecb0f633e8ec1d063",
+    "result.json": "5052e39b472dc720d1d35258ee698d79ec478942a6c39b1c04d6899bf5ffa36a",
+    "uart.log": "8633961507a5ef31a630cd9a8b70b09c9de89302f0e25e24b8e266965fb02a62"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

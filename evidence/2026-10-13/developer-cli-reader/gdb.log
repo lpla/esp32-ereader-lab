@@ -1,0 +1,7 @@
+The target architecture is set to "riscv:rv32".
+warning: No executable has been specified and target does not support
+determining executable automatically.  Try using the "file" command.
+0x40000000 in ?? ()
+
+Breakpoint -9, 0x42010112 in ?? ()
+Remote connection closed

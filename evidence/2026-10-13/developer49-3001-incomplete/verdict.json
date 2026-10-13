@@ -1,0 +1,21 @@
+{
+  "guest_checkpoint_completed": false,
+  "semantic_page_requires_image_inspection": true,
+  "diagnostics": {
+    "bus_faults": 1,
+    "bus_fault_examples": [
+      "Bus fault: read8 unmapped 0x3FFFFFFC"
+    ],
+    "debugger_read_faults": 1,
+    "debugger_read_addresses": {
+      "0x3ffffffc": 1
+    },
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": false,
+    "physical_memory_safety_validated": false
+  },
+  "physical_performance_valid": false,
+  "allocator_substituted": false
+}

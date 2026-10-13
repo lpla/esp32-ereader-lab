@@ -1,0 +1,18 @@
+{
+  "source_run": "developer-firmware-recorded",
+  "files_sha256": {
+    "command.json": "99cab22370cd2eef6fdd9ce1e848099834aacf68fb7f05438a859f8be18aa6d0",
+    "input.json": "2b42b32e8868b6f180fa1affe490f744a7643fe38b44ef69d9b0d703395aa053",
+    "result.json": "8a1b217580e7a6e7a5fe97a99ba0224a5a4a2a2928b62ea09fcd4ac9faeabd42",
+    "source-check.json": "e935ed741aecadcc618089a9cfae1e6a9ac8756798a8de5b88843e1221384a6f",
+    "uart.log": "c6f1d1cd0587a64460662b9917a3d8aa0eb19ebdd317e49c06d50861b94f4528"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

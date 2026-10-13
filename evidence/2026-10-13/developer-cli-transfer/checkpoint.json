@@ -1,0 +1,1 @@
+{"protocol": 2, "activity": "CrossPointWebServer", "display_after_activity_entered": true, "reason": "guest requested restart after AP exit", "reset_executed": false, "scenario": "web-ap"}

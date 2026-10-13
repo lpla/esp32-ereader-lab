@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "completion_marker": "AP_READY",
+  "marker_observed": true,
+  "returncode": 0,
+  "timed_out": false,
+  "abort_reports": 0,
+  "diagnostics": {
+    "bus_faults": 0,
+    "bus_fault_examples": [],
+    "debugger_read_faults": 0,
+    "debugger_read_addresses": {},
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": true,
+    "physical_memory_safety_validated": false
+  },
+  "full_crosspoint_validated": false,
+  "physical_performance_validated": false,
+  "engine": {
+    "name": "esp-emu",
+    "version": "0.49.0",
+    "executable_sha256": "72e06c477edc1f9cd877c69f180a649e213a622b82af430a1888cb2e3e951a63"
+  },
+  "run_image_after_sha256": "7dcec20013448ebf3d345160adac27e3e0cedfdfbd12234369b7f3a72704d5a2",
+  "original_image_unchanged": true
+}

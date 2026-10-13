@@ -1,0 +1,17 @@
+[
+  "/work/tools/esp-emu-0.49.0-x86_64-unknown-linux-gnu/esp-emu",
+  "--chip",
+  "esp32c3",
+  "--firmware",
+  "/work/results/developer-firmware-recorded/flash.bin",
+  "--timeout",
+  "30s",
+  "--exit-on",
+  "AP_READY",
+  "--net",
+  "user,restrict=yes",
+  "--log-color",
+  "never",
+  "--wifi-fw-ap-password",
+  ""
+]

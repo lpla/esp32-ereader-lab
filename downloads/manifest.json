@@ -88,6 +88,12 @@
       "url": "https://raw.githubusercontent.com/espressif/esp-emulator/0933dd1/README.md",
       "bytes": 39930,
       "sha256": "c32226db637e35ff1a8cc8d046601f942dbabe5b24229498e22a9cb27365c749"
+    },
+    {
+      "file": "esp-emu-0.49.0-x86_64-unknown-linux-gnu.tar.gz",
+      "url": "https://github.com/espressif/esp-emulator/releases/download/v0.49.0/esp-emu-0.49.0-x86_64-unknown-linux-gnu.tar.gz",
+      "bytes": 4023466,
+      "sha256": "100d656d33a2c26b4efd38e009b92e68914452105585187d3b8807ee87041ffc"
     }
   ]
 }

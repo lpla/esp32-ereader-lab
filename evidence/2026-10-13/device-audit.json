@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-13",
+  "crosspoint": "c1a62f663172af69eda49e774c82ec7600836d01",
+  "sdk": "7fcd3b34c108f28c086ade3b433924022dbc0998",
+  "simulator": "1915ee0a15564c3f49d74fa2334f773f282c5364",
+  "release": "1.6.5",
+  "devices": [
+    {
+      "firmware_flag": "FREEINK_DEVICE_EEGO_A4",
+      "simulator_profile": "EEGO_A4",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_METALIO_EINK4",
+      "simulator_profile": "METALIO_EINK4",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_PAPERMONO",
+      "simulator_profile": "PAPERMONO",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_STICKY",
+      "simulator_profile": "STICKY",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_X3",
+      "simulator_profile": "X3",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_X4",
+      "simulator_profile": "X4 (default)",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_X4CLASSIC",
+      "simulator_profile": "X4_CLASSIC",
+      "covered": true
+    },
+    {
+      "firmware_flag": "FREEINK_DEVICE_X4PRO",
+      "simulator_profile": "X4_PRO",
+      "covered": true
+    }
+  ],
+  "missing": []
+}

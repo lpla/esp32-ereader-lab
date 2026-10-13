@@ -1,0 +1,252 @@
+{
+  "engine": {
+    "name": "esp-emu",
+    "version": "0.49.0",
+    "executable_sha256": "72e06c477edc1f9cd877c69f180a649e213a622b82af430a1888cb2e3e951a63"
+  },
+  "done": true,
+  "failure": null,
+  "transfers": [
+    {
+      "cycle": 0,
+      "bytes": 4097,
+      "fnv32": 925412639,
+      "response": {
+        "bytes": 4097,
+        "fnv32": 925412639
+      }
+    },
+    {
+      "cycle": 0,
+      "bytes": 262177,
+      "fnv32": 486019359,
+      "response": {
+        "bytes": 262177,
+        "fnv32": 486019359
+      }
+    },
+    {
+      "cycle": 1,
+      "bytes": 4097,
+      "fnv32": 969455586,
+      "response": {
+        "bytes": 4097,
+        "fnv32": 969455586
+      }
+    },
+    {
+      "cycle": 1,
+      "bytes": 262177,
+      "fnv32": 2032245922,
+      "response": {
+        "bytes": 262177,
+        "fnv32": 2032245922
+      }
+    },
+    {
+      "cycle": 2,
+      "bytes": 4097,
+      "fnv32": 2780589145,
+      "response": {
+        "bytes": 4097,
+        "fnv32": 2780589145
+      }
+    },
+    {
+      "cycle": 2,
+      "bytes": 262177,
+      "fnv32": 1478012793,
+      "response": {
+        "bytes": 262177,
+        "fnv32": 1478012793
+      }
+    }
+  ],
+  "records": [
+    {
+      "kind": "AP_HEAP",
+      "phase": "baseline",
+      "cycle": 0,
+      "free": 263864,
+      "largest": 122868,
+      "minimum": 257308,
+      "integrity": true
+    },
+    {
+      "kind": "AP_READY",
+      "cycle": 0,
+      "started": true,
+      "ip": "192.168.4.1"
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "active",
+      "cycle": 0,
+      "free": 207160,
+      "largest": 114676,
+      "minimum": 205584,
+      "integrity": true
+    },
+    {
+      "kind": "AP_UPLOAD",
+      "cycle": 0,
+      "bytes": 4097,
+      "fnv32": 925412639
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "uploaded",
+      "cycle": 0,
+      "free": 197980,
+      "largest": 114676,
+      "minimum": 188104,
+      "integrity": true
+    },
+    {
+      "kind": "AP_UPLOAD",
+      "cycle": 0,
+      "bytes": 262177,
+      "fnv32": 486019359
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "uploaded",
+      "cycle": 0,
+      "free": 197932,
+      "largest": 114676,
+      "minimum": 183052,
+      "integrity": true
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "off",
+      "cycle": 0,
+      "free": 243380,
+      "largest": 114676,
+      "minimum": 183052,
+      "integrity": true
+    },
+    {
+      "kind": "AP_READY",
+      "cycle": 1,
+      "started": true,
+      "ip": "192.168.4.1"
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "active",
+      "cycle": 1,
+      "free": 206064,
+      "largest": 114676,
+      "minimum": 183052,
+      "integrity": true
+    },
+    {
+      "kind": "AP_UPLOAD",
+      "cycle": 1,
+      "bytes": 4097,
+      "fnv32": 969455586
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "uploaded",
+      "cycle": 1,
+      "free": 197520,
+      "largest": 114676,
+      "minimum": 183052,
+      "integrity": true
+    },
+    {
+      "kind": "AP_UPLOAD",
+      "cycle": 1,
+      "bytes": 262177,
+      "fnv32": 2032245922
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "uploaded",
+      "cycle": 1,
+      "free": 197260,
+      "largest": 114676,
+      "minimum": 182356,
+      "integrity": true
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "off",
+      "cycle": 1,
+      "free": 242968,
+      "largest": 114676,
+      "minimum": 182356,
+      "integrity": true
+    },
+    {
+      "kind": "AP_READY",
+      "cycle": 2,
+      "started": true,
+      "ip": "192.168.4.1"
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "active",
+      "cycle": 2,
+      "free": 205836,
+      "largest": 114676,
+      "minimum": 182356,
+      "integrity": true
+    },
+    {
+      "kind": "AP_UPLOAD",
+      "cycle": 2,
+      "bytes": 4097,
+      "fnv32": 2780589145
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "uploaded",
+      "cycle": 2,
+      "free": 200572,
+      "largest": 114676,
+      "minimum": 182356,
+      "integrity": true
+    },
+    {
+      "kind": "AP_UPLOAD",
+      "cycle": 2,
+      "bytes": 262177,
+      "fnv32": 1478012793
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "uploaded",
+      "cycle": 2,
+      "free": 200568,
+      "largest": 114676,
+      "minimum": 182356,
+      "integrity": true
+    },
+    {
+      "kind": "AP_HEAP",
+      "phase": "off",
+      "cycle": 2,
+      "free": 242964,
+      "largest": 114676,
+      "minimum": 182356,
+      "integrity": true
+    }
+  ],
+  "image_unchanged": true,
+  "diagnostics": {
+    "bus_faults": 0,
+    "bus_fault_examples": [],
+    "debugger_read_faults": 0,
+    "debugger_read_addresses": {},
+    "unexplained_bus_faults": 0,
+    "guest_panics": 0,
+    "lockup_reports": 0,
+    "modeled_execution_clean": true,
+    "physical_memory_safety_validated": false
+  },
+  "crosspoint_candidate_validated": false,
+  "ap_max_station_limit_validated": false
+}

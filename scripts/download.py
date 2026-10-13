@@ -4,15 +4,18 @@ import hashlib
 import json
 import urllib.request
 import argparse
+from engine_packages import add_selection, select_files
 
 parser=argparse.ArgumentParser()
-parser.add_argument('--emulators-only',action='store_true',help='Do not fetch closed firmware fixtures')
+add_selection(parser)
 args=parser.parse_args()
 
 root = Path(__file__).resolve().parents[1]
 manifest = json.loads((root / 'downloads/manifest.json').read_text())
-for entry in manifest['files']:
-    if args.emulators_only and not entry['file'].startswith(('esp-emu','qemu')):continue
+if args.legacy_fixtures and (args.engine or args.emulators_only):
+    parser.error('--legacy-fixtures cannot be combined with engine selection')
+selection = args.engine or (None if args.emulators_only or args.legacy_fixtures else 'all')
+for entry in select_files(manifest['files'], selection, args.esp_version, args.emulators_only):
     destination = root / 'downloads' / entry['file']
     if not destination.exists():
         with urllib.request.urlopen(entry['url'], timeout=60) as response:

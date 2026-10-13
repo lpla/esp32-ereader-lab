@@ -5,6 +5,7 @@ import json
 import struct
 import tarfile
 import argparse
+from engine_packages import add_selection, select_files
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -40,34 +41,24 @@ def inspect(data):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--emulators-only',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();add_selection(parser);args=parser.parse_args()
     for directory in ('firmware', 'tools', 'results'):
         (ROOT / directory).mkdir(exist_ok=True)
     manifest = json.loads((ROOT / 'downloads/manifest.json').read_text())
-    for entry in manifest['files']:
-        if args.emulators_only and not entry['file'].startswith(('esp-emu','qemu')):continue
+    if args.legacy_fixtures and (args.engine or args.emulators_only):
+        parser.error('--legacy-fixtures cannot be combined with engine selection')
+    selection = args.engine or (None if args.emulators_only or args.legacy_fixtures else 'all')
+    selected = select_files(manifest['files'], selection, args.esp_version, args.emulators_only)
+    for entry in selected:
         data = (ROOT / 'downloads' / entry['file']).read_bytes()
-        assert len(data) == entry['bytes'], entry['file']
-        assert hashlib.sha256(data).hexdigest() == entry['sha256'], entry['file']
-    archives = [
-        ("esp-emu.tar.gz", "esp-emu-SHA256SUMS",
-         "esp-emu-0.45.0-x86_64-unknown-linux-gnu.tar.gz"),
-        ("qemu.tar.xz", "qemu-SHA256SUMS",
-         "qemu-riscv32-softmmu-esp_develop_9.2.2_20260417-x86_64-linux-gnu.tar.xz"),
-        ("esp-emu-wasm.tar.gz", "esp-emu-SHA256SUMS",
-         "esp-emu-0.45.0-wasm.tar.gz"),
-    ]
-    for archive, checksums, name in archives:
-        expected = next(line.split()[0] for line in
-                        (ROOT / "downloads" / checksums).read_text().splitlines()
-                        if not line.startswith("#") and name in line)
-        assert hashlib.sha256((ROOT / "downloads" / archive).read_bytes()).hexdigest() == expected
-        with tarfile.open(ROOT / "downloads" / archive) as tar:
+        if len(data) != entry['bytes'] or hashlib.sha256(data).hexdigest() != entry['sha256']:
+            raise ValueError(f"Package mismatch: {entry['file']}")
+    for entry in selected:
+        if not entry['file'].endswith(('.tar.gz', '.tar.xz')):
+            continue
+        with tarfile.open(ROOT / 'downloads' / entry['file']) as tar:
             tar.extractall(ROOT / "tools", filter="data")
-    # This release is pinned by GitHub's published asset digest in the manifest.
-    with tarfile.open(ROOT/'downloads/esp-emu-0.48.0-x86_64-unknown-linux-gnu.tar.gz') as tar:
-        tar.extractall(ROOT/'tools', filter='data')
-    if args.emulators_only:return
+    if not args.legacy_fixtures:return
     for source, name in [('x4pro-xtos-v7.4.4.bin', 'x4pro-stock-padded'),
                          ('x4pro-xtos_licorice-260923.bin', 'x4pro-licorice-padded')]:
         data = (ROOT / 'downloads' / source).read_bytes()

@@ -1,0 +1,42 @@
+[415] [DBG] [UI] Using Lyra theme
+[670] [INF] [HW] Xteink probe scores: pass1=0 pass2=0 verdict=0
+[671] [XTDET] NVS hw_calib/screenType: not set
+[739] [XTDET] bus probe VER=FF FF FF FF FF FLG=FF -> default controller
+[739] [ERR] [GYR] SDK IMU not found
+[739] [INF] [CLK] RTC not found
+[739] [INF] [MAIN] Hardware detect: X4
+[739] [SD] SD card detected
+[740] [DBG] [UI] Using Lyra theme
+[740] [DBG] [MAIN] Starting CrossPoint version 1.6.5-dev-detached-223c20b48
+[780] [DBG] [MAIN] Display initialized
+[780] [DBG] [SDREG] Fonts directory not found: /.fonts
+[780] [DBG] [SDREG] Fonts directory not found: /fonts
+[780] [DBG] [SDREG] Discovery complete: 0 families
+[780] [DBG] [SDFS] SD font system ready (0 families discovered)
+[780] [DBG] [MAIN] Fonts setup
+[780] [DBG] [ACT] Entering activity: Boot
+[784] [DBG] [GFX] Time = 4 ms from clearScreen to displayBuffer
+[786] [DBG] [ACT] Exiting activity: Boot
+[786] [DBG] [ACT] Entering activity: EpubReader
+[786] [INF] [MEM] reader enter: free=158408 max_block=114676
+[787] [DBG] [GFX] Time = 7 ms from clearScreen to displayBuffer
+[787] [DBG] [EBP] Loading ePub: /omega.epub
+[787] [INF] [CPRO] open: free=158172 max_block=114676
+[910] [BMC] Failed to open file for reading: /.crosspoint/epub_2586578863/book.bin
+[910] [DBG] [EBP] Cache not found, building spine/TOC cache
+[910] [DBG] [BMC] Entering write mode
+[910] [DBG] [BMC] Beginning content opf pass
+[914] [DBG] [ZIP] Decompressed 153 bytes into 221 bytes
+[914] [DBG] [EBP] Parsing content.opf: OEBPS/content.opf
+[1311] [DBG] [COF] Using fast index for 3002 manifest items
+[1510] [DBG] [ZIP] Decompressed 25021 bytes into 285362 bytes
+[1510] [DBG] [EBP] Successfully parsed content.opf
+[1618] [DBG] [EBP] OPF pass completed in 708 ms
+[1618] [DBG] [BMC] Beginning toc pass
+[1702] [DBG] [BMC] Using fast index for 3001 spine items
+[1702] [DBG] [EBP] Falling back to NCX TOC
+[1702] [DBG] [EBP] Parsing toc ncx file: OEBPS/toc.ncx
+[2310] [DBG] [ZIP] Decompressed 34023 bytes into 365151 bytes
+[2310] [DBG] [EBP] Parsed TOC items
+[2310] [DBG] [EBP] TOC pass completed in 692 ms
+[2311] [DBG] [BMC] Wrote 3001 spine, 3001 TOC entries

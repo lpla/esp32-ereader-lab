@@ -1,122 +1,97 @@
 # ESP32 e-reader lab
 
-Run CrossPoint's embedded firmware and focused regression probes in Espressif
-QEMU and esp-emulator. Guest tests add the C3 allocator, 32-bit ABI, FreeRTOS and
-Wi-Fi/lwIP behavior to the native simulator's fast UI coverage.
-
-Current work is emulator reliability and reproducing CrossPoint problems.
-Closed-stock feature comparisons stopped on 2026-10-08; the earlier experiments
-remain archived in [SOURCE_FEATURES.md](docs/SOURCE_FEATURES.md) and
-[FEATURE_SCOPE.md](docs/FEATURE_SCOPE.md).
-
-Start with [the current runner improvements and evidence](docs/REGRESSION_RUNNERS.md).
-The default newer engine is hash-pinned esp-emulator **0.48.0**. QEMU remains
-`esp-develop-9.2.2-20260417`; 0.45.0 stays available for explicit engine-version
-controls. These are harness and adapter improvements, not emulator-core forks.
-
-A firmware-created AP now supports automated host uploads and real guest AP
-teardown/restart. The full CrossPoint web activity also uploads/downloads an
-EPUB through its actual SD filesystem and reaches the AP-exit restart request.
-Full-reader checkpoints require a paint from the current
-activity, and debugger register handling avoids speculative zero-address reads.
-See [older issue/PR results and feedback decisions](docs/REGRESSION_RUNNERS.md#older-work-and-feedback).
-
-Download engines without closed firmware:
-
-```sh
-python3 scripts/download.py --emulators-only
-python3 scripts/prepare.py --emulators-only
-docker build -t crosspoint-esp-emulation-lab:2026-10-04 .
-pio run -d probes/wifi-ap
-python3 scripts/prepare_ap.py
-docker run --rm --network none -v "$PWD:/work" \
-  crosspoint-esp-emulation-lab:2026-10-04 \
-  python3 scripts/probe_ap.py --name my-ap-test
-```
-
-## Earlier coverage (0.45.0; historical)
-
-| Capability | QEMU | esp-emulator v0.45.0 |
-|---|---|---|
-| X4 home screen, scripted Right/Select | Verified | Verified |
-| Settings screen | Verified | Verified |
-| Partial display update composition | Verified | Verified |
-| Change displayed language | Observed; persistence unverified | Not validated |
-| Stock SD-backed EPUB reading and page turn | Verified via sector adapter | First-page render observed; full case incomplete |
-| EPUB chapter/menu/bookmark/reopen probes | Verified with diagnostic reader-clock offset | Not validated |
-| Guest C3 allocator fragmentation/recovery control | Verified with UART transport observer | Verified in independent IDF/Arduino probe |
-| Guest Wi-Fi/DHCP/HTTP, isolated PR #3612 TCP DF A/B | Wi-Fi unsupported by documented model | Verified; full CrossPoint integration/carrier behavior untested |
-| X4 Pro stock/Licorice usable reader | Not attempted | Blocked during bring-up |
-| Full CrossPoint C3 cold EPUB / page turn / exit | Verified guest workflow | Verified guest workflow |
-| Historical #2332 ditherer output, cleanup and fragmented-heap tradeoff | Verified component A/B | Verified component A/B |
-| Full CrossPoint 6,001-entry XTCH page turn / exit | Verified; shared-payload table fixture | Verified; shared-payload table fixture |
-| Stock Auto Flip page advancement | Verified; clock substituted | Not validated |
-| Physical display/power/timing accuracy | Not validated | Not validated |
-
-Both engines produced byte-identical panel buffers for navigation and Settings. See the [experiment report](REPORT.md), [recorded evidence](evidence/2026-10-04), and [executed EPUB comparison](docs/EPUB_COMPARISON.md).
-
-![Stock Settings screen](evidence/2026-10-04/qemu-x4-settings/screen.png)
+Run embedded firmware tests before moving to real hardware. This repository
+packages Espressif QEMU and esp-emulator with reproducible setup, CrossPoint
+board adapters, disposable SD fixtures, bounded tests, and recorded results.
+It complements the [CrossPoint Simulator](https://github.com/lpla/crosspoint-simulator):
+the simulator is fast for UI work; these tests execute the guest allocator,
+FreeRTOS, filesystem and supported networking code.
 
 ## Quick start
 
-Requirements: Docker, Python3.12+, and Linux x86_64 containers. Intel macOS was tested. ARM hosts may require Docker's x86_64 emulation; that host configuration has not been validated here.
+Requirements: Python 3.12+, Docker running Linux containers, and PlatformIO CLI
+for guest builds. The container uses Linux x86_64; Intel macOS is the tested host.
 
 ```sh
 git clone https://github.com/lpla/esp32-ereader-lab.git
 cd esp32-ereader-lab
-python3 scripts/download.py
-python3 scripts/prepare.py
-docker build -t crosspoint-esp-emulation-lab:2026-10-04 .
-python3 scripts/run_lab.py --engine qemu --scenario settings --prefix first-settings
+python3 lab.py setup --engine esp-emu
+python3 lab.py doctor
+python3 lab.py build --profile ap
+python3 lab.py doctor --profile ap
+python3 lab.py run --profile ap --name first-ap
 ```
 
-For the SD-backed book probe, rebuild the container after updating the repository, then:
+The AP test checks six uploads over three hotspot starts, including payload
+checksums and guest heap integrity. See `results/first-ap/result.json` and
+`uart.log`. Use a new name for each run: existing evidence is preserved.
+
+The default is SHA256-pinned **esp-emulator 0.49.0**, the latest release checked
+on October 13, 2026. QEMU is pinned to **esp-develop-9.2.2-20260417**.
+`setup --engine all` installs both; `--esp-version 0.48.0` or `0.45.0` selects an
+older control explicitly. Setup does not download stock firmware.
+
+## Choose a workflow
+
+| Workflow | Command | What it validates | Current limit |
+|---|---|---|---|
+| Embedded AP | `lab.py run --profile ap` | Guest HTTP uploads, AP restart, heap integrity | Standalone component, no CrossPoint activity |
+| CrossPoint reading | `lab.py run --profile reader --card …` | Guest SD/EPUB, page turn, Home paint | Verified X4/C3 control and ABI; QEMU preferred |
+| CrossPoint transfer | `lab.py run --profile file-transfer --card …` | Hotspot upload/download through guest SD | Observes restart request; does not execute reset |
+| Your test firmware | `lab.py firmware --image … --expect …` | Explicit serial assertion in your own merged image | No SD, input or display board adapter |
+
+`python3 lab.py profiles --json` exposes workflow descriptions and limits to
+agents. `doctor --json` returns readiness, errors and suggested fixes with a
+nonzero exit status when prerequisites are missing. Both work without a guest run.
+
+## Test your own code
 
 ```sh
-python3 scripts/create_card.py
-python3 scripts/run_lab.py --engine qemu --scenario book --card cards/base.img --prefix first-book
+python3 lab.py build --project /path/to/your/project --environment your-test-env
+python3 lab.py firmware --image /path/to/merged-flash.bin \
+  --source /path/to/your/project --name candidate-heap \
+  --chip esp32c3 --expect TEST_PASS --seconds 60
 ```
 
-The source card is copied per run. Firmware cache/bookmark writes go to `results/<run>/card.img`; inspect it using `mtools`, with the FAT partition offset `@@1048576`. Original EPUB/TXT fixtures are generated from source; `create_card.py --fixture beta --name beta` adds the CSS/image probe and `--fixture gamma --name gamma` adds the 120-chapter probe. No privileged mount or physical SD card is needed. See [SD adapter details](docs/SD_ADAPTER.md).
+Your test must emit the marker only after its assertions pass. The runner checks
+the chip and merged-image layout, copies the image, verifies the engine, and
+records logs and a semantic result. A normal exit without the marker fails.
+See [testing your code](docs/TESTING_YOUR_CODE.md) for image requirements,
+base/candidate comparisons and the distinction between component tests and full
+CrossPoint integration. ESP32-S3 selection is available but not validated here.
 
-Other scenarios include `baseline`, `right`, `language`, `folder`, `book-page`, `book-controls`, `book-chapters`, `book-chapter-two`, `book-bookmark`, `book-reopen`, and `book-stride-cycle`. See the runner help for diagnostic probes. SD scenarios require `--card`; `book-page` uses the side Down button. Engines: `qemu`, `esp-emu`, `both`. Each prefix must be new so prior evidence is preserved. Reader menu/held-input scenarios use a documented Arduino-millis offset; they are unsuitable for timing or performance measurements.
+## Documentation and repository layout
 
-The runner emits JSON with status and artifact paths. Screens are saved as `results/<run>/screen.png`; individual display writes, logs, commands and hashes accompany them. A successful process/GDB exit alone does not mean a feature passed: inspect the screen and the scenario's actual behavior.
+- [Developer guide](docs/DEVELOPER_GUIDE.md): installation, full reader/SD test,
+  file transfer, result inspection and troubleshooting.
+- [Testing your code](docs/TESTING_YOUR_CODE.md): custom builds and tests for humans
+  and agents.
+- [Architecture and extension points](docs/ARCHITECTURE.md): CLI, profiles,
+  engine pins, adapters and evidence.
+- [Emulation roadmap](docs/ROADMAP.md): remaining limitations and useful next work.
+- [Documentation index](docs/README.md): current guidance and historical reports.
+- [Contributing](CONTRIBUTING.md) and [agent instructions](AGENTS.md).
 
-Downloads are pinned and checked against SHA256 hashes. No emulator executables, ROMs, stock firmware, personal flash backups or SD contents are bundled in Git. `download.py` fetches the documented public sources; their licenses/provenance remain separate from this harness. An Internet connection is needed to download/build; guest test containers run with networking disabled.
+`lab.py` is the public entry point; `config/` describes workflows, `adapters/`
+defines verified engine/board contracts, `probes/` holds buildable guest tests,
+`scripts/` implements the runners, and `tests/` checks host behavior. Generated
+packages, builds, cards and complete results are ignored by Git. Selected
+reviewable evidence belongs in `evidence/`.
 
-## How it works
+## Validation boundaries
 
-- `scripts/probe.py` controls bounded emulator/GDB sessions in Docker.
-- `scripts/x4-*.gdb` supply GPIO/ADC responses and button schedules for the pinned application.
-- `scripts/x4-display-capture.gdb` reads display-driver calls without changing their instructions.
-- `scripts/render_display.py` retains panel RAM and composes full/partial writes into PNGs using the Python standard library.
-- `scripts/wasm_probe.mjs` exercises the published WASM JavaScript API with instruction/time limits (Node18+).
+Full reader runs currently use CrossPoint
+`223c20b4864da9e7ee400d8234f7544fbbe54b62` and FreeInk SDK
+`aef1a6c89e36f331b2e1aacbbf7ce0debdeb732a`, not latest develop. Arbitrary firmware
+cannot use that adapter without ABI verification. Large SD/EPUB workloads are
+more practical in QEMU; esp-emulator supplies useful guest Wi-Fi tests.
 
-The screenshots represent firmware requests to the display driver. They do not model e-paper waveforms, ghosting, BUSY timing or optical output. Raw framebuffer RAM is reused for partial windows, so repeatedly dumping the same buffer is insufficient.
+Neither engine establishes device speed, RF behavior, SD timing, e-paper optical
+output, power consumption or reset/RTC retention. Screenshots capture firmware
+display requests. A completed component test is evidence for that component,
+not a pass for an unexecuted PR or a physical device.
 
-## Current priority
-
-Use **QEMU** for practical SD/EPUB regressions and **esp-emulator 0.48.0** for
-embedded Wi-Fi/AP workflows. Keep CrossPoint's allocator, filesystem, parser,
-rendering and activity code executing; label the board transport supplied by the
-adapter. The [current report](docs/REGRESSION_RUNNERS.md) records exact source
-pins, completed and incomplete runs, and older issue/PR feedback decisions.
-
-Exact candidate comparisons remain necessary before commenting on a PR. The
-existing [hardware PR results](docs/HARDWARE_PR_TESTING.md) and
-[historical tests](docs/HISTORICAL_TESTS.md) distinguish component probes from
-full firmware integration. Controls do not establish that an unexecuted
-candidate passed. Physical timing, RF, reset/RTC retention and complete board
-emulation remain separate validation work.
-
-The earlier stock/CrossPoint feature catalogue and comparison are archived in
-[SOURCE_FEATURES.md](docs/SOURCE_FEATURES.md) and
-[EPUB_COMPARISON.md](docs/EPUB_COMPARISON.md). CrossInk comparison is outside the
-current scope.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). Include the image hash, hook ABI evidence, commands, logs, input sequence and screenshots with new support. Distinguish an original flash image from a constructed fixture, and substituted hardware behavior from feature behavior. Keep timeouts and failed probes visible.
-
-Harness source and documentation are MIT licensed. See [NOTICE.md](NOTICE.md) for third-party firmware, tools and UI evidence.
+The lab adds harnesses and adapters; it does not fork either emulator core.
+Closed-stock feature research is stopped; its [historical reports](docs/README.md#historical-reports)
+remain available separately. Harness code and docs are MIT licensed; see
+[NOTICE.md](NOTICE.md) for third-party material.

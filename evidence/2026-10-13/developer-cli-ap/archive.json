@@ -1,0 +1,17 @@
+{
+  "source_run": "developer-cli-ap-final",
+  "files_sha256": {
+    "command.json": "8cfe3f85e8c3c63730b423f555c4e4b85c777ff3350f88c5e15aa3ecfaad4d19",
+    "input.json": "5cedc4db42a3bbc88e151a4b4a37af2e3438d0c07bf5731ecb0f633e8ec1d063",
+    "result.json": "ef60ea71c5c900232b1de5088cd38471d10a9d285db871eb1278a86704cf79ed",
+    "uart.log": "679575f569cd9628dfa88a568b5b72b22ca3635aa98d137ac1e41bea8c6c1379"
+  },
+  "local_lab_paths_replaced": true,
+  "omitted": [
+    "firmware",
+    "emulator executables",
+    "SD image/files",
+    "raw guest RAM",
+    "raw display write bytes"
+  ]
+}

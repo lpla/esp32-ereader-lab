@@ -1,5 +1,9 @@
 # CrossPoint regression runners — 2026-10-08
 
+This report records the October 8 controls. The current default is 0.49.0;
+pass `--esp-version 0.48.0` to reproduce the recorded 0.48.0 runs. Use the
+[developer guide](DEVELOPER_GUIDE.md) for the public CLI and current setup.
+
 Closed-stock feature investigation has stopped. The current work is making
 embedded CrossPoint tests reliable and useful for developers. QEMU and
 esp-emulator run target machine code, FreeRTOS and the embedded allocator; the

@@ -7,6 +7,7 @@ from prepare_machine import HEAD,SDK
 from engines import ESP_VERSIONS,DEFAULT_ESP
 from diagnostics import diagnostics
 from check_machine import inspect
+from doctor import packaged
 
 
 def main():
@@ -21,13 +22,17 @@ def main():
  if not a.name.replace('-','').isalnum():p.error('Use letters, digits and hyphens')
  if a.book and (not a.book.startswith('/') or '\n' in a.book):p.error('Book must be an absolute SD path')
  if not 5<=a.seconds<=300:p.error('Run budget must be 5–300 seconds')
- if a.scenario=='web-ap' and (a.engine!='esp-emu' or a.esp_version!='0.48.0' or a.book):p.error('AP workflow requires esp-emulator 0.48.0 and a fresh Home card')
+ if a.scenario=='web-ap' and (a.engine!='esp-emu' or a.esp_version not in ('0.48.0','0.49.0') or a.book):p.error('AP workflow requires esp-emulator 0.48.0 or 0.49.0 and a fresh Home card')
+ ok,detail=packaged('crosspoint-machine')
+ if not ok:p.error(f'{detail}. Run python3 scripts/prepare_machine.py first; see docs/DEVELOPER_GUIDE.md')
+ if not a.card.is_file():p.error('SD card image is missing; run scripts/create_card.py or choose an existing --card')
+ if (ROOT/'results'/a.name).exists():p.error('Result name already exists; choose a new --name to preserve earlier evidence')
  manifest=json.loads((ROOT/'firmware/crosspoint-machine.json').read_text())
  elf=ROOT/'tools/crosspoint-machine/.pio/build/default/firmware.elf'
  flash=ROOT/'firmware/crosspoint-machine.bin'
  if not manifest.get('abi_layout_verified') or manifest['crosspoint']!=HEAD or manifest['sdk']!=SDK or hashlib.sha256(flash.read_bytes()).hexdigest()!=manifest['flash_sha256'] or hashlib.sha256(elf.read_bytes()).hexdigest()!=manifest['elf_sha256']:
   raise ValueError('Unsupported build ABI: derive and verify adapter addresses for this ELF first')
- d=ROOT/'results'/a.name;d.mkdir(exist_ok=False)
+ d=ROOT/'results'/a.name;d.parent.mkdir(exist_ok=True);d.mkdir(exist_ok=False)
  shutil.copyfile(a.card,d/'card.img')
  (d/'input.json').write_text(json.dumps(dict(**manifest,card_source_sha256=hashlib.sha256(a.card.read_bytes()).hexdigest(),
   resumed_book=a.book,scenario=a.scenario,simulated_boot='AfterFlash',diagnostic_override='lastMemPrint after render',

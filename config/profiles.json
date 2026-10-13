@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "profiles": [
+    {
+      "id": "ap",
+      "description": "Standalone embedded AP upload, restart and heap-integrity test",
+      "preferred_engine": "esp-emu",
+      "doctor_profile": "ap",
+      "build": "wifi-ap",
+      "requires_card": false,
+      "scope": "Component probe; no CrossPoint activity or SD filesystem"
+    },
+    {
+      "id": "reader",
+      "description": "Pinned CrossPoint EPUB/XTC reading, page turn and Home exit",
+      "preferred_engine": "qemu",
+      "doctor_profile": "reader",
+      "build": "crosspoint-control",
+      "requires_card": true,
+      "scope": "X4/C3 verified adapter; explicit control revision, not arbitrary builds"
+    },
+    {
+      "id": "file-transfer",
+      "description": "CrossPoint hotspot upload/download through guest SD",
+      "preferred_engine": "esp-emu",
+      "doctor_profile": "reader",
+      "build": "crosspoint-control",
+      "requires_card": true,
+      "scope": "Stops at the restart request; reset/RTC recovery untested"
+    }
+  ]
+}

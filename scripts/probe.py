@@ -43,7 +43,7 @@ def main():
         if args.break_at or args.pre_commands or args.pre_file:
             command += ['--gdb-halt']
         if args.crosspoint_http:
-            if args.esp_version!='0.48.0':parser.error('Full AP workflow requires esp-emulator 0.48.0')
+            if args.esp_version not in ('0.48.0','0.49.0'):parser.error('Full AP workflow requires esp-emulator 0.48.0 or 0.49.0')
             command[command.index('user,restrict=yes')]='user,restrict=yes,hostfwd=tcp:127.0.0.1:18080-:80'
             command+=['--wifi-fw-ap-password','']
     else:

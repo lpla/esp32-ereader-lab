@@ -1,0 +1,8 @@
+{
+  "bytes": 2348625,
+  "sha256": "e484cda7e9621497a268943a63d23b0216cb41a286a01fcef7ac8ff75f4bb8fb",
+  "startup_read_packets": [
+    "  [remote] Sending packet: $m3ffffffc,4#c7"
+  ],
+  "complete_trace_retained_locally": true
+}

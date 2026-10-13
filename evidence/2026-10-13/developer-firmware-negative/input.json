@@ -1,0 +1,91 @@
+{
+  "image_sha256": "7dcec20013448ebf3d345160adac27e3e0cedfdfbd12234369b7f3a72704d5a2",
+  "original_path": "<LAB_ROOT>/firmware/wifi-ap.bin",
+  "layout": {
+    "bytes": 16777216,
+    "partitions": [
+      {
+        "type": 1,
+        "subtype": 2,
+        "offset": 36864,
+        "size": 20480,
+        "label": "nvs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 0,
+        "offset": 57344,
+        "size": 8192,
+        "label": "otadata",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 16,
+        "offset": 65536,
+        "size": 1310720,
+        "label": "app0",
+        "flags": 0
+      },
+      {
+        "type": 0,
+        "subtype": 17,
+        "offset": 1376256,
+        "size": 1310720,
+        "label": "app1",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 130,
+        "offset": 2686976,
+        "size": 1441792,
+        "label": "spiffs",
+        "flags": 0
+      },
+      {
+        "type": 1,
+        "subtype": 3,
+        "offset": 4128768,
+        "size": 65536,
+        "label": "coredump",
+        "flags": 0
+      }
+    ],
+    "images": [
+      {
+        "offset": 0,
+        "segments": 3,
+        "entry": "0x403cbf10",
+        "chip_id": 5,
+        "flash_size_code": 2,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0
+      },
+      {
+        "offset": 65536,
+        "segments": 6,
+        "entry": "0x403807ce",
+        "chip_id": 5,
+        "flash_size_code": 2,
+        "min_chip_rev": 0,
+        "min_chip_rev_full": 0,
+        "app": {
+          "version": "ee57070",
+          "project": "arduino-lib-builder",
+          "time": "10:50:59",
+          "date": "Jul 20 2026",
+          "idf": "v5.5.5"
+        }
+      }
+    ]
+  },
+  "source": null,
+  "chip": "esp32c3",
+  "completion_marker": "LAB_MARKER_NEVER_EMITTED",
+  "seconds": 3,
+  "esp_version": "0.49.0",
+  "scope": "serial component test; no board transport adapter",
+  "guest_network_isolated": true
+}
